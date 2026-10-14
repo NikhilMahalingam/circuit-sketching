@@ -1,0 +1,40 @@
+{
+  "checked_at_utc": "2026-10-14T18:23:08.086020+00:00",
+  "assets": {
+    "vocab": {
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/vocab.json",
+      "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+      "etag": "\"1f1d9aaca301414e7f6c9396df506798ff4eb9a6\"",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/vocab.json?%2Fopenai-community%2Fgpt2%2Fresolve%2Fmain%2Fvocab.json=&etag=%221f1d9aaca301414e7f6c9396df506798ff4eb9a6%22"
+    },
+    "merges": {
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/merges.txt",
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "etag": "\"226b0752cac7789c48f0cb3ec53eda48b7be36cc\"",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/merges.txt?%2Fopenai-community%2Fgpt2%2Fresolve%2Fmain%2Fmerges.txt=&etag=%22226b0752cac7789c48f0cb3ec53eda48b7be36cc%22"
+    }
+  },
+  "method": "GPT-2 byte encoding followed by lowest-rank adjacent BPE merges; one pretokenizer word per candidate",
+  "candidates": [
+    {
+      "text": " Paris",
+      "bpe_pieces": [
+        "\u0120Paris"
+      ],
+      "token_ids": [
+        6342
+      ],
+      "n_tokens": 1
+    },
+    {
+      "text": " London",
+      "bpe_pieces": [
+        "\u0120London"
+      ],
+      "token_ids": [
+        3576
+      ],
+      "n_tokens": 1
+    }
+  ]
+}

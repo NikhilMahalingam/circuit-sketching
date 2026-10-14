@@ -1,0 +1,48 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Downloaded models and local runtime state
+.cache/
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+
+# Generated experiment outputs (regenerate with run_notebook.py)
+/results/
+*.executed.ipynb
+*.failed.ipynb
+/review_checks/cuda_execution.json
+/review_checks/cuda_results_validation.json
+/review_checks/installed_requirements.json
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
