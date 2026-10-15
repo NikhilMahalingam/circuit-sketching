@@ -1,0 +1,7 @@
+state,anchor_strength,method,wall_seconds,forward_passes_batches,examples_processed,backward_calls,hvp_operations,peak_cuda_allocated_mib,cost_scope
+0011111111000000,0.0,first_order,1.1803676999988966,16,32,8,0,878.98046875,independently measured first-order estimator
+0011111111000000,0.0,full_second_order,13.673934300008113,16,32,136,128,1175.28466796875,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.0,sketch_rank_4,4.271651199982443,16,32,40,32,1175.28466796875,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.0,sketch_rank_8,7.3442595999804325,16,32,72,64,1175.28466796875,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.0,sketch_rank_12,10.421297199987748,16,32,104,96,1175.28466796875,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.0,sketch_rank_16,13.548919799985015,16,32,136,128,1175.28466796875,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound

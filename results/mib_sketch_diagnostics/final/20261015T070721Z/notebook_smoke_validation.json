@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "code_cells_executed": 7,
+  "smoke": true,
+  "full_hessian_smoke_enabled": true,
+  "full_campaign_is_separate": true,
+  "executed_notebook": "notebooks/mib_sketch_diagnostics.smoke.executed.ipynb",
+  "source_results": "results/mib_sketch_diagnostics/20261015T152632Z",
+  "completion": {
+    "smoke": true,
+    "full_hessian_measured": true,
+    "old_notebooks_unchanged": true,
+    "successful": true,
+    "query_count": 2
+  }
+}

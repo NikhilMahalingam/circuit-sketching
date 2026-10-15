@@ -1,0 +1,25 @@
+state,anchor_strength,method,wall_seconds,forward_passes_batches,examples_processed,backward_calls,hvp_operations,peak_cuda_allocated_mib,cost_scope
+0000001000000000,0.0,first_order,8.227890399997705,128,256,64,0,886.41845703125,independently measured first-order estimator
+0000001000000000,0.0,full_second_order,108.93039919994771,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0000001000000000,0.0,sketch_rank_4,34.33561479995842,128,256,320,256,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0000001000000000,0.0,sketch_rank_16,108.2533512997179,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0000001000000000,0.5,first_order,8.012028400000418,128,256,64,0,886.41845703125,independently measured first-order estimator
+0000001000000000,0.5,full_second_order,107.6428281999979,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0000001000000000,0.5,sketch_rank_4,33.13492240011692,128,256,320,256,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0000001000000000,0.5,sketch_rank_16,107.73809410019021,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011110000000000,0.0,first_order,7.9228367999894544,128,256,64,0,886.41845703125,independently measured first-order estimator
+0011110000000000,0.0,full_second_order,107.86550389986951,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011110000000000,0.0,sketch_rank_4,33.5842671997234,128,256,320,256,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011110000000000,0.0,sketch_rank_16,108.42607829983172,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011110000000000,0.5,first_order,9.071310100000119,128,256,64,0,886.41845703125,independently measured first-order estimator
+0011110000000000,0.5,full_second_order,109.88253959969734,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011110000000000,0.5,sketch_rank_4,33.69867169976351,128,256,320,256,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011110000000000,0.5,sketch_rank_16,109.22995930007892,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.0,first_order,8.38952130000689,128,256,64,0,886.41845703125,independently measured first-order estimator
+0011111111000000,0.0,full_second_order,108.06102970025677,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.0,sketch_rank_4,33.43984350003302,128,256,320,256,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.0,sketch_rank_16,108.30893489990558,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.5,first_order,7.786086100008106,128,256,64,0,886.41845703125,independently measured first-order estimator
+0011111111000000,0.5,full_second_order,107.66548570002487,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.5,sketch_rank_4,33.70287019984971,128,256,320,256,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound
+0011111111000000,0.5,sketch_rank_16,108.4112320998247,128,256,1088,1024,1195.58984375,measured standalone allocation; shared graph and nested HVP prefixes; peak is shared upper bound

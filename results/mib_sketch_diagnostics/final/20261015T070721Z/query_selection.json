@@ -1,0 +1,19 @@
+{
+  "training_examples": 16,
+  "seed": 42,
+  "trajectory_thresholds": [
+    1.5183496475219727,
+    1.916748970746994,
+    2.6513655185699463
+  ],
+  "states": [
+    "0000001000000000",
+    "0011110000000000",
+    "0011111111000000"
+  ],
+  "query_count": 35,
+  "decision_pairs": 8435,
+  "difficult_pairs": 321,
+  "difficult_unique_queries": 35,
+  "validation_used": false
+}

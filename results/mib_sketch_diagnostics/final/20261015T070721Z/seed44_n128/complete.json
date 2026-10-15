@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "discovery_examples": 128,
+  "validation_examples": 128,
+  "seed": 44,
+  "ranks": [
+    4,
+    16
+  ],
+  "queries": 35,
+  "smoke": false,
+  "heldout_validation_fingerprint": "36475045c89996a1"
+}

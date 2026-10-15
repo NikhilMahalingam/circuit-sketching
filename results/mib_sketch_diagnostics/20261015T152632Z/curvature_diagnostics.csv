@@ -1,0 +1,5 @@
+state,anchor_strength,method,hessian_relative_asymmetry,core_condition_number,hessian_relative_compression_error
+0000001000000000,0.0,full_second_order,2.1702913954868563e-07,,
+0000001000000000,0.0,sketch_rank_4,,26892.50390625,0.48709272688892585
+0000001000000000,0.5,full_second_order,1.7645398031618242e-07,,
+0000001000000000,0.5,sketch_rank_4,,32769.40625,1.056535188801529

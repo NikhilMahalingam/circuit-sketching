@@ -1,0 +1,76 @@
+{
+  "rule": "Additional seeds 43/44 for a sketch with >=5% training MAE gain or >=2pp training difficult-decision gain; choose before viewing validation extension results.",
+  "training_only_candidates": [
+    {
+      "method": "sketch_rank_16",
+      "anchor_strength": 0.0,
+      "train_mae_gain_fraction": 0.44314580693314987,
+      "train_difficult_gain": 0.0311526479750778,
+      "train_mae": 0.0120945571286722
+    },
+    {
+      "method": "sketch_rank_12",
+      "anchor_strength": 0.0,
+      "train_mae_gain_fraction": 0.44313825363801884,
+      "train_difficult_gain": 0.0311526479750778,
+      "train_mae": 0.0120947211819569
+    },
+    {
+      "method": "sketch_rank_8",
+      "anchor_strength": 0.0,
+      "train_mae_gain_fraction": 0.44297577622950596,
+      "train_difficult_gain": 0.0311526479750778,
+      "train_mae": 0.0120982500990843
+    },
+    {
+      "method": "sketch_rank_4",
+      "anchor_strength": 0.0,
+      "train_mae_gain_fraction": 0.40810595609607825,
+      "train_difficult_gain": 0.0311526479750778,
+      "train_mae": 0.0128556028081437
+    },
+    {
+      "method": "sketch_rank_16",
+      "anchor_strength": 0.5,
+      "train_mae_gain_fraction": 0.7850961967751848,
+      "train_difficult_gain": 0.161993769470405,
+      "train_mae": 0.0184931992706862
+    },
+    {
+      "method": "sketch_rank_12",
+      "anchor_strength": 0.5,
+      "train_mae_gain_fraction": 0.7850740974850746,
+      "train_difficult_gain": 0.161993769470405,
+      "train_mae": 0.0184951009893604
+    },
+    {
+      "method": "sketch_rank_8",
+      "anchor_strength": 0.5,
+      "train_mae_gain_fraction": 0.785008722580954,
+      "train_difficult_gain": 0.161993769470405,
+      "train_mae": 0.0185007267210183
+    },
+    {
+      "method": "sketch_rank_4",
+      "anchor_strength": 0.5,
+      "train_mae_gain_fraction": 0.7783625709341381,
+      "train_difficult_gain": 0.161993769470405,
+      "train_mae": 0.0190726505536514
+    }
+  ],
+  "selected": {
+    "method": "sketch_rank_16",
+    "anchor_strength": 0.0,
+    "train_mae_gain_fraction": 0.44314580693314987,
+    "train_difficult_gain": 0.0311526479750778,
+    "train_mae": 0.0120945571286722
+  },
+  "ranks_to_run": [
+    4,
+    16
+  ],
+  "additional_seeds": [
+    43,
+    44
+  ]
+}

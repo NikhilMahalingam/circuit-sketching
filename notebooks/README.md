@@ -34,3 +34,27 @@ To deliberately run the exact oracle, add `--oracle` and optionally set
 `--max-oracle-candidates-per-size`. The cap rejects a circuit size entirely
 when the full combination count exceeds it. Validate a completed run with
 `review_checks/validate_mib_discovery_results.py RESULTS_DIRECTORY`.
+
+## Sketch-ACDC diagnostics
+
+`mib_sketch_diagnostics.ipynb` reuses the official IOI loader and the corrected
+shared edge adapter. Its default execution is an explicitly labeled lightweight
+smoke test. The full wrap-up runs the same utilities through a checkpointed CLI:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\run_sketch_diagnostics_final.py --sizes 16 32 64 128
+```
+
+Keep the printed result directory. Resume a single discovery size with
+`--out <directory> --sizes 128`. Thresholds and queries are chosen on training
+prompts; all sizes share the same 128 validation prompts. After the primary
+runs, `scripts/build_sketch_final_report.py <directory>` writes the report and
+`seed_extension_selection.json`. Run the selected ranks with
+`--out <directory> --sizes 128 --seeds 43 44 --ranks <selected ranks>`, then rebuild
+the report and run `scripts/verify_sketch_final_results.py <directory>`.
+
+The notebook's final dashboard displays completed campaign results without
+launching another model run. Full numerical artifacts and the research decision
+are linked from [the final report](../SKETCH_ACDC_FINAL_REPORT.md). Earlier
+executed notebooks and frozen-sender results remain unchanged; the report
+explains their limitations.

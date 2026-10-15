@@ -1,0 +1,5 @@
+mask,state,max_abs_dynamic_vs_official,max_abs_historical_vs_official
+baseline,0000000000000000,0.0,0.0
+single,1000000000000000,0.0,0.0
+partial,0000001000000000,0.0,0.0
+dependent,1111110000000000,0.0,0.4119710922241211

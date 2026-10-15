@@ -1,5 +1,12 @@
 # Circuit sketching
 
+The [Sketch-ACDC research wrap-up](SKETCH_ACDC_FINAL_REPORT.md) records corrected
+MIB edge semantics, the nested discovery-data diagnostics, measured compute,
+and the research recommendation. The shared edge adapter now uses current
+sender activations during simultaneous patching. Earlier frozen-sender edge
+results are preserved and explicitly qualified in that report; earlier
+head-level experiments used a separate adapter.
+
 The follow-up [circuit discovery notebook](notebooks/mib_circuit_discovery.ipynb)
 and its [run guide](notebooks/README.md) compare EAP, first-order, and
 second-order selection on official MIB IOI examples. Exact combinatorial

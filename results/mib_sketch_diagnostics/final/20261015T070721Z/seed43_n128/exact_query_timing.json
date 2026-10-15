@@ -1,0 +1,5 @@
+{
+  "queries": 3,
+  "seconds_per_query": 5.763894566664628,
+  "scope": "uncached candidate forward evaluation; already-known current score; donor preparation included"
+}

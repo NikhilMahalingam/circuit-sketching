@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "masks": 24,
+  "prompts": 4,
+  "hvp_fd_max_abs_error": 6.842613220214844e-05,
+  "adapter": "mib_dynamic_sender_v2"
+}

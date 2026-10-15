@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "configurations": [
+    {
+      "seed": 42,
+      "discovery_examples": 128,
+      "queries": 35,
+      "forward_batches": 6784,
+      "peak_cuda_allocated_mib": 1195.58447265625
+    },
+    {
+      "seed": 42,
+      "discovery_examples": 16,
+      "queries": 35,
+      "forward_batches": 5712,
+      "peak_cuda_allocated_mib": 1175.28466796875
+    },
+    {
+      "seed": 42,
+      "discovery_examples": 32,
+      "queries": 35,
+      "forward_batches": 1696,
+      "peak_cuda_allocated_mib": 1175.02685546875
+    },
+    {
+      "seed": 42,
+      "discovery_examples": 64,
+      "queries": 35,
+      "forward_batches": 3392,
+      "peak_cuda_allocated_mib": 1175.02685546875
+    },
+    {
+      "seed": 43,
+      "discovery_examples": 128,
+      "queries": 35,
+      "forward_batches": 6784,
+      "peak_cuda_allocated_mib": 1195.58984375
+    },
+    {
+      "seed": 44,
+      "discovery_examples": 128,
+      "queries": 35,
+      "forward_batches": 6784,
+      "peak_cuda_allocated_mib": 1239.59130859375
+    }
+  ],
+  "fixed_validation_examples": 128,
+  "validation_effects_identical_across_configurations": true,
+  "previous_notebooks_unchanged": true,
+  "missing_ignored_local_failed_notebooks": [],
+  "decomposition_identity_checked": true,
+  "forward_logs_reconciled": true,
+  "no_smoke_fallback": true,
+  "nested_train_effect_prefixes_identical": true,
+  "heldout_metrics_independently_recomputed": true
+}

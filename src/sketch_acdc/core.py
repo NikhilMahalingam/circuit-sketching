@@ -41,11 +41,16 @@ def nystrom_sketch(function, point, rank, seed=0, ridge=1e-5):
     omega = torch.linalg.qr(omega).Q
     columns = [hessian_vector_product(function, point, omega[:, i]) for i in range(rank)]
     y = torch.stack(columns, dim=1)
+    return nystrom_from_products(omega,y,ridge), omega, y
+
+
+def nystrom_from_products(omega,y,ridge=1e-5):
+    """Shared symmetric indefinite Nyström reconstruction from measured HVPs."""
     middle = omega.T @ y
     # Symmetric indefinite Hessians require a pseudoinverse, not Cholesky.
     middle = (middle + middle.T) / 2
     approximation = y @ torch.linalg.pinv(middle, rtol=ridge) @ y.T
-    return (approximation + approximation.T) / 2, omega, y
+    return (approximation + approximation.T) / 2
 
 
 @dataclass(frozen=True)
@@ -81,6 +86,7 @@ def select_edges(graph, scores, count=16):
 
 class EdgeExperiment:
     """Evaluate selected MIB edges, with exact binary and differentiable z masks."""
+    VERSION = 'mib_dynamic_sender_v2'
     def __init__(self, model, graph, edges, splits, batch_size, identity, ledger=None):
         from MIB_circuit_track.metrics import get_metric
         self.model, self.graph, self.edges = model, graph, list(edges)
@@ -95,11 +101,13 @@ class EdgeExperiment:
                     or official.hook != edge.hook or not bool(graph.real_edge_mask[official.matrix_index])):
                 raise ValueError(f'Invalid edge identity: {edge.name}')
             self.grouped[(edge.hook, edge.head)].append((i, edge.sender_index))
-        payload = {'identity': identity, 'edges': [e.name for e in edges], 'batch_size': batch_size,
+        payload = {'identity': identity, 'adapter_version':self.VERSION,
+                   'edges': [e.name for e in edges], 'batch_size': batch_size,
                    'splits': {k: v.dataset._fingerprint for k, v in splits.items()}}
         self.cache_id = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
 
-    def _batch_score(self, clean, corrupted, labels, z):
+    def _frozen_batch_score(self, clean, corrupted, labels, z):
+        """Historical implementation retained solely for auditing old results."""
         from eap.utils import tokenize_plus, make_hooks_and_matrices
         tokens, attention_mask, lengths, n_pos = tokenize_plus(self.model, clean)
         donor_tokens, _, _, donor_n_pos = tokenize_plus(self.model, corrupted)
@@ -134,6 +142,37 @@ class EdgeExperiment:
         with self.model.hooks(fwd_hooks=hooks):
             logits = self.model(tokens, attention_mask=attention_mask)
         return self.metric(logits, None, lengths, labels, mean=False, loss=False)
+
+    def _batch_score(self, clean, corrupted, labels, z):
+        from eap.utils import tokenize_plus, make_hooks_and_matrices
+        tokens, mask, lengths, n_pos = tokenize_plus(self.model, clean)
+        donor_tokens, _, _, donor_n_pos = tokenize_plus(self.model, corrupted)
+        if donor_n_pos != n_pos:
+            raise ValueError('MIB clean/corrupted sequence lengths do not match.')
+        (donor_hooks, _, _), donor_matrix = make_hooks_and_matrices(
+            self.model, self.graph, len(clean), n_pos, None)
+        with torch.no_grad(), self.model.hooks(fwd_hooks=donor_hooks):
+            self.model(donor_tokens, attention_mask=mask)
+        donor = {e.sender_index:donor_matrix[:,:,e.sender_index,:].clone() for e in self.edges}
+        del donor_matrix, donor_hooks
+        current, hooks, seen = {}, [], set()
+        for edge in self.edges:
+            if edge.sender_index in seen: continue
+            seen.add(edge.sender_index)
+            parent = self.graph.edges[edge.name].parent
+            def capture(value, hook, sender=edge.sender_index, index=parent.index):
+                current[sender] = value[index]  # Preserve upstream derivatives.
+            hooks.append((parent.out_hook,capture))
+        by_hook = defaultdict(list)
+        for (hook,head),members in self.grouped.items():
+            by_hook[hook].append((head,members))
+        for name,groups in by_hook.items():
+            def patch(value, hook, groups=groups):
+                return receiver_patch(value,groups,donor,current,z)
+            hooks.append((name,patch))
+        with self.model.hooks(fwd_hooks=hooks):
+            logits = self.model(tokens,attention_mask=mask)
+        return self.metric(logits,None,lengths,labels,mean=False,loss=False)
 
     def continuous(self, z, split, limit=None):
         if z.shape != (len(self.edges),):
@@ -216,3 +255,19 @@ def exact_acdc(experiment, split, threshold, order=None):
                      'exact_effect': effect, 'pruned': accepted, 'current_ioi_score': current,
                      'remaining_candidate_edges': n-sum(state), 'decision_seconds': time.perf_counter()-t0})
     return state, rows
+
+
+def receiver_patch(value, groups, donor, current, z):
+    """Official edge replacement: donor minus CURRENT sender, receiver slice only."""
+    result=value.clone()
+    for head,members in groups:
+        delta=sum(z[i]*(donor[sender]-current[sender]) for i,sender in members)
+        if head is None: result=result+delta
+        else: result[:,:,head,:]=result[:,:,head,:]+delta
+    return result
+
+
+class FrozenSenderEdgeExperiment(EdgeExperiment):
+    """Historical control. Do not use for new circuit-discovery measurements."""
+    VERSION='historical_frozen_sender_v1'
+    _batch_score=EdgeExperiment._frozen_batch_score

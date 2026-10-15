@@ -1,0 +1,7 @@
+{
+  "smoke": true,
+  "full_hessian_measured": true,
+  "old_notebooks_unchanged": true,
+  "successful": true,
+  "query_count": 2
+}

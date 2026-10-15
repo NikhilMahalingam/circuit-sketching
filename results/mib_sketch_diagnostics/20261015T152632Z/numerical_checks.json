@@ -1,0 +1,6 @@
+{
+  "official_binary_equivalence": true,
+  "cache_forward_count": true,
+  "hvp_finite_difference_max_abs_error": 8.7738037109375e-05,
+  "no_parameter_gradients": true
+}
