@@ -1,0 +1,13 @@
+{
+  "intervention": "matched s2_io_flip_counterfactual head-result replacement at all positions",
+  "metric": "raw IOI correct-minus-incorrect logit difference; effects are patched minus clean",
+  "full_model_mean": {
+    "train": 3.2766874954104424,
+    "validation": 3.1554731652140617
+  },
+  "all_removed_mean": {
+    "train": -3.6813443265855312,
+    "validation": -4.05248948931694
+  },
+  "reproduction_atol": 0.0003
+}

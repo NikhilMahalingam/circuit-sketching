@@ -1,0 +1,9 @@
+{
+  "completed_at_utc": "2026-10-15T04:34:39.201058+00:00",
+  "oracle_enabled": false,
+  "execution_backend": "direct_python",
+  "executed_code_cells": 9,
+  "wall_seconds": 77.84586379999382,
+  "notebook": "H:\\GenAI Research\\sketch_prune\\notebooks\\mib_circuit_discovery.executed.ipynb",
+  "results_directory": "H:\\GenAI Research\\sketch_prune\\results\\mib_circuit_discovery_20261015T043327Z_3e398329"
+}

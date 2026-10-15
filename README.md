@@ -1,5 +1,10 @@
 # Circuit sketching
 
+The follow-up [circuit discovery notebook](notebooks/mib_circuit_discovery.ipynb)
+and its [run guide](notebooks/README.md) compare EAP, first-order, and
+second-order selection on official MIB IOI examples. Exact combinatorial
+search is available but disabled by default.
+
 An exploratory GPT-2 attention-head intervention notebook comparing first-order
 regression, explicit second-order regression, and a toy directional sketch on
 held-out intervention masks.
