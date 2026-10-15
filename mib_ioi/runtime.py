@@ -142,6 +142,7 @@ class Ledger:
         self.stage_name = 'outside_stage'
         self.hits = 0
         self.backward_calls = 0
+        self.hvp_calls = 0
         self.component_count = 0
         self.mask_keys = set()
 
@@ -155,7 +156,7 @@ class Ledger:
             print(f'{name}: {estimate}', flush=True)
         old = self.stage_name
         self.stage_name = name
-        start_index, hits, backwards = len(self.calls), self.hits, self.backward_calls
+        start_index, hits, backwards, hvps = len(self.calls), self.hits, self.backward_calls, self.hvp_calls
         masks_before = set(self.mask_keys)
         self.sync()
         if self.device.type == 'cuda':
@@ -178,6 +179,7 @@ class Ledger:
                                 'forward_seconds': sum(c['seconds'] for c in calls),
                                 'wall_seconds': time.perf_counter() - start,
                                 'backward_calls': self.backward_calls - backwards,
+                                'hvp_operations': self.hvp_calls - hvps,
                                 'cache_hits': self.hits - hits,
                                 'new_unique_masks': len(self.mask_keys - masks_before),
                                 'unique_masks_cumulative': len(self.mask_keys),
