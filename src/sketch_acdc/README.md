@@ -17,3 +17,20 @@ Run the default CUDA Stage A and save an executed notebook under a timestamped r
 ```powershell
 .\.venv\Scripts\python.exe scripts\run_sketch_acdc_stage_a.py
 ```
+
+The measured B/C pilot uses 16 official train prompts, 8 validation prompts,
+16 EAP-selected edges, one threshold (0.05), and sketch ranks 2 and 4. It runs
+all three stages with:
+
+```powershell
+$env:SKETCH_ACDC_PROFILE='pilot'
+$env:SKETCH_ACDC_RUN_B='1'
+$env:SKETCH_ACDC_RUN_C='1'
+.\.venv\Scripts\python.exe scripts\run_sketch_acdc_stage_a.py
+```
+
+The pilot's original per-method times exclude H1 data collection. Run
+`scripts/reconcile_sketch_acdc_costs.py <result-directory>` to add the measured
+H1 cost as separate columns and regenerate cost plots. The columns retain both
+algorithm-only and end-to-end research costs. The pilot is a functional test,
+not enough evidence to claim a general pruning speedup.

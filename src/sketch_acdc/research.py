@@ -44,6 +44,7 @@ def collect_h1(experiment, thresholds, ranks, train_limit, seed, ledger=None):
     for threshold in thresholds:
         state = [0]*n
         for step in range(n):
+            print(f'H1 threshold={threshold:g} state {step+1}/{n} pruned={sum(state)}',flush=True)
             intact = [i for i, bit in enumerate(state) if not bit]
             estimators = {rank: local_estimator(experiment,state,rank,train_limit,
                                                  seed+step+int(1000*threshold),ledger) for rank in ranks}

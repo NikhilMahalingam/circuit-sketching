@@ -1,0 +1,17 @@
+name,sender_index,receiver_index,hook,head,layer,eap_score
+a9.h9->logits,127,-1,blocks.11.hook_resid_post,,11,2.2337517738342285
+a10.h7->logits,138,-1,blocks.11.hook_resid_post,,11,-1.429598093032837
+a9.h6->logits,124,-1,blocks.11.hook_resid_post,,11,1.0634881258010864
+a5.h5->a8.h6<v>,71,326,blocks.8.hook_v_input,6.0,8,0.9703357815742493
+a11.h10->logits,154,-1,blocks.11.hook_resid_post,,11,-0.7226618528366089
+a9.h9->a11.h10<q>,127,417,blocks.11.hook_q_input,10.0,11,-0.46975621581077576
+a6.h9->a11.h8<k>,88,427,blocks.11.hook_k_input,8.0,11,0.00022402789909392595
+a1.h2->a3.h6<k>,16,129,blocks.3.hook_k_input,6.0,3,-0.0002239874011138454
+a2.h1->a6.h3<k>,28,237,blocks.6.hook_k_input,3.0,6,-0.00022398711007554084
+a3.h8->a6.h1<v>,48,247,blocks.6.hook_v_input,1.0,6,-0.000223981449380517
+a0.h2->a5.h5<q>,3,190,blocks.5.hook_q_input,5.0,5,-0.00022396558779291809
+a2.h7->a9.h0<v>,34,357,blocks.9.hook_v_input,0.0,9,-4.094936957699247e-05
+a2.h4->a5.h8<k>,31,205,blocks.5.hook_k_input,8.0,5,-4.09426138503477e-05
+a3.h10->a6.h10<k>,50,244,blocks.6.hook_k_input,10.0,6,4.0934697608463466e-05
+a2.h10->a5.h8<k>,37,205,blocks.5.hook_k_input,8.0,5,-4.092493691132404e-05
+a8.h4->a11.h0<k>,109,419,blocks.11.hook_k_input,0.0,11,4.092294329893775e-05

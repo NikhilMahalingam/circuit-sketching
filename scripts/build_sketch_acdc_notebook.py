@@ -24,12 +24,13 @@ sys.path.insert(0, str(ROOT))
 from mib_ioi.runtime import configure_repository, seed_everything, load_model, load_splits, Ledger, write_json, subset
 from src.sketch_acdc.core import EdgeExperiment, select_edges, exact_acdc, hessian_vector_product, nystrom_sketch
 SEED = 42
-TRAIN_N, VALIDATION_N = 32, 64
+PILOT = os.environ.get('SKETCH_ACDC_PROFILE') == 'pilot'
+TRAIN_N, VALIDATION_N = (16, 8) if PILOT else (32, 64)
 BATCH_SIZE, EAP_BATCH_SIZE = 2, 2
 EDGE_COUNT = 16
 SMOKE_COUNT = TRAIN_N
-RUN_STAGE_B = False
-RUN_STAGE_C = False
+RUN_STAGE_B = os.environ.get('SKETCH_ACDC_RUN_B') == '1'
+RUN_STAGE_C = os.environ.get('SKETCH_ACDC_RUN_C') == '1'
 os.environ.setdefault('HF_HOME', str(ROOT / '.cache/huggingface'))
 os.environ.setdefault('MPLCONFIGDIR', str(ROOT / '.cache/matplotlib'))
 os.environ.setdefault('HF_DATASETS_OFFLINE', '1')
@@ -37,7 +38,7 @@ os.environ.setdefault('HF_HUB_OFFLINE', '1')
 OUT = ROOT / 'results/mib_sketch_acdc' / datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
 OUT.mkdir(parents=True, exist_ok=True)
 seed_everything(SEED)
-print('Results:', OUT, 'batch size:', BATCH_SIZE, 'stage B/C:', RUN_STAGE_B, RUN_STAGE_C)''')
+print('Results:', OUT, 'batch size:', BATCH_SIZE, 'pilot:', PILOT, 'stage B/C:', RUN_STAGE_B, RUN_STAGE_C)''')
 
 md('''## Stage A — official data, edge rankings, intervention and derivative checks
 
@@ -89,7 +90,9 @@ config = {'model':'gpt2','task':'ioi','dataset':'official MIB IOI','splits':spli
           'batch_size':BATCH_SIZE,'eap_batch_size':EAP_BATCH_SIZE,'selected_edges':selected.to_dict('records'),
           'intervention':'MIB corrupted-minus-clean sender activation at receiver input',
           'mib_provenance':provenance,'acdc_commit':acdc_commit,
-          'sketch_ranks':[2,4,8,16], 'packages':{p:importlib.metadata.version(p) for p in ['torch','transformer-lens','datasets','numpy','pandas']}}
+          'profile':'pilot' if PILOT else 'full','run_stage_b':RUN_STAGE_B,'run_stage_c':RUN_STAGE_C,
+          'sketch_ranks':[2,4] if PILOT else [2,4,8,16],
+          'packages':{p:importlib.metadata.version(p) for p in ['torch','transformer-lens','datasets','numpy','pandas']}}
 write_json(OUT/'experiment_config.json',config)''')
 
 code('''# Compare exact graph patching and differentiable interpolation endpoints on a tiny official subset.
@@ -160,9 +163,9 @@ md('''## Stage B — H1 prediction experiment (opt in)
 
 Run only after Stage A passes. At each state from several exact-ACDC trajectories, compare local gradient and randomized Hessian predictions against exact next-edge effects. Keep train examples for estimator construction and validation examples only for held-out assessment. A full rank-16 sketch requires 16 HVPs per expansion state and may cost more than exact edge trials.''')
 code('''from src.sketch_acdc.research import collect_h1, rank_summary, calibrate_bound, hybrid_acdc
-H1_THRESHOLDS = [0.01, 0.05, 0.1]
-SKETCH_RANKS = [2, 4, 8, 16]
-H1_TRAIN_LIMIT = 16
+H1_THRESHOLDS = [0.05] if PILOT else [0.01, 0.05, 0.1]
+SKETCH_RANKS = [2, 4] if PILOT else [2, 4, 8, 16]
+H1_TRAIN_LIMIT = TRAIN_N//2 if PILOT else 16
 if RUN_STAGE_B:
     estimated_states = EDGE_COUNT*len(H1_THRESHOLDS)
     estimated_hvps = estimated_states*sum(SKETCH_RANKS)
@@ -200,7 +203,7 @@ code('''if RUN_STAGE_C:
         raise RuntimeError('Run measured Stage B first; calibration uses train residuals from that stage.')
     C_THRESHOLD=0.05
     C_RANK=4
-    C_REFRESH=[None,2,4,'error',1]
+    C_REFRESH=[None,2] if PILOT else [None,2,4,'error',1]
     bound=calibrate_bound(h1[h1['rank']==C_RANK],quantile=0.9)
     first_bound=calibrate_bound(h1[h1['rank']==C_RANK],method='first_order',quantile=0.9)
     configurations=[('first_order_only',0,0,None,False),
@@ -235,20 +238,29 @@ code('''if RUN_STAGE_C:
                         'exact_intervention_queries':EDGE_COUNT,'forward_batches':len(ledger.calls)-before,
                         'backward_calls':0,'wall_seconds':time.perf_counter()-start})
     pd.concat(decisions).to_csv(OUT/'hybrid_acdc_results.csv',index=False)
-    quality=pd.DataFrame(quality);quality.to_csv(OUT/'circuit_quality.csv',index=False)
+    quality=pd.DataFrame(quality)
+    # The H1 data collection was required for rank comparison and empirical
+    # bounds. Show its measured cost separately from each C algorithm's loop.
+    h1_cost=next(s for s in ledger.stages if s['stage']=='stage_b_h1')
+    quality['shared_h1_experiment_seconds']=np.where(quality.method=='exact_acdc',0,h1_cost['wall_seconds'])
+    quality['shared_h1_forward_batches']=np.where(quality.method=='exact_acdc',0,h1_cost['forward_passes_batches'])
+    quality['wall_seconds_including_h1_experiment']=quality.wall_seconds+quality.shared_h1_experiment_seconds
+    quality['forward_batches_including_h1_experiment']=quality.forward_batches+quality.shared_h1_forward_batches
+    quality.to_csv(OUT/'circuit_quality.csv',index=False)
     pd.DataFrame(ledger.stages).to_csv(OUT/'runtime_breakdown.csv',index=False)
     fig,axes=plt.subplots(1,3,figsize=(15,4))
-    axes[0].scatter(quality.wall_seconds,quality.validation_score)
-    axes[1].scatter(quality.forward_batches+quality.backward_calls,quality.validation_score)
+    axes[0].scatter(quality.wall_seconds_including_h1_experiment,quality.validation_score)
+    axes[1].scatter(quality.forward_batches_including_h1_experiment+quality.backward_calls,quality.validation_score)
     fractions=pd.concat(decisions).groupby('method').exact_verification.mean()
     hybrid_quality=quality.set_index('method').loc[fractions.index]
     axes[2].scatter(fractions,hybrid_quality.validation_score)
-    axes[0].set(xlabel='wall seconds',ylabel='validation IOI score')
-    axes[1].set(xlabel='forward + backward calls (unweighted)',ylabel='validation IOI score')
+    axes[0].set(xlabel='wall seconds incl. measured H1 experiment',ylabel='validation IOI score')
+    axes[1].set(xlabel='forward + backward calls incl. H1 (unweighted)',ylabel='validation IOI score')
     axes[2].set(xlabel='fraction exactly verified',ylabel='validation IOI score')
     fig.tight_layout();fig.savefig(OUT/'h2_quality_cost.png',dpi=150);plt.close(fig)
-    refresh_axis=quality.refresh_after_removals.map(lambda x:-1 if x=='error' else (0 if pd.isna(x) else x))
-    fig,ax=plt.subplots();ax.scatter(refresh_axis,quality.wall_seconds,c=quality.validation_score)
+    refresh_quality=quality[quality.method.str.startswith('second_order_refresh_')]
+    refresh_axis=refresh_quality.refresh_after_removals.map(lambda x:-1 if x=='error' else (0 if pd.isna(x) else x))
+    fig,ax=plt.subplots();ax.scatter(refresh_axis,refresh_quality.wall_seconds,c=refresh_quality.validation_score)
     ax.set(xlabel='refresh interval (-1=train error trigger; 0=none/exact)',ylabel='wall seconds')
     fig.tight_layout();fig.savefig(OUT/'h2_refresh.png',dpi=150);plt.close(fig)
     print(quality.to_string(index=False))

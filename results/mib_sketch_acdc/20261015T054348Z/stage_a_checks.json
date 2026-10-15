@@ -1,0 +1,8 @@
+{
+  "edge_endpoint_equivalence": true,
+  "hvp_synthetic_and_finite_difference": true,
+  "restricted_acdc_completed": true,
+  "smoke_train_examples": 16,
+  "validation_baseline_score": 2.440658926963806,
+  "validation_score": 2.436887502670288
+}

@@ -1,0 +1,265 @@
+{
+  "model": "gpt2",
+  "task": "ioi",
+  "dataset": "official MIB IOI",
+  "splits": {
+    "train": {
+      "official_filtered_size": 10000,
+      "selected_size": 16,
+      "official_fingerprint": "7ba6f4f07d9411dd",
+      "selected_fingerprint": "3d7ebd498e5126cb",
+      "selected_filtered_indices": [
+        8132,
+        8268,
+        719,
+        8237,
+        4555,
+        6651,
+        5650,
+        9034,
+        1260,
+        644,
+        9098,
+        3760,
+        34,
+        8086,
+        4873,
+        1538
+      ],
+      "columns": [
+        "template",
+        "metadata",
+        "prompt",
+        "choices",
+        "answerKey",
+        "abc_counterfactual",
+        "random_names_counterfactual",
+        "s1_io_flip_counterfactual",
+        "s2_io_flip_counterfactual",
+        "random_names_s1_ioi_flip_counterfactual",
+        "random_names_s2_ioi_flip_counterfactual",
+        "s1_ioi_flip_s2_ioi_flip_counterfactual",
+        "random_names_s1_ioi_flip_s2_ioi_flip_counterfactual"
+      ]
+    },
+    "validation": {
+      "official_filtered_size": 10000,
+      "selected_size": 8,
+      "official_fingerprint": "f041e310a241ad2a",
+      "selected_fingerprint": "b96d51cdaac2aaaf",
+      "selected_filtered_indices": [
+        8132,
+        8268,
+        719,
+        8237,
+        4555,
+        6651,
+        5650,
+        9034
+      ],
+      "columns": [
+        "template",
+        "metadata",
+        "prompt",
+        "choices",
+        "answerKey",
+        "abc_counterfactual",
+        "random_names_counterfactual",
+        "s1_io_flip_counterfactual",
+        "s2_io_flip_counterfactual",
+        "random_names_s1_ioi_flip_counterfactual",
+        "random_names_s2_ioi_flip_counterfactual",
+        "s1_ioi_flip_s2_ioi_flip_counterfactual",
+        "random_names_s1_ioi_flip_s2_ioi_flip_counterfactual"
+      ]
+    },
+    "full_filtered_split_clean_prompt_overlap": {
+      "train__validation": 0
+    }
+  },
+  "seed": 42,
+  "train_examples": 16,
+  "validation_examples": 8,
+  "batch_size": 2,
+  "eap_batch_size": 2,
+  "selected_edges": [
+    {
+      "name": "a9.h9->logits",
+      "sender_index": 127,
+      "receiver_index": -1,
+      "hook": "blocks.11.hook_resid_post",
+      "head": NaN,
+      "layer": 11,
+      "eap_score": 2.2337517738342285
+    },
+    {
+      "name": "a10.h7->logits",
+      "sender_index": 138,
+      "receiver_index": -1,
+      "hook": "blocks.11.hook_resid_post",
+      "head": NaN,
+      "layer": 11,
+      "eap_score": -1.429598093032837
+    },
+    {
+      "name": "a9.h6->logits",
+      "sender_index": 124,
+      "receiver_index": -1,
+      "hook": "blocks.11.hook_resid_post",
+      "head": NaN,
+      "layer": 11,
+      "eap_score": 1.0634881258010864
+    },
+    {
+      "name": "a5.h5->a8.h6<v>",
+      "sender_index": 71,
+      "receiver_index": 326,
+      "hook": "blocks.8.hook_v_input",
+      "head": 6.0,
+      "layer": 8,
+      "eap_score": 0.9703357815742493
+    },
+    {
+      "name": "a11.h10->logits",
+      "sender_index": 154,
+      "receiver_index": -1,
+      "hook": "blocks.11.hook_resid_post",
+      "head": NaN,
+      "layer": 11,
+      "eap_score": -0.7226618528366089
+    },
+    {
+      "name": "a9.h9->a11.h10<q>",
+      "sender_index": 127,
+      "receiver_index": 417,
+      "hook": "blocks.11.hook_q_input",
+      "head": 10.0,
+      "layer": 11,
+      "eap_score": -0.46975621581077576
+    },
+    {
+      "name": "a6.h9->a11.h8<k>",
+      "sender_index": 88,
+      "receiver_index": 427,
+      "hook": "blocks.11.hook_k_input",
+      "head": 8.0,
+      "layer": 11,
+      "eap_score": 0.00022402789909392595
+    },
+    {
+      "name": "a1.h2->a3.h6<k>",
+      "sender_index": 16,
+      "receiver_index": 129,
+      "hook": "blocks.3.hook_k_input",
+      "head": 6.0,
+      "layer": 3,
+      "eap_score": -0.0002239874011138454
+    },
+    {
+      "name": "a2.h1->a6.h3<k>",
+      "sender_index": 28,
+      "receiver_index": 237,
+      "hook": "blocks.6.hook_k_input",
+      "head": 3.0,
+      "layer": 6,
+      "eap_score": -0.00022398711007554084
+    },
+    {
+      "name": "a3.h8->a6.h1<v>",
+      "sender_index": 48,
+      "receiver_index": 247,
+      "hook": "blocks.6.hook_v_input",
+      "head": 1.0,
+      "layer": 6,
+      "eap_score": -0.000223981449380517
+    },
+    {
+      "name": "a0.h2->a5.h5<q>",
+      "sender_index": 3,
+      "receiver_index": 190,
+      "hook": "blocks.5.hook_q_input",
+      "head": 5.0,
+      "layer": 5,
+      "eap_score": -0.00022396558779291809
+    },
+    {
+      "name": "a2.h7->a9.h0<v>",
+      "sender_index": 34,
+      "receiver_index": 357,
+      "hook": "blocks.9.hook_v_input",
+      "head": 0.0,
+      "layer": 9,
+      "eap_score": -4.094936957699247e-05
+    },
+    {
+      "name": "a2.h4->a5.h8<k>",
+      "sender_index": 31,
+      "receiver_index": 205,
+      "hook": "blocks.5.hook_k_input",
+      "head": 8.0,
+      "layer": 5,
+      "eap_score": -4.09426138503477e-05
+    },
+    {
+      "name": "a3.h10->a6.h10<k>",
+      "sender_index": 50,
+      "receiver_index": 244,
+      "hook": "blocks.6.hook_k_input",
+      "head": 10.0,
+      "layer": 6,
+      "eap_score": 4.0934697608463466e-05
+    },
+    {
+      "name": "a2.h10->a5.h8<k>",
+      "sender_index": 37,
+      "receiver_index": 205,
+      "hook": "blocks.5.hook_k_input",
+      "head": 8.0,
+      "layer": 5,
+      "eap_score": -4.092493691132404e-05
+    },
+    {
+      "name": "a8.h4->a11.h0<k>",
+      "sender_index": 109,
+      "receiver_index": 419,
+      "hook": "blocks.11.hook_k_input",
+      "head": 0.0,
+      "layer": 11,
+      "eap_score": 4.092294329893775e-05
+    }
+  ],
+  "intervention": "MIB corrupted-minus-clean sender activation at receiver input",
+  "mib_provenance": {
+    "repository": "H:\\GenAI Research\\sketch_prune\\external\\MIB-circuit-track",
+    "mib_commit": "b759df34433c9e31043ba9e02908ce0bf20e894f",
+    "eap_commit": "7af394a5662de8b23ad6154716a0cd3993d447a3",
+    "source_sha256": {
+      "README.md": "caae67baddc56e68e1be1e872f235c15b70cceda9350b9303660ade07244a003",
+      "run_attribution.py": "cfdced1b7104b9ed09685387e660fa477c1dd3c0d74369d4d6a8d74163a692e0",
+      "run_evaluation.py": "4c49c2496b5959df6c201c88a3db23ca038b851a6cc0c5cde0875f8a9aad5e02",
+      "MIB_circuit_track/dataset.py": "6a4019cfd454573fa409b6460853942c52959e2fa8f82013b50af56a0d55d007",
+      "MIB_circuit_track/metrics.py": "6ec0458b107c9e9e98370274af978ce2c3b48c56d78c1eaf5f82e906b66d302b",
+      "MIB_circuit_track/utils.py": "c1dca9b945f7e56de5fa5b49bcdf3585477ac77bd8d404b8231abe4379bfbff2",
+      "MIB_circuit_track/evaluation.py": "cb6566e8d093bde15c9fa47d4169e8a56d10600adc645b61a53956d72b67b16b",
+      "EAP-IG/src/eap/attribute_node.py": "265614b609a785b8651eacf70f2c0ba214571e7e57513e5b8468759f711a8451",
+      "EAP-IG/src/eap/evaluate.py": "9b0a8bfc26bb1bd69e5e759f0ce6b296cd01942cdf29a496ab5783c405823a85",
+      "EAP-IG/src/eap/utils.py": "8b384351cc6d55919b26728de5f9ab55da91d2348291c59d553b7e7bf0a928e4",
+      "EAP-IG/src/eap/graph.py": "f52c277928ca1f49ef6dc67a3eae05ad236ce3caeb13b199cff897f937226ed7"
+    }
+  },
+  "acdc_commit": "bc99ace817974b5584b7ee203d596a8e2bbcd399",
+  "profile": "pilot",
+  "run_stage_b": true,
+  "run_stage_c": true,
+  "sketch_ranks": [
+    2,
+    4
+  ],
+  "packages": {
+    "torch": "2.14.1+cu126",
+    "transformer-lens": "2.16.1",
+    "datasets": "3.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  }
+}
