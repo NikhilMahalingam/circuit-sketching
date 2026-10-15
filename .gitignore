@@ -17,6 +17,7 @@ dist/
 
 # Downloaded models and local runtime state
 .cache/
+/external/
 .ipynb_checkpoints/
 .ipython/
 .jupyter/
