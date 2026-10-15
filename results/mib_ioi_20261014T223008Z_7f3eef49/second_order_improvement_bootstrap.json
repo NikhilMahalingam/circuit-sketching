@@ -1,0 +1,6 @@
+{
+  "MAE_improvement": 0.36875728523458223,
+  "ci_low": 0.30150650639742005,
+  "ci_high": 0.39008038908545095,
+  "scope": "Prompt bootstrap conditional on fixed training fit, components, and test masks"
+}

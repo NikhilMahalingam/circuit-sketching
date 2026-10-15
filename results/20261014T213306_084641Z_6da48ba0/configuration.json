@@ -1,0 +1,104 @@
+{
+  "seed": 42,
+  "model": "gpt2-small",
+  "prompt": "The capital of France is",
+  "prepend_bos": true,
+  "correct_token": " Paris",
+  "incorrect_token": " London",
+  "correct_token_id": 6342,
+  "incorrect_token_id": 3576,
+  "baseline_score": 1.890848159790039,
+  "components": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      7,
+      7
+    ]
+  ],
+  "head_hooks": {
+    "0": "blocks.0.attn.hook_z",
+    "1": "blocks.1.attn.hook_z",
+    "2": "blocks.2.attn.hook_z",
+    "3": "blocks.3.attn.hook_z",
+    "4": "blocks.4.attn.hook_z",
+    "5": "blocks.5.attn.hook_z",
+    "6": "blocks.6.attn.hook_z",
+    "7": "blocks.7.attn.hook_z",
+    "8": "blocks.8.attn.hook_z",
+    "9": "blocks.9.attn.hook_z",
+    "10": "blocks.10.attn.hook_z",
+    "11": "blocks.11.attn.hook_z"
+  },
+  "intervention_positions": "all positions",
+  "n_train": 64,
+  "n_test": 32,
+  "ablation_probability": 0.3,
+  "epsilon": 0.05,
+  "sketch_budgets": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "chosen_k": 64,
+  "local_gradient_check": true,
+  "curvature": true,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "dtype": "torch.float32",
+  "python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.14.1+cu126",
+    "transformer-lens": "2.16.1",
+    "transformers": "4.51.3",
+    "datasets": "3.6.0",
+    "pyarrow": "20.0.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "tqdm": "4.70.1"
+  },
+  "linear_design": {
+    "rank": 8,
+    "columns": 8,
+    "condition_number": 2.9326269908506966
+  },
+  "quadratic_design": {
+    "rank": 36,
+    "columns": 36,
+    "condition_number": 18.982898421507556
+  },
+  "summary_target": "held-out binary mask score changes",
+  "summary_cost": "model_evaluations: actual acquisition forwards; standalone budget separately includes baseline",
+  "timing_scope": "from before model loading through pre-export snapshot; includes cell idle time"
+}

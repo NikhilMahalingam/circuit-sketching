@@ -1,0 +1,16 @@
+mask_size,mask_split,count
+1,train,4
+1,validation,4
+1,test,4
+2,train,34
+2,validation,16
+2,test,16
+3,train,64
+3,validation,16
+3,test,16
+6,train,64
+6,validation,16
+6,test,16
+9,train,64
+9,validation,16
+9,test,16

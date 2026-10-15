@@ -1,0 +1,5 @@
+prompt_split,input,mean_logit_diff,top1_accuracy,correct_over_distractor_rate,n_examples,batch_size
+train,clean,3.2766874954104424,0.8828125,0.96875,128,8
+train,corrupted,-2.048850953578949,0.015625,0.1015625,128,8
+validation,clean,3.1554731652140617,0.8203125,0.9921875,128,8
+validation,corrupted,-2.6634806394577026,0.015625,0.0546875,128,8

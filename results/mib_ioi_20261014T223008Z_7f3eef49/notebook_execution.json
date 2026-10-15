@@ -1,0 +1,11 @@
+{
+  "completed_at_utc": "2026-10-14T22:45:54.453593+00:00",
+  "smoke": false,
+  "resumed": false,
+  "executed_code_cells": 19,
+  "wall_seconds": 952.4854489999998,
+  "notebook": "mib_ioi_experiments.executed.ipynb",
+  "results_directories": [
+    "H:\\GenAI Research\\sketch_prune\\results\\mib_ioi_20261014T223008Z_7f3eef49"
+  ]
+}

@@ -17,7 +17,7 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m jupyterlab
 ```
 
-Open `mib_sketching_baseline.ipynb` and select **Python (mib-sketching CUDA)**.
+Open `notebooks/mib_sketching_baseline.ipynb` and select **Python (mib-sketching CUDA)**.
 Use the project interpreter explicitly so that a different system Python does
 not select a CPU-only PyTorch installation. The first run downloads GPT-2 weights
 from Hugging Face.
@@ -32,14 +32,14 @@ For a complete run without opening JupyterLab:
 ```
 
 The runner requires CUDA and the registered kernel. It saves an executed copy
-to `mib_sketching_baseline.executed.ipynb`, exports tables and plots to a new
+to `notebooks/mib_sketching_baseline.executed.ipynb`, exports tables and plots to a new
 directory under `results/`, and records execution details in `review_checks/`.
 The validator reads those local outputs, recomputes held-out metrics, and checks
 forward-pass accounting and train/test separation. Run it after the runner.
 
-The clean source notebook, code, and portable tokenizer provenance are tracked
-in Git. Environments, downloaded models, generated results, executed notebooks,
-and machine-specific reports are ignored and remain available locally.
+The clean source notebooks, completed executed notebooks, and published result
+tables are tracked in Git. Environments, downloaded models, failed runs, and
+unpublished result directories remain local.
 
 ## Review checks
 

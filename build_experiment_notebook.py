@@ -390,7 +390,7 @@ def main() -> None:
     for entry in cells:
         if entry["cell_type"] == "code":
             compile(entry["source"], f"<cell {entry['id']}>", "exec")
-    destination = ROOT / "mib_sketching_experiments.ipynb"
+    destination = ROOT / "notebooks" / "mib_sketching_experiments.ipynb"
     destination.write_text(json.dumps(notebook, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     code_count = sum(entry["cell_type"] == "code" for entry in cells)
     print(f"Wrote {destination.name}: {len(cells)} cells, {code_count} code cells")

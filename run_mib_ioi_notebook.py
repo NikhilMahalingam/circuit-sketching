@@ -32,7 +32,7 @@ def main():
     parser.add_argument('--smoke', action='store_true')
     parser.add_argument('--resume-run', type=Path)
     args = parser.parse_args()
-    notebook = nbformat.read(ROOT / 'mib_ioi_experiments.ipynb', as_version=4)
+    notebook = nbformat.read(ROOT / 'notebooks' / 'mib_ioi_experiments.ipynb', as_version=4)
     if args.resume_run:
         notebook.cells[1].source = notebook.cells[1].source.replace(
             'RESUME_DIR = None', f'RESUME_DIR = {str(args.resume_run.resolve())!r}')
@@ -61,13 +61,13 @@ def main():
     try:
         client.execute()
     except Exception:
-        nbformat.write(notebook, ROOT / name.replace('.executed.', '.failed.'))
+        nbformat.write(notebook, ROOT / 'notebooks' / name.replace('.executed.', '.failed.'))
         raise
     nbformat.validate(notebook)
     code = [c for c in notebook.cells if c.cell_type == 'code']
     assert all(c.execution_count is not None for c in code)
     assert not any(o.output_type == 'error' for c in code for o in c.outputs)
-    nbformat.write(notebook, ROOT / name)
+    nbformat.write(notebook, ROOT / 'notebooks' / name)
     new_runs = set((ROOT/'results').glob('mib_ioi_*')) - before
     if args.resume_run:
         new_runs = {args.resume_run.resolve()}

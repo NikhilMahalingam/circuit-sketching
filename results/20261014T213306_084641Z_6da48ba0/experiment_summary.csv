@@ -1,0 +1,4 @@
+method,model_evaluations,MAE,Pearson,Spearman,R2,standalone_acquisition_evaluations,evaluation_split
+first-order regression,38,0.04416106808104135,0.9651835517796048,0.9637096774193546,0.9279000826009527,64,held-out test masks
+explicit second-order regression,38,0.01248418120980133,0.9975875856099117,0.9948680351906156,0.994641671168153,64,held-out test masks
+toy directional sketch,100,0.11999118820011453,0.862249162669803,0.8365102639296186,0.45384699415246954,101,held-out test masks

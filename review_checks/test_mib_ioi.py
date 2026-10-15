@@ -60,7 +60,7 @@ class IOIInvariants(unittest.TestCase):
         self.assertEqual(len(draws), 100)
 
     def test_notebook_schema_and_every_code_cell(self):
-        notebook = nbformat.read(ROOT / 'mib_ioi_experiments.ipynb', as_version=4)
+        notebook = nbformat.read(ROOT / 'notebooks' / 'mib_ioi_experiments.ipynb', as_version=4)
         nbformat.validate(notebook)
         for index, cell in enumerate(notebook.cells):
             if cell.cell_type == 'code':

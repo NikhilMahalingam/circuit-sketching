@@ -35,11 +35,15 @@ import itertools
 import json
 import math
 import os
+import sys
 import uuid
 
-ROOT = Path.cwd().resolve()
-if not (ROOT / 'mib_ioi/runtime.py').is_file():
-    raise RuntimeError('Start this notebook from the circuit-sketching repository root.')
+ROOT = next((p for p in (Path.cwd().resolve(), *Path.cwd().resolve().parents)
+             if (p / 'mib_ioi/runtime.py').is_file()), None)
+if ROOT is None:
+    raise RuntimeError('Start this notebook from the circuit-sketching repository.')
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 os.environ['HF_HOME'] = str(ROOT / '.cache/huggingface')
 os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'
 os.environ['TOKENIZERS_PARALLELISM'] = 'false'
@@ -125,7 +129,7 @@ code('''
 repo, provenance = rt.configure_repository(ROOT, MIB_REPO)
 provenance['local_source_sha256'] = {
     p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest()
-    for p in ('mib_ioi/runtime.py', 'mib_ioi/analysis.py', 'mib_ioi_experiments.ipynb')}
+    for p in ('mib_ioi/runtime.py', 'mib_ioi/analysis.py', 'notebooks/mib_ioi_experiments.ipynb')}
 from MIB_circuit_track.dataset import HFEAPDataset
 from MIB_circuit_track.metrics import get_metric
 from MIB_circuit_track.utils import MODEL_NAME_TO_FULLNAME, TASKS_TO_HF_NAMES
@@ -729,6 +733,6 @@ nbf.validate(notebook)
 for i, cell in enumerate(cells):
     if cell.cell_type == 'code':
         compile(cell.source, f'ioi_cell_{i}', 'exec')
-nbf.write(notebook, ROOT / 'mib_ioi_experiments.ipynb')
-print(f'Created mib_ioi_experiments.ipynb: {len(cells)} cells, '
+nbf.write(notebook, ROOT / 'notebooks' / 'mib_ioi_experiments.ipynb')
+print(f'Created notebooks/mib_ioi_experiments.ipynb: {len(cells)} cells, '
       f'{sum(c.cell_type == "code" for c in cells)} code cells')

@@ -1,0 +1,16 @@
+stage,model_evaluations,mask_requests,mask_cache_hits,wall_seconds,peak_allocated_mib,peak_reserved_mib
+model loading,0,0,0,220.5898965999986,635.51416015625,690.0
+sanity check,1,0,0,1.5454566000007617,646.6376953125,690.0
+activation cache inspection,1,0,0,0.06004910000046948,646.6376953125,690.0
+baseline score,1,0,0,0.05940779999946244,646.6376953125,690.0
+mask and hook sanity checks,2,3,2,0.11637649999829591,646.6376953125,690.0
+exact single interventions,7,8,1,0.4127961999984109,646.6376953125,690.0
+exact pair interventions,28,28,0,1.2856290000017907,646.6376953125,690.0
+random-mask training acquisition,38,64,26,1.6702422999987903,646.6376953125,690.0
+held-out test acquisition,24,32,8,0.8772943000003579,646.6376953125,690.0
+first-order regression fit and evaluation,0,0,0,0.031287699999666074,643.6396484375,690.0
+second-order regression fit and evaluation,0,0,0,0.004140699998970376,643.6396484375,690.0
+toy directional sketch acquisition,100,0,0,4.158314000000246,646.6376953125,690.0
+coordinate-gradient diagnostics,16,0,0,0.7944014000022435,646.6376953125,690.0
+toy sketch reconstruction and evaluation,0,0,0,0.010085199999593897,643.6396484375,690.0
+directional curvature (reused endpoints),0,0,0,0.0019947000000684056,643.6396484375,690.0

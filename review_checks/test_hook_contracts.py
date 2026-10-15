@@ -18,7 +18,7 @@ import torch
 
 
 ROOT = Path(__file__).resolve().parents[1]
-notebook = json.loads((ROOT / "mib_sketching_baseline.ipynb").read_text(encoding="utf-8"))
+notebook = json.loads((ROOT / "notebooks" / "mib_sketching_baseline.ipynb").read_text(encoding="utf-8"))
 definitions = {}
 for cell in notebook["cells"]:
     if cell["cell_type"] == "code":

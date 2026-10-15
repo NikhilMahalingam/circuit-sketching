@@ -15,7 +15,7 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTEBOOK = json.loads((ROOT / "mib_sketching_baseline.ipynb").read_text(encoding="utf-8"))
+NOTEBOOK = json.loads((ROOT / "notebooks" / "mib_sketching_baseline.ipynb").read_text(encoding="utf-8"))
 CODE_CELLS = [cell for cell in NOTEBOOK["cells"] if cell["cell_type"] == "code"]
 PARSED = [ast.parse("".join(cell["source"]), filename=cell["id"]) for cell in CODE_CELLS]
 NODES = [node for module in PARSED for node in module.body]

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "real_forward_batches": 12074,
+  "example_forwards": 95632,
+  "components": 12,
+  "pairs": 66,
+  "mask_counts": {
+    "train": 230,
+    "validation": 68,
+    "test": 68
+  },
+  "prompt_counts": {
+    "train": 128,
+    "validation": 128
+  },
+  "peak_cuda_allocated_mib": 1677.81982421875,
+  "heldout_metrics_recomputed": true,
+  "training_only_fits_recomputed": true,
+  "official_evaluator_outputs_preserved": true
+}

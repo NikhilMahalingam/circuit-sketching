@@ -41,8 +41,8 @@ def main():
         raise RuntimeError(f"CUDA is unavailable in {sys.executable}; select the project .venv.")
     print("Python:", sys.executable, flush=True)
     print("PyTorch:", torch.__version__, "| GPU:", torch.cuda.get_device_name(0), flush=True)
-    source = ROOT / "mib_sketching_baseline.ipynb"
-    output = ROOT / "mib_sketching_baseline.executed.ipynb"
+    source = ROOT / "notebooks" / "mib_sketching_baseline.ipynb"
+    output = ROOT / "notebooks" / "mib_sketching_baseline.executed.ipynb"
     results_root = ROOT / "results"
     previous_results = set(results_root.iterdir()) if results_root.exists() else set()
     notebook = nbformat.read(source, as_version=4)

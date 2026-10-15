@@ -1,0 +1,2 @@
+method,model,task,level,split,n_examples,batch_size,area_under,area_from_1,average,scope
+official EAP,gpt2,ioi,node,validation,32,4,0.6075968341039186,0.39140316589608143,0.1893991926031256,local official split subset

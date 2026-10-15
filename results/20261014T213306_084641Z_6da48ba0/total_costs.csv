@@ -1,0 +1,2 @@
+model_evaluations,mask_requests,mask_cache_hits,forward_seconds,elapsed_wall_seconds,peak_allocated_mib,peak_reserved_mib,distinct_binary_masks_evaluated,distinct_scaling_points_evaluated
+218,135,37,10.20351200002915,234.11745900000096,646.6376953125,690.0,99,117

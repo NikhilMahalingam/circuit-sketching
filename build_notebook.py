@@ -1216,6 +1216,6 @@ notebook = {"cells": cells, "metadata": {
                       "mimetype": "text/x-python", "pygments_lexer": "ipython3"},
 }, "nbformat": 4, "nbformat_minor": 5}
 
-output = Path(__file__).with_name("mib_sketching_baseline.ipynb")
+output = Path(__file__).resolve().parent / "notebooks" / "mib_sketching_baseline.ipynb"
 output.write_text(json.dumps(notebook, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 print(f"Wrote {output} ({len(cells)} cells)")

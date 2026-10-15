@@ -1,6 +1,6 @@
 # IOI notebook implementation review
 
-The source notebook is `mib_ioi_experiments.ipynb` (39 cells, 19 code cells).
+The source notebook is `notebooks/mib_ioi_experiments.ipynb` (39 cells, 19 code cells).
 It imports experiment helpers from `mib_ioi/` and official MIB/EAP source from
 the ignored local checkout at `external/MIB-circuit-track`.
 

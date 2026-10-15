@@ -1,0 +1,3 @@
+method,Spearman,top_5_overlap,top_10_overlap
+first-order regression,0.9637096774193546,0.8,0.9
+explicit second-order regression,0.9948680351906156,1.0,0.9

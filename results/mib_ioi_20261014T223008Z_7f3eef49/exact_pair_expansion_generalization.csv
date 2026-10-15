@@ -1,0 +1,3 @@
+method,eval_prompt_split,MAE,Pearson,Spearman,R2
+exact train singleton + pair expansion,train,0.6425231294158626,0.8877284501641579,0.8349047600870327,0.7201634802813175
+exact train singleton + pair expansion,validation,0.8275597762206898,0.8782265482363261,0.8218880024430277,0.659472961287785

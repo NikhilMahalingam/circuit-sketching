@@ -1,11 +1,11 @@
 # Notebook correctness review
 
-Reviewed and updated `mib_sketching_baseline.ipynb` on October 14, 2026.
+Reviewed and updated `notebooks/mib_sketching_baseline.ipynb` on October 14, 2026.
 The notebook contains 49 cells, including 23 code cells and all 23 requested sections.
 Every cell was statically inspected and every code cell compiled successfully.
 The initial review used static inspection and CPU contract tests. A subsequent full GPT-2
 execution completed successfully on CUDA; its outputs are saved in
-`../mib_sketching_baseline.executed.ipynb`. The source notebook retains clean outputs.
+`../notebooks/mib_sketching_baseline.executed.ipynb`. The source notebook retains clean outputs.
 
 | Requested check | Finding and evidence |
 | --- | --- |

@@ -1,0 +1,13 @@
+{
+  "n_examples": 4,
+  "head": [
+    0,
+    0
+  ],
+  "mean_effect": -0.0035104751586914062,
+  "hook_removal_max_error": 0.0,
+  "determinism_max_error": 0.0,
+  "batching_max_error": 8.58306884765625e-06,
+  "official_graph_max_error": 1.71661376953125e-05,
+  "tolerance": 0.0003
+}

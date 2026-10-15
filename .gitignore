@@ -24,7 +24,7 @@ dist/
 
 # Generated experiment outputs (regenerate with run_notebook.py)
 /results/
-*.executed.ipynb
+/notebooks/results/
 *.failed.ipynb
 /review_checks/cuda_execution.json
 /review_checks/cuda_results_validation.json

@@ -1,0 +1,219 @@
+stage,wall_seconds,success
+sanity check,1.3156974999983504,True
+activation cache inspection,0.05924769999910495,True
+baseline score,0.057908899998437846,True
+mask and hook sanity checks,0.05489250000027823,True
+mask and hook sanity checks,0.05861499999809894,True
+exact single interventions,0.05716749999919557,True
+exact single interventions,0.057219400001486065,True
+exact single interventions,0.05251680000219494,True
+exact single interventions,0.049723600001016166,True
+exact single interventions,0.059648800001014024,True
+exact single interventions,0.05504569999902742,True
+exact single interventions,0.06408019999798853,True
+exact pair interventions,0.05335229999764124,True
+exact pair interventions,0.04895740000210935,True
+exact pair interventions,0.0462840000000142,True
+exact pair interventions,0.0587322999999742,True
+exact pair interventions,0.06693119999908959,True
+exact pair interventions,0.05621199999950477,True
+exact pair interventions,0.0449949000030756,True
+exact pair interventions,0.037580299998808187,True
+exact pair interventions,0.031456500000786036,True
+exact pair interventions,0.05099770000015269,True
+exact pair interventions,0.03952489999937825,True
+exact pair interventions,0.030150800001138123,True
+exact pair interventions,0.04233990000284393,True
+exact pair interventions,0.03389249999963795,True
+exact pair interventions,0.030686800000694348,True
+exact pair interventions,0.03965469999820925,True
+exact pair interventions,0.03168619999996736,True
+exact pair interventions,0.03971770000134711,True
+exact pair interventions,0.05096150000099442,True
+exact pair interventions,0.05460460000176681,True
+exact pair interventions,0.04000169999926584,True
+exact pair interventions,0.04492509999909089,True
+exact pair interventions,0.03459799999836832,True
+exact pair interventions,0.05430420000266167,True
+exact pair interventions,0.04871830000047339,True
+exact pair interventions,0.039165300000604475,True
+exact pair interventions,0.04098120000344352,True
+exact pair interventions,0.0452052000000549,True
+random-mask training acquisition,0.04949280000073486,True
+random-mask training acquisition,0.03315269999802695,True
+random-mask training acquisition,0.0447706000013568,True
+random-mask training acquisition,0.0589414999994915,True
+random-mask training acquisition,0.05859000000054948,True
+random-mask training acquisition,0.05498100000113482,True
+random-mask training acquisition,0.04225640000004205,True
+random-mask training acquisition,0.0722472999987076,True
+random-mask training acquisition,0.048095400001329836,True
+random-mask training acquisition,0.06340389999968465,True
+random-mask training acquisition,0.040229700000054436,True
+random-mask training acquisition,0.05254339999737567,True
+random-mask training acquisition,0.0455617000006896,True
+random-mask training acquisition,0.04678020000210381,True
+random-mask training acquisition,0.038127499999973224,True
+random-mask training acquisition,0.04067669999858481,True
+random-mask training acquisition,0.04507530000046245,True
+random-mask training acquisition,0.046760400000493973,True
+random-mask training acquisition,0.03631650000170339,True
+random-mask training acquisition,0.03241669999988517,True
+random-mask training acquisition,0.032521100001758896,True
+random-mask training acquisition,0.04106409999803873,True
+random-mask training acquisition,0.030609699999331497,True
+random-mask training acquisition,0.03276410000034957,True
+random-mask training acquisition,0.03875479999987874,True
+random-mask training acquisition,0.03374460000122781,True
+random-mask training acquisition,0.05160960000284831,True
+random-mask training acquisition,0.04075719999673311,True
+random-mask training acquisition,0.031360100001620594,True
+random-mask training acquisition,0.031040900001244154,True
+random-mask training acquisition,0.03052190000016708,True
+random-mask training acquisition,0.030402500000491273,True
+random-mask training acquisition,0.03941050000139512,True
+random-mask training acquisition,0.041432400001212955,True
+random-mask training acquisition,0.037483699998119846,True
+random-mask training acquisition,0.03000860000247485,True
+random-mask training acquisition,0.03119899999728659,True
+random-mask training acquisition,0.03144049999900744,True
+held-out test acquisition,0.043539400001463946,True
+held-out test acquisition,0.04446100000131992,True
+held-out test acquisition,0.03705970000009984,True
+held-out test acquisition,0.033791500001825625,True
+held-out test acquisition,0.03226839999842923,True
+held-out test acquisition,0.04065919999993639,True
+held-out test acquisition,0.03125680000084685,True
+held-out test acquisition,0.0313319999986561,True
+held-out test acquisition,0.031602099999872735,True
+held-out test acquisition,0.030990300001576543,True
+held-out test acquisition,0.03329709999889019,True
+held-out test acquisition,0.03376149999894551,True
+held-out test acquisition,0.03586100000029546,True
+held-out test acquisition,0.033128499999293126,True
+held-out test acquisition,0.030642099998658523,True
+held-out test acquisition,0.030698800001118798,True
+held-out test acquisition,0.030324099996505538,True
+held-out test acquisition,0.030955700000049546,True
+held-out test acquisition,0.03040830000099959,True
+held-out test acquisition,0.029613600003358442,True
+held-out test acquisition,0.030390199997782474,True
+held-out test acquisition,0.03538679999837768,True
+held-out test acquisition,0.033902700000908226,True
+held-out test acquisition,0.052080600002227584,True
+toy directional sketch acquisition,0.03721210000003339,True
+toy directional sketch acquisition,0.036191999999573454,True
+toy directional sketch acquisition,0.03480370000033872,True
+toy directional sketch acquisition,0.041260100002546096,True
+toy directional sketch acquisition,0.0376341000010143,True
+toy directional sketch acquisition,0.03185769999981858,True
+toy directional sketch acquisition,0.030055700000957586,True
+toy directional sketch acquisition,0.043684800002665725,True
+toy directional sketch acquisition,0.03263229999720352,True
+toy directional sketch acquisition,0.03199590000076569,True
+toy directional sketch acquisition,0.030762499998672865,True
+toy directional sketch acquisition,0.03013170000122045,True
+toy directional sketch acquisition,0.04155130000071949,True
+toy directional sketch acquisition,0.03581360000316636,True
+toy directional sketch acquisition,0.03205309999975725,True
+toy directional sketch acquisition,0.030322400001750793,True
+toy directional sketch acquisition,0.0340295000023616,True
+toy directional sketch acquisition,0.03451900000072783,True
+toy directional sketch acquisition,0.03809679999903892,True
+toy directional sketch acquisition,0.0410455000019283,True
+toy directional sketch acquisition,0.03901229999974021,True
+toy directional sketch acquisition,0.03168780000123661,True
+toy directional sketch acquisition,0.03474429999914719,True
+toy directional sketch acquisition,0.03169949999937671,True
+toy directional sketch acquisition,0.03536240000175894,True
+toy directional sketch acquisition,0.038625599998340476,True
+toy directional sketch acquisition,0.035966600000392646,True
+toy directional sketch acquisition,0.035096200001135,True
+toy directional sketch acquisition,0.03336200000194367,True
+toy directional sketch acquisition,0.03180009999778122,True
+toy directional sketch acquisition,0.031205100000079256,True
+toy directional sketch acquisition,0.031742799998028204,True
+toy directional sketch acquisition,0.03774350000094273,True
+toy directional sketch acquisition,0.032151100000191946,True
+toy directional sketch acquisition,0.03085590000046068,True
+toy directional sketch acquisition,0.0336477000018931,True
+toy directional sketch acquisition,0.0338119000007282,True
+toy directional sketch acquisition,0.03126500000144006,True
+toy directional sketch acquisition,0.04584220000106143,True
+toy directional sketch acquisition,0.03696910000144271,True
+toy directional sketch acquisition,0.03306289999818546,True
+toy directional sketch acquisition,0.033554800000274554,True
+toy directional sketch acquisition,0.03278379999755998,True
+toy directional sketch acquisition,0.033694800000375835,True
+toy directional sketch acquisition,0.03314010000030976,True
+toy directional sketch acquisition,0.03330429999914486,True
+toy directional sketch acquisition,0.046722499999305,True
+toy directional sketch acquisition,0.04148610000265762,True
+toy directional sketch acquisition,0.0447874999990745,True
+toy directional sketch acquisition,0.031280499999411404,True
+toy directional sketch acquisition,0.042569299999740906,True
+toy directional sketch acquisition,0.031788300002517644,True
+toy directional sketch acquisition,0.031246099999407306,True
+toy directional sketch acquisition,0.030360299999301787,True
+toy directional sketch acquisition,0.03759910000007949,True
+toy directional sketch acquisition,0.031268200000340585,True
+toy directional sketch acquisition,0.031081699999049306,True
+toy directional sketch acquisition,0.040019500000198605,True
+toy directional sketch acquisition,0.0335120999989158,True
+toy directional sketch acquisition,0.03189559999736957,True
+toy directional sketch acquisition,0.030056699997658143,True
+toy directional sketch acquisition,0.03152050000062445,True
+toy directional sketch acquisition,0.03439099999741302,True
+toy directional sketch acquisition,0.046996900000522146,True
+toy directional sketch acquisition,0.033871899999212474,True
+toy directional sketch acquisition,0.031299800000851974,True
+toy directional sketch acquisition,0.0530776000014157,True
+toy directional sketch acquisition,0.053672100002586376,True
+toy directional sketch acquisition,0.05516179999904125,True
+toy directional sketch acquisition,0.055581500000698725,True
+toy directional sketch acquisition,0.050701600001048064,True
+toy directional sketch acquisition,0.03814029999921331,True
+toy directional sketch acquisition,0.05003670000223792,True
+toy directional sketch acquisition,0.04427120000036666,True
+toy directional sketch acquisition,0.047556299999996554,True
+toy directional sketch acquisition,0.03286699999807752,True
+toy directional sketch acquisition,0.030264400000305614,True
+toy directional sketch acquisition,0.03655409999919357,True
+toy directional sketch acquisition,0.046864100000675535,True
+toy directional sketch acquisition,0.05588499999794294,True
+toy directional sketch acquisition,0.04363770000054501,True
+toy directional sketch acquisition,0.05335410000043339,True
+toy directional sketch acquisition,0.0473323000005621,True
+toy directional sketch acquisition,0.055305600002611754,True
+toy directional sketch acquisition,0.030305100000987295,True
+toy directional sketch acquisition,0.04653900000266731,True
+toy directional sketch acquisition,0.05022689999896102,True
+toy directional sketch acquisition,0.0330138999997871,True
+toy directional sketch acquisition,0.031984400000510504,True
+toy directional sketch acquisition,0.03427150000061374,True
+toy directional sketch acquisition,0.03731859999970766,True
+toy directional sketch acquisition,0.03205359999992652,True
+toy directional sketch acquisition,0.04176269999879878,True
+toy directional sketch acquisition,0.05145199999969918,True
+toy directional sketch acquisition,0.046401999999943655,True
+toy directional sketch acquisition,0.05219360000046436,True
+toy directional sketch acquisition,0.05974900000001071,True
+toy directional sketch acquisition,0.05585050000081537,True
+toy directional sketch acquisition,0.043418500001280336,True
+toy directional sketch acquisition,0.058042299999215174,True
+coordinate-gradient diagnostics,0.04601429999820539,True
+coordinate-gradient diagnostics,0.04231639999852632,True
+coordinate-gradient diagnostics,0.04880079999929876,True
+coordinate-gradient diagnostics,0.041603800000302726,True
+coordinate-gradient diagnostics,0.043075000001408625,True
+coordinate-gradient diagnostics,0.04350179999892134,True
+coordinate-gradient diagnostics,0.044026100000337465,True
+coordinate-gradient diagnostics,0.04192709999915678,True
+coordinate-gradient diagnostics,0.057514700001775054,True
+coordinate-gradient diagnostics,0.0531446999993932,True
+coordinate-gradient diagnostics,0.04557849999764585,True
+coordinate-gradient diagnostics,0.04236029999810853,True
+coordinate-gradient diagnostics,0.05893339999965974,True
+coordinate-gradient diagnostics,0.049968199997238116,True
+coordinate-gradient diagnostics,0.044318800002656644,True
+coordinate-gradient diagnostics,0.04170470000099158,True
