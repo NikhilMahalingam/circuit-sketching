@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "method": "EAP-IG",
+  "eligible_unique_train_examples": 32,
+  "sampled_unique_train_examples": 32,
+  "total_attribution_example_presentations": 32,
+  "backward_example_presentations": 160,
+  "validation_examples": 128,
+  "public_test_accessed": false
+}

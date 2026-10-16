@@ -78,3 +78,21 @@ generated locally and are not included in the repository.
 
 `build_notebook.py` regenerates the clean source notebook and overwrites that
 file. Keep notebook content changes in the generator if using it to rebuild.
+
+## Matryoshka Attribution reproduction
+
+[mib_mattr_reproduction.ipynb](notebooks/mib_mattr_reproduction.ipynb) runs and
+analyzes the official GPT-2 Small / MIB IOI node-attribution recipe, discovery
+data-size experiments, and matched-data EAP/EAP-IG comparisons. Model execution
+uses a separate **WSL Ubuntu / Python 3.12** environment with the official
+dependency lock. Follow the [MAttr run guide](scripts/mattr/README.md), rather
+than the Windows environment instructions above.
+
+The [reproduction report](MATTR_REPRODUCTION_REPORT.md) records actual results,
+metric definitions, compute accounting, and limitations. Timestamped outputs
+are saved under `results/mattr_reproduction/`. Previous Sketch-ACDC notebooks
+and reports remain preserved.
+
+The [executed analysis notebook](notebooks/mib_mattr_reproduction.executed.ipynb)
+and [saved campaign](results/mattr_reproduction/20261015T223201Z/) include the
+rankings, checkpoints, raw evaluations, figures, and verification evidence.

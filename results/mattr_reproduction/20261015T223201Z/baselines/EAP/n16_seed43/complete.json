@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "method": "EAP",
+  "eligible_unique_train_examples": 16,
+  "sampled_unique_train_examples": 16,
+  "total_attribution_example_presentations": 16,
+  "backward_example_presentations": 16,
+  "validation_examples": 128,
+  "public_test_accessed": false
+}

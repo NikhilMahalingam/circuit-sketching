@@ -1,0 +1,6 @@
+{
+  "hits": 1,
+  "source": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed43",
+  "guard": "identical official node scores, validation manifest, batch size and evaluator provenance",
+  "additional_model_forwards": 0
+}

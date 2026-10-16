@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "kind": "scaling",
+  "optimization_steps": 500,
+  "eligible_unique_train_examples": 32,
+  "sampled_unique_train_examples": 32,
+  "total_training_presentations": 500,
+  "validation_examples": 128,
+  "wall_seconds_this_attempt": 74.61216972900002,
+  "public_test_accessed": false
+}

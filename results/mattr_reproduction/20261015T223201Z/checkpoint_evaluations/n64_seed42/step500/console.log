@@ -1,0 +1,17 @@
+
+ATTEMPT 2026-10-16T05:07:13.905170+00:00
+["bash", "/mnt/h/GenAI Research/sketch_prune/scripts/mattr/evaluate_wsl.sh", "reevaluate", "--source", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n64_seed42", "--checkpoint", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n64_seed42/checkpoints/step_000500.pt", "--validation-size", "128", "--include-train", "--reuse-final-validation", "--out", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed42/step500"]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  61%|██████▏   | 91/148 [01:02<00:38,  1.47it/s]Loading weights: 100%|██████████| 148/148 [01:02<00:00,  2.38it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:01<00:03,  1.12s/it] 50%|█████     | 2/4 [00:01<00:01,  1.58it/s] 75%|███████▌  | 3/4 [00:01<00:00,  2.09it/s]100%|██████████| 4/4 [00:01<00:00,  2.96it/s]100%|██████████| 4/4 [00:01<00:00,  2.19it/s]
+Computing results for 0.1% of nodes (N=0)
+Computing results for 0.2% of nodes (N=0)
+Computing results for 0.5% of nodes (N=0)
+Computing results for 1.0% of nodes (N=1)
+Computing results for 2.0% of nodes (N=3)
+Computing results for 5.0% of nodes (N=7)
+Computing results for 10.0% of nodes (N=15)
+Computing results for 20.0% of nodes (N=31)
+Computing results for 50.0% of nodes (N=78)
+Computing results for 100% of nodes (N=157)

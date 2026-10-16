@@ -1,0 +1,41 @@
+{
+  "mattr_commit": "af82b2eef145dd3e66c793a413352d6931a152d7",
+  "model": "gpt2",
+  "task": "ioi",
+  "level": "node",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "discovery_sizes": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "steps": 500,
+  "lr": 0.05,
+  "masking": "topk",
+  "mode": "iso",
+  "k_schedule": "uniform",
+  "include_input": true,
+  "validation_comparison_size": 128,
+  "validation_seed": 42,
+  "reference_train_size": "all",
+  "reference_validation_size": "all",
+  "reference_and_comparisons_have_distinct_cohorts": true,
+  "evaluation_batch_size": 20,
+  "train_batch_size": 1,
+  "cf_cache_gb": 4.0,
+  "intervention": "patching",
+  "public_test_accessed": true,
+  "intermediate_evaluation_steps": [
+    100,
+    250,
+    500
+  ],
+  "baseline_ig_steps": 5,
+  "equal_data_is_not_equal_compute": true,
+  "baseline_attribution_batch_size": 1
+}

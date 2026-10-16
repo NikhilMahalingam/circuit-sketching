@@ -1,0 +1,596 @@
+{
+  "passed": true,
+  "complete_campaign_required": true,
+  "verified_jobs": [
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n128_seed42",
+      "forward_batches": 720,
+      "example_forwards": 6528,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n128_seed43",
+      "forward_batches": 720,
+      "example_forwards": 6528,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n128_seed44",
+      "forward_batches": 720,
+      "example_forwards": 6528,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n16_seed42",
+      "forward_batches": 240,
+      "example_forwards": 3504,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n16_seed43",
+      "forward_batches": 240,
+      "example_forwards": 3504,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n16_seed44",
+      "forward_batches": 240,
+      "example_forwards": 3504,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n32_seed42",
+      "forward_batches": 312,
+      "example_forwards": 3936,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n32_seed43",
+      "forward_batches": 312,
+      "example_forwards": 3936,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n32_seed44",
+      "forward_batches": 312,
+      "example_forwards": 3936,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n64_seed42",
+      "forward_batches": 456,
+      "example_forwards": 4800,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n64_seed43",
+      "forward_batches": 456,
+      "example_forwards": 4800,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n64_seed44",
+      "forward_batches": 456,
+      "example_forwards": 4800,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n128_seed42",
+      "forward_batches": 1232,
+      "example_forwards": 7040,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n128_seed43",
+      "forward_batches": 1232,
+      "example_forwards": 7040,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n128_seed44",
+      "forward_batches": 1232,
+      "example_forwards": 7040,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n16_seed42",
+      "forward_batches": 304,
+      "example_forwards": 3568,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n16_seed43",
+      "forward_batches": 304,
+      "example_forwards": 3568,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n16_seed44",
+      "forward_batches": 304,
+      "example_forwards": 3568,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n32_seed42",
+      "forward_batches": 440,
+      "example_forwards": 4064,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n32_seed43",
+      "forward_batches": 440,
+      "example_forwards": 4064,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n32_seed44",
+      "forward_batches": 440,
+      "example_forwards": 4064,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n64_seed42",
+      "forward_batches": 712,
+      "example_forwards": 5056,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n64_seed43",
+      "forward_batches": 712,
+      "example_forwards": 5056,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n64_seed44",
+      "forward_batches": 712,
+      "example_forwards": 5056,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed42/step100",
+      "forward_batches": 336,
+      "example_forwards": 6144,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed42/step250",
+      "forward_batches": 336,
+      "example_forwards": 6144,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed42/step500",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed43/step100",
+      "forward_batches": 336,
+      "example_forwards": 6144,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed43/step250",
+      "forward_batches": 336,
+      "example_forwards": 6144,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed43/step500",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed44/step100",
+      "forward_batches": 336,
+      "example_forwards": 6144,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed44/step250",
+      "forward_batches": 336,
+      "example_forwards": 6144,
+      "inference_forwards_without_grad": 336,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed44/step500",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed42/step100",
+      "forward_batches": 192,
+      "example_forwards": 3456,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed42/step250",
+      "forward_batches": 192,
+      "example_forwards": 3456,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed42/step500",
+      "forward_batches": 24,
+      "example_forwards": 384,
+      "inference_forwards_without_grad": 24,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed43/step100",
+      "forward_batches": 192,
+      "example_forwards": 3456,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed43/step250",
+      "forward_batches": 192,
+      "example_forwards": 3456,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed43/step500",
+      "forward_batches": 24,
+      "example_forwards": 384,
+      "inference_forwards_without_grad": 24,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed44/step100",
+      "forward_batches": 192,
+      "example_forwards": 3456,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed44/step250",
+      "forward_batches": 192,
+      "example_forwards": 3456,
+      "inference_forwards_without_grad": 192,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n16_seed44/step500",
+      "forward_batches": 24,
+      "example_forwards": 384,
+      "inference_forwards_without_grad": 24,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed42/step100",
+      "forward_batches": 216,
+      "example_forwards": 3840,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed42/step250",
+      "forward_batches": 216,
+      "example_forwards": 3840,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed42/step500",
+      "forward_batches": 48,
+      "example_forwards": 768,
+      "inference_forwards_without_grad": 48,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed43/step100",
+      "forward_batches": 216,
+      "example_forwards": 3840,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed43/step250",
+      "forward_batches": 216,
+      "example_forwards": 3840,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed43/step500",
+      "forward_batches": 48,
+      "example_forwards": 768,
+      "inference_forwards_without_grad": 48,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed44/step100",
+      "forward_batches": 216,
+      "example_forwards": 3840,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed44/step250",
+      "forward_batches": 216,
+      "example_forwards": 3840,
+      "inference_forwards_without_grad": 216,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n32_seed44/step500",
+      "forward_batches": 48,
+      "example_forwards": 768,
+      "inference_forwards_without_grad": 48,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed42/step100",
+      "forward_batches": 264,
+      "example_forwards": 4608,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed42/step250",
+      "forward_batches": 264,
+      "example_forwards": 4608,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed42/step500",
+      "forward_batches": 96,
+      "example_forwards": 1536,
+      "inference_forwards_without_grad": 96,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed43/step100",
+      "forward_batches": 264,
+      "example_forwards": 4608,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed43/step250",
+      "forward_batches": 264,
+      "example_forwards": 4608,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed43/step500",
+      "forward_batches": 96,
+      "example_forwards": 1536,
+      "inference_forwards_without_grad": 96,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed44/step100",
+      "forward_batches": 264,
+      "example_forwards": 4608,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed44/step250",
+      "forward_batches": 264,
+      "example_forwards": 4608,
+      "inference_forwards_without_grad": 264,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n64_seed44/step500",
+      "forward_batches": 96,
+      "example_forwards": 1536,
+      "inference_forwards_without_grad": 96,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/EAP/seed42",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/EAP/seed43",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/EAP/seed44",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/EAP-IG/seed42",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/EAP-IG/seed43",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/EAP-IG/seed44",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/MAttr/seed42",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/MAttr/seed43",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/confirmation/MAttr/seed44",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/reference",
+      "forward_batches": 12989,
+      "example_forwards": 240989,
+      "inference_forwards_without_grad": 12000,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/reference_common_validation",
+      "forward_batches": 168,
+      "example_forwards": 3072,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n128_seed42",
+      "forward_batches": 796,
+      "example_forwards": 3700,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n128_seed43",
+      "forward_batches": 793,
+      "example_forwards": 3697,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n128_seed44",
+      "forward_batches": 794,
+      "example_forwards": 3698,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n16_seed42",
+      "forward_batches": 684,
+      "example_forwards": 3588,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n16_seed43",
+      "forward_batches": 684,
+      "example_forwards": 3588,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n16_seed44",
+      "forward_batches": 684,
+      "example_forwards": 3588,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed42",
+      "forward_batches": 700,
+      "example_forwards": 3604,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed43",
+      "forward_batches": 700,
+      "example_forwards": 3604,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed44",
+      "forward_batches": 700,
+      "example_forwards": 3604,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n64_seed42",
+      "forward_batches": 732,
+      "example_forwards": 3636,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n64_seed43",
+      "forward_batches": 732,
+      "example_forwards": 3636,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n64_seed44",
+      "forward_batches": 732,
+      "example_forwards": 3636,
+      "inference_forwards_without_grad": 168,
+      "passed": true
+    },
+    {
+      "job": "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/smoke",
+      "forward_batches": 105,
+      "example_forwards": 201,
+      "inference_forwards_without_grad": 96,
+      "passed": true
+    }
+  ],
+  "previous_artifacts_unchanged": true,
+  "public_test_accessed": true
+}

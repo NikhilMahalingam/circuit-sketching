@@ -1,0 +1,30 @@
+
+ATTEMPT 2026-10-16T04:15:45.510587+00:00
+["bash", "/mnt/h/GenAI Research/sketch_prune/scripts/mattr/evaluate_wsl.sh", "baseline", "--method", "EAP", "--train-size", "16", "--validation-size", "128", "--seed", "42", "--out", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP/n16_seed42"]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  70%|███████   | 104/148 [00:00<00:00, 1038.36it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1399.63it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+Filter:   0%|          | 0/10000 [00:00<?, ? examples/s]Filter:  10%|█         | 1000/10000 [00:00<00:01, 7582.36 examples/s]Filter:  20%|██        | 2000/10000 [00:00<00:01, 7953.05 examples/s]Filter:  30%|███       | 3000/10000 [00:00<00:00, 7931.61 examples/s]Filter:  40%|████      | 4000/10000 [00:00<00:00, 7943.46 examples/s]Filter:  50%|█████     | 5000/10000 [00:00<00:00, 7931.02 examples/s]Filter:  60%|██████    | 6000/10000 [00:00<00:00, 7832.79 examples/s]Filter:  70%|███████   | 7000/10000 [00:01<00:00, 5296.97 examples/s]Filter:  80%|████████  | 8000/10000 [00:01<00:00, 5936.20 examples/s]Filter:  90%|█████████ | 9000/10000 [00:01<00:00, 6469.89 examples/s]Filter: 100%|██████████| 10000/10000 [00:01<00:00, 6847.65 examples/s]Filter: 100%|██████████| 10000/10000 [00:01<00:00, 6819.26 examples/s]
+EAP: 16 unique discovery examples; official EAP, IG steps=5; attribution batch=1; evaluation batch=20; node evaluation grid=10
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  3.68it/s]100%|██████████| 1/1 [00:00<00:00,  3.67it/s]
+Computing results for 0.1% of nodes (N=0)
+Computing results for 0.2% of nodes (N=0)
+Computing results for 0.5% of nodes (N=0)
+Computing results for 1.0% of nodes (N=1)
+Computing results for 2.0% of nodes (N=3)
+Computing results for 5.0% of nodes (N=7)
+Computing results for 10.0% of nodes (N=15)
+Computing results for 20.0% of nodes (N=31)
+Computing results for 50.0% of nodes (N=78)
+Computing results for 100% of nodes (N=157)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:02,  2.89it/s] 29%|██▊       | 2/7 [00:00<00:01,  2.86it/s] 43%|████▎     | 3/7 [00:00<00:01,  3.12it/s] 57%|█████▋    | 4/7 [00:01<00:00,  3.19it/s] 71%|███████▏  | 5/7 [00:01<00:00,  3.19it/s] 86%|████████▌ | 6/7 [00:01<00:00,  3.19it/s]100%|██████████| 7/7 [00:02<00:00,  3.94it/s]100%|██████████| 7/7 [00:02<00:00,  3.43it/s]
+Computing results for 0.1% of nodes (N=0)
+Computing results for 0.2% of nodes (N=0)
+Computing results for 0.5% of nodes (N=0)
+Computing results for 1.0% of nodes (N=1)
+Computing results for 2.0% of nodes (N=3)
+Computing results for 5.0% of nodes (N=7)
+Computing results for 10.0% of nodes (N=15)
+Computing results for 20.0% of nodes (N=31)
+Computing results for 50.0% of nodes (N=78)
+Computing results for 100% of nodes (N=157)

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+export HF_HOME="$ROOT/.cache/huggingface"
+export MPLCONFIGDIR="$ROOT/.cache/mattr-matplotlib"
+export MPLBACKEND=Agg
+export WANDB_MODE=disabled
+cd "$ROOT"
+exec "${UV_PROJECT_ENVIRONMENT:-$HOME/.venvs/mattr-af82b2e}/bin/python" -m src.mattr_reproduction.campaign "$@"

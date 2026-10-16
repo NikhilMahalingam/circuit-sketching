@@ -1,0 +1,8 @@
+[
+  {
+    "wall_seconds": 2095.648809283,
+    "success": true,
+    "includes_interpreter_and_imports": true,
+    "measurement": "Linux process start tick to exit observation; <=0.5s observation overhead"
+  }
+]

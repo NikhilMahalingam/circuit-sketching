@@ -1,0 +1,9 @@
+{
+  "method": "MAttr",
+  "discovery_pool": 128,
+  "steps": 500,
+  "selection_metric": "mean fixed-validation official CPR AUC over seeds 42,43,44",
+  "validation_cpr_mean": 1.8529779551925696,
+  "public_test_accessed": false,
+  "selection_is_exploratory": true
+}

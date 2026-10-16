@@ -1,0 +1,29 @@
+
+ATTEMPT 2026-10-16T04:24:30.548917+00:00
+["bash", "/mnt/h/GenAI Research/sketch_prune/scripts/mattr/evaluate_wsl.sh", "baseline", "--method", "EAP-IG", "--train-size", "32", "--validation-size", "128", "--seed", "43", "--out", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/baselines/EAP-IG/n32_seed43"]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  64%|██████▍   | 95/148 [00:00<00:00, 946.88it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1256.71it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+EAP-IG: 32 unique discovery examples; official EAP-IG-inputs, IG steps=5; attribution batch=1; evaluation batch=20; node evaluation grid=10
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  3.29it/s]100%|██████████| 2/2 [00:00<00:00,  4.44it/s]100%|██████████| 2/2 [00:00<00:00,  4.21it/s]
+Computing results for 0.1% of nodes (N=0)
+Computing results for 0.2% of nodes (N=0)
+Computing results for 0.5% of nodes (N=0)
+Computing results for 1.0% of nodes (N=1)
+Computing results for 2.0% of nodes (N=3)
+Computing results for 5.0% of nodes (N=7)
+Computing results for 10.0% of nodes (N=15)
+Computing results for 20.0% of nodes (N=31)
+Computing results for 50.0% of nodes (N=78)
+Computing results for 100% of nodes (N=157)
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [-00:59<00:00, -0.12it/s]
+Computing results for 0.1% of nodes (N=0)
+Computing results for 0.2% of nodes (N=0)
+Computing results for 0.5% of nodes (N=0)
+Computing results for 1.0% of nodes (N=1)
+Computing results for 2.0% of nodes (N=3)
+Computing results for 5.0% of nodes (N=7)
+Computing results for 10.0% of nodes (N=15)
+Computing results for 20.0% of nodes (N=31)
+Computing results for 50.0% of nodes (N=78)
+Computing results for 100% of nodes (N=157)

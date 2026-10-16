@@ -1,0 +1,102 @@
+{
+  "selection": {
+    "discovery_pool": 128,
+    "mattr_optimization_steps": 500,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "selection": "highest mean MAttr validation CPR AUC over the three preset seeds; same pool for all methods",
+    "validation_selection_sha256": "b6cc6288201d6ec2287de35bb3a5656e46d3939fe619d08973dba806eea2b6dd",
+    "test_split": "test",
+    "test_examples": 128,
+    "test_subset_seed": 42,
+    "evaluation_batch_size": 20,
+    "test_results_may_not_change_selection": true,
+    "jobs": [
+      {
+        "key": "MAttr_seed42",
+        "method": "MAttr",
+        "seed": 42,
+        "source": "scaling/n128_seed42",
+        "ranking_sha256": "a5d4950d6b1035b3daffb7315e9191cd6c47f3133798065a5699762764a1b2b7",
+        "validation_metric_sha256": "34e73498b5864ef4984cacb7878eda771411bb56f924d6617317942a9f292394"
+      },
+      {
+        "key": "MAttr_seed43",
+        "method": "MAttr",
+        "seed": 43,
+        "source": "scaling/n128_seed43",
+        "ranking_sha256": "831d60b12cebff23b46f09e8fee62a3ab5f40dac8a29ff2b39696f8828f6c664",
+        "validation_metric_sha256": "414bbaf710afb89eb333298a35481d2898f3ab4d99b944c2548c6cdd8d44fa3a"
+      },
+      {
+        "key": "MAttr_seed44",
+        "method": "MAttr",
+        "seed": 44,
+        "source": "scaling/n128_seed44",
+        "ranking_sha256": "228c98ae066f65599564b53595082de0e4ee9cec3e997a650c25939486d8269e",
+        "validation_metric_sha256": "44943bea9635fb3519cb9d255c30dab91adb4b3fd4f43562f1b7d22b9c6d7cc7"
+      },
+      {
+        "key": "EAP_seed42",
+        "method": "EAP",
+        "seed": 42,
+        "source": "baselines/EAP/n128_seed42",
+        "ranking_sha256": "dfa14df934a78d87c8d68625112f60f7b664cf660e110f477cbe1f07533fadcf",
+        "validation_metric_sha256": "3423a0d350328cc507dc8316858cfe71618e65902fd9f1f48bad1948a1182998"
+      },
+      {
+        "key": "EAP_seed43",
+        "method": "EAP",
+        "seed": 43,
+        "source": "baselines/EAP/n128_seed43",
+        "ranking_sha256": "667669de645495d4a95f7178cef8522023845084b5c5647c9f78484af2c1892b",
+        "validation_metric_sha256": "72f6993502721e03253e52107c69e5276176f27e3fb7d7c068111a60037b6a1b"
+      },
+      {
+        "key": "EAP_seed44",
+        "method": "EAP",
+        "seed": 44,
+        "source": "baselines/EAP/n128_seed44",
+        "ranking_sha256": "56135a9a4d4c3d40081e94b2f0ebfc3c04b7e2f958e15db35c9ee85718eb17ca",
+        "validation_metric_sha256": "1eb53834276199a6fedbffa1a5eb77be83307e2d5c824f2a792309efea3df5c0"
+      },
+      {
+        "key": "EAP-IG_seed42",
+        "method": "EAP-IG",
+        "seed": 42,
+        "source": "baselines/EAP-IG/n128_seed42",
+        "ranking_sha256": "ceb36728dcad4a3b54df6aecf1530f025fe006f1ecf7a7c68591b87fefd3f95b",
+        "validation_metric_sha256": "70515d8be7bd6794c5fa3d909874da90d12464fb82cf8dc2406f5f2d25928f23"
+      },
+      {
+        "key": "EAP-IG_seed43",
+        "method": "EAP-IG",
+        "seed": 43,
+        "source": "baselines/EAP-IG/n128_seed43",
+        "ranking_sha256": "a63349a468f4c42cbbc468f8e499a12025f876c70bab3ad5e3ed1551050af3c6",
+        "validation_metric_sha256": "c3ee02bcc85861acbfdb5e00630b14f7c7b766ae6c5313c5a03d09d2f4af7687"
+      },
+      {
+        "key": "EAP-IG_seed44",
+        "method": "EAP-IG",
+        "seed": 44,
+        "source": "baselines/EAP-IG/n128_seed44",
+        "ranking_sha256": "f7d234c40750cff96631e6bdb3ea7dc708b01f00a81ed637dc7c756d4ded3ee2",
+        "validation_metric_sha256": "307f7fea416b95c6d24d133fabfe6506401f417ac0fe08267ffec8138a5fb931"
+      }
+    ],
+    "permission_source": "external/matryoshka-attribution/deps/MIB-circuit-track/README.md",
+    "permission_source_sha256": "f27ff3066f271aa9bd3daaa21c33a4af352cfc1c46b2230d8b1c7003ed54832d",
+    "confirmation_code_sha256": {
+      "src/mattr_reproduction/confirm.py": "6745c2a8fcdfafed5c2d67a55afb31f6d5119cac8e60acc9a9fd0dd165a2f49f",
+      "src/mattr_reproduction/evaluate.py": "f36d64929cba179c22c7c6ff04e0f91a9f71f34f484cde244e6a2625a56c26a1",
+      "src/mattr_reproduction/runner.py": "fe99b3a8cc46c7516efb6913eee54a0d3736982f563d40099fa4a40370abaa21",
+      "src/mattr_reproduction/runtime.py": "86bf0786a952cb680b71c8fd5b5000b65754ef9fd5ed453d2cc4093cb0c8b831"
+    }
+  },
+  "locked_before_test": true,
+  "locked_at_utc": "2026-10-16T05:24:21.667331+00:00"
+}

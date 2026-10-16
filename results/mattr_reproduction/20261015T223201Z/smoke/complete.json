@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "kind": "smoke",
+  "optimization_steps": 5,
+  "eligible_unique_train_examples": 16,
+  "sampled_unique_train_examples": 4,
+  "total_training_presentations": 5,
+  "validation_examples": 8,
+  "wall_seconds_this_attempt": 26.609166605,
+  "public_test_accessed": false
+}

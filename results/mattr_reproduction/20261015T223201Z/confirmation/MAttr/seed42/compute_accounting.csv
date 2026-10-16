@@ -1,0 +1,4 @@
+stage,success,wall_seconds,forward_batches,example_forwards,backward_calls,optimizer_steps,peak_cuda_allocated_mib,peak_cuda_reserved_mib,peak_cpu_rss_mib,lifetime_cpu_peak_rss_mib
+confirmation_model_and_data_preparation,True,10.925513096999566,0,0,0,0,635.51416015625,690.0,2854.07421875,2999.8359375
+test_evaluation,True,25.983992236999256,168,3072,0,0,2185.0068359375,3734.0,1650.23046875,2999.8359375
+saving_and_ranking,True,5.2579999646695796e-05,0,0,0,0,644.26416015625,3734.0,1650.234375,2999.8359375

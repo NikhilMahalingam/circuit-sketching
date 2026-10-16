@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "step": 250,
+  "train_examples": 32,
+  "validation_examples": 128,
+  "public_test_accessed": false
+}

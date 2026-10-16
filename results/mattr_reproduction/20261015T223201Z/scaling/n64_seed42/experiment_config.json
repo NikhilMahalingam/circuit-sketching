@@ -1,0 +1,62 @@
+{
+  "method": "MAttr",
+  "kind": "scaling",
+  "model": "gpt2",
+  "task": "ioi",
+  "level": "node",
+  "train_size": 64,
+  "validation_size": 128,
+  "seed": 42,
+  "validation_seed": 42,
+  "steps": 500,
+  "optimizer": "adam",
+  "lr": 0.05,
+  "masking": "topk",
+  "mode": "iso",
+  "k_schedule": "uniform",
+  "T": 0.5,
+  "n_iters": 30,
+  "adam_eps": 1e-08,
+  "include_input": true,
+  "train_batch_size": 1,
+  "evaluation_batch_size": 20,
+  "cf_cache_gb": 4.0,
+  "checkpoint_every": 50,
+  "provenance": {
+    "mattr_commit": "af82b2eef145dd3e66c793a413352d6931a152d7",
+    "mib_commit": "582fdbc8a2b0f7063a265c8f94851fd2a3aa5480",
+    "eap_commit": "3fb341eafdaba63632954aecbbb96b4b08e13d02",
+    "versions": {
+      "torch": "2.12.0",
+      "transformers": "5.9.0",
+      "transformer-lens": "3.2.1",
+      "datasets": "4.8.5",
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "matplotlib": "3.10.9",
+      "pytest": "9.1.1",
+      "accelerate": "1.13.0",
+      "psutil": "7.2.2"
+    },
+    "source_sha256": {
+      "external/matryoshka-attribution/scripts/mib/eval_mib.py": "75fa67aea49706c11d1101b38463b1ddff00076405dedaa73ec8281b1c0294c9",
+      "external/matryoshka-attribution/src/matryoshka_attribution/trainer.py": "b987d4b174e6147613d8f806ba41ee65ce0fde8214cbf568f863ce1c701ab7e9",
+      "external/matryoshka-attribution/uv.lock": "95ff386810f211133e1f8a9a64a8d78a1d263a3e0d673dd578ab6359a8abe235",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/evaluation.py": "66bf4e8cb2cde67b6dcc30b84e9eee70505f0f52b7e811c1d77c745e30577ef4",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/dataset.py": "33064953976238cef84943446387fe7faa5e95cb77c2f7d10851d3f7df40c422",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/attribute_node.py": "a50260b1a88a93128cf021b3dcab42ed5cd19e26a0900eb03194bbec83249ed6"
+    },
+    "cuda_runtime": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "cuda_total_memory_mib": 12287.5
+  },
+  "local_source_sha256": {
+    "src/mattr_reproduction/runner.py": "fe99b3a8cc46c7516efb6913eee54a0d3736982f563d40099fa4a40370abaa21",
+    "src/mattr_reproduction/runtime.py": "86bf0786a952cb680b71c8fd5b5000b65754ef9fd5ed453d2cc4093cb0c8b831",
+    "src/mattr_reproduction/checkpoint.py": "55f05a4fea567e05dc454548095ffe847427570a92462a8a90e42f0bb6d1385a"
+  },
+  "unique_pool_is_distinct_from_sampled_unique_examples": true,
+  "public_test_accessed": false,
+  "identity": "bd2433ae6ca2d7228e310d31fca076d51688491aad274687d9bbfd2598533335"
+}

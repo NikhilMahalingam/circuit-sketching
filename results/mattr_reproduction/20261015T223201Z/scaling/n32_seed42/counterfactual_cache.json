@@ -1,0 +1,11 @@
+[
+  {
+    "seen_examples_this_attempt": 500,
+    "forward_examples_this_attempt": 32,
+    "hits_this_attempt": 468,
+    "entries": 32,
+    "bytes": 97443840,
+    "cache_restored_after_restart": false,
+    "official_summary": "cf-cache: 32/500 example-forwards paid (94% saved), 32 cached, 0.10 GB"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "/mnt/h/GenAI Research/sketch_prune/external/matryoshka-attribution/scripts/mib/eval_mib.py",
+    "--model",
+    "gpt2",
+    "--task",
+    "ioi",
+    "--steps",
+    "500",
+    "--k-schedule",
+    "uniform",
+    "--masking",
+    "topk",
+    "--mode",
+    "iso",
+    "--lr",
+    "0.05",
+    "--optimizer",
+    "adam",
+    "--seed",
+    "43",
+    "--split",
+    "validation",
+    "--train-split",
+    "train",
+    "--include-input",
+    "--batch-size",
+    "20",
+    "--train-batch-size",
+    "1",
+    "--cf-cache-gb",
+    "4.0",
+    "--no-wandb",
+    "--output",
+    "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed43/official"
+  ],
+  "subset_adapter": {
+    "train": 32,
+    "validation": 128,
+    "seed": 43
+  }
+}

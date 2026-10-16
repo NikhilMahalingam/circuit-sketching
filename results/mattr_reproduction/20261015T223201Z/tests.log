@@ -1,0 +1,12 @@
+......                                                                   [100%]
+6 passed in 3.87s
+test_fresh_wrapper_preserves_official_updates_exactly (test_mattr_reproduction.MAttrReproductionTests.test_fresh_wrapper_preserves_official_updates_exactly) ... ok
+test_public_confirmation_requires_every_validation_stage (test_mattr_reproduction.MAttrReproductionTests.test_public_confirmation_requires_every_validation_stage) ... ok
+test_resumed_wrapper_preserves_adam_and_both_rng_streams (test_mattr_reproduction.MAttrReproductionTests.test_resumed_wrapper_preserves_adam_and_both_rng_streams) ... ok
+test_subsets_are_nested_and_do_not_perturb_global_rngs (test_mattr_reproduction.MAttrReproductionTests.test_subsets_are_nested_and_do_not_perturb_global_rngs) ... ok
+test_verifier_checks_the_actual_test_artifacts (test_mattr_reproduction.MAttrReproductionTests.test_verifier_checks_the_actual_test_artifacts) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.331s
+
+OK

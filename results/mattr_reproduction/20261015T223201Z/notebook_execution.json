@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "analysis_kernel": "mib-sketching",
+  "model_execution_environment": "isolated WSL Ubuntu CUDA",
+  "campaign": "H:\\GenAI Research\\sketch_prune\\results\\mattr_reproduction\\20261015T223201Z",
+  "executed_code_cells": 4
+}

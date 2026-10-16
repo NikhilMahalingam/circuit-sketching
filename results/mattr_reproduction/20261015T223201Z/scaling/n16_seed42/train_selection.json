@@ -1,0 +1,27 @@
+{
+  "split": "train",
+  "seed": 42,
+  "requested_size": 16,
+  "selected_size": 16,
+  "indices": [
+    8132,
+    8268,
+    719,
+    8237,
+    4555,
+    6651,
+    5650,
+    9034,
+    1260,
+    644,
+    9098,
+    3760,
+    34,
+    8086,
+    4873,
+    1538
+  ],
+  "official_fingerprint": "5a0728acfb0808ed",
+  "subset_fingerprint": "559f7980fc162e71",
+  "manifest_sha256": "05f98f4ed9d96d41526db458fde8a8e21e78f132e88a07fbf823f76a39036efc"
+}

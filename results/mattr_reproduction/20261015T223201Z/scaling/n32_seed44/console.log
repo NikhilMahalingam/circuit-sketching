@@ -1,0 +1,105 @@
+
+ATTEMPT 2026-10-16T04:06:07.263483+00:00
+["bash", "/mnt/h/GenAI Research/sketch_prune/scripts/mattr/run_wsl.sh", "--kind", "scaling", "--train-size", "32", "--validation-size", "128", "--seed", "44", "--out", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed44"]
+2026-10-16 00:07:19,470 INFO _official_mattr_eval: Loading HF model gpt2 for training...
+2026-10-16 00:07:19,624 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-10-16 00:07:19,719 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-16 00:07:19,720 WARNING huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-16 00:07:19,925 INFO httpx: HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-16 00:07:19,958 INFO httpx: HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-16 00:07:20,004 INFO httpx: HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-16 00:07:20,036 INFO httpx: HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-16 00:07:20,342 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  65%|██████▍   | 96/148 [00:00<00:00, 956.24it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1347.55it/s]
+2026-10-16 00:07:20,651 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-10-16 00:07:23,358 INFO _official_mattr_eval: Model loaded in 3.9s
+2026-10-16 00:07:23,407 INFO httpx: HTTP Request: HEAD https://huggingface.co/datasets/mib-bench/ioi/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-10-16 00:07:23,422 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/mib-bench/ioi/e5f3468f3af4c0883be35cd3bced8c711c95d286/README.md "HTTP/1.1 200 OK"
+2026-10-16 00:07:23,484 INFO httpx: HTTP Request: HEAD https://huggingface.co/datasets/mib-bench/ioi/resolve/e5f3468f3af4c0883be35cd3bced8c711c95d286/ioi.py "HTTP/1.1 404 Not Found"
+2026-10-16 00:07:23,848 INFO httpx: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/mib-bench/ioi/mib-bench/ioi.py "HTTP/1.1 404 Not Found"
+2026-10-16 00:07:23,894 INFO httpx: HTTP Request: GET https://huggingface.co/api/datasets/mib-bench/ioi/revision/e5f3468f3af4c0883be35cd3bced8c711c95d286 "HTTP/1.1 200 OK"
+2026-10-16 00:07:23,932 INFO httpx: HTTP Request: HEAD https://huggingface.co/datasets/mib-bench/ioi/resolve/e5f3468f3af4c0883be35cd3bced8c711c95d286/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-10-16 00:07:24,253 INFO httpx: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=mib-bench/ioi "HTTP/1.1 200 OK"
+2026-10-16 00:07:24,300 INFO httpx: HTTP Request: GET https://huggingface.co/api/datasets/mib-bench/ioi/tree/e5f3468f3af4c0883be35cd3bced8c711c95d286/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"
+2026-10-16 00:07:24,351 INFO httpx: HTTP Request: GET https://huggingface.co/api/datasets/mib-bench/ioi/tree/e5f3468f3af4c0883be35cd3bced8c711c95d286?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-10-16 00:07:24,436 INFO httpx: HTTP Request: HEAD https://huggingface.co/datasets/mib-bench/ioi/resolve/e5f3468f3af4c0883be35cd3bced8c711c95d286/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-10-16 00:07:25,438 INFO _official_mattr_eval: Loaded 32 TRAIN examples from ioi (train)
+2026-10-16 00:07:25,439 INFO _official_mattr_eval: Node scores: Node: 12L x (12h + 1mlp)+input = 157 = 157 total
+2026-10-16 00:07:25,439 INFO _official_mattr_eval: Training for 500 steps on ioi/gpt2...
+2026-10-16 00:07:25,452 INFO _official_mattr_eval: Pre-tokenized 32 examples in 0.0s
+2026-10-16 00:07:26,365 INFO _official_mattr_eval: Step    1/500  loss=-6.5414  |grad|=2.534  |s|max=0.05  k=113/157  (1.1 step/s)
+2026-10-16 00:07:29,643 INFO _official_mattr_eval: Step   50/500  loss=-6.3061  |grad|=1.644  |s|max=1.942  k=114/157  (12.0 step/s)
+2026-10-16 00:06:31,043 INFO _official_mattr_eval: Step  100/500  loss=-13.3736  |grad|=0.6117  |s|max=3.427  k=57/157  (-1.8 step/s)
+2026-10-16 00:07:36,133 INFO _official_mattr_eval: Step  150/500  loss=-16.8668  |grad|=0.7666  |s|max=3.981  k=128/157  (14.1 step/s)
+2026-10-16 00:06:36,996 INFO _official_mattr_eval: Step  200/500  loss=-10.2533  |grad|=0.2986  |s|max=4.318  k=73/157  (-4.1 step/s)
+2026-10-16 00:06:39,853 INFO _official_mattr_eval: Step  250/500  loss=-9.7868  |grad|=1.834  |s|max=4.539  k=153/157  (-5.5 step/s)
+2026-10-16 00:06:42,579 INFO _official_mattr_eval: Step  300/500  loss=-8.5192  |grad|=0.147  |s|max=5.158  k=122/157  (-7.0 step/s)
+2026-10-16 00:06:45,310 INFO _official_mattr_eval: Step  350/500  loss=1.3232  |grad|=0.241  |s|max=5.435  k=10/157  (-8.7 step/s)
+2026-10-16 00:06:47,891 INFO _official_mattr_eval: Step  400/500  loss=-10.4547  |grad|=0.2697  |s|max=5.502  k=63/157  (-10.6 step/s)
+2026-10-16 00:06:50,937 INFO _official_mattr_eval: Step  450/500  loss=-4.5650  |grad|=1.256  |s|max=5.699  k=16/157  (-13.0 step/s)
+2026-10-16 00:06:54,064 INFO _official_mattr_eval: Step  500/500  loss=-10.6950  |grad|=0.2869  |s|max=6.443  k=144/157  (-15.9 step/s)
+2026-10-16 00:06:54,078 INFO _official_mattr_eval: Training complete in -31.4s (cf-cache: 32/500 example-forwards paid (94% saved), 32 cached, 0.10 GB)
+2026-10-16 00:06:54,083 INFO _official_mattr_eval: Saved train log to /mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed44/official/ioi_gpt2_trainlog.csv
+2026-10-16 00:06:54,086 INFO _official_mattr_eval: Loading transformer_lens model for MIB evaluation...
+2026-10-16 00:06:54,313 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-10-16 00:06:54,435 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  52%|█████▏    | 77/148 [00:00<00:00, 765.38it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1003.40it/s]
+2026-10-16 00:06:54,834 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-10-16 00:06:54,980 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-10-16 00:06:55,038 INFO httpx: HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-10-16 00:06:55,113 INFO httpx: HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-16 00:06:55,162 INFO httpx: HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-16 00:06:55,268 INFO httpx: HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-16 00:06:55,317 INFO httpx: HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-16 00:06:58,987 INFO _official_mattr_eval: Graph: 158 nodes, 32491 edges
+2026-10-16 00:06:58,989 INFO _official_mattr_eval: Set node scores (157 scored, 157 forward nodes)
+2026-10-16 00:06:58,990 INFO _official_mattr_eval: Set node scores on graph
+2026-10-16 00:06:59,028 INFO httpx: HTTP Request: HEAD https://huggingface.co/datasets/mib-bench/ioi/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-10-16 00:06:59,045 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/mib-bench/ioi/e5f3468f3af4c0883be35cd3bced8c711c95d286/README.md "HTTP/1.1 200 OK"
+2026-10-16 00:06:59,105 INFO httpx: HTTP Request: HEAD https://huggingface.co/datasets/mib-bench/ioi/resolve/e5f3468f3af4c0883be35cd3bced8c711c95d286/ioi.py "HTTP/1.1 404 Not Found"
+2026-10-16 00:06:59,242 INFO httpx: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/mib-bench/ioi/mib-bench/ioi.py "HTTP/1.1 404 Not Found"
+2026-10-16 00:06:59,290 INFO httpx: HTTP Request: HEAD https://huggingface.co/datasets/mib-bench/ioi/resolve/e5f3468f3af4c0883be35cd3bced8c711c95d286/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-10-16 00:06:59,537 INFO httpx: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=mib-bench/ioi "HTTP/1.1 200 OK"
+2026-10-16 00:06:59,578 INFO httpx: HTTP Request: GET https://huggingface.co/api/datasets/mib-bench/ioi/tree/e5f3468f3af4c0883be35cd3bced8c711c95d286/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"
+2026-10-16 00:06:59,672 INFO httpx: HTTP Request: HEAD https://huggingface.co/datasets/mib-bench/ioi/resolve/e5f3468f3af4c0883be35cd3bced8c711c95d286/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-10-16 00:07:00,540 INFO _official_mattr_eval: Running MIB evaluation (node level)...
+Loaded pretrained model gpt2-small into HookedTransformer
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:03,  1.67it/s] 29%|██▊       | 2/7 [00:00<00:02,  2.21it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.60it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.77it/s] 71%|███████▏  | 5/7 [00:01<00:00,  2.86it/s] 86%|████████▌ | 6/7 [00:02<00:00,  2.94it/s]100%|██████████| 7/7 [00:02<00:00,  3.65it/s]100%|██████████| 7/7 [00:02<00:00,  2.96it/s]
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:01,  3.10it/s] 29%|██▊       | 2/7 [01:02<03:03, 36.80s/it]100%|██████████| 7/7 [00:02<00:00,  3.41it/s]
+Computing results for 0.1% of nodes (N=0)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:01,  3.13it/s] 29%|██▊       | 2/7 [00:00<00:01,  2.83it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.98it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.93it/s] 71%|███████▏  | 5/7 [00:01<00:00,  2.80it/s] 86%|████████▌ | 6/7 [00:02<00:00,  2.26it/s]100%|██████████| 7/7 [00:02<00:00,  2.83it/s]100%|██████████| 7/7 [00:02<00:00,  2.77it/s]
+Computing results for 0.2% of nodes (N=0)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:02,  2.54it/s] 29%|██▊       | 2/7 [00:00<00:01,  2.51it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.62it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.78it/s] 71%|███████▏  | 5/7 [00:01<00:00,  2.87it/s] 86%|████████▌ | 6/7 [00:02<00:00,  2.79it/s]100%|██████████| 7/7 [00:02<00:00,  3.34it/s]100%|██████████| 7/7 [00:02<00:00,  2.96it/s]
+Computing results for 0.5% of nodes (N=0)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:02,  2.99it/s] 29%|██▊       | 2/7 [00:00<00:01,  3.02it/s] 43%|████▎     | 3/7 [00:00<00:01,  3.21it/s] 57%|█████▋    | 4/7 [00:01<00:00,  3.19it/s] 71%|███████▏  | 5/7 [00:01<00:00,  3.15it/s] 86%|████████▌ | 6/7 [00:01<00:00,  3.13it/s]100%|██████████| 7/7 [00:02<00:00,  3.78it/s]100%|██████████| 7/7 [00:02<00:00,  3.38it/s]
+Computing results for 1.0% of nodes (N=1)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:01,  3.13it/s] 29%|██▊       | 2/7 [00:00<00:01,  3.04it/s] 43%|████▎     | 3/7 [00:00<00:01,  3.16it/s] 57%|█████▋    | 4/7 [00:01<00:00,  3.07it/s] 71%|███████▏  | 5/7 [01:03<00:45, 22.68s/it]100%|██████████| 7/7 [00:02<00:00,  3.24it/s]
+Computing results for 2.0% of nodes (N=3)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:02,  2.62it/s] 29%|██▊       | 2/7 [00:00<00:01,  2.66it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.82it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.79it/s] 71%|███████▏  | 5/7 [00:01<00:00,  2.73it/s] 86%|████████▌ | 6/7 [00:02<00:00,  2.67it/s]100%|██████████| 7/7 [00:02<00:00,  3.28it/s]100%|██████████| 7/7 [00:02<00:00,  2.94it/s]
+Computing results for 5.0% of nodes (N=7)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:02,  2.52it/s] 29%|██▊       | 2/7 [00:00<00:01,  2.55it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.71it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.69it/s] 71%|███████▏  | 5/7 [00:01<00:00,  2.63it/s] 86%|████████▌ | 6/7 [00:02<00:00,  2.59it/s]100%|██████████| 7/7 [01:04<00:00, 20.45s/it]100%|██████████| 7/7 [01:04<00:00,  9.15s/it]
+Computing results for 10.0% of nodes (N=15)
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [-00:59<00:00, -0.12it/s]
+Computing results for 20.0% of nodes (N=31)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:02,  2.50it/s] 29%|██▊       | 2/7 [00:00<00:02,  2.41it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.42it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.41it/s] 71%|███████▏  | 5/7 [00:02<00:00,  2.32it/s] 86%|████████▌ | 6/7 [00:02<00:00,  2.23it/s]100%|██████████| 7/7 [00:02<00:00,  2.75it/s]100%|██████████| 7/7 [00:02<00:00,  2.51it/s]
+Computing results for 50.0% of nodes (N=78)
+  0%|          | 0/7 [00:00<?, ?it/s] 29%|██▊       | 2/7 [00:00<00:01,  4.08it/s] 43%|████▎     | 3/7 [00:00<00:01,  3.18it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.87it/s] 71%|███████▏  | 5/7 [00:01<00:00,  2.66it/s] 86%|████████▌ | 6/7 [00:02<00:00,  2.51it/s]100%|██████████| 7/7 [00:02<00:00,  3.06it/s]100%|██████████| 7/7 [00:02<00:00,  2.97it/s]
+Computing results for 100% of nodes (N=157)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:02,  2.39it/s] 29%|██▊       | 2/7 [00:00<00:02,  2.39it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.49it/s] 57%|█████▋    | 4/7 [00:01<00:01,  2.48it/s] 71%|███████▏  | 5/7 [00:02<00:00,  2.43it/s] 86%|████████▌ | 6/7 [00:02<00:00,  2.39it/s]100%|██████████| 7/7 [00:02<00:00,  2.85it/s]100%|██████████| 7/7 [00:02<00:00,  2.60it/s]
+2026-10-16 00:07:29,520 INFO _official_mattr_eval: MIB Results:
+2026-10-16 00:07:29,520 INFO _official_mattr_eval:     0.1% -> CPR=0.0000  CMD=1.0000
+2026-10-16 00:07:29,521 INFO _official_mattr_eval:     0.2% -> CPR=0.0000  CMD=1.0000
+2026-10-16 00:07:29,521 INFO _official_mattr_eval:     0.5% -> CPR=0.0000  CMD=1.0000
+2026-10-16 00:07:29,522 INFO _official_mattr_eval:     1.0% -> CPR=0.0000  CMD=1.0000
+2026-10-16 00:07:29,522 INFO _official_mattr_eval:     2.0% -> CPR=-0.0000  CMD=1.0000
+2026-10-16 00:07:29,523 INFO _official_mattr_eval:     5.0% -> CPR=0.0000  CMD=1.0000
+2026-10-16 00:07:29,523 INFO _official_mattr_eval:    10.0% -> CPR=1.1046  CMD=0.1046
+2026-10-16 00:07:29,524 INFO _official_mattr_eval:    20.0% -> CPR=2.3389  CMD=1.3389
+2026-10-16 00:07:29,524 INFO _official_mattr_eval:    50.0% -> CPR=2.6108  CMD=1.6108
+2026-10-16 00:07:29,525 INFO _official_mattr_eval:   100.0% -> CPR=1.0000  CMD=0.0000
+2026-10-16 00:07:29,525 INFO _official_mattr_eval:   CPR AUC=1.8449  CMD AUC=0.9939  Avg CPR=0.7054
+2026-10-16 00:07:29,529 INFO _official_mattr_eval: Saved MIB results to /mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed44/official/ioi_gpt2_validation.pkl
+2026-10-16 00:07:29,533 INFO _official_mattr_eval: Saved scores to /mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed44/official/ioi_gpt2_scores.pt
+2026-10-16 00:07:29,587 INFO _official_mattr_eval: Saved importances to /mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed44/official/ioi_gpt2_importances.json
+COMPLETED: /mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n32_seed44

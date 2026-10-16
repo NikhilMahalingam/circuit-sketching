@@ -1,0 +1,28 @@
+{
+  "metric": "logit_diff",
+  "level": "node",
+  "split": "validation",
+  "intervention": "patching",
+  "absolute_ranking": false,
+  "log_scale": false,
+  "percentages": [
+    0.001,
+    0.002,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1.0
+  ],
+  "cpr_auc_area_under": 1.8168479485019906,
+  "cmd_auc_area_from_1": 1.019031503649567,
+  "average_cpr": 0.6600997613008819,
+  "accuracy_auc_logspace": 0.38468637999379074,
+  "examples": 128,
+  "clean_logit_diff": 3.155473470687866,
+  "corrupted_logit_diff": -2.6634795665740967,
+  "definition_source": "MIB_circuit_track.evaluation.evaluate_area_under_curve"
+}

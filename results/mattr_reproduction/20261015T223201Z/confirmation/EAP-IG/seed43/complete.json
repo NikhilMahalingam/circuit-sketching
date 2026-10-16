@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "stage": "final_confirmation",
+  "method": "EAP-IG",
+  "seed": 43,
+  "test_examples": 128,
+  "public_test_accessed": true
+}

@@ -1,0 +1,19 @@
+{
+  "split": "validation",
+  "seed": 42,
+  "requested_size": 8,
+  "selected_size": 8,
+  "indices": [
+    8132,
+    8268,
+    719,
+    8237,
+    4555,
+    6651,
+    5650,
+    9034
+  ],
+  "official_fingerprint": "2f3e83e0e07ebf4a",
+  "subset_fingerprint": "ebb6f58d3e0c7da5",
+  "manifest_sha256": "ca220e0ecf09c2d3574480ae5309818789bb75b10c14131d9509b51fc271a7d4"
+}

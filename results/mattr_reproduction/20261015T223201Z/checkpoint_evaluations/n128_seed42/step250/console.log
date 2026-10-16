@@ -1,0 +1,28 @@
+
+ATTEMPT 2026-10-16T05:14:34.318443+00:00
+["bash", "/mnt/h/GenAI Research/sketch_prune/scripts/mattr/evaluate_wsl.sh", "reevaluate", "--source", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n128_seed42", "--checkpoint", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/scaling/n128_seed42/checkpoints/step_000250.pt", "--validation-size", "128", "--include-train", "--out", "/mnt/h/GenAI Research/sketch_prune/results/mattr_reproduction/20261015T223201Z/checkpoint_evaluations/n128_seed42/step250"]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 92/148 [00:00<00:00, 908.28it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1294.78it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:01<00:06,  1.05s/it] 29%|██▊       | 2/7 [00:01<00:03,  1.58it/s] 43%|████▎     | 3/7 [00:01<00:01,  2.00it/s] 57%|█████▋    | 4/7 [00:02<00:01,  2.34it/s] 71%|███████▏  | 5/7 [01:04<00:45, 22.74s/it]100%|██████████| 7/7 [00:02<00:00,  2.51it/s]
+Computing results for 0.1% of nodes (N=0)
+Computing results for 0.2% of nodes (N=0)
+Computing results for 0.5% of nodes (N=0)
+Computing results for 1.0% of nodes (N=1)
+Computing results for 2.0% of nodes (N=3)
+Computing results for 5.0% of nodes (N=7)
+Computing results for 10.0% of nodes (N=15)
+Computing results for 20.0% of nodes (N=31)
+Computing results for 50.0% of nodes (N=78)
+Computing results for 100% of nodes (N=157)
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [-00:59<00:00, -0.12it/s]
+Computing results for 0.1% of nodes (N=0)
+Computing results for 0.2% of nodes (N=0)
+Computing results for 0.5% of nodes (N=0)
+Computing results for 1.0% of nodes (N=1)
+Computing results for 2.0% of nodes (N=3)
+Computing results for 5.0% of nodes (N=7)
+Computing results for 10.0% of nodes (N=15)
+Computing results for 20.0% of nodes (N=31)
+Computing results for 50.0% of nodes (N=78)
+Computing results for 100% of nodes (N=157)
