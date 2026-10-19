@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "tests": 10,
+  "command": [
+    "/home/nikhilmahalingam/.venvs/mattr-af82b2e/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_acdc_prefix_cache.py",
+    "-v"
+  ],
+  "test_source_sha256": "aadbd9a20539cba27491264bee6515f2e4d5ff958a6808fbd79fa0f9a5335bf2"
+}

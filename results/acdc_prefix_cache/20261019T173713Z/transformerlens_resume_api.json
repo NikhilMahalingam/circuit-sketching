@@ -1,0 +1,5 @@
+{
+  "file": "/home/nikhilmahalingam/.venvs/mattr-af82b2e/lib/python3.12/site-packages/transformer_lens/HookedTransformer.py",
+  "signature": "(self, input: \"Union[str, List[str], Int[torch.Tensor, 'batch pos'], Float[torch.Tensor, 'batch pos d_model']]\", return_type: 'Optional[str]' = 'logits', loss_per_token: 'bool' = False, prepend_bos: 'Optional[Union[bool, None]]' = None, padding_side: \"Optional[Literal['left', 'right']]\" = None, start_at_layer: 'Optional[int]' = None, tokens: \"Optional[Int[torch.Tensor, 'batch pos']]\" = None, shortformer_pos_embed: \"Optional[Float[torch.Tensor, 'batch pos d_model']]\" = None, attention_mask: 'Optional[torch.Tensor]' = None, stop_at_layer: 'Optional[int]' = None, past_kv_cache: 'Optional[TransformerLensKeyValueCache]' = None) -> \"Union[None, Float[torch.Tensor, 'batch pos d_vocab'], Loss, Tuple[Float[torch.Tensor, 'batch pos d_vocab'], Loss]]\"",
+  "forward_source_sha256": "eed0a8174fef4a99d01d3822266f746ed5073d32101955044c54d47fe52d7596"
+}

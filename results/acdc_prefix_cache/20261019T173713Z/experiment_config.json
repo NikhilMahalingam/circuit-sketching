@@ -1,0 +1,71 @@
+{
+  "model": "gpt2-small",
+  "mib_model_id": "gpt2",
+  "task": "ioi",
+  "seed": 42,
+  "train_examples": 16,
+  "validation_examples": 16,
+  "batch_size": 2,
+  "precision": "float32",
+  "threshold": 0.05,
+  "task_loss": "negative official MIB IOI logit difference; loss=True",
+  "decision_rule": "proposed_mean_loss - current_mean_loss < threshold (signed)",
+  "traversal": "descending receiver DAG phase, descending sender index, edge name tie break",
+  "structural_cleanup": "no automatic cascade/skip in the search; official pruned MIB is an independent loss oracle",
+  "long_checks": 64,
+  "atol": 5e-05,
+  "rtol": 1e-05,
+  "warmup": 3,
+  "cpu_threads": 4,
+  "source": {
+    "repository": "/mnt/h/GenAI Research/sketch_prune/external/MIB-circuit-track",
+    "mib_commit": "b759df34433c9e31043ba9e02908ce0bf20e894f",
+    "eap_commit": "7af394a5662de8b23ad6154716a0cd3993d447a3",
+    "source_sha256": {
+      "README.md": "caae67baddc56e68e1be1e872f235c15b70cceda9350b9303660ade07244a003",
+      "run_attribution.py": "cfdced1b7104b9ed09685387e660fa477c1dd3c0d74369d4d6a8d74163a692e0",
+      "run_evaluation.py": "4c49c2496b5959df6c201c88a3db23ca038b851a6cc0c5cde0875f8a9aad5e02",
+      "MIB_circuit_track/dataset.py": "6a4019cfd454573fa409b6460853942c52959e2fa8f82013b50af56a0d55d007",
+      "MIB_circuit_track/metrics.py": "6ec0458b107c9e9e98370274af978ce2c3b48c56d78c1eaf5f82e906b66d302b",
+      "MIB_circuit_track/utils.py": "c1dca9b945f7e56de5fa5b49bcdf3585477ac77bd8d404b8231abe4379bfbff2",
+      "MIB_circuit_track/evaluation.py": "cb6566e8d093bde15c9fa47d4169e8a56d10600adc645b61a53956d72b67b16b",
+      "EAP-IG/src/eap/attribute_node.py": "265614b609a785b8651eacf70f2c0ba214571e7e57513e5b8468759f711a8451",
+      "EAP-IG/src/eap/evaluate.py": "9b0a8bfc26bb1bd69e5e759f0ce6b296cd01942cdf29a496ab5783c405823a85",
+      "EAP-IG/src/eap/utils.py": "8b384351cc6d55919b26728de5f9ab55da91d2348291c59d553b7e7bf0a928e4",
+      "EAP-IG/src/eap/graph.py": "f52c277928ca1f49ef6dc67a3eae05ad236ce3caeb13b199cff897f937226ed7"
+    }
+  },
+  "packages": {
+    "torch": "2.12.0",
+    "transformer-lens": "3.2.1",
+    "transformers": "5.9.0",
+    "datasets": "4.8.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "matplotlib": "3.10.9"
+  },
+  "python": "3.12.15",
+  "cuda_runtime": "13.0",
+  "wsl": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "git_parent_commit": "cfc4578dca845099a700290fd1311ffb511c489f",
+  "no_environment_install_or_mattr_import": true,
+  "public_test_accessed": false,
+  "independent_original_implementation_available": false,
+  "independent_result": "Research log Stage J: 2.35x, auto-circuit IOI, squared probability distance; not this configuration",
+  "timing": {
+    "cuda_synchronization": true,
+    "repeat_trials_B_C": 3,
+    "alternate_arm_order": true
+  },
+  "stage_c_default": false,
+  "stage_b_sizes": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "stage_b_checks": [
+    64,
+    128
+  ]
+}

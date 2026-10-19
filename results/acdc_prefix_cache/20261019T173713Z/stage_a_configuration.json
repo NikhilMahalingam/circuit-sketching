@@ -1,0 +1,26 @@
+{
+  "stage": "a",
+  "out": "results/acdc_prefix_cache/20261019T173713Z",
+  "train_examples": 16,
+  "validation_examples": 16,
+  "batch_size": 2,
+  "seed": 42,
+  "threshold": 0.05,
+  "long_checks": 64,
+  "warmup": 3,
+  "cpu_threads": 4,
+  "atol": 5e-05,
+  "rtol": 1e-05,
+  "allow_full_graph": false,
+  "sizes": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "checks": [
+    64,
+    128
+  ],
+  "repeats": 3
+}

@@ -1,0 +1,15 @@
+test_actual_blocks_are_skipped_and_evaluations_not_memoized (test_acdc_prefix_cache.PrefixCacheTests.test_actual_blocks_are_skipped_and_evaluations_not_memoized) ... ok
+test_all_layers_and_output_receiver (test_acdc_prefix_cache.PrefixCacheTests.test_all_layers_and_output_receiver) ... ok
+test_cached_boundaries_are_not_modified (test_acdc_prefix_cache.PrefixCacheTests.test_cached_boundaries_are_not_modified) ... ok
+test_dependency_proof_for_nonreverse_states (test_acdc_prefix_cache.PrefixCacheTests.test_dependency_proof_for_nonreverse_states) ... ok
+test_dependent_current_senders (test_acdc_prefix_cache.PrefixCacheTests.test_dependent_current_senders) ... ok
+test_matrix_patching_matches_corrected_shared_receiver (test_acdc_prefix_cache.PrefixCacheTests.test_matrix_patching_matches_corrected_shared_receiver) ... ok
+test_model_mutation_invalidates_cache (test_acdc_prefix_cache.PrefixCacheTests.test_model_mutation_invalidates_cache) ... ok
+test_padding_mask_and_unequal_lengths (test_acdc_prefix_cache.PrefixCacheTests.test_padding_mask_and_unequal_lengths) ... ok
+test_random_multi_edge_states (test_acdc_prefix_cache.PrefixCacheTests.test_random_multi_edge_states) ... ok
+test_sequential_decisions_and_resume_are_identical (test_acdc_prefix_cache.PrefixCacheTests.test_sequential_decisions_and_resume_are_identical) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.802s
+
+OK

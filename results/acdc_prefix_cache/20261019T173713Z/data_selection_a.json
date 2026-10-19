@@ -1,0 +1,83 @@
+{
+  "train": {
+    "official_filtered_size": 10000,
+    "selected_size": 16,
+    "official_fingerprint": "1dac676c46df0278",
+    "selected_fingerprint": "e3896b2b45c6b672",
+    "selected_filtered_indices": [
+      8132,
+      8268,
+      719,
+      8237,
+      4555,
+      6651,
+      5650,
+      9034,
+      1260,
+      644,
+      9098,
+      3760,
+      34,
+      8086,
+      4873,
+      1538
+    ],
+    "columns": [
+      "template",
+      "metadata",
+      "prompt",
+      "choices",
+      "answerKey",
+      "abc_counterfactual",
+      "random_names_counterfactual",
+      "s1_io_flip_counterfactual",
+      "s2_io_flip_counterfactual",
+      "random_names_s1_ioi_flip_counterfactual",
+      "random_names_s2_ioi_flip_counterfactual",
+      "s1_ioi_flip_s2_ioi_flip_counterfactual",
+      "random_names_s1_ioi_flip_s2_ioi_flip_counterfactual"
+    ]
+  },
+  "validation": {
+    "official_filtered_size": 10000,
+    "selected_size": 16,
+    "official_fingerprint": "87ad2cf7adcc8fa6",
+    "selected_fingerprint": "5b4ac94b14f25d2e",
+    "selected_filtered_indices": [
+      8132,
+      8268,
+      719,
+      8237,
+      4555,
+      6651,
+      5650,
+      9034,
+      1260,
+      644,
+      9098,
+      3760,
+      34,
+      8086,
+      4873,
+      1538
+    ],
+    "columns": [
+      "template",
+      "metadata",
+      "prompt",
+      "choices",
+      "answerKey",
+      "abc_counterfactual",
+      "random_names_counterfactual",
+      "s1_io_flip_counterfactual",
+      "s2_io_flip_counterfactual",
+      "random_names_s1_ioi_flip_counterfactual",
+      "random_names_s2_ioi_flip_counterfactual",
+      "s1_ioi_flip_s2_ioi_flip_counterfactual",
+      "random_names_s1_ioi_flip_s2_ioi_flip_counterfactual"
+    ]
+  },
+  "full_filtered_split_clean_prompt_overlap": {
+    "train__validation": 0
+  }
+}

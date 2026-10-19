@@ -1,0 +1,73 @@
+Seed: 42; TF32 disabled; model.eval() used.
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights:   9%|▉         | 13/148 [00:00<00:01, 122.79it/s]
+Loading weights:  25%|██▌       | 37/148 [00:00<00:00, 185.22it/s]
+Loading weights:  38%|███▊      | 56/148 [00:00<00:00, 180.82it/s]
+Loading weights:  68%|██████▊   | 101/148 [00:00<00:00, 277.62it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 306.23it/s]
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Fri Oct 16 01:25:40 2026).
+
+Loaded pretrained model gpt2-small into HookedTransformer
+Filter:   0%|          | 0/10000 [00:00<?, ? examples/s]
+Filter:  10%|█         | 1000/10000 [00:00<00:01, 7835.46 examples/s]
+Filter:  20%|██        | 2000/10000 [00:00<00:01, 7368.93 examples/s]
+Filter:  30%|███       | 3000/10000 [00:00<00:01, 4281.69 examples/s]
+Filter:  40%|████      | 4000/10000 [00:00<00:01, 5084.36 examples/s]
+Filter:  50%|█████     | 5000/10000 [00:00<00:00, 5849.25 examples/s]
+Filter:  60%|██████    | 6000/10000 [00:01<00:00, 6498.01 examples/s]
+Filter:  70%|███████   | 7000/10000 [00:01<00:00, 6951.09 examples/s]
+Filter:  80%|████████  | 8000/10000 [00:01<00:00, 7355.82 examples/s]
+Filter:  90%|█████████ | 9000/10000 [00:01<00:00, 7661.10 examples/s]
+Filter: 100%|██████████| 10000/10000 [00:01<00:00, 7831.41 examples/s]
+Filter: 100%|██████████| 10000/10000 [00:01<00:00, 6661.73 examples/s]
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:23 2026).
+
+Filter:   0%|          | 0/10000 [00:00<?, ? examples/s]
+Filter:  10%|█         | 1000/10000 [01:02<09:19, 16.09 examples/s]
+Filter: 100%|██████████| 10000/10000 [00:01<00:00, 6059.11 examples/s]
+Stage A: 30 single-edge and 8 multi-edge queries; 32 restricted + 64 deterministic-prefix decisions per arm; 8 batches/query. Official oracle adds 2 full forwards/batch/query. No performance or full-graph benchmark will run.
+single 1/38 input->a0.h0<q>: max error 0; official 0; safe boundary 0
+single 2/38 input->a0.h0<k>: max error 0; official 0; safe boundary 0
+single 3/38 input->a0.h0<v>: max error 0; official 0; safe boundary 0
+single 4/38 a0.h0->m0: max error 0; official 0; safe boundary 0
+single 5/38 m1->a2.h0<q>: max error 0; official 0; safe boundary 2
+single 6/38 m1->a2.h0<k>: max error 0; official 0; safe boundary 2
+single 7/38 m1->a2.h0<v>: max error 0; official 0; safe boundary 2
+single 8/38 a2.h0->m2: max error 0; official 0; safe boundary 2
+single 9/38 m3->a4.h0<q>: max error 0; official 0; safe boundary 4
+single 10/38 m3->a4.h0<k>: max error 0; official 0; safe boundary 4
+single 11/38 m3->a4.h0<v>: max error 0; official 0; safe boundary 4
+single 12/38 a4.h0->m4: max error 0; official 0; safe boundary 4
+single 13/38 m5->a6.h0<q>: max error 0; official 0; safe boundary 6
+single 14/38 m5->a6.h0<k>: max error 0; official 0; safe boundary 6
+single 15/38 m5->a6.h0<v>: max error 0; official 0; safe boundary 6
+single 16/38 a6.h0->m6: max error 0; official 0; safe boundary 6
+single 17/38 m7->a8.h0<q>: max error 0; official 0; safe boundary 8
+single 18/38 m7->a8.h0<k>: max error 0; official 0; safe boundary 8
+single 19/38 m7->a8.h0<v>: max error 0; official 0; safe boundary 8
+single 20/38 a8.h0->m8: max error 0; official 0; safe boundary 8
+single 21/38 m9->a10.h0<q>: max error 0; official 0; safe boundary 10
+single 22/38 m9->a10.h0<k>: max error 0; official 0; safe boundary 10
+single 23/38 m9->a10.h0<v>: max error 0; official 0; safe boundary 10
+single 24/38 a10.h0->m10: max error 0; official 0; safe boundary 10
+single 25/38 m10->a11.h0<q>: max error 0; official 0; safe boundary 11
+single 26/38 m10->a11.h0<k>: max error 0; official 0; safe boundary 11
+single 27/38 m10->a11.h0<v>: max error 0; official 0; safe boundary 11
+single 28/38 a11.h0->m11: max error 0; official 0; safe boundary 11
+single 29/38 input->logits: max error 0; official 0; safe boundary 11
+single 30/38 m11->logits: max error 0; official 0; safe boundary 11
+multi 31/38 dependent_early: max error 0; official 0; safe boundary 0
+multi 32/38 dependent_middle: max error 0; official 0; safe boundary 4
+multi 33/38 previous_early_removal_plus_late_candidate: max error 0; official 0; safe boundary 0
+multi 34/38 disconnected_head: max error 0; official 1.62e-05; safe boundary 0
+multi 35/38 random_4: max error 0; official 0; safe boundary 5
+multi 36/38 random_16: max error 0; official 0; safe boundary 2
+multi 37/38 random_48: max error 0; official 0; safe boundary 2
+multi 38/38 random_late_64: max error 0; official 0; safe boundary 8
+restricted_32: 32 identical decisions; retained circuit hash 1096339b459593f6
+partial_prefix_64: 64 identical decisions; retained circuit hash 8b491da4a5ca8c5d
+Report: /mnt/h/GenAI Research/sketch_prune/ACDC_PREFIX_CACHE_REPORT.md
+Saved: /mnt/h/GenAI Research/sketch_prune/results/acdc_prefix_cache/20261019T173713Z

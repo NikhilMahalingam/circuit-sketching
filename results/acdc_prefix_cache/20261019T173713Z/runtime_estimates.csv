@@ -1,0 +1,5 @@
+discovery_examples,stage_b_medium_paired_seconds_estimate,stage_c_one_paired_full_seconds_estimate,stage_c_requested_repeats_seconds_estimate,performance_measurement,method
+16,200.79784209601203,13365.24248485958,40095.72745457874,False,"Stage-A diagnostic query timing, linear examples scaling; layer-nearest interpolation"
+32,401.59568419202407,26730.48496971916,80191.45490915747,False,"Stage-A diagnostic query timing, linear examples scaling; layer-nearest interpolation"
+64,803.1913683840481,53460.96993943832,160382.90981831495,False,"Stage-A diagnostic query timing, linear examples scaling; layer-nearest interpolation"
+128,1606.3827367680963,106921.93987887664,320765.8196366299,False,"Stage-A diagnostic query timing, linear examples scaling; layer-nearest interpolation"

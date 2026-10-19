@@ -1,0 +1,3 @@
+trajectory,examples,standard_loss,cached_loss,official_loss,max_absolute_error,official_max_absolute_error,retained_identity_match
+restricted_32,16,-2.4759809970855713,-2.4759809970855713,-2.475980758666992,0.0,1.33514404296875e-05,True
+partial_prefix_64,16,-8.159912109375,-8.159912109375,-8.159912109375,0.0,4.76837158203125e-06,True

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "single_queries": 30,
+  "multi_queries": 8,
+  "restricted_decisions": 32,
+  "longer_partial_decisions": 64,
+  "resume_decisions": 64,
+  "all_retained_edge_identities_match": true,
+  "full_graph_run": false,
+  "previous_artifacts_unchanged": true,
+  "atol": 5e-05,
+  "rtol": 1e-05,
+  "graph_edges": 32491,
+  "graph_identity": "674c679b0040570195ce6ea7d7f0c7d118a2c42456a753d244626eb1a032aafa",
+  "core_source_sha256": {
+    "src/acdc_prefix_cache/benchmark.py": "94d22b5663dfcb3ec1a4034e072a10bf7b7179039b10cd5929e8f1634fd92fca",
+    "src/acdc_prefix_cache/engine.py": "2cc9f6edf357f7757f7d5d82464df7129bf622787e845e39759897a42c0ea3f4",
+    "src/acdc_prefix_cache/execute_notebook.py": "feaa4fd0aa26ead3f71d0084e36d438df5e99d68f687389f49034734d1ff2527",
+    "src/acdc_prefix_cache/graph.py": "c450731afc19a0c38a2710ab973829d0ec5c4f6b289eba092e9897f11301d207",
+    "src/acdc_prefix_cache/notebook.py": "6097bb11cff1503adfa3b974d7f72373619973dd79e3abfcba2f7faf45a90e4a",
+    "src/acdc_prefix_cache/report.py": "18abbb21b7697de3a2886638aacead87e0cf785258886ac046105666566e1f7e",
+    "src/acdc_prefix_cache/runner.py": "769b163be279767a86b40153e82435d3bde4a49e487b52a98c6a868d84da5c87",
+    "src/acdc_prefix_cache/search.py": "61d5b31caea81a709af8b9cc44b93875571111927dde6edd71f6c3c0e6456f6c",
+    "src/acdc_prefix_cache/__init__.py": "2ed4898e16fbd06eed5cefccc3c6d5f722aecd86aaa63cea2165bf7738c32b67"
+  },
+  "batch_size": 2,
+  "train_examples": 16,
+  "threshold": 0.05
+}

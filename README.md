@@ -96,3 +96,17 @@ and reports remain preserved.
 The [executed analysis notebook](notebooks/mib_mattr_reproduction.executed.ipynb)
 and [saved campaign](results/mattr_reproduction/20261015T223201Z/) include the
 rankings, checkpoints, raw evaluations, figures, and verification evidence.
+
+## Prefix-cached ACDC
+
+[acdc_prefix_caching.ipynb](notebooks/acdc_prefix_caching.ipynb) compares full
+forwards with dependency-checked cached-prefix execution on official MIB IOI.
+The [implementation guide](src/acdc_prefix_cache/README.md) documents the
+independent stages and WSL commands. The [report](ACDC_PREFIX_CACHE_REPORT.md)
+records passing Stage A correctness tests and planning estimates; performance
+Stages B and C have not run.
+
+The [executed analysis notebook](notebooks/acdc_prefix_caching.executed.ipynb)
+reads the [saved Stage A campaign](results/acdc_prefix_cache/20261019T173713Z/).
+All experiment flags remain disabled by default. The independent reference's
+2.35× speedup has not been reproduced or claimed by this campaign.
