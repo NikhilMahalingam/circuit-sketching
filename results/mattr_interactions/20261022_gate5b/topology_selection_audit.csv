@@ -1,0 +1,5 @@
+fraction,direction,candidates,valid_pairs,joint_cleanup_rejections,selected_pairs,safe_singles_total,base_edges,requested_edges
+0.01,deletion,24,276,0,49,7033,317,324
+0.01,addition,24,276,0,47,7033,317,324
+0.02,deletion,24,276,0,47,10800,646,649
+0.02,addition,24,276,0,48,10800,646,649

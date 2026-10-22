@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "protocol_sha256": "2ed5dd02a7b58377b532e3753abf088034a68c999d17766953bc2c6d60ea1519",
+  "frozen_source_hashes": 8,
+  "protected_historical_files_unchanged": 3550,
+  "candidate_edges": 96,
+  "screen_pairs": 191,
+  "confirmation_pairs": 29,
+  "four_way_cache_reconstructions": 220,
+  "confirmation_prompts": 64,
+  "prior_small_validation_manifests_checked": 61,
+  "cpu_tests": 7,
+  "counts": {
+    "forward_batches": 3448,
+    "example_forwards": 13608,
+    "backward_calls": 0,
+    "optimizer_updates": 0
+  },
+  "additional_model_forwards": 0,
+  "audit_source_sha256": "3f842b2c0a2c23f822a594e9199d136995563520b5469c40b0d1c1368d418398",
+  "seconds": 33.222367404999986
+}

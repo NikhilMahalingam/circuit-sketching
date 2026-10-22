@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "seconds": 286.783557991,
+  "counts": {
+    "forward_batches": 3448,
+    "example_forwards": 13608,
+    "backward_calls": 0,
+    "optimizer_updates": 0
+  },
+  "unique_evaluations_this_run": 373,
+  "exact_cache_hits": 528,
+  "donor_cache_hits": 3338,
+  "donor_cache_misses": 27,
+  "donor_cache_cpu_bytes": 973289472
+}

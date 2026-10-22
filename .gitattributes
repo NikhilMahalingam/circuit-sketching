@@ -4,6 +4,7 @@ scripts/mattr/*.sh text eol=lf
 src/acdc_prefix_cache/*.sh text eol=lf
 src/mattr_optimization/*.sh text eol=lf
 src/mattr_expander/*.sh text eol=lf
+src/mattr_interactions/*.sh text eol=lf
 
 # Keep archived experiment bytes and source-report hashes intact.
 /results/mib_sketch_diagnostics/** -text
@@ -11,3 +12,4 @@ src/mattr_expander/*.sh text eol=lf
 /results/acdc_prefix_cache/** -text
 /results/mattr_optimization/** -text
 /results/mattr_expander/** -text
+/results/mattr_interactions/** -text

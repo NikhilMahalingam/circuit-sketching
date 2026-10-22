@@ -1,0 +1,26 @@
+{
+  "recommendation": "Option B",
+  "option_A": false,
+  "option_B": true,
+  "primary_confirmation_pairs": 16,
+  "reproduced_substantial_pairs": 2,
+  "reproduced_fraction": 0.125,
+  "useful_excluded_additions": 0,
+  "component_groupings_passing": [
+    "source_head",
+    "destination_head",
+    "qkv_receiver",
+    "source_MLP",
+    "destination_layer"
+  ],
+  "within_component_vs_matched_control": {
+    "comparisons": 11,
+    "mean_ratio": 28.075866130265318,
+    "difference": 0.2718339995904402,
+    "lo": 0.22327758473428813,
+    "hi": 0.32223073911260475,
+    "passed": true
+  },
+  "model_training_updates": 0,
+  "protocol_sha256": "2ed5dd02a7b58377b532e3753abf088034a68c999d17766953bc2c6d60ea1519"
+}

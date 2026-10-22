@@ -1,0 +1,14 @@
+direction,stratum_i,stratum_j,pairs,mean_abs_interaction,sign_disagreements
+addition,boundary,boundary,23,0.001384561476500106,0.0
+addition,boundary,disagreement,29,0.0008662291641892775,0.0
+addition,disagreement,boundary,17,0.0010251367793363414,0.0
+addition,disagreement,disagreement,26,0.003433466530763152,0.0
+deletion,boundary,boundary,7,0.0010465894426617758,0.0
+deletion,boundary,disagreement,5,0.00192748010158532,0.0
+deletion,boundary,high,9,0.008044037553999111,0.0
+deletion,disagreement,boundary,13,0.004736923254453178,0.0
+deletion,disagreement,disagreement,11,0.20428462868387046,0.0
+deletion,disagreement,high,14,0.18242247402667996,0.0
+deletion,high,boundary,11,0.00550170920111913,0.0
+deletion,high,disagreement,12,0.07489534715811408,0.0
+deletion,high,high,14,0.3906786377940859,0.0

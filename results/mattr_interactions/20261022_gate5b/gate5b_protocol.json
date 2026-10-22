@@ -1,0 +1,86 @@
+{
+  "gate": "5B",
+  "model": "gpt2-small",
+  "task": "official MIB IOI",
+  "edge_count": 32491,
+  "ranking_steps": 5000,
+  "discovery_pool": 128,
+  "ranking_seeds": [
+    42,
+    43,
+    44
+  ],
+  "intervention_seed": 42,
+  "fractions": [
+    0.01,
+    0.02
+  ],
+  "train_prompts": 32,
+  "confirmation_prompts": 64,
+  "batch_size": 4,
+  "selection_seed": 5142,
+  "confirmation_seed": 5042,
+  "bootstrap_seed": 5242,
+  "bootstrap_replicates": 2000,
+  "candidates_per_cutoff": 48,
+  "pairs_per_cutoff_max": 120,
+  "candidate_rule": "24 retained: 8 highest, 8 nearest retained boundary, 8 largest signed-rank disagreement with saved EAP-IG; 24 excluded:12 nearest below requested cutoff,12 disagreement. Distinct endpoint/type round-robin for diversity. Select only individual toggles unchanged by official prune. Excluded disagreement pool limited to next4096 ranks. No prompt effects used.",
+  "pair_rule": "Each direction: up to15 same receiver,15 shared head/MLP,15 different components,15 unused random controls matched to first45 pairs by source/destination types and layers where possible. Joint prune must equal exact two-edge toggle. i<j, unique within cutoff/direction. Shortfalls reported, never expand beyond120.",
+  "confirmation_rule": "Per cutoff/direction: top3 absolute training interaction; plus1 largest joint addition gain (or deletion magnitude), excluding those3. At most16 primary pairs. For each primary select one previously screened random control in that cutoff/direction, minimizing source/destination type and layer mismatch (tie by pair_id), reusing identical controls. At most32 total. Ties by pair_id. Freeze IDs/hashes before loading confirmation data/effects.",
+  "cohort_rule": "Screen first32 exact Gate2 seed42 N128 rows. Confirm seeded shuffle of official filtered validation, excluding every small (<10000 rows) prior Gate2-5A validation manifest by index AND prompt, and all three discovery-pool prompts. Gate1 full validation is historical exposure, not independent of all research.",
+  "intervention": "official evaluate_graph patching, signed ranking topn prune=True for base; exact binary toggles only when subsequent official prune changes no additional edge; no new mask/patch implementation; original live closure used only as correctness oracle",
+  "cache": "Exact scores keyed by cohort fingerprint, protocol/source/ranking/mask hashes. CPU immutable donor-only activation matrix <=2GiB LRU, keyed by exact tokens, attention mask, source shape and model identity. Never cache clean/patched sources. Cache hits do not count as model forwards.",
+  "criteria": {
+    "substantial_absolute_margin": 0.1,
+    "substantial_relative_interaction": 0.2,
+    "reproducible_selected_fraction_min": 0.5,
+    "option_A_confirmed_pairs_min": 4,
+    "option_A_useful_additions_min": 2,
+    "useful_joint_margin_gain_min": 0.1,
+    "useful_addition": "positive held-out joint effect >=.1, interaction CI excludes0, signed interaction agrees with train, joint > max(single_i,single_j), accuracy gain positive and bootstrap95 lower>=0",
+    "option_B_component_spearman_gain_min": 0.1,
+    "option_B_null_percentile": 0.95,
+    "option_B_groupings_min": 2,
+    "option_B_interaction_concentration_ratio_min": 1.5,
+    "option_B_concentration": "same receiver/component mean absolute confirmed interaction >=1.5 times type/layer matched random controls, with prompt-bootstrap CI for the difference excluding0; insufficient controls means inconclusive, not success",
+    "uncertainty": "Shared prompt bootstrap indices across pairs; per-pair95% and familywise Bonferroni intervals. No bootstrap over correlated pair/threshold rows; no significance claims from3 training seeds.",
+    "direction_decision": "A only if reproducibility and >=4 substantial/sign-consistent confirmed pairs and >=2 useful excluded additions; B only if >=2 component groupings exceed edge Spearman by.1 and95th common-permutation null and within-component concentration criterion. Both allowed; otherwise neither. Exploratory evidence, never proof of algorithm improvement."
+  },
+  "stability_null": "200 common edge-label permutations across all3 seeds, preserving cross-seed edge covariance, overlapping group memberships and exact component sizes; compare normalized mean percentile rank. Also random size-matched edge membership controls.",
+  "budget": {
+    "unique_masks_max": 450,
+    "example_forwards_max": 30000,
+    "seconds_max": 14400,
+    "training_updates": 0
+  },
+  "no_retraining": true,
+  "no_new_algorithm": true,
+  "no_leaderboard": true,
+  "sources": {
+    "src/mattr_interactions/__init__.py": "0768550c39ce18d036c2996b6f43bc139a8aaf1457855a366726abc7bc646a42",
+    "src/mattr_interactions/campaign.py": "906dfa56896e815be305a64c05436a93fa5ff133167659f057970698e0e5633c",
+    "src/mattr_interactions/design.py": "60a1347d595f2be4cce2cb462a3d2d646d347f384288b5fd4c935047806eaf33",
+    "src/mattr_interactions/evaluation.py": "e1dc0fefab6402cef0086f2c7d5883a9a614f08066fa43255fcd37db6a8773cb",
+    "src/mattr_interactions/report.py": "74541beecbe6a60bda1cd93cdb0fe8de800c0f2b3a1ccc34f7df451690bd833a",
+    "src/mattr_interactions/stability.py": "d0c9b0d8b78c310e3e21c15965991ed9f6d6fcfb55ce7d5395bfdaf722bf3ca7",
+    "src/mattr_interactions/statistics.py": "1c333e211fa6b778731d4f0686b9cbf8f44cfb846941afd2f7bb417109d743cb",
+    "tests/test_mattr_interactions.py": "cdbe2e7172f110c8a0b6ac2e33933d6b06b52cd58b31e537bfd2fdb45739701a"
+  },
+  "ranking_inputs": {
+    "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/final_scores.pt": "d3c42d9022caff9c1adeb3eba70ee2b0c109c8c85c76f6308a69c029c7880d8b",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/final_scores.pt": "276d8e992c27fd43f7320adca4c6d2b60950f33429e397e9ea697fe9950de129",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/final_scores.pt": "51726a56a0d72e68d5abc3ec9adf9e22d3cc6f0dd8e6da2033ac9943f9f56130"
+  },
+  "eap_reference": {
+    "path": "results/mattr_optimization/20261022_gate4/attribution_seed42/eap_ig_scores.pt",
+    "sha256": "98c2df077bb0ba8b3308e3be86d9264693f31cb01e532242553bf4b631aa0305",
+    "orientation": "signed official EAP-IG, train-only128; observational reference"
+  },
+  "selection_artifacts": {
+    "edge_mapping.csv": "511ca9c07256f218debc7a2a053c47c624394c31a1d6b4d2704de70ea673a245",
+    "selected_candidates.csv": "90e0edb931fdcff152e9101abc5367811f68a59a888c324171edf68774949ef6",
+    "selected_pairs.csv": "ab27b90e14d4bca3d3b2ca18ea5b0671830d92614519de1fe54ecd93822245b8",
+    "base_0.01.npy": "4a81758d868c572aed141c344d661cf135fb57e0ebb98ea1937ad5f6e465e2d6",
+    "base_0.02.npy": "69b3213c51b1c60270d01bea8d2d3452e14a5bca86b69a63b261e655f6322416"
+  }
+}

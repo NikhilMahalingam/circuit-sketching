@@ -1,0 +1,10 @@
+mask,live_vs_official_max_error,examples,passed
+full,5.7220458984375e-06,2,True
+empty,1.239776611328125e-05,2,True
+base_0.01,3.0517578125e-05,2,True
+0.01_deletion_joint,2.765655517578125e-05,2,True
+0.01_addition_joint,3.24249267578125e-05,2,True
+base_0.02,6.103515625e-05,2,True
+0.02_deletion_joint,3.0517578125e-05,2,True
+0.02_addition_joint,4.57763671875e-05,2,True
+dependent_two_edge_path,1.239776611328125e-05,2,True

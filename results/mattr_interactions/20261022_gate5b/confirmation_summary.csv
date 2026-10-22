@@ -1,0 +1,5 @@
+fraction,direction,pairs,sign_consistency,reproduced_substantial,familywise_CI_nonzero,useful_additions,joint_accuracy_gain
+0.01,addition,4,1.0,0,3,0,0.0
+0.01,deletion,4,1.0,1,4,0,-0.0078125
+0.02,addition,4,1.0,0,2,0,0.0
+0.02,deletion,4,0.75,1,3,0,0.0

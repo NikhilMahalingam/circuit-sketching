@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "masks": 9,
+  "live_patcher": "pinned corrected eval_mib_edge.py",
+  "official_oracle": "eap.evaluate.evaluate_graph, normal prune enabled",
+  "dependent_multi_edge_checked": true,
+  "batch_single_max_error": 1.239776611328125e-05,
+  "training_updates": 0,
+  "model_backwards": 0
+}

@@ -1,0 +1,17 @@
+test_confirmation_bound_and_ties (test_mattr_interactions.DiagnosticsTests.test_confirmation_bound_and_ties) ... ok
+test_donor_cache_recomputes_live_clean_sources (test_mattr_interactions.DiagnosticsTests.test_donor_cache_recomputes_live_clean_sources) ... <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+/mnt/h/GenAI Research/sketch_prune/external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/utils.py:10: DeprecationWarning: The 'utils' module has been deprecated. Please use 'transformer_lens.utilities' instead. Importing from utils.py will be removed in TransformerLens 4.0.
+  from transformer_lens.utils import get_attention_mask
+ok
+test_exact_toggles_and_digest (test_mattr_interactions.DiagnosticsTests.test_exact_toggles_and_digest) ... ok
+test_interaction_algebra (test_mattr_interactions.DiagnosticsTests.test_interaction_algebra) ... ok
+test_no_algorithm_or_training_in_protocol (test_mattr_interactions.DiagnosticsTests.test_no_algorithm_or_training_in_protocol) ... ok
+test_official_cleanup_detects_collateral (test_mattr_interactions.DiagnosticsTests.test_official_cleanup_detects_collateral) ... ok
+test_prompt_bootstrap (test_mattr_interactions.DiagnosticsTests.test_prompt_bootstrap) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 8.656s
+
+OK
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

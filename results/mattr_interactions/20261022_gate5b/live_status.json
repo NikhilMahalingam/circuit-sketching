@@ -1,0 +1,13 @@
+{
+  "elapsed_seconds": 271.286450682,
+  "stage": "heldout_confirmation",
+  "forward_batches": 3448,
+  "example_forwards": 13608,
+  "backward_calls": 0,
+  "optimizer_updates": 0,
+  "cohort": "confirmation",
+  "pairs_completed": 29,
+  "pairs_total": 29,
+  "exact_cache_hits": 528,
+  "donor_cache_hits": 3338
+}

@@ -1,0 +1,8 @@
+stage,success,seconds,forward_batches,example_forwards,backward_calls,optimizer_updates,peak_allocated_mib,peak_reserved_mib,sampled_peak_cpu_rss_mib
+offline_ranking_stability,True,4.526161217999999,0,0,0,0,0.0,0.0,1088.7265625
+model_loading,True,15.563643412000005,0,0,0,0,635.51416015625,690.0,2975.65625
+training_cohort_loading,True,0.9314342179999926,0,0,0,0,635.51416015625,690.0,1189.4921875
+correctness_checks,True,7.916261945000002,80,136,0,0,842.17236328125,922.0,1779.18359375
+training_screen,True,163.547271794,2296,9184,0,0,951.2421875,1474.0,2117.5078125
+confirmation_cohort_loading,True,4.094092736999983,0,0,0,0,675.54150390625,1474.0,2127.79296875
+heldout_confirmation,True,74.36685814200001,1072,4288,0,0,965.31689453125,1690.0,2746.2890625

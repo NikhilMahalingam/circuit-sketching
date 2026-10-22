@@ -1,0 +1,4 @@
+seed,reference,signed_rank_spearman,top1pct_raw_ranking_jaccard
+42,saved official EAP-IG,0.08152062240040234,0.15302491103202848
+43,saved official EAP-IG,0.08164039646592638,0.19337016574585636
+44,saved official EAP-IG,0.07497034178458416,0.1717902350813743
