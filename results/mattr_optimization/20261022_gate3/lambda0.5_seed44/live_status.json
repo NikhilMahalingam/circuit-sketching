@@ -1,0 +1,9 @@
+{
+  "elapsed_seconds": 312.7503499300001,
+  "stage": null,
+  "forward_batches": 1296,
+  "example_forwards": 4200,
+  "backward_calls": 1000,
+  "optimizer_updates": 1000,
+  "success": true
+}

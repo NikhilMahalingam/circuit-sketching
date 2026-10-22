@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-22T02:47:00.281257+00:00",
+  "source_csv_sha256": {
+    "results/mattr_optimization/20261021T172035Z_gate2/sample_efficiency.csv": "1c82c44d509dc910e7a66d3d8034c8ebd255bfcf69e3444fd5ee9cb0c5e797ad",
+    "results/mattr_optimization/20261021T172035Z_gate2/quality_by_step.csv": "28fec173353715a7e7f707450fd7107aa07ab36e180dc6ae3c5911d700c6b227",
+    "results/mattr_optimization/20261021T172035Z_gate2/faithfulness_curves.csv": "bc80fd716e5926a7386c043c2018f4b8dcd66713df60c52b44d50a41f3f4057b",
+    "results/mattr_optimization/20261021T172035Z_gate2/training_example_usage.csv": "36bb29f9149fcfa6cfa1157cd235c09f8a89f9c091ccc78d93e6761e62b5ab43",
+    "results/mattr_optimization/20261021T172035Z_gate2/compute_accounting.csv": "bce8a33b8dc2f9f4db9c1a441602e913e6090158cc321d5fb38a987900eb5528",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/sample_efficiency.csv": "da2c0c47dd622b8854053da04d6e781f30e37a103a53229a0d0e54379c3ac74b",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/quality_by_step.csv": "25b672040b6c1394b96ebf7434b39d7089c245097359d215464bfdc433215e36",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/faithfulness_curves.csv": "e0a0a916c5920ef2b23db719a9540e6ef9cb42385d3dc088c48ea148ccef3837",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/training_example_usage.csv": "c420f62a7d95141d654001d9d797492156b68edaf8406b1a7e59b39beb9d9e85",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/compute_accounting.csv": "87de8e0980344cfcc79d11f014f1201fb09cf156f1887dc895e7824496bb54ba"
+  },
+  "criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "analysis_source_sha256": "d6d2bea1f030e4ac91495adaccd2a93397cd1bc1e7ee564af3ef64853e969920",
+  "gate3_executed": false
+}

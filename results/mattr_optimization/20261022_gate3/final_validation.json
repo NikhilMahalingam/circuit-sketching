@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "screen_jobs": 9,
+  "confirmation_jobs": 0,
+  "protected_files_unchanged": 1872,
+  "criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "protocol_sha256": "6ff6c0aed7cdfb8614bd16f022fcfbb8cdfb23d644691af8452a5dc4a9f9f808",
+  "totals": {
+    "forward_batches": 11664,
+    "example_forwards": 37800,
+    "optimizer_updates": 9000,
+    "backward_calls": 9000
+  },
+  "uniform_scores_bitwise_equal_to_gate2": true,
+  "all_example_draws_equal_to_gate2": true,
+  "one_torch_rng_draw_per_step_verified_against_gate2": true,
+  "sampler_transform_matches_logged_k": true,
+  "all_validation_cohorts_identical": true,
+  "inference_gradients_disabled": true,
+  "cpu_tests_passed": 6,
+  "additional_model_forwards_for_audit": 0,
+  "gate4_executed": false,
+  "leaderboard_submission": false
+}

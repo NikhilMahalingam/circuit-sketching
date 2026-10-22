@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "main_jobs": 12,
+  "conditional_controls": 4,
+  "frozen_vector_files": 300,
+  "protected_files_unchanged": 446,
+  "measured_validation_checkpoint_rows": 36,
+  "all_validation_cohorts_identical": true,
+  "train_validation_disjoint": true,
+  "nested_pools_verified": true,
+  "all_selected_rows_visited_by_step500": false,
+  "all_selected_rows_visited_by_step1000": true,
+  "study_totals_including_preexisting_seed42": {
+    "forward_batches": 92264,
+    "example_forwards": 279504,
+    "backward_calls": 80000,
+    "optimizer_updates": 80000
+  },
+  "additional_model_forwards_for_audit": 0,
+  "frozen_evaluation_gradients_disabled": true,
+  "criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "gate3_executed": false
+}

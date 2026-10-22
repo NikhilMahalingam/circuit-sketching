@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "sha256": {
+    "experiment_config.json": "6a2b5b21154470040234b85f7c858e29b6a1b4dc1a882d1dd697d0ec2f026ac7",
+    "final_scores_1000.pt": "99255d3b19bf9a72d3ad8622a5cee10820d2c09a588536b415190cdc55ec6ce5",
+    "ranking_1000.csv": "38b58395957793af8d8b86ec142ba149d6be1ee6e610243e92c6e42847b6af74",
+    "quality_1000.json": "49aff36f0bdebdcd6fc3ff03a4d2949e98d714661da5f6171c0e83bb9f00e902",
+    "train_manifest.csv": "a54515beeae8de69a4d9a06883b8092993267fcc9038fa26683c5a1cd40b392e",
+    "validation_manifest.csv": "18921021f9a486e2dab0401b0170421f3512847351841d7e80efc354c620dda3",
+    "training_metrics_1000.csv": "9439139c87f6045e3efde3159c364ace1d03e40ff30ace7f3d020c3c5be98d91"
+  }
+}

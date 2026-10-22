@@ -1,0 +1,248 @@
+2026-10-21 20:25:42,735 INFO official_edge_gate2: Loading gpt2-small...
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights:  64%|██████▍   | 95/148 [00:00<00:00, 938.42it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1217.55it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+2026-10-21 20:25:47,610 INFO official_edge_gate2: Graph: 158 nodes, 32491 edges (32491 real)
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-21 20:25:47,623 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-21 20:25:47,657 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+Gate 2: seed=44, pool=128, train=128
+2026-10-21 20:25:48,233 INFO official_edge_gate2: Loaded 128 examples
+2026-10-21 20:25:48,233 INFO official_edge_gate2: Edge scores: 32491 parameters
+2026-10-21 20:25:48,233 INFO official_edge_gate2: Training for 5000 steps (mode=iso, k_schedule=uniform, live activations)...
+2026-10-21 20:25:48,730 INFO official_edge_gate2: Pre-tokenized 128 examples in 0.5s
+seed=44, N=128: 1/5000; forwards=2
+2026-10-21 20:25:49,992 INFO official_edge_gate2: Step    1/5000  loss=2.9819  |grad|=3.611  |s|max=0.05  k=23380/32491  (0.8 step/s)
+2026-10-21 20:26:06,460 INFO official_edge_gate2: Step   50/5000  loss=-62.0583  |grad|=3.854  |s|max=2.097  k=23466/32491  (2.8 step/s)
+seed=44, N=128: 100/5000; forwards=165
+2026-10-21 20:27:21,873 INFO official_edge_gate2: Step  100/5000  loss=-72.0483  |grad|=4.158  |s|max=3.202  k=11579/32491  (1.1 step/s)
+2026-10-21 20:26:36,190 INFO official_edge_gate2: Step  150/5000  loss=-89.7896  |grad|=1.375  |s|max=4.089  k=26485/32491  (3.2 step/s)
+seed=44, N=128: 200/5000; forwards=297
+2026-10-21 20:26:51,092 INFO official_edge_gate2: Step  200/5000  loss=-82.3621  |grad|=1.439  |s|max=4.588  k=14964/32491  (3.2 step/s)
+2026-10-21 20:27:05,009 INFO official_edge_gate2: Step  250/5000  loss=-27.3907  |grad|=3.809  |s|max=4.799  k=31687/32491  (3.3 step/s)
+seed=44, N=128: 300/5000; forwards=410
+2026-10-21 20:27:20,278 INFO official_edge_gate2: Step  300/5000  loss=-70.5578  |grad|=1.608  |s|max=5.043  k=25274/32491  (3.3 step/s)
+2026-10-21 20:27:35,509 INFO official_edge_gate2: Step  350/5000  loss=-72.5658  |grad|=2.079  |s|max=5.278  k=1789/32491  (3.3 step/s)
+seed=44, N=128: 400/5000; forwards=519
+2026-10-21 20:28:50,053 INFO official_edge_gate2: Step  400/5000  loss=-70.6231  |grad|=1.699  |s|max=5.404  k=12854/32491  (2.2 step/s)
+2026-10-21 20:28:02,011 INFO official_edge_gate2: Step  450/5000  loss=-84.0531  |grad|=1.32  |s|max=5.556  k=3057/32491  (3.4 step/s)
+seed=44, N=128: 500/5000; forwards=626
+2026-10-21 20:28:16,367 INFO official_edge_gate2: Step  500/5000  loss=-75.4214  |grad|=2.486  |s|max=5.66  k=29822/32491  (3.4 step/s)
+2026-10-21 20:28:31,548 INFO official_edge_gate2: Step  550/5000  loss=-80.0613  |grad|=1.891  |s|max=5.797  k=29012/32491  (3.4 step/s)
+seed=44, N=128: 600/5000; forwards=727
+2026-10-21 20:28:47,011 INFO official_edge_gate2: Step  600/5000  loss=-86.3867  |grad|=1.498  |s|max=5.835  k=28483/32491  (3.4 step/s)
+2026-10-21 20:29:02,715 INFO official_edge_gate2: Step  650/5000  loss=-79.7141  |grad|=1.51  |s|max=6.266  k=27380/32491  (3.4 step/s)
+seed=44, N=128: 700/5000; forwards=827
+2026-10-21 20:30:19,386 INFO official_edge_gate2: Step  700/5000  loss=-67.2484  |grad|=1.911  |s|max=6.396  k=27100/32491  (2.6 step/s)
+2026-10-21 20:29:31,992 INFO official_edge_gate2: Step  750/5000  loss=-85.4223  |grad|=1.518  |s|max=6.421  k=18434/32491  (3.4 step/s)
+seed=44, N=128: 800/5000; forwards=928
+2026-10-21 20:30:47,700 INFO official_edge_gate2: Step  800/5000  loss=-83.7317  |grad|=1.506  |s|max=6.545  k=22984/32491  (2.7 step/s)
+2026-10-21 20:29:59,476 INFO official_edge_gate2: Step  850/5000  loss=-94.6862  |grad|=1.665  |s|max=6.58  k=18163/32491  (3.4 step/s)
+seed=44, N=128: 900/5000; forwards=1028
+2026-10-21 20:31:15,695 INFO official_edge_gate2: Step  900/5000  loss=-77.3835  |grad|=1.245  |s|max=6.679  k=18851/32491  (2.8 step/s)
+2026-10-21 20:30:26,263 INFO official_edge_gate2: Step  950/5000  loss=-97.3425  |grad|=1.21  |s|max=6.799  k=19370/32491  (3.4 step/s)
+seed=44, N=128: 1000/5000; forwards=1128
+2026-10-21 20:30:40,443 INFO official_edge_gate2: Step 1000/5000  loss=-63.0510  |grad|=2.548  |s|max=6.797  k=2264/32491  (3.4 step/s)
+2026-10-21 20:30:56,555 INFO official_edge_gate2: Step 1050/5000  loss=-68.4547  |grad|=2.724  |s|max=6.887  k=31098/32491  (3.4 step/s)
+seed=44, N=128: 1100/5000; forwards=1228
+2026-10-21 20:31:11,063 INFO official_edge_gate2: Step 1100/5000  loss=-77.9549  |grad|=1.176  |s|max=6.894  k=9186/32491  (3.4 step/s)
+2026-10-21 20:31:25,401 INFO official_edge_gate2: Step 1150/5000  loss=-95.7701  |grad|=1.117  |s|max=6.983  k=9593/32491  (3.4 step/s)
+seed=44, N=128: 1200/5000; forwards=1328
+2026-10-21 20:31:38,990 INFO official_edge_gate2: Step 1200/5000  loss=-85.6638  |grad|=1.937  |s|max=7.029  k=30320/32491  (3.4 step/s)
+2026-10-21 20:31:52,458 INFO official_edge_gate2: Step 1250/5000  loss=-89.6319  |grad|=1.214  |s|max=7.096  k=16512/32491  (3.4 step/s)
+seed=44, N=128: 1300/5000; forwards=1428
+2026-10-21 20:32:07,887 INFO official_edge_gate2: Step 1300/5000  loss=-90.1250  |grad|=0.9972  |s|max=7.185  k=9982/32491  (3.4 step/s)
+2026-10-21 20:32:23,037 INFO official_edge_gate2: Step 1350/5000  loss=-69.9120  |grad|=1.025  |s|max=7.24  k=5749/32491  (3.4 step/s)
+seed=44, N=128: 1400/5000; forwards=1528
+2026-10-21 20:32:37,370 INFO official_edge_gate2: Step 1400/5000  loss=-93.0984  |grad|=1.301  |s|max=7.272  k=26619/32491  (3.4 step/s)
+2026-10-21 20:32:50,784 INFO official_edge_gate2: Step 1450/5000  loss=-79.2334  |grad|=1.009  |s|max=7.312  k=17256/32491  (3.4 step/s)
+seed=44, N=128: 1500/5000; forwards=1628
+2026-10-21 20:33:04,709 INFO official_edge_gate2: Step 1500/5000  loss=-70.2175  |grad|=3.289  |s|max=7.351  k=31580/32491  (3.4 step/s)
+2026-10-21 20:33:19,399 INFO official_edge_gate2: Step 1550/5000  loss=-69.4157  |grad|=1.359  |s|max=7.681  k=2824/32491  (3.4 step/s)
+seed=44, N=128: 1600/5000; forwards=1728
+2026-10-21 20:33:33,042 INFO official_edge_gate2: Step 1600/5000  loss=-88.8813  |grad|=1.152  |s|max=8.232  k=18455/32491  (3.4 step/s)
+2026-10-21 20:33:48,201 INFO official_edge_gate2: Step 1650/5000  loss=-78.4740  |grad|=1.439  |s|max=8.237  k=3056/32491  (3.4 step/s)
+seed=44, N=128: 1700/5000; forwards=1828
+2026-10-21 20:34:02,730 INFO official_edge_gate2: Step 1700/5000  loss=-76.9692  |grad|=1.336  |s|max=8.237  k=7357/32491  (3.4 step/s)
+2026-10-21 20:34:17,007 INFO official_edge_gate2: Step 1750/5000  loss=-94.5070  |grad|=0.9467  |s|max=8.237  k=23464/32491  (3.4 step/s)
+seed=44, N=128: 1800/5000; forwards=1928
+2026-10-21 20:34:31,396 INFO official_edge_gate2: Step 1800/5000  loss=-88.4235  |grad|=1.933  |s|max=8.247  k=18075/32491  (3.4 step/s)
+2026-10-21 20:34:44,280 INFO official_edge_gate2: Step 1850/5000  loss=-96.9009  |grad|=1.336  |s|max=8.323  k=7506/32491  (3.5 step/s)
+seed=44, N=128: 1900/5000; forwards=2028
+2026-10-21 20:34:56,425 INFO official_edge_gate2: Step 1900/5000  loss=-105.9467  |grad|=1.171  |s|max=8.382  k=15814/32491  (3.5 step/s)
+2026-10-21 20:35:14,075 INFO official_edge_gate2: Step 1950/5000  loss=-70.5441  |grad|=1.747  |s|max=8.419  k=1807/32491  (3.4 step/s)
+seed=44, N=128: 2000/5000; forwards=2128
+2026-10-21 20:36:29,229 INFO official_edge_gate2: Step 2000/5000  loss=-94.8818  |grad|=1.479  |s|max=8.572  k=27019/32491  (3.1 step/s)
+2026-10-21 20:35:41,314 INFO official_edge_gate2: Step 2050/5000  loss=-91.8070  |grad|=1.712  |s|max=8.648  k=25215/32491  (3.5 step/s)
+seed=44, N=128: 2100/5000; forwards=2228
+2026-10-21 20:35:55,320 INFO official_edge_gate2: Step 2100/5000  loss=-97.9324  |grad|=1.062  |s|max=8.68  k=12871/32491  (3.5 step/s)
+2026-10-21 20:36:10,255 INFO official_edge_gate2: Step 2150/5000  loss=-85.2235  |grad|=1.653  |s|max=8.689  k=2096/32491  (3.5 step/s)
+seed=44, N=128: 2200/5000; forwards=2328
+2026-10-21 20:36:25,814 INFO official_edge_gate2: Step 2200/5000  loss=-83.7359  |grad|=0.953  |s|max=8.689  k=23608/32491  (3.5 step/s)
+2026-10-21 20:36:39,366 INFO official_edge_gate2: Step 2250/5000  loss=-98.7575  |grad|=1.422  |s|max=8.769  k=14047/32491  (3.5 step/s)
+seed=44, N=128: 2300/5000; forwards=2428
+2026-10-21 20:36:54,129 INFO official_edge_gate2: Step 2300/5000  loss=-91.3008  |grad|=1.357  |s|max=9.168  k=9174/32491  (3.5 step/s)
+2026-10-21 20:37:07,488 INFO official_edge_gate2: Step 2350/5000  loss=-95.7927  |grad|=1.952  |s|max=9.174  k=27487/32491  (3.5 step/s)
+seed=44, N=128: 2400/5000; forwards=2528
+2026-10-21 20:37:22,046 INFO official_edge_gate2: Step 2400/5000  loss=-70.9524  |grad|=1.314  |s|max=9.174  k=30549/32491  (3.5 step/s)
+2026-10-21 20:37:36,309 INFO official_edge_gate2: Step 2450/5000  loss=-82.1385  |grad|=1.705  |s|max=9.177  k=4409/32491  (3.5 step/s)
+seed=44, N=128: 2500/5000; forwards=2628
+2026-10-21 20:38:51,264 INFO official_edge_gate2: Step 2500/5000  loss=-97.7328  |grad|=1.143  |s|max=9.177  k=17680/32491  (3.2 step/s)
+2026-10-21 20:38:02,706 INFO official_edge_gate2: Step 2550/5000  loss=-86.4747  |grad|=1.017  |s|max=9.177  k=3375/32491  (3.5 step/s)
+seed=44, N=128: 2600/5000; forwards=2728
+2026-10-21 20:38:17,182 INFO official_edge_gate2: Step 2600/5000  loss=-89.3633  |grad|=1.042  |s|max=9.176  k=10656/32491  (3.5 step/s)
+2026-10-21 20:38:32,270 INFO official_edge_gate2: Step 2650/5000  loss=-95.0399  |grad|=1.182  |s|max=9.177  k=16576/32491  (3.5 step/s)
+seed=44, N=128: 2700/5000; forwards=2828
+2026-10-21 20:38:47,631 INFO official_edge_gate2: Step 2700/5000  loss=-92.6446  |grad|=1.132  |s|max=9.177  k=19630/32491  (3.5 step/s)
+2026-10-21 20:39:01,595 INFO official_edge_gate2: Step 2750/5000  loss=-100.1474  |grad|=1.202  |s|max=9.195  k=6920/32491  (3.5 step/s)
+seed=44, N=128: 2800/5000; forwards=2928
+2026-10-21 20:40:17,411 INFO official_edge_gate2: Step 2800/5000  loss=-3.6315  |grad|=0.3144  |s|max=9.195  k=108/32491  (3.2 step/s)
+2026-10-21 20:39:28,534 INFO official_edge_gate2: Step 2850/5000  loss=-78.5111  |grad|=0.9923  |s|max=9.527  k=8493/32491  (3.5 step/s)
+seed=44, N=128: 2900/5000; forwards=3028
+2026-10-21 20:39:42,908 INFO official_edge_gate2: Step 2900/5000  loss=-101.6938  |grad|=1.071  |s|max=9.531  k=22599/32491  (3.5 step/s)
+2026-10-21 20:39:58,451 INFO official_edge_gate2: Step 2950/5000  loss=-91.3919  |grad|=1.345  |s|max=9.816  k=13036/32491  (3.5 step/s)
+seed=44, N=128: 3000/5000; forwards=3128
+2026-10-21 20:41:14,288 INFO official_edge_gate2: Step 3000/5000  loss=-95.5878  |grad|=1.138  |s|max=9.887  k=19851/32491  (3.2 step/s)
+2026-10-21 20:40:27,078 INFO official_edge_gate2: Step 3050/5000  loss=-87.2798  |grad|=0.9251  |s|max=9.89  k=19648/32491  (3.5 step/s)
+seed=44, N=128: 3100/5000; forwards=3228
+2026-10-21 20:40:40,766 INFO official_edge_gate2: Step 3100/5000  loss=-97.8697  |grad|=1.154  |s|max=9.89  k=8679/32491  (3.5 step/s)
+2026-10-21 20:40:56,472 INFO official_edge_gate2: Step 3150/5000  loss=-60.8709  |grad|=2.959  |s|max=9.89  k=31519/32491  (3.5 step/s)
+seed=44, N=128: 3200/5000; forwards=3328
+2026-10-21 20:41:11,126 INFO official_edge_gate2: Step 3200/5000  loss=-84.9777  |grad|=1.017  |s|max=9.891  k=27083/32491  (3.5 step/s)
+2026-10-21 20:41:24,881 INFO official_edge_gate2: Step 3250/5000  loss=-76.1894  |grad|=1.147  |s|max=9.891  k=29174/32491  (3.5 step/s)
+seed=44, N=128: 3300/5000; forwards=3428
+2026-10-21 20:41:38,300 INFO official_edge_gate2: Step 3300/5000  loss=-105.8802  |grad|=1.076  |s|max=9.976  k=21252/32491  (3.5 step/s)
+2026-10-21 20:42:52,437 INFO official_edge_gate2: Step 3350/5000  loss=-93.3299  |grad|=1.336  |s|max=10.12  k=9782/32491  (3.3 step/s)
+seed=44, N=128: 3400/5000; forwards=3528
+2026-10-21 20:42:05,536 INFO official_edge_gate2: Step 3400/5000  loss=-67.8298  |grad|=1.119  |s|max=10.3  k=4529/32491  (3.5 step/s)
+2026-10-21 20:42:20,343 INFO official_edge_gate2: Step 3450/5000  loss=-86.5486  |grad|=1.007  |s|max=10.31  k=26558/32491  (3.5 step/s)
+seed=44, N=128: 3500/5000; forwards=3628
+2026-10-21 20:42:34,708 INFO official_edge_gate2: Step 3500/5000  loss=-95.4849  |grad|=1.486  |s|max=10.38  k=26157/32491  (3.5 step/s)
+2026-10-21 20:43:52,501 INFO official_edge_gate2: Step 3550/5000  loss=-88.6745  |grad|=1.041  |s|max=10.39  k=13599/32491  (3.3 step/s)
+seed=44, N=128: 3600/5000; forwards=3728
+2026-10-21 20:44:06,263 INFO official_edge_gate2: Step 3600/5000  loss=-89.8385  |grad|=1.225  |s|max=10.43  k=13175/32491  (3.3 step/s)
+2026-10-21 20:43:19,498 INFO official_edge_gate2: Step 3650/5000  loss=-102.8924  |grad|=0.8133  |s|max=10.43  k=20086/32491  (3.5 step/s)
+seed=44, N=128: 3700/5000; forwards=3828
+2026-10-21 20:43:31,967 INFO official_edge_gate2: Step 3700/5000  loss=-108.7074  |grad|=0.9876  |s|max=10.74  k=15265/32491  (3.5 step/s)
+2026-10-21 20:43:48,113 INFO official_edge_gate2: Step 3750/5000  loss=-83.5173  |grad|=1.805  |s|max=10.75  k=30912/32491  (3.5 step/s)
+seed=44, N=128: 3800/5000; forwards=3928
+2026-10-21 20:44:02,667 INFO official_edge_gate2: Step 3800/5000  loss=-87.9707  |grad|=1.618  |s|max=10.78  k=26869/32491  (3.5 step/s)
+2026-10-21 20:44:15,416 INFO official_edge_gate2: Step 3850/5000  loss=-106.6574  |grad|=1.431  |s|max=10.88  k=17879/32491  (3.5 step/s)
+seed=44, N=128: 3900/5000; forwards=4028
+2026-10-21 20:44:28,872 INFO official_edge_gate2: Step 3900/5000  loss=-105.4453  |grad|=1.142  |s|max=11.01  k=7616/32491  (3.5 step/s)
+2026-10-21 20:44:42,895 INFO official_edge_gate2: Step 3950/5000  loss=-101.5972  |grad|=1.077  |s|max=11.03  k=8887/32491  (3.5 step/s)
+seed=44, N=128: 4000/5000; forwards=4128
+2026-10-21 20:44:57,413 INFO official_edge_gate2: Step 4000/5000  loss=-87.6609  |grad|=1.378  |s|max=11.36  k=4485/32491  (3.5 step/s)
+2026-10-21 20:45:11,288 INFO official_edge_gate2: Step 4050/5000  loss=-112.2990  |grad|=1.062  |s|max=11.39  k=11942/32491  (3.5 step/s)
+seed=44, N=128: 4100/5000; forwards=4228
+2026-10-21 20:45:26,839 INFO official_edge_gate2: Step 4100/5000  loss=-68.8370  |grad|=1.51  |s|max=11.39  k=31345/32491  (3.5 step/s)
+2026-10-21 20:45:39,896 INFO official_edge_gate2: Step 4150/5000  loss=-87.1732  |grad|=1.422  |s|max=11.46  k=30335/32491  (3.5 step/s)
+seed=44, N=128: 4200/5000; forwards=4328
+2026-10-21 20:45:54,830 INFO official_edge_gate2: Step 4200/5000  loss=-102.5481  |grad|=1.091  |s|max=11.47  k=10275/32491  (3.5 step/s)
+2026-10-21 20:46:07,997 INFO official_edge_gate2: Step 4250/5000  loss=-96.7019  |grad|=1.431  |s|max=11.47  k=12171/32491  (3.5 step/s)
+seed=44, N=128: 4300/5000; forwards=4428
+2026-10-21 20:47:22,626 INFO official_edge_gate2: Step 4300/5000  loss=-94.6305  |grad|=1.217  |s|max=11.47  k=24362/32491  (3.3 step/s)
+2026-10-21 20:46:37,014 INFO official_edge_gate2: Step 4350/5000  loss=-78.0429  |grad|=0.7837  |s|max=12.18  k=5596/32491  (3.5 step/s)
+seed=44, N=128: 4400/5000; forwards=4528
+2026-10-21 20:46:50,424 INFO official_edge_gate2: Step 4400/5000  loss=-105.3101  |grad|=0.9955  |s|max=12.23  k=20642/32491  (3.5 step/s)
+2026-10-21 20:47:07,068 INFO official_edge_gate2: Step 4450/5000  loss=-105.2225  |grad|=0.9783  |s|max=12.23  k=10153/32491  (3.5 step/s)
+seed=44, N=128: 4500/5000; forwards=4628
+2026-10-21 20:47:20,026 INFO official_edge_gate2: Step 4500/5000  loss=-80.1277  |grad|=1.294  |s|max=12.23  k=15868/32491  (3.5 step/s)
+2026-10-21 20:47:33,191 INFO official_edge_gate2: Step 4550/5000  loss=-86.3043  |grad|=1.206  |s|max=12.23  k=22501/32491  (3.5 step/s)
+seed=44, N=128: 4600/5000; forwards=4728
+2026-10-21 20:47:48,285 INFO official_edge_gate2: Step 4600/5000  loss=-106.7005  |grad|=1.508  |s|max=12.23  k=26420/32491  (3.5 step/s)
+2026-10-21 20:48:02,424 INFO official_edge_gate2: Step 4650/5000  loss=-89.0296  |grad|=0.8315  |s|max=12.23  k=20580/32491  (3.5 step/s)
+seed=44, N=128: 4700/5000; forwards=4828
+2026-10-21 20:48:16,557 INFO official_edge_gate2: Step 4700/5000  loss=-96.1928  |grad|=1.168  |s|max=12.23  k=24463/32491  (3.5 step/s)
+2026-10-21 20:48:31,525 INFO official_edge_gate2: Step 4750/5000  loss=-84.6046  |grad|=0.9397  |s|max=12.23  k=13657/32491  (3.5 step/s)
+seed=44, N=128: 4800/5000; forwards=4928
+2026-10-21 20:48:46,553 INFO official_edge_gate2: Step 4800/5000  loss=-88.1101  |grad|=1.238  |s|max=12.29  k=2314/32491  (3.5 step/s)
+2026-10-21 20:49:00,549 INFO official_edge_gate2: Step 4850/5000  loss=-99.6029  |grad|=1.112  |s|max=12.33  k=6750/32491  (3.5 step/s)
+seed=44, N=128: 4900/5000; forwards=5028
+2026-10-21 20:49:15,018 INFO official_edge_gate2: Step 4900/5000  loss=-45.2696  |grad|=2.433  |s|max=12.52  k=32231/32491  (3.5 step/s)
+2026-10-21 20:49:29,118 INFO official_edge_gate2: Step 4950/5000  loss=-69.0464  |grad|=1.158  |s|max=12.53  k=2022/32491  (3.5 step/s)
+seed=44, N=128: 5000/5000; forwards=5128
+2026-10-21 20:49:42,627 INFO official_edge_gate2: Step 5000/5000  loss=-85.8110  |grad|=1.539  |s|max=12.53  k=13801/32491  (3.5 step/s)
+2026-10-21 20:49:42,695 INFO official_edge_gate2: Training complete in 1433.9s (corrupted-acts cache: 128/5000 forwards paid, 128 cached, 1.06 GB)
+2026-10-21 20:49:42,695 INFO official_edge_gate2: Running MIB evaluation (edge level)...
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-21 20:49:42,701 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-21 20:49:42,710 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+Gate 2: seed=44, pool=128, validation=128
+
+  0%|          | 0/7 [00:00<?, ?it/s]
+ 14%|█▍        | 1/7 [00:00<00:02,  2.51it/s]
+ 29%|██▊       | 2/7 [00:00<00:01,  2.75it/s]
+ 43%|████▎     | 3/7 [00:01<00:01,  3.10it/s]
+ 57%|█████▋    | 4/7 [00:01<00:00,  3.18it/s]
+ 71%|███████▏  | 5/7 [00:01<00:00,  3.18it/s]
+ 86%|████████▌ | 6/7 [00:01<00:00,  3.20it/s]
+100%|██████████| 7/7 [00:02<00:00,  3.98it/s]
+100%|██████████| 7/7 [00:02<00:00,  3.39it/s]
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+
+  0%|          | 0/7 [00:00<?, ?it/s]
+ 14%|█▍        | 1/7 [00:00<00:01,  3.23it/s]
+ 29%|██▊       | 2/7 [00:00<00:01,  3.25it/s]
+ 43%|████▎     | 3/7 [00:00<00:01,  3.27it/s]
+ 57%|█████▋    | 4/7 [00:01<00:01,  2.82it/s]
+ 71%|███████▏  | 5/7 [00:01<00:00,  3.06it/s]
+ 86%|████████▌ | 6/7 [00:01<00:00,  3.17it/s]
+100%|██████████| 7/7 [00:02<00:00,  3.85it/s]
+100%|██████████| 7/7 [00:02<00:00,  3.39it/s]
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+2026-10-21 20:51:26,438 INFO official_edge_gate2: MIB Results (edge level, live activations):
+2026-10-21 20:51:26,438 INFO official_edge_gate2:     0.1% -> CPR=0.2098
+2026-10-21 20:51:26,438 INFO official_edge_gate2:     0.2% -> CPR=0.5059
+2026-10-21 20:51:26,438 INFO official_edge_gate2:     0.5% -> CPR=1.9251
+2026-10-21 20:51:26,438 INFO official_edge_gate2:     1.0% -> CPR=4.9934
+2026-10-21 20:51:26,438 INFO official_edge_gate2:     2.0% -> CPR=10.4694
+2026-10-21 20:51:26,438 INFO official_edge_gate2:     5.0% -> CPR=12.8653
+2026-10-21 20:51:26,438 INFO official_edge_gate2:    10.0% -> CPR=13.4926
+2026-10-21 20:51:26,438 INFO official_edge_gate2:    20.0% -> CPR=13.6313
+2026-10-21 20:51:26,438 INFO official_edge_gate2:    50.0% -> CPR=13.7713
+2026-10-21 20:51:26,438 INFO official_edge_gate2:   100.0% -> CPR=1.0000
+2026-10-21 20:51:26,438 INFO official_edge_gate2:   CPR AUC=10.2670  Avg CPR=7.2864
+2026-10-21 20:51:26,448 INFO official_edge_gate2: Saved results to /mnt/h/GenAI Research/sketch_prune/results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/upstream

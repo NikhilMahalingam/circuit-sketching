@@ -1,0 +1,89 @@
+2026-10-22 08:38:11,124 INFO official_edge_gate3: Loading gpt2-small...
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights:  10%|█         | 15/148 [00:00<00:01, 123.30it/s]
+Loading weights:  24%|██▎       | 35/148 [00:00<00:00, 164.47it/s]
+Loading weights:  35%|███▌      | 52/148 [00:00<00:00, 165.96it/s]
+Loading weights:  57%|█████▋    | 84/148 [00:00<00:00, 223.18it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 284.00it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+2026-10-22 08:38:26,294 INFO official_edge_gate3: Graph: 158 nodes, 32491 edges (32491 real)
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-22 08:38:26,310 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 08:38:26,370 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 08:38:27,115 INFO official_edge_gate3: Loaded 128 examples
+2026-10-22 08:38:27,116 INFO official_edge_gate3: Edge scores: 32491 parameters
+2026-10-22 08:38:27,116 INFO official_edge_gate3: Training for 1000 steps (mode=iso, k_schedule=uniform, live activations)...
+2026-10-22 08:38:27,531 INFO official_edge_gate3: Pre-tokenized 128 examples in 0.4s
+lambda=1.0, seed=42: 1/1000
+2026-10-22 08:38:28,755 INFO official_edge_gate3: Step    1/1000  loss=-0.7882  |grad|=2.8  |s|max=0.05  k=28666/32491  (0.8 step/s)
+2026-10-22 08:38:44,690 INFO official_edge_gate3: Step   50/1000  loss=-37.0003  |grad|=5.8  |s|max=2.219  k=6345/32491  (2.9 step/s)
+lambda=1.0, seed=42: 100/1000
+2026-10-22 08:38:59,071 INFO official_edge_gate3: Step  100/1000  loss=2.3082  |grad|=0.1005  |s|max=3.586  k=527/32491  (3.2 step/s)
+2026-10-22 08:39:13,601 INFO official_edge_gate3: Step  150/1000  loss=-68.3506  |grad|=1.268  |s|max=4.297  k=3365/32491  (3.3 step/s)
+lambda=1.0, seed=42: 200/1000
+2026-10-22 08:39:26,587 INFO official_edge_gate3: Step  200/1000  loss=-82.3577  |grad|=1.336  |s|max=4.848  k=20798/32491  (3.4 step/s)
+2026-10-22 08:39:39,436 INFO official_edge_gate3: Step  250/1000  loss=-72.1902  |grad|=2.253  |s|max=5.115  k=26275/32491  (3.5 step/s)
+lambda=1.0, seed=42: 300/1000
+2026-10-22 08:39:54,403 INFO official_edge_gate3: Step  300/1000  loss=-96.2620  |grad|=1.294  |s|max=5.316  k=10990/32491  (3.5 step/s)
+2026-10-22 08:40:09,160 INFO official_edge_gate3: Step  350/1000  loss=-74.9707  |grad|=1.608  |s|max=5.613  k=20184/32491  (3.4 step/s)
+lambda=1.0, seed=42: 400/1000
+2026-10-22 08:40:23,206 INFO official_edge_gate3: Step  400/1000  loss=-65.7319  |grad|=1.15  |s|max=5.96  k=8745/32491  (3.5 step/s)
+2026-10-22 08:40:36,548 INFO official_edge_gate3: Step  450/1000  loss=-78.4232  |grad|=1.936  |s|max=6.031  k=3842/32491  (3.5 step/s)
+lambda=1.0, seed=42: 500/1000
+2026-10-22 08:41:52,336 INFO official_edge_gate3: Step  500/1000  loss=-81.4120  |grad|=1.404  |s|max=6.27  k=9379/32491  (2.4 step/s)
+2026-10-22 08:41:05,433 INFO official_edge_gate3: Step  550/1000  loss=-82.9881  |grad|=1.106  |s|max=6.486  k=10636/32491  (3.5 step/s)
+lambda=1.0, seed=42: 600/1000
+2026-10-22 08:41:18,997 INFO official_edge_gate3: Step  600/1000  loss=-80.1996  |grad|=1.685  |s|max=6.557  k=18127/32491  (3.5 step/s)
+2026-10-22 08:41:32,688 INFO official_edge_gate3: Step  650/1000  loss=-80.4847  |grad|=1.03  |s|max=6.715  k=8911/32491  (3.5 step/s)
+lambda=1.0, seed=42: 700/1000
+2026-10-22 08:41:46,300 INFO official_edge_gate3: Step  700/1000  loss=-19.2707  |grad|=1.982  |s|max=6.671  k=31181/32491  (3.5 step/s)
+2026-10-22 08:41:58,826 INFO official_edge_gate3: Step  750/1000  loss=-81.8619  |grad|=1.26  |s|max=6.751  k=28105/32491  (3.5 step/s)
+lambda=1.0, seed=42: 800/1000
+2026-10-22 08:42:11,214 INFO official_edge_gate3: Step  800/1000  loss=-23.6244  |grad|=1.933  |s|max=6.963  k=32116/32491  (3.6 step/s)
+2026-10-22 08:42:23,901 INFO official_edge_gate3: Step  850/1000  loss=-74.1281  |grad|=2.367  |s|max=7.046  k=31139/32491  (3.6 step/s)
+lambda=1.0, seed=42: 900/1000
+2026-10-22 08:42:36,207 INFO official_edge_gate3: Step  900/1000  loss=-82.6042  |grad|=1.057  |s|max=7.1  k=9967/32491  (3.6 step/s)
+2026-10-22 08:42:48,844 INFO official_edge_gate3: Step  950/1000  loss=-87.5653  |grad|=1.117  |s|max=7.258  k=23026/32491  (3.6 step/s)
+lambda=1.0, seed=42: 1000/1000
+2026-10-22 08:43:02,487 INFO official_edge_gate3: Step 1000/1000  loss=-62.4334  |grad|=2.249  |s|max=7.252  k=965/32491  (3.6 step/s)
+2026-10-22 08:43:02,568 INFO official_edge_gate3: Training complete in 274.9s (corrupted-acts cache: 128/1000 forwards paid, 128 cached, 1.07 GB)
+2026-10-22 08:43:02,569 INFO official_edge_gate3: Running MIB evaluation (edge level)...
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-22 08:43:02,579 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 08:43:02,588 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+
+  0%|          | 0/7 [00:00<?, ?it/s]
+ 14%|█▍        | 1/7 [00:00<00:02,  2.63it/s]
+ 29%|██▊       | 2/7 [00:00<00:01,  2.79it/s]
+ 43%|████▎     | 3/7 [00:00<00:01,  3.13it/s]
+ 57%|█████▋    | 4/7 [00:01<00:00,  3.21it/s]
+ 71%|███████▏  | 5/7 [00:01<00:00,  3.22it/s]
+ 86%|████████▌ | 6/7 [00:01<00:00,  3.23it/s]
+100%|██████████| 7/7 [00:02<00:00,  4.02it/s]
+100%|██████████| 7/7 [00:02<00:00,  3.44it/s]
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+2026-10-22 08:43:31,348 INFO official_edge_gate3: MIB Results (edge level, live activations):
+2026-10-22 08:43:31,348 INFO official_edge_gate3:     0.1% -> CPR=0.0009
+2026-10-22 08:43:31,348 INFO official_edge_gate3:     0.2% -> CPR=0.0009
+2026-10-22 08:43:31,348 INFO official_edge_gate3:     0.5% -> CPR=0.0083
+2026-10-22 08:43:31,348 INFO official_edge_gate3:     1.0% -> CPR=0.2060
+2026-10-22 08:43:31,348 INFO official_edge_gate3:     2.0% -> CPR=7.7219
+2026-10-22 08:43:31,348 INFO official_edge_gate3:     5.0% -> CPR=12.4074
+2026-10-22 08:43:31,348 INFO official_edge_gate3:    10.0% -> CPR=12.8451
+2026-10-22 08:43:31,348 INFO official_edge_gate3:    20.0% -> CPR=13.3796
+2026-10-22 08:43:31,348 INFO official_edge_gate3:    50.0% -> CPR=13.5151
+2026-10-22 08:43:31,348 INFO official_edge_gate3:   100.0% -> CPR=1.0000
+2026-10-22 08:43:31,348 INFO official_edge_gate3:   CPR AUC=9.9477  Avg CPR=6.1085
+2026-10-22 08:43:31,357 INFO official_edge_gate3: Saved results to /mnt/h/GenAI Research/sketch_prune/results/mattr_optimization/20261022_gate3/uniform_seed42/upstream_1000

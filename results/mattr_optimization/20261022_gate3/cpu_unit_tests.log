@@ -1,0 +1,11 @@
+test_frozen_thresholds_fail_bad_compact_accuracy (test_mattr_gate3.Gate3Tests.test_frozen_thresholds_fail_bad_compact_accuracy) ... ok
+test_grid_weights_rounding_and_endpoint (test_mattr_gate3.Gate3Tests.test_grid_weights_rounding_and_endpoint) ... ok
+test_mixture_distribution_and_python_rng_untouched (test_mattr_gate3.Gate3Tests.test_mixture_distribution_and_python_rng_untouched) ... ok
+test_resume_matches_uninterrupted_official_trainer (test_mattr_gate3.Gate3Tests.test_resume_matches_uninterrupted_official_trainer) ... ok
+test_uniform_exact_rng_consumption_and_values (test_mattr_gate3.Gate3Tests.test_uniform_exact_rng_consumption_and_values) ... ok
+test_negative_stop_and_single_winner_confirmation (test_mattr_gate3_report.ScreeningReportTests.test_negative_stop_and_single_winner_confirmation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 5.404s
+
+OK

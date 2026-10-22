@@ -1,0 +1,78 @@
+{
+  "gate": 3,
+  "status": "frozen_before_any_modified_sampling_test",
+  "model": "gpt2",
+  "task": "ioi",
+  "level": "edge",
+  "discovery_pool": 128,
+  "nested_subset_seeds": [
+    42,
+    43,
+    44
+  ],
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "validation_size": 128,
+  "validation_seed": 42,
+  "screen_steps": 1000,
+  "confirmation_steps": 5000,
+  "reference": "Unchanged uniform-k at the identical pool, seed, step budget and validation cohort; retain official full-data 5000-step Gate1 as external frozen reference.",
+  "unchanged_defaults": {
+    "optimizer": "adam",
+    "lr": 0.05,
+    "eps": 1e-08,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "T": 0.5,
+    "n_iters": 30,
+    "masking": "topk",
+    "mode": "iso",
+    "initialization": "zeros",
+    "evaluation_batch": 20,
+    "donor_cache_gb": 4.0
+  },
+  "primary_cpr_specific_success": {
+    "mean_paired_relative_CPR_gain_at_5000_min": 0.02,
+    "positive_seed_differences_min": 2,
+    "seed_count": 3,
+    "mean_compact_accuracy_drop_max_absolute": 0.02,
+    "compact_fractions": [
+      0.005,
+      0.01,
+      0.02,
+      0.05
+    ],
+    "mean_accuracy_log_auc_drop_max_absolute": 0.02,
+    "mean_CMD_increase_max": "max(0, mean paired CPR increase) + 0.05",
+    "training_time_ratio_max": 1.1,
+    "peak_allocated_memory_ratio_max": 1.1
+  },
+  "interpretation": "A CPR-specific success can amplify behavior and worsen CMD. Call it a general fidelity improvement only if mean paired CMD also decreases and compact accuracy guardrails pass. Three seeds are descriptive, not statistical significance.",
+  "sample_efficiency_success_alternative": {
+    "CPR_relative_loss_max": 0.01,
+    "CMD_increase_max_absolute": 0.1,
+    "compact_accuracy_drop_max_absolute": 0.02,
+    "accuracy_log_auc_drop_max_absolute": 0.02,
+    "total_training_compute_reduction_min": 0.2,
+    "confirmation": "Compare candidate at 1000 with unchanged uniform at 5000 on identical subsets/seeds; charge adaptation/attribution overhead."
+  },
+  "variant_budget": {
+    "schedule_only": true,
+    "mixture_lambdas": [
+      0.5,
+      0.25
+    ],
+    "weight_exponent": 1.0,
+    "jitter": "Freeze exact distribution in a separate variant protocol before first run; no post-result tuning.",
+    "selection": "Screen both prespecified mixtures at 1000; carry at most one to 5000 using mean paired CPR gain, subject to guards. No tests in this task."
+  },
+  "no_test_split_access": true,
+  "no_leaderboard_claim": true,
+  "gate3_executed": false,
+  "validation_reuse": "Development cohort used for budget/variant selection; successful confirmation must later be checked on a disjoint official validation cohort before any generalization or leaderboard claim."
+}

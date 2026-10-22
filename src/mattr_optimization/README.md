@@ -166,3 +166,56 @@ CPU-only follow-up tests:
 ```bash
 ~/.venvs/mattr-optimization-af82b2e/bin/python -m unittest discover -s tests -p 'test_mattr_gate2_*.py' -v
 ```
+
+## Gate 3: CPR-aware sampling, with frozen stopping rules
+
+The new sampler uses only the official trainer's existing `k_sampler` hook.
+Patching, loss, mask gradients, optimizer and MIB evaluator remain unchanged.
+This is a static quadrature-aware mixture; it does not adapt to validation or
+per-step loss. The exact distribution, floor rounding, 5% truncated jitter,
+full-graph endpoint exclusion/renormalization and one-draw Torch RNG mapping
+are documented in the saved `GATE3_SAMPLING_PROTOCOL.md` and JSON before training.
+
+From WSL Ubuntu with the existing isolated runtime:
+
+```bash
+bash src/mattr_optimization/run_gate3_wsl.sh tests
+OUT="results/mattr_optimization/20261022_gate3"
+bash src/mattr_optimization/run_gate3_wsl.sh --out "$OUT" --freeze-only
+bash src/mattr_optimization/run_gate3_wsl.sh --out "$OUT"
+```
+
+The campaign first runs three official uniform controls for matched runtime and
+memory, checking their scores bitwise against Gate 2's 1,000-step checkpoints.
+Then it screens exactly lambda 0.5 and 0.25 for paired seeds 42/43/44 at N=128.
+Quality is compared with the saved Gate 2 checkpoints. All original success
+thresholds and their SHA-256 are preserved. The additional conservative screen
+policy is frozen before execution: provisional primary numerical gates against
+1,000-step baselines OR the original efficiency alternative against 5,000-step
+baselines. Highest mean paired relative CPR gain selects at most one eligible
+mixture; a tie selects 0.5. If neither qualifies, the campaign stops.
+
+A selected winner continues its existing score/Adam/RNG checkpoints to 5,000
+updates for all three seeds. Donor-cache rebuilds, restarts, rejected variants
+and all baseline controls remain charged. No further hyperparameters, Gate 4
+or leaderboard submission are dispatched. Repeat the exact command only after
+the previous process has ended to resume; source/protocol changes are rejected.
+
+To regenerate the final report without model calls:
+
+```bash
+bash src/mattr_optimization/run_gate3_wsl.sh --out "$OUT" --report-only
+```
+
+The root `GATE3_ADAPTIVE_SAMPLING_REPORT.md` and campaign copy contain paired
+CPR/CMD/compact-accuracy/log-AUC results, full curves and actual compute. Original
+Gate 2 files are hash protected; `gate3_success_criteria.json` is copied byte for
+byte, never rewritten. Model checkpoints and runtime caches stay local; curated
+curves, rankings, logs and protocol evidence are retained for version control.
+The ranking CSV is for inspection; use the saved exact score tensor and official
+MIB graph sorting when reproducing circuits, so tied-score order is preserved.
+After completion, run the CPU artifact audit with the same isolated interpreter:
+
+```bash
+~/.venvs/mattr-optimization-af82b2e/bin/python -m src.mattr_optimization.verify_gate3 --out "$OUT"
+```

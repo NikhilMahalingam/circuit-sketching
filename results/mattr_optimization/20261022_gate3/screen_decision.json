@@ -1,0 +1,71 @@
+{
+  "criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "winner": null,
+  "screen_decisions": {
+    "0.5": {
+      "provisional_primary_1000": {
+        "passed": false,
+        "checks": {
+          "cpr_gain": false,
+          "positive_seeds": false,
+          "cmd_guard": true,
+          "training_time_guard": true,
+          "memory_guard": true,
+          "accuracy_auc_guard": true,
+          "compact_accuracy_0.005": false,
+          "compact_accuracy_0.01": true,
+          "compact_accuracy_0.02": true,
+          "compact_accuracy_0.05": true
+        }
+      },
+      "efficiency_1000_vs_5000": {
+        "passed": false,
+        "checks": {
+          "cpr_noninferiority": false,
+          "cmd_noninferiority": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_accuracy_0.005": false,
+          "compact_accuracy_0.01": true,
+          "compact_accuracy_0.02": true,
+          "compact_accuracy_0.05": true
+        }
+      },
+      "eligible": false,
+      "mean_paired_relative_cpr_gain": -0.0017157307960069049
+    },
+    "0.25": {
+      "provisional_primary_1000": {
+        "passed": false,
+        "checks": {
+          "cpr_gain": false,
+          "positive_seeds": false,
+          "cmd_guard": true,
+          "training_time_guard": true,
+          "memory_guard": true,
+          "accuracy_auc_guard": true,
+          "compact_accuracy_0.005": true,
+          "compact_accuracy_0.01": true,
+          "compact_accuracy_0.02": true,
+          "compact_accuracy_0.05": true
+        }
+      },
+      "efficiency_1000_vs_5000": {
+        "passed": false,
+        "checks": {
+          "cpr_noninferiority": false,
+          "cmd_noninferiority": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_accuracy_0.005": false,
+          "compact_accuracy_0.01": true,
+          "compact_accuracy_0.02": true,
+          "compact_accuracy_0.05": true
+        }
+      },
+      "eligible": false,
+      "mean_paired_relative_cpr_gain": 0.0007738770529713014
+    }
+  },
+  "selection_rule": "Apply frozen primary numerical gates provisionally at 1000 vs matching 1000 baselines, OR frozen efficiency alternative vs 5000 baseline. This does not establish 5000 success. If none eligible stop. Rank eligible by mean paired relative CPR gain vs 1000; exact tie chooses lambda .5. No extra variants."
+}

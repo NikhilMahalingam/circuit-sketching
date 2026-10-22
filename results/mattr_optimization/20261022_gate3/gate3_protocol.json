@@ -1,0 +1,141 @@
+{
+  "gate": 3,
+  "criteria_path": "results/mattr_optimization/20261021_gate2_final/gate3_success_criteria.json",
+  "criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "paired_subset_training_seeds": [
+    [
+      42,
+      42
+    ],
+    [
+      43,
+      43
+    ],
+    [
+      44,
+      44
+    ]
+  ],
+  "pool": 128,
+  "validation_size": 128,
+  "validation_seed": 42,
+  "lambdas": [
+    0.5,
+    0.25
+  ],
+  "exponent": 1.0,
+  "screen_steps": 1000,
+  "confirmation_steps": 5000,
+  "uniform_timing_replays": true,
+  "total_edges": 32491,
+  "grid": [
+    0.001,
+    0.002,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1.0
+  ],
+  "distribution": [
+    {
+      "fraction": 0.001,
+      "quadrature_weight": 0.0005,
+      "rounded_k": 32,
+      "conditional_grid_probability": 0.0006675567423230974,
+      "jitter_low": 30.4,
+      "jitter_high": 33.6
+    },
+    {
+      "fraction": 0.002,
+      "quadrature_weight": 0.002,
+      "rounded_k": 64,
+      "conditional_grid_probability": 0.0026702269692923898,
+      "jitter_low": 60.8,
+      "jitter_high": 67.2
+    },
+    {
+      "fraction": 0.005,
+      "quadrature_weight": 0.004,
+      "rounded_k": 162,
+      "conditional_grid_probability": 0.0053404539385847796,
+      "jitter_low": 153.9,
+      "jitter_high": 170.1
+    },
+    {
+      "fraction": 0.01,
+      "quadrature_weight": 0.0075,
+      "rounded_k": 324,
+      "conditional_grid_probability": 0.010013351134846462,
+      "jitter_low": 307.8,
+      "jitter_high": 340.2
+    },
+    {
+      "fraction": 0.02,
+      "quadrature_weight": 0.02,
+      "rounded_k": 649,
+      "conditional_grid_probability": 0.0267022696929239,
+      "jitter_low": 616.55,
+      "jitter_high": 681.45
+    },
+    {
+      "fraction": 0.05,
+      "quadrature_weight": 0.04,
+      "rounded_k": 1624,
+      "conditional_grid_probability": 0.0534045393858478,
+      "jitter_low": 1542.8,
+      "jitter_high": 1705.2
+    },
+    {
+      "fraction": 0.1,
+      "quadrature_weight": 0.07500000000000001,
+      "rounded_k": 3249,
+      "conditional_grid_probability": 0.10013351134846464,
+      "jitter_low": 3086.5499999999997,
+      "jitter_high": 3411.4500000000003
+    },
+    {
+      "fraction": 0.2,
+      "quadrature_weight": 0.2,
+      "rounded_k": 6498,
+      "conditional_grid_probability": 0.267022696929239,
+      "jitter_low": 6173.099999999999,
+      "jitter_high": 6822.900000000001
+    },
+    {
+      "fraction": 0.5,
+      "quadrature_weight": 0.4,
+      "rounded_k": 16245,
+      "conditional_grid_probability": 0.534045393858478,
+      "jitter_low": 15432.75,
+      "jitter_high": 17057.25
+    }
+  ],
+  "sampling": "lambda Uniform[1,N) + (1-lambda) sum_j q_j Uniform[L_j,H_j); q_j=w_j^1/sum(w_except_full); weights are linear CPR trapezoids.",
+  "rounding": "c_j=int(p_j*N), positive floor matching the official evaluator; k remains floating, never rounded after jitter.",
+  "jitter": "L=max(1,0.95*c); H=min(N-1,1.05*c); uniform over truncated interval, no clipping point masses.",
+  "endpoint": "Full graph p=1 has fixed faithfulness 1, constant CPR contribution .25 and no ranking objective; exclude ONLY from grid training, renormalize .749 remaining mass. Evaluation grid unchanged. Uniform branch retains original near-full k<N behavior.",
+  "rng": "Exactly one global CPU float32 torch.rand(1) per step, same consumption as official uniform. Inverse mixture CDF and category residual provide branch, grid index, jitter. Python row RNG untouched. No feedback/private RNG. Original checkpoint CPU/CUDA/Python/NumPy RNG restoration suffices.",
+  "screen_rule": "Apply frozen primary numerical gates provisionally at 1000 vs matching 1000 baselines, OR frozen efficiency alternative vs 5000 baseline. This does not establish 5000 success. If none eligible stop. Rank eligible by mean paired relative CPR gain vs 1000; exact tie chooses lambda .5. No extra variants.",
+  "confirmation": "Resume the one winner from step 1000 to 5000 for all three seeds; charge screen, restart/cache rebuilding and all other trials. Match frozen 5000 criteria without changes.",
+  "memory": "Peak torch.cuda.max_memory_allocated, maximum across actual stages/attempts. Paired ratio of mean peaks, limit from original criteria.",
+  "time": "CUDA-synchronized perf_counter. Screen training time/peak guards compare fresh uniform timing controls verified against Gate2; quality always Gate2. Confirmation training cost sums screen+continuation+donor-cache rebuilds against Gate2 measured 5000 training times; total costs additionally reported.",
+  "adapter_sha256": {
+    "gate3.py": "d6b703f62156cc8308b6da19e511a50ec26775b4ed5605168bfa576c71509844",
+    "gate3_sampling.py": "003f8642de0d879e024b51daf20eae88bd8442d2a99a9d8b2b045e70bd265097",
+    "gate3_report.py": "4ec069ade97f2e298bd330c412373fdeae21f3c652917abdb9e8468ca9fb3a15",
+    "common.py": "0b0aa87a7c85c98b81c5b4d7ea1949ede43134ef7ed2e23719fdc087e253f66c",
+    "checkpoint.py": "77e211de407f17ccbb0905dcb9e500f566f3cea423836d74e4008b5907a4e5e8",
+    "gate2.py": "21a93f59b0e10517f707d10d5d66ebdde795ea1c0dab4199ab111154f7951d9c",
+    "gate1.py": "f014380f4513ae02e0e579cf9f763b4e72a9178ce8a4ab853c551211f6973633",
+    "gate0.py": "103b5cb213cfe53a547e4324a79352f9d2e2aa0108faa8ba63460997804f4ffc"
+  }
+}
