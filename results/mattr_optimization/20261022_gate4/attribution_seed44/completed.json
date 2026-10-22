@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "sha256": {
+    "experiment_config.json": "046c28f77670ef84bd7c3487499c99a7311a95634f84dead9128e7b1b0f9330b",
+    "eap_ig_scores.pt": "0311f8e70090644ccaf3eac8f87f7c0fc07ce4c91c7ce674c5158d74ff0fb709",
+    "rank_normalized.pt": "5e62cf90ecb392986fee695c80904ef3e572a31da24b7420ad4568b3c814188c",
+    "edge_mapping.csv": "c6fd1f0eecbcdfb89e42b1817cc9822ec4230e5adb22172dac7f5eac03a96dbe",
+    "initialization_statistics.csv": "80d13e462bdd9edc09b8e46062184ad191d50512db2acd6ed5243791c8f27bcd",
+    "train_manifest.csv": "a54515beeae8de69a4d9a06883b8092993267fcc9038fa26683c5a1cd40b392e"
+  },
+  "attribution_sources": {
+    "external/matryoshka-attribution/deps/MIB-circuit-track/run_attribution.py": "760e051572c600964e8ee98918e8582af11f2a84b0c6ca50f160018b1d687a3f",
+    "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/metrics.py": "842f7bca12577b83d11ca207fa4fac2864edb045fd5aa44b8e6b65ed4444e840",
+    "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/attribute.py": "3b0e4d017fb2b92a11747ace8b176f514365ec966203b5e68aa900e1e051c796",
+    "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/utils.py": "1bea32178bfd0313f5c5b460c9965c7a1e218a73de47ec5918928d61cdd5d7c3"
+  }
+}

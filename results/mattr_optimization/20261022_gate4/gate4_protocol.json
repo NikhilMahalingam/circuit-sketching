@@ -1,0 +1,131 @@
+{
+  "gate": 4,
+  "parent_commit": "2be4d8752dd69907d5c25c87482ebaf2e12e651f",
+  "historical_gate3_criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "pool": 128,
+  "scales": [
+    0.1,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "model": "gpt2-small",
+  "task": "official MIB IOI edge",
+  "edges": 32491,
+  "attribution": {
+    "method": "EAP-IG-inputs",
+    "intervention": "patching",
+    "ig_steps": 5,
+    "alpha_grid": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "batch_size": 4,
+    "aggregation": "sum",
+    "metric": "official logit_diff mean=True loss=True",
+    "orientation": "signed, no abs/sign reversal",
+    "source_hashes": {
+      "external/matryoshka-attribution/deps/MIB-circuit-track/run_attribution.py": "760e051572c600964e8ee98918e8582af11f2a84b0c6ca50f160018b1d687a3f",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/metrics.py": "842f7bca12577b83d11ca207fa4fac2864edb045fd5aa44b8e6b65ed4444e840",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/attribute.py": "3b0e4d017fb2b92a11747ace8b176f514365ec966203b5e68aa900e1e051c796",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/utils.py": "1bea32178bfd0313f5c5b460c9965c7a1e218a73de47ec5918928d61cdd5d7c3"
+    },
+    "data": "exact paired Gate2 N128 train subsets; no validation attribution"
+  },
+  "initialization": "scale * (2*(ascending average rank-1)/(32491-1)-1); ties equal; centered [-1,1]; float32; no RNG draw",
+  "training": {
+    "optimizer": "official Adam",
+    "lr": 0.05,
+    "T": 0.5,
+    "n_iters": 30,
+    "k_schedule": "uniform",
+    "mode": "iso",
+    "steps_max": 5000,
+    "batch_size": 20,
+    "cf_cache_gb": 4,
+    "all_other_settings": "unchanged pinned CLI; init tensor only"
+  },
+  "development_cohort": {
+    "source": "exact Gate2 fixed seed42 validation128",
+    "manifest_sha256": "18921021f9a486e2dab0401b0170421f3512847351841d7e80efc354c620dda3"
+  },
+  "confirmation_cohort": {
+    "source": "official filtered validation permutation seed42 positions128:256; disjoint rows/prompts from development and train",
+    "usage": "only after a single final development winner is fixed; no selection feedback"
+  },
+  "pilot": {
+    "seed": 42,
+    "steps": 1000,
+    "selection": "exploratory top two by CPR gain vs paired1000; ties lower scale. No pilot success claims."
+  },
+  "paired_screen": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "steps": 1000,
+    "selection": "require same primary numerical quality gates provisionally vs1000 OR efficiency vs5000; seed42 pilot reused and labeled exploratory; select at most one eligible scale by mean paired relative CPR gain; tie lower scale; none means stop"
+  },
+  "evaluation_steps": [
+    500,
+    1000,
+    2500,
+    5000
+  ],
+  "success": {
+    "primary": {
+      "mean_paired_relative_CPR_gain_min": 0.02,
+      "positive_seeds_min": 2,
+      "mean_compact_accuracy_drop_max": 0.02,
+      "mean_accuracy_log_auc_drop_max": 0.02,
+      "compact_fractions": [
+        0.005,
+        0.01,
+        0.02,
+        0.05
+      ],
+      "mean_CMD_increase_max": "max(0, mean paired CPR increase) + 0.05",
+      "total_adaptation_time_ratio_max": 1.1,
+      "peak_allocated_ratio_max": 1.1
+    },
+    "efficiency": {
+      "CPR_relative_loss_max": 0.01,
+      "CMD_increase_max": 0.1,
+      "accuracy_drop_max": 0.02,
+      "accuracy_auc_drop_max": 0.02,
+      "total_adaptation_compute_reduction_min": 0.2
+    },
+    "confirmation": "primary uses paired5000; efficiency uses candidate1000 vs baseline5000. Disjoint confirmation repeats the applicable QUALITY guards before any generalization claim."
+  },
+  "compute": "EAPIG + all required model/data/setup/training and restart cost; evaluation separate. EAP attribution charged once per deployable seed, all pilot/failed trials charged to research. CUDA synchronized; root forward/example/backward/updates, CPU RSS and allocation peaks measured.",
+  "compute_matched": "Use existing ordinary MAttr100-step checkpoints nearest initialized1000 total adaptation cost by Gate2 checkpoint timer, if <=5000; evaluate frozen ranking only. Report actual time mismatch. No unregistered optimizer budgets beyond5000.",
+  "resume": "original score/Adam/Python/NumPy/CPU/CUDA RNG checkpoint restoration; exact CPU equivalence test; pair actual row and uniform-k streams with Gate2",
+  "stability": "official signed apply_topn(floor(fraction*32491),prune=True), paired edge-set Jaccard at .005/.01/.02/.05; diagnostic only",
+  "no_gate5": true,
+  "no_full_data_followup": true,
+  "no_leaderboard": true,
+  "adapter_sha256": {
+    "gate4.py": "4800e5f419d0706708e438b7e1ae1d1fe6dd17d8cf96112bde1865bb0ceac0fa",
+    "gate4_init.py": "76f71f116695b23c8a539e122d4a4f628dcdb6ad6fc408c397f3fe27e7b71e01",
+    "gate4_attribution.py": "f8a09ad9c5b7c3dd4f3d5ebab6ba7f6c2f8dadd6c5a7b76df8e11bad85af1ccf",
+    "gate4_train.py": "45c731b1e38aae475af34ec931cf367ebd4348951dd9eb17577f1cd03b1dfb8f",
+    "gate4_evaluate.py": "c4c2ea90991740d6976d6df27448e1e4632d65932690d630bb1afec9e97eaa69",
+    "gate4_report.py": "3e590761f45c426ee47a27ad552360878d7ab536a2484936943fd0cf22612985",
+    "common.py": "0b0aa87a7c85c98b81c5b4d7ea1949ede43134ef7ed2e23719fdc087e253f66c",
+    "checkpoint.py": "77e211de407f17ccbb0905dcb9e500f566f3cea423836d74e4008b5907a4e5e8",
+    "gate2.py": "21a93f59b0e10517f707d10d5d66ebdde795ea1c0dab4199ab111154f7951d9c",
+    "gate1.py": "f014380f4513ae02e0e579cf9f763b4e72a9178ce8a4ab853c551211f6973633",
+    "gate0.py": "103b5cb213cfe53a547e4324a79352f9d2e2aa0108faa8ba63460997804f4ffc",
+    "gate3.py": "d6b703f62156cc8308b6da19e511a50ec26775b4ed5605168bfa576c71509844",
+    "gate3_report.py": "4ec069ade97f2e298bd330c412373fdeae21f3c652917abdb9e8468ca9fb3a15"
+  }
+}

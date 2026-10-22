@@ -1,0 +1,17 @@
+{
+  "seconds": 47.75007833000018,
+  "argv": [
+    "/home/nikhilmahalingam/.venvs/mattr-optimization-af82b2e/bin/python",
+    "-u",
+    "-m",
+    "src.mattr_optimization.gate4_evaluate",
+    "--out",
+    "/mnt/h/GenAI Research/sketch_prune/results/mattr_optimization/20261022_gate4/compute_matched_seed43",
+    "--seed",
+    "43",
+    "--step",
+    "1000",
+    "--scores",
+    "/mnt/h/GenAI Research/sketch_prune/results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/checkpoints/step_001000.pt"
+  ]
+}

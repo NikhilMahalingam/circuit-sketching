@@ -1,0 +1,10 @@
+test_all_edges_and_mismatch (test_mattr_gate4.InitializationTests.test_all_edges_and_mismatch) ... ok
+test_init_zero_identity_and_exact_resume (test_mattr_gate4.InitializationTests.test_init_zero_identity_and_exact_resume) ... ok
+test_mask_mass_and_all_gradient_entries (test_mattr_gate4.InitializationTests.test_mask_mass_and_all_gradient_entries) ... ok
+test_primary_and_efficiency_guards (test_mattr_gate4.InitializationTests.test_primary_and_efficiency_guards) ... ok
+test_signed_midranks_and_ties (test_mattr_gate4.InitializationTests.test_signed_midranks_and_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.487s
+
+OK

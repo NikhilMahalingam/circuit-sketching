@@ -1,0 +1,12 @@
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights:  74%|███████▍  | 110/148 [00:00<00:00, 1098.75it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1290.57it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+Official EAP-IG: seed 44, examples=128, ig_steps=5; expected 224 forward batches and 160 backwards.
+             stage  success   seconds  forward_batches  example_forwards  backward_calls  optimizer_updates  peak_allocated_mib  peak_reserved_mib  sampled_peak_cpu_rss_mib
+     model_loading     True  3.880977                0                 0               0                  0          635.514160              690.0               3004.582031
+data_loading_train     True  1.183518                0                 0               0                  0          635.514160              690.0               1119.226562
+            eap_ig     True 21.994791              224               896             160                  0         1270.840332             1934.0               1749.339844

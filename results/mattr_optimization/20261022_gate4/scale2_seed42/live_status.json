@@ -1,0 +1,12 @@
+{
+  "elapsed_seconds": 287.680926989,
+  "stage": "training",
+  "forward_batches": 1128,
+  "example_forwards": 1128,
+  "backward_calls": 1000,
+  "optimizer_updates": 1000,
+  "completed_iteration": 1000,
+  "target": 1000,
+  "scale": 2.0,
+  "seed": 42
+}

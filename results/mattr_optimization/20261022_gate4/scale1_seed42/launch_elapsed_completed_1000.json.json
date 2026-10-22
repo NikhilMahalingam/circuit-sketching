@@ -1,0 +1,19 @@
+{
+  "seconds": 360.83805989200005,
+  "argv": [
+    "/home/nikhilmahalingam/.venvs/mattr-optimization-af82b2e/bin/python",
+    "-u",
+    "-m",
+    "src.mattr_optimization.gate4_train",
+    "--out",
+    "/mnt/h/GenAI Research/sketch_prune/results/mattr_optimization/20261022_gate4/scale1_seed42",
+    "--protocol",
+    "/mnt/h/GenAI Research/sketch_prune/results/mattr_optimization/20261022_gate4/gate4_protocol.json",
+    "--scale",
+    "1.0",
+    "--seed",
+    "42",
+    "--target",
+    "1000"
+  ]
+}

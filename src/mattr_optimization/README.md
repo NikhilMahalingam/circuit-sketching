@@ -219,3 +219,57 @@ After completion, run the CPU artifact audit with the same isolated interpreter:
 ```bash
 ~/.venvs/mattr-optimization-af82b2e/bin/python -m src.mattr_optimization.verify_gate3 --out "$OUT"
 ```
+
+## Gate 4: EAP-IG score initialization
+
+Gate 4 changes only the initial MAttr score vector. The pinned official EAP-IG
+inputs adapter uses five left-endpoint integration points and signed loss
+attributions. Its canonical edge audit covers every real edge, including the
+official graph's negative logits-column index. The trainer-local Parameter
+constructor receives centered midranks scaled by 0.1, 0.5, 1 or 2; original Adam,
+sigmoid top-k, uniform-k, edge patching and evaluation stay unchanged.
+
+```bash
+bash src/mattr_optimization/run_gate4_wsl.sh tests
+OUT="results/mattr_optimization/20261022_gate4"
+bash src/mattr_optimization/run_gate4_wsl.sh smoke --out "$OUT/smoke_seed42" --seed 42
+bash src/mattr_optimization/run_gate4_wsl.sh --out "$OUT" --freeze-only
+bash src/mattr_optimization/run_gate4_wsl.sh --out "$OUT"
+```
+
+Read the measured smoke attribution cost before the final command. A frozen
+protocol and SHA record the exact scale-selection and success criteria before
+modified training. The exploratory seed-42 pilot selects at most two scales;
+paired seeds 42/43/44 screen at 1,000 steps. At most one eligible winner continues
+to 5,000 steps, with checkpoints evaluated at 500/1,000/2,500/5,000. A negative
+screen stops confirmation and any extra sweep. EAP-IG-only and approximately
+time-matched frozen ordinary-MAttr rankings are separate controls, not new trained
+variants. Attribution and all pilot/failed-trial costs are recorded.
+
+Report regeneration performs no model forwards:
+
+```bash
+bash src/mattr_optimization/run_gate4_wsl.sh --out "$OUT" --report-only
+```
+
+The root and campaign `GATE4_EAPIG_INITIALIZATION_REPORT.md` summarize actual
+quality, full curves, compact accuracy, exact rankings, cross-seed retained-edge
+Jaccard overlap, timing and memory. A disjoint official validation cohort is
+accessed only after a single final development candidate qualifies. No Gate 5,
+full-data follow-up or leaderboard submission is launched. Historical Gates 1–3
+and the Gate 3 criteria hash remain protected.
+
+After the campaign finishes, verify byte preservation, all mapped edges, paired
+row/k streams, real computation counters and inference gradient mode without any
+new model calls:
+
+```bash
+~/.venvs/mattr-optimization-af82b2e/bin/python -m src.mattr_optimization.verify_gate4 --out "$OUT"
+```
+
+The wrapper runs this CPU audit automatically for a completed campaign, including
+after report regeneration. It also reconstructs 500-step display times from the
+measured checkpoint prefix plus fixed setup; those prefixes were not separately
+launched processes. This corrects the frozen initial reporter's full-job timing
+for early display points. The protocol, 1,000-step screening costs/decisions and
+all quality measurements are unchanged; the report records the correction.

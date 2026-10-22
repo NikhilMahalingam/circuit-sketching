@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "protected_historical_files_unchanged": 2232,
+  "historical_criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "gate4_protocol_sha256": "fc496f791166c7d422bdc3afbc873aa97da52c1cf3b7f9ed1f5489df1a155bb8",
+  "cpu_tests_passed": 5,
+  "training_jobs": 8,
+  "screen_winner": null,
+  "totals": {
+    "forward_batches": 13413,
+    "example_forwards": 79380,
+    "backward_calls": 8485,
+    "optimizer_updates": 8000
+  },
+  "attribution_data_train_only": true,
+  "all_32491_edges_bijective": true,
+  "signed_orientation_verified": true,
+  "paired_k_and_example_streams_equal": true,
+  "inference_gradients_disabled": true,
+  "additional_model_forwards_for_audit": 0,
+  "gate5": false,
+  "full_data_followup": false,
+  "leaderboard_submission": false,
+  "summed_actual_child_launch_seconds": 3316.709395455,
+  "smoke_process_seconds_excluding_interpreter_startup": 22.559782658999993,
+  "audit_seconds": 12.58506204699998,
+  "early_checkpoint_display_cost_corrected": true,
+  "frozen_screen_costs_and_decisions_unchanged": true
+}

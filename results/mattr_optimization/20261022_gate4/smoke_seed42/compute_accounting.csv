@@ -1,0 +1,5 @@
+stage,success,seconds,forward_batches,example_forwards,backward_calls,optimizer_updates,peak_allocated_mib,peak_reserved_mib,sampled_peak_cpu_rss_mib
+model_loading,True,16.704983960999996,0,0,0,0,635.51416015625,690.0,2941.8515625
+data_loading_train,True,0.8007226860000003,0,0,0,0,635.51416015625,690.0,1142.18359375
+eap_ig,True,1.6452944290000033,7,28,5,0,1073.07666015625,1326.0,1748.5546875
+training_only_sign_sanity,True,1.3220386569999931,14,56,0,0,894.55810546875,1326.0,1769.18359375

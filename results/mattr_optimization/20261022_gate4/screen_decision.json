@@ -1,0 +1,68 @@
+{
+  "winner": null,
+  "results": {
+    "0.1": {
+      "primary_provisional": {
+        "passed": false,
+        "checks": {
+          "cpr": false,
+          "positive_seeds": false,
+          "cmd": true,
+          "compute": true,
+          "memory": true,
+          "accuracy_auc": true,
+          "accuracy_0.005": true,
+          "accuracy_0.01": false,
+          "accuracy_0.02": true,
+          "accuracy_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "cpr": false,
+          "cmd": true,
+          "compute": true,
+          "accuracy_auc": false,
+          "accuracy_0.005": false,
+          "accuracy_0.01": false,
+          "accuracy_0.02": true,
+          "accuracy_0.05": true
+        }
+      },
+      "mean_relative_cpr_gain": -0.011217030967736444
+    },
+    "0.5": {
+      "primary_provisional": {
+        "passed": false,
+        "checks": {
+          "cpr": false,
+          "positive_seeds": false,
+          "cmd": true,
+          "compute": true,
+          "memory": true,
+          "accuracy_auc": true,
+          "accuracy_0.005": false,
+          "accuracy_0.01": true,
+          "accuracy_0.02": true,
+          "accuracy_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "cpr": false,
+          "cmd": true,
+          "compute": true,
+          "accuracy_auc": false,
+          "accuracy_0.005": false,
+          "accuracy_0.01": false,
+          "accuracy_0.02": true,
+          "accuracy_0.05": true
+        }
+      },
+      "mean_relative_cpr_gain": -0.024008279441660025
+    }
+  },
+  "exploratory": true
+}

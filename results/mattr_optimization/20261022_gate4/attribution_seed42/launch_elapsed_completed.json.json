@@ -1,0 +1,13 @@
+{
+  "seconds": 43.71240212800001,
+  "argv": [
+    "/home/nikhilmahalingam/.venvs/mattr-optimization-af82b2e/bin/python",
+    "-u",
+    "-m",
+    "src.mattr_optimization.gate4_attribution",
+    "--out",
+    "/mnt/h/GenAI Research/sketch_prune/results/mattr_optimization/20261022_gate4/attribution_seed42",
+    "--seed",
+    "42"
+  ]
+}

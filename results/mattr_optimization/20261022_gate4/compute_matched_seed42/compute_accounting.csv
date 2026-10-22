@@ -1,0 +1,4 @@
+stage,success,seconds,forward_batches,example_forwards,backward_calls,optimizer_updates,peak_allocated_mib,peak_reserved_mib,sampled_peak_cpu_rss_mib
+model_loading,True,3.786023627999839,0,0,0,0,635.51416015625,690.0,2977.4609375
+data_loading_validation,True,0.9113712759999544,0,0,0,0,635.51416015625,690.0,1143.171875
+validation_evaluation_step1100,True,28.861513578000086,168,3072,0,0,2258.55078125,3972.0,1619.91796875

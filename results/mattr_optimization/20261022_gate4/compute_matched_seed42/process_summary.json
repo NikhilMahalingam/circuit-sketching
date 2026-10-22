@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "counts": {
+    "forward_batches": 168,
+    "example_forwards": 3072,
+    "backward_calls": 0,
+    "optimizer_updates": 0
+  },
+  "seconds": 37.47609789000035
+}
