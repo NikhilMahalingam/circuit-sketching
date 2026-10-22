@@ -56,7 +56,18 @@ Stage B additionally includes seven-layer repeated microbenchmarks and held-out 
 
 ## Performance status and next action
 
-Stage B: NOT RUN. Stage C: NOT RUN; disabled by default. The current Stage-A report therefore does not claim a measured speedup, fastest layer, discovery-size trend, or cross-model generalization. The small real-model unit tests are structural correctness tests, not a second standardized model/task benchmark.
+Stage B: completed. Stage C: NOT RUN; disabled by default. Only completed stages support the measured comparisons below; partial trajectories do not establish full-search performance. The small real-model unit tests are structural correctness tests, not a second standardized model/task benchmark.
 
 Next authorized checkpoint: review the implementation, numerical agreement and estimates before executing Stage B or C. No sketching, Hessians, group deletion or MAttr algorithm has been implemented. Possible later optimization: avoid conservative full-graph dependency propagation for nodes proven unable to affect logits, but that requires a separate correctness proof and is not implemented.
 
+Measured end-to-end discovery speedup includes per-arm tokenization, constructor, donor/cache construction, synchronization, mask bookkeeping, exact decisions, checkpoint I/O and previous failed attempts. Common model/dataset loading and warmups are separate; validation time and including-validation totals are also saved. Medians and interquartile ranges are reported across paired trials.
+
+- Stage B, n=16, checks=64: median speedup 3.382×, IQR [3.175, 3.516], 3 paired trials. Partial trajectory.
+- Stage B, n=16, checks=128: median speedup 3.084×, IQR [2.987, 3.190], 3 paired trials. Partial trajectory.
+- Stage B, n=32, checks=64: median speedup 3.494×, IQR [3.467, 3.730], 3 paired trials. Partial trajectory.
+- Stage B, n=32, checks=128: median speedup 3.545×, IQR [3.523, 3.596], 3 paired trials. Partial trajectory.
+- Stage B, n=64, checks=64: median speedup 3.607×, IQR [3.396, 3.794], 3 paired trials. Partial trajectory.
+- Stage B, n=64, checks=128: median speedup 4.033×, IQR [3.897, 4.046], 3 paired trials. Partial trajectory.
+- Stage B, n=128, checks=64: median speedup 4.015×, IQR [3.943, 4.117], 3 paired trials. Partial trajectory.
+- Stage B, n=128, checks=128: median speedup 4.078×, IQR [4.024, 4.176], 3 paired trials. Partial trajectory.
+- Stage C, n=16, checks=32491: median speedup 1.723×, IQR [1.723, 1.723], 1 paired trials. Full graph.
