@@ -1,0 +1,3 @@
+training_examples,validation_examples,seed,updates,CPR,CMD,accuracy_log_AUC,scope
+10000,10000,42,5000,10.588012424092025,9.600809149001824,0.7372056036919511,Gate1 full official validation
+10000,128,42,5000,10.725481272108391,9.738245562281099,0.7383025905078514,Frozen Gate1 ranking on Gate2 development cohort

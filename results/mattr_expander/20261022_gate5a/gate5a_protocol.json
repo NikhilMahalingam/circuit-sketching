@@ -1,0 +1,120 @@
+{
+  "gate": "5A",
+  "parent_commit": "f24406e52ee74abdf2370f832149b07ca3d552e4",
+  "graph_seed": 1701,
+  "graph_registry_sha256": "bbbe7dcaee6223d5b56a2c314d5eaeb220521ad566019663bc5d4e84ddd2a23c",
+  "graph_files": {
+    "G0": "98c605336b06b43e5aaafc459db9807954a81abdb6da750e85b5f7ad0417d1f2",
+    "G1": "ab13ff142c91c4f801aead968398fe46546c778d2d6020404da1faa2aa33d7cf",
+    "G2": "f27476d453a401a2a63f35bc2c3766154ac442979a8eb5c4c1dc85e1b4fce92a",
+    "G2perm": "cde90a0ffdeeab88ca76fbc8369b60a248e78727cbe9fddbb97e4bbf46deec4a"
+  },
+  "mapping_sha256": "c6fd1f0eecbcdfb89e42b1817cc9822ec4230e5adb22172dac7f5eac03a96dbe",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "betas": [
+    0.1,
+    0.25
+  ],
+  "families": [
+    "G0",
+    "G1",
+    "G2"
+  ],
+  "model": "gpt2-small",
+  "task": "official MIB IOI edge",
+  "pool": 128,
+  "edges": 32491,
+  "data": "exact Gate2 nested N128 train subset for each seed; identical fixed dev128 validation cohort",
+  "development_manifest_sha256": "18921021f9a486e2dab0401b0170421f3512847351841d7e80efc354c620dda3",
+  "training": {
+    "lr": 0.05,
+    "optimizer": "official Adam unchanged",
+    "T": 0.5,
+    "n_iters": 30,
+    "k_schedule": "uniform",
+    "mode": "iso",
+    "dtype": "float32",
+    "batch_size": 20,
+    "cf_cache_gb": 4
+  },
+  "transformation": "B=(1-beta)I+beta P; P symmetric row-normalized degree8 adjacency; all32491 raw zero-init scores retained; original trainer.build_mask receives Bs; evaluator/export receives Bs; raw score/Adam/RNG saved for resume",
+  "theory": "beta<.5 makes B positive definite and invertible for undirected regular P; reparameterization/conditioning, not enlarged hypothesis class",
+  "scale_control": "s_effective=(1-beta)s; no neighbors; both registered betas run in PhaseB",
+  "RNG": "local graph RNG1701 and optional permutation2701; no training RNG consumption by coupling; preserve paired Python row and CPU Torch uniform-k streams; restore Python/NumPy/CPU/CUDA checkpoint RNG",
+  "phaseA": "unit/spectral/GPU checks then90 total model optimizer updates: official30, identity30, G2 beta.25 smoke30; official hard-mask patching checks at0/.1/.5/1; frozen validation ranking; fail correctness means stop",
+  "phaseB": {
+    "seed": 42,
+    "updates": 1000,
+    "jobs": "fresh zero calibration + six graph/beta variants + two scale controls",
+    "rule": "eligible graph: >=.5% CPR gain vs paired Gate2_1000 OR efficiency-quality/compute gate vs5000; all dev compact/AUC loss<=.02, CMD<=positive CPR gain+.05, total adaptation overhead<=15%, peak<=10%; sort by CPR gain, then mean compact gain, then lower beta, then family name; at most2; no eligible means stop"
+  },
+  "phaseC": {
+    "updates": 1000,
+    "candidates_max": 2,
+    "rule": "repeat selected candidates on43/44; for each selected beta also repeat G0/G1/G2/scale controls on43/44, so topology comparisons are fully paired; zero calibrations43/44; at most one winner by mean relative CPR gain then lower beta/family"
+  },
+  "criteria": {
+    "primary_CPR_gain": 0.02,
+    "positive_seeds": 2,
+    "compact_drop": 0.02,
+    "accuracy_auc_drop": 0.02,
+    "compact_fractions": [
+      0.005,
+      0.01,
+      0.02,
+      0.05
+    ],
+    "CMD_guard": "max(0, mean paired CPR increase)+.05",
+    "adaptation_time_ratio_max": 1.15,
+    "allocated_memory_ratio_max": 1.1,
+    "efficiency": {
+      "CPR_loss_max": 0.01,
+      "CMD_increase_max": 0.1,
+      "accuracy_drop_max": 0.02,
+      "accuracy_auc_drop_max": 0.02,
+      "compute_saving_min": 0.2
+    },
+    "expander_specific": "G2 must beat G0, G1 AND scale-only by>=.5% mean paired relative CPR and>=2 positive seeds, with compact/AUC safeguards, at the same beta/budget; final claim additionally requires permutation control to pass baseline quality guards; one graph instance gives no causal spectral-gap claim"
+  },
+  "phaseD": "only after C primary/efficiency pass: continue one winning beta/configuration AND registered G0/G1/G2/scale controls at that beta across3 seeds to5000, evaluate500/1000/2500/5000; optional G2perm at1000 across3 seeds only when G2 is selected winner; no parameter reselection from permutation",
+  "confirmation_generalization": "any development success remains exploratory; no generalization claim from reused dev cohort. A future disjoint validation/full-data study requires separate authorization.",
+  "budget": {
+    "optimizer_updates_max": 78090,
+    "child_wall_seconds_max": 43200,
+    "phaseB_updates_max": 9000,
+    "phaseC_additional_updates_max": 18000,
+    "phaseD_additional_updates_max": 48000,
+    "permutation_updates_max": 3000
+  },
+  "timing": "CUDA synchronized perf_counter. Graph construction/validation charged to deployable adaptation, graph operation and same diagnostic cadence charged inside every training/control. Spectral diagnostics separate. All failed pilots/replays/evaluation/graph work charged in research costs. Partial500/2500 cost from measured checkpoint prefix plus job fixed setup; not separate process timing.",
+  "diagnostics": "every50 updates plus first: raw/effective gradient norm, variance, top1%-score-edge gradient L1 share, successive effective rank Spearman and top1% Jaccard. All controls same cadence; finite gradients required.",
+  "permutation_control": "only registered G2 relabeling2701; same real mapping; beta unchanged; no additional graph seeds",
+  "historical_gate3_criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "no_refinement": true,
+  "no_leaderboard": true,
+  "no_multi_model": true,
+  "source_sha256": {
+    "src/mattr_expander/analysis.py": "be067c36e7fe7c3411c8e8183e2236e8557ab364cf7a983da6245bf7a091423e",
+    "src/mattr_expander/audit.py": "cb1ba313f329790c933df841fb2247c93f22c57330a644bfce286b1ddfbdbd87",
+    "src/mattr_expander/campaign.py": "0e6cda1e871a6dc9666e7c51cecb8b90b79649dace9eed3eab1ed493d5a6836a",
+    "src/mattr_expander/coupling.py": "810d80e72b19064bc6999a38eada88c82818c813d36eba66d739bec2e178c5e5",
+    "src/mattr_expander/gpu_checks.py": "35b13d050c6c18de0dbc5a68d6bd1555d30a1b91216a4d48e9e1c6db21ede2ac",
+    "src/mattr_expander/graphs.py": "3d8982c35b489ab3f622b8d1ce5e7c59ebcf33fc63e99349706da99440898e89",
+    "src/mattr_expander/runner.py": "a45c3f084f237e506db7c8ff961093bd0723ff11eeea3b43425ea3a2692d1aae",
+    "src/mattr_expander/__init__.py": "501c591238342ead633f9b5e6397bc41efdcf22b33b02c6d2c3c95935a6c7c84",
+    "src/mattr_optimization/checkpoint.py": "77e211de407f17ccbb0905dcb9e500f566f3cea423836d74e4008b5907a4e5e8",
+    "src/mattr_optimization/common.py": "0b0aa87a7c85c98b81c5b4d7ea1949ede43134ef7ed2e23719fdc087e253f66c",
+    "src/mattr_optimization/gate0.py": "103b5cb213cfe53a547e4324a79352f9d2e2aa0108faa8ba63460997804f4ffc",
+    "src/mattr_optimization/gate1.py": "f014380f4513ae02e0e579cf9f763b4e72a9178ce8a4ab853c551211f6973633",
+    "src/mattr_optimization/gate2.py": "21a93f59b0e10517f707d10d5d66ebdde795ea1c0dab4199ab111154f7951d9c",
+    "src/mattr_optimization/gate3.py": "d6b703f62156cc8308b6da19e511a50ec26775b4ed5605168bfa576c71509844",
+    "src/mattr_optimization/gate4_init.py": "76f71f116695b23c8a539e122d4a4f628dcdb6ad6fc408c397f3fe27e7b71e01",
+    "src/mattr_optimization/gate4_train.py": "45c731b1e38aae475af34ec931cf367ebd4348951dd9eb17577f1cd03b1dfb8f",
+    "src/mattr_optimization/gate4_evaluate.py": "c4c2ea90991740d6976d6df27448e1e4632d65932690d630bb1afec9e97eaa69",
+    "tests/test_mattr_expander.py": "63c8e6f14a55f7c7e5544c8906be10cfbfd23502ff05f3a2b2e872d9185403cf"
+  }
+}

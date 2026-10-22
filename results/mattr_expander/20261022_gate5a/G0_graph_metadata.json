@@ -1,0 +1,26 @@
+{
+  "family": "G0",
+  "graph_seed": 1701,
+  "generation_seconds": 0.002172917999999413,
+  "successful_swaps": 0,
+  "swap_attempts": 0,
+  "vertices": 32491,
+  "edges": 129964,
+  "degree_min": 8,
+  "degree_max": 8,
+  "components": 1,
+  "degree_histogram": {
+    "8": 32491
+  },
+  "csr_bytes": 3249104,
+  "neighbor_int32_bytes": 1039712,
+  "gpu_neighbor_int64_bytes": 2079424,
+  "adjacency_sha256": "497b0ad4715257ffe9f619ae571761b74d42f472b45035b5930e37976114562a",
+  "laplacian_gap": 1.4023771677251773e-07,
+  "nontrivial_adjacency_magnitude": 0.9999998597622832,
+  "spectral_residual": 0.0,
+  "spectral_seconds": 0.001471785999999753,
+  "spectral_method": "analytic real circulant spectrum (all N frequencies)",
+  "required_construction_seconds": 0.014048198000001122,
+  "file_sha256": "98c605336b06b43e5aaafc459db9807954a81abdb6da750e85b5f7ad0417d1f2"
+}

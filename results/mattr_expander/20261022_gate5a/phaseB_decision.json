@@ -1,0 +1,205 @@
+{
+  "exploratory": true,
+  "selected": [
+    {
+      "family": "G1",
+      "beta": 0.1
+    }
+  ],
+  "results": [
+    {
+      "family": "G0",
+      "beta": 0.1,
+      "primary_plausibility": {
+        "passed": false,
+        "checks": {
+          "CPR_gain": false,
+          "CMD_guard": true,
+          "time_guard": true,
+          "memory_guard": true,
+          "accuracy_auc_guard": true,
+          "compact_0.005": true,
+          "compact_0.01": true,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "CPR_noninferiority": false,
+          "CMD_guard": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_0.005": false,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "relative_cpr_gain": 0.0020372767113463475
+    },
+    {
+      "family": "G0",
+      "beta": 0.25,
+      "primary_plausibility": {
+        "passed": false,
+        "checks": {
+          "CPR_gain": false,
+          "CMD_guard": true,
+          "time_guard": true,
+          "memory_guard": true,
+          "accuracy_auc_guard": true,
+          "compact_0.005": true,
+          "compact_0.01": true,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "CPR_noninferiority": false,
+          "CMD_guard": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_0.005": false,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "relative_cpr_gain": -0.0047838512916899
+    },
+    {
+      "family": "G1",
+      "beta": 0.1,
+      "primary_plausibility": {
+        "passed": true,
+        "checks": {
+          "CPR_gain": true,
+          "CMD_guard": true,
+          "time_guard": true,
+          "memory_guard": true,
+          "accuracy_auc_guard": true,
+          "compact_0.005": true,
+          "compact_0.01": true,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "CPR_noninferiority": false,
+          "CMD_guard": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_0.005": false,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "relative_cpr_gain": 0.007733962318239085
+    },
+    {
+      "family": "G1",
+      "beta": 0.25,
+      "primary_plausibility": {
+        "passed": false,
+        "checks": {
+          "CPR_gain": false,
+          "CMD_guard": true,
+          "time_guard": true,
+          "memory_guard": true,
+          "accuracy_auc_guard": true,
+          "compact_0.005": true,
+          "compact_0.01": true,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "CPR_noninferiority": false,
+          "CMD_guard": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_0.005": false,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "relative_cpr_gain": -0.018573497523991844
+    },
+    {
+      "family": "G2",
+      "beta": 0.1,
+      "primary_plausibility": {
+        "passed": false,
+        "checks": {
+          "CPR_gain": false,
+          "CMD_guard": true,
+          "time_guard": true,
+          "memory_guard": true,
+          "accuracy_auc_guard": true,
+          "compact_0.005": true,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "CPR_noninferiority": false,
+          "CMD_guard": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_0.005": false,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "relative_cpr_gain": 0.003831151520696352
+    },
+    {
+      "family": "G2",
+      "beta": 0.25,
+      "primary_plausibility": {
+        "passed": false,
+        "checks": {
+          "CPR_gain": false,
+          "CMD_guard": true,
+          "time_guard": true,
+          "memory_guard": true,
+          "accuracy_auc_guard": true,
+          "compact_0.005": true,
+          "compact_0.01": true,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "CPR_noninferiority": false,
+          "CMD_guard": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_0.005": false,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "relative_cpr_gain": -0.004777017860048471
+    }
+  ],
+  "stopped": false,
+  "no_unregistered_sweep": true
+}

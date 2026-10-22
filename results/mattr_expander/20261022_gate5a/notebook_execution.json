@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "scope": "CPU artifact analysis and plots only; all RUN flags false; model training used pinned WSL runtime",
+  "python": "H:\\GenAI Research\\sketch_prune\\.venv\\Scripts\\python.exe",
+  "seconds": 13.512367899995297,
+  "model_forwards": 0,
+  "code_cells": 9
+}

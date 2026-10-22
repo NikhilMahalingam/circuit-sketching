@@ -1,0 +1,21 @@
+{
+  "seconds": 379.11138675400025,
+  "argv": [
+    "/home/nikhilmahalingam/.venvs/mattr-optimization-af82b2e/bin/python",
+    "-u",
+    "-m",
+    "src.mattr_expander.runner",
+    "--out",
+    "/mnt/h/GenAI Research/sketch_prune/results/mattr_expander/20261022_gate5a/jobs/zero_b0_s43",
+    "--protocol",
+    "/mnt/h/GenAI Research/sketch_prune/results/mattr_expander/20261022_gate5a/gate5a_protocol.json",
+    "--family",
+    "zero",
+    "--beta",
+    "0",
+    "--seed",
+    "43",
+    "--target",
+    "1000"
+  ]
+}

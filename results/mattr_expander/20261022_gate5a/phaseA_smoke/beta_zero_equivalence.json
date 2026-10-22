@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "steps": 30,
+  "scores_bitwise_equal": true,
+  "loss_k_logs_equal": true,
+  "torch_python_rng_equal": true,
+  "cuda_numpy_rng_equal": true,
+  "timing_caveat": "reference uses colder donor cache; not an overhead benchmark"
+}

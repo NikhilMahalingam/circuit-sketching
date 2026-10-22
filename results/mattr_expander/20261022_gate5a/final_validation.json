@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "historical_files_unchanged": 4033,
+  "historical_Gate3_criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "protocol_sha256": "177f98a8751f408d80ac965ad9e46f67715f3c6458be03a81f48c3beded8a4e2",
+  "cpu_tests": 6,
+  "all_graphs_degree8_connected": true,
+  "canonical_mapping_bijective": true,
+  "beta_zero_bitwise_matches_Gate2": true,
+  "raw_checkpoints_effective_rankings_verified": true,
+  "paired_example_and_k_streams_equal": true,
+  "inference_no_grad_verified": true,
+  "totals": {
+    "forward_batches": 28111,
+    "example_forwards": 141367,
+    "backward_calls": 19090,
+    "optimizer_updates": 19090
+  },
+  "actual_child_launch_seconds": 7332.628940554,
+  "phaseB_selected": [
+    {
+      "family": "G1",
+      "beta": 0.1
+    }
+  ],
+  "phaseD_executed": false,
+  "leaderboard_submission": false,
+  "additional_model_forwards_for_audit": 0,
+  "audit_seconds": 23.77667589199973
+}

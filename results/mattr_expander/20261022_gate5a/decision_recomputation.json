@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "selected": [
+    {
+      "family": "G1",
+      "beta": 0.1
+    }
+  ],
+  "winner": null,
+  "decision_sha256": {
+    "phaseB_decision.json": "bf6c9c1e6e22a0e905b8eba66c1386d12edffda8671db9cc87fe620c4ec0c7bc",
+    "phaseC_decision.json": "ab6426716a3292b3355b10451eb601e04f7c2dc11c12e526d5cef3b95b57a969"
+  },
+  "protocol_sha256": "177f98a8751f408d80ac965ad9e46f67715f3c6458be03a81f48c3beded8a4e2",
+  "model_forwards": 0,
+  "thresholds_modified": false
+}

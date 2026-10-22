@@ -1,0 +1,77 @@
+{
+  "winner": null,
+  "results": [
+    {
+      "family": "G1",
+      "beta": 0.1,
+      "primary_provisional": {
+        "passed": false,
+        "checks": {
+          "CPR_gain": false,
+          "CMD_guard": true,
+          "time_guard": true,
+          "memory_guard": true,
+          "positive_seeds": false,
+          "accuracy_auc_guard": true,
+          "compact_0.005": false,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "efficiency": {
+        "passed": false,
+        "checks": {
+          "CPR_noninferiority": false,
+          "CMD_guard": true,
+          "compute_saving": true,
+          "accuracy_auc_guard": false,
+          "compact_0.005": false,
+          "compact_0.01": false,
+          "compact_0.02": true,
+          "compact_0.05": true
+        }
+      },
+      "G2_topology_controls": {
+        "G0": {
+          "passed": true,
+          "checks": {
+            "relative_CPR_gain": true,
+            "positive_seeds": true,
+            "accuracy_auc": true,
+            "compact_0.005": true,
+            "compact_0.01": true,
+            "compact_0.02": true,
+            "compact_0.05": true
+          }
+        },
+        "G1": {
+          "passed": false,
+          "checks": {
+            "relative_CPR_gain": false,
+            "positive_seeds": false,
+            "accuracy_auc": true,
+            "compact_0.005": true,
+            "compact_0.01": true,
+            "compact_0.02": true,
+            "compact_0.05": true
+          }
+        },
+        "scale": {
+          "passed": false,
+          "checks": {
+            "relative_CPR_gain": false,
+            "positive_seeds": true,
+            "accuracy_auc": true,
+            "compact_0.005": true,
+            "compact_0.01": true,
+            "compact_0.02": true,
+            "compact_0.05": true
+          }
+        }
+      },
+      "mean_relative_cpr_gain": -0.005238844562754363
+    }
+  ],
+  "development_only": true
+}

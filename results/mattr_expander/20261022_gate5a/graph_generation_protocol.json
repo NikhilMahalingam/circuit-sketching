@@ -1,0 +1,17 @@
+{
+  "vertices": 32491,
+  "degree": 8,
+  "seed": 1701,
+  "G0": "circular +/-1..4",
+  "G1": "ring; E//4 successful uniform-edge-pair degree-preserving swaps, random endpoint orientation, reject loops/duplicates; max100*budget attempts; final connectivity assertion, no regeneration",
+  "G2": "networkx.random_regular_graph(8,32491,seed=1701); sorted neighbor rows; final degree/connectivity audit",
+  "permutation": "G2 independently relabeled by numpy.default_rng(2701).permutation(N); real score order never changes",
+  "spectral": "G0 analytic all frequencies; others sparse eigsh LA3/SA1 tol1e-7 ncv40 maxiter6000; residual<=1e-5; no dense N-square matrices",
+  "versions": {
+    "networkx": "3.6.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "torch": "2.12.0",
+    "pandas": "3.0.3"
+  }
+}

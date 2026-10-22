@@ -1,0 +1,50 @@
+{
+  "identity": {
+    "configuration": "{\"beta\": 0.1, \"family\": \"G0\", \"gate\": \"5A\", \"graph_file_sha256\": \"98c605336b06b43e5aaafc459db9807954a81abdb6da750e85b5f7ad0417d1f2\", \"mapping_sha256\": \"c6fd1f0eecbcdfb89e42b1817cc9822ec4230e5adb22172dac7f5eac03a96dbe\", \"pool\": 128, \"protocol_sha256\": \"177f98a8751f408d80ac965ad9e46f67715f3c6458be03a81f48c3beded8a4e2\", \"seed\": 43, \"source_provenance\": {\"commits\": {\"external/matryoshka-attribution\": \"af82b2eef145dd3e66c793a413352d6931a152d7\", \"external/matryoshka-attribution/deps/MIB-circuit-track\": \"582fdbc8a2b0f7063a265c8f94851fd2a3aa5480\", \"external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG\": \"3fb341eafdaba63632954aecbbb96b4b08e13d02\"}, \"executable\": \"/home/nikhilmahalingam/.venvs/mattr-optimization-af82b2e/bin/python\", \"gpu\": \"NVIDIA GeForce RTX 3060\", \"python\": \"3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]\", \"source_sha256\": {\"external/matryoshka-attribution/README.md\": \"4b13062f534cd84e784d37e764795e5ddefef5c90638998db0a96bcc92818d4e\", \"external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/evaluate.py\": \"aea970d5a3ee9bb6cf2d1a1845d75218e5b6d5c405ee0a97eb91a256a60a06ff\", \"external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/graph.py\": \"e87d98418cd1bcd5be20d189fc46a826dd7cdb8ca28216e6a7e167167b954f53\", \"external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/dataset.py\": \"33064953976238cef84943446387fe7faa5e95cb77c2f7d10851d3f7df40c422\", \"external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/evaluation.py\": \"66bf4e8cb2cde67b6dcc30b84e9eee70505f0f52b7e811c1d77c745e30577ef4\", \"external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/metrics.py\": \"842f7bca12577b83d11ca207fa4fac2864edb045fd5aa44b8e6b65ed4444e840\", \"external/matryoshka-attribution/pyproject.toml\": \"27a0bdbc2d7b6652ec04b821d24136293246ad210e676c78fe6688fb0541371a\", \"external/matryoshka-attribution/scripts/mib/eval_mib.py\": \"75fa67aea49706c11d1101b38463b1ddff00076405dedaa73ec8281b1c0294c9\", \"external/matryoshka-attribution/scripts/mib/eval_mib_edge.py\": \"042b354cbace9c509d339b975557fbb45821639ece50aa4870097f3971de2db1\", \"external/matryoshka-attribution/src/matryoshka_attribution/__init__.py\": \"e34bf7de36d32cfd27585912945f6b1e7c578a9c21f42c641919374319d26e94\", \"external/matryoshka-attribution/src/matryoshka_attribution/cf_cache.py\": \"b6b20149c1c16acb7178683941ab5843f799ec86c77d5746efa3326103cb6221\", \"external/matryoshka-attribution/src/matryoshka_attribution/data/__init__.py\": \"e50e7b6d62d0f946e180c550d4967a526e7b1206d5bdff2700e2d0014bb3cd59\", \"external/matryoshka-attribution/src/matryoshka_attribution/data/arithmetic_wild.py\": \"f5a07bd63b6b570fe21367b61a4c8887526fa71ea8d2e39ee1d87100feafd84f\", \"external/matryoshka-attribution/src/matryoshka_attribution/data/sva.py\": \"7fe4ab731cfcca9afe3968ca7a600fc094ff0f91b572b269b51d056a9a04aa88\", \"external/matryoshka-attribution/src/matryoshka_attribution/deps.py\": \"cbfe9bb6dfa3d5efae760f790d1da82782f3ba9b28b89aaa84ebdb7faff04811\", \"external/matryoshka-attribution/src/matryoshka_attribution/edge_pruning.py\": \"dfb34e4b99ee90c70cb5024f732ba61dbc0bb38f6c330b25e0e07e2a04c41ff6\", \"external/matryoshka-attribution/src/matryoshka_attribution/evaluate.py\": \"53c27db5264f8627f76c7129dc66ccf396a085ab6c948c541973e6b3d5131408\", \"external/matryoshka-attribution/src/matryoshka_attribution/grad_attribution.py\": \"280e82a9c5e02d55c67ca2af1ad10a298a054a1cae0bb2bec6a3301230289241\", \"external/matryoshka-attribution/src/matryoshka_attribution/losses.py\": \"e0e6afea2767e442ea0af276bccfea71acf3cae618878da784e152c5f499e5c1\", \"external/matryoshka-attribution/src/matryoshka_attribution/masks.py\": \"5a9a85d36486e536b544caaefc6f8fbac33919247282cd0c33d354bf722de52c\", \"external/matryoshka-attribution/src/matryoshka_attribution/models/__init__.py\": \"dd0bc2ac16eb893bd7d6f2ede2a0128e7e8e0f3749c7307538180ed84488ba3b\", \"external/matryoshka-attribution/src/matryoshka_attribution/models/gpt2.py\": \"4854845914a25c2cb7968c2a07c58506eb72a1294bdd625d09d194bf942a2afc\", \"external/matryoshka-attribution/src/matryoshka_attribution/models/llama.py\": \"421c25d7bc32bf4792f2e963eace0559c6793791b297a3ce4b5b71c8769294e9\", \"external/matryoshka-attribution/src/matryoshka_attribution/modes.py\": \"7fdc9b88687d596452a8cba2559ab702a2da3089cde7948408c6d36bc4a92d43\", \"external/matryoshka-attribution/src/matryoshka_attribution/sae_loader.py\": \"12b14debbc2fb7405c7274a8fe1b053806c492d00e88cd7c54f5e5c5a933fd68\", \"external/matryoshka-attribution/src/matryoshka_attribution/schedules.py\": \"9a339ac80ce1e50caefc26defa5f96dbec32b184f7df0b691d129406a6109bd2\", \"external/matryoshka-attribution/src/matryoshka_attribution/sigmoid_topk.py\": \"0ecbdc87fe907b68439fb76a3bca140e023506883d6f40446fb44a2612452677\", \"external/matryoshka-attribution/src/matryoshka_attribution/trainer.py\": \"b987d4b174e6147613d8f806ba41ee65ce0fde8214cbf568f863ce1c701ab7e9\", \"external/matryoshka-attribution/src/matryoshka_attribution/wandb_util.py\": \"c9973b10eadb7e48a9adea89cd97fee965de55e3dc2642ab99692245724a3390\", \"external/matryoshka-attribution/uv.lock\": \"95ff386810f211133e1f8a9a64a8d78a1d263a3e0d673dd578ab6359a8abe235\"}, \"torch_cuda\": \"13.0\", \"versions\": {\"datasets\": \"4.8.5\", \"matplotlib\": \"3.10.9\", \"numpy\": \"2.4.6\", \"pandas\": \"3.0.3\", \"psutil\": \"7.2.2\", \"pytest\": \"9.1.1\", \"scipy\": \"1.17.1\", \"torch\": \"2.12.0\", \"transformer-lens\": \"3.2.1\", \"transformers\": \"5.9.0\"}}}",
+    "raw_checkpoint_sha256": "553133f0906f1437cbaa393964c7ea08eef6398bc53d43ea961761183b9b4648",
+    "validation_manifest_sha256": "18921021f9a486e2dab0401b0170421f3512847351841d7e80efc354c620dda3",
+    "export": "effective scores"
+  },
+  "result": [
+    [
+      0.0,
+      0.0,
+      96.0,
+      283.0,
+      632.0,
+      1612.0,
+      3245.0,
+      6498.0,
+      16245.0,
+      32491.0
+    ],
+    9.954984135325986,
+    8.970146528533554,
+    5.980428344006328,
+    [
+      0.0,
+      0.0,
+      0.0659705722149441,
+      0.8873228143141458,
+      5.781417483847923,
+      11.937080054795333,
+      13.08640733530445,
+      13.474804209607147,
+      13.57128096997934,
+      1.0
+    ],
+    [
+      0.0546875,
+      0.0546875,
+      0.0546875,
+      0.7421875,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9921875
+    ],
+    0.706062004903457
+  ]
+}

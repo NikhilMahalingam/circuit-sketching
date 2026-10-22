@@ -1,0 +1,26 @@
+{
+  "family": "G1",
+  "graph_seed": 1701,
+  "generation_seconds": 0.4267787289999987,
+  "successful_swaps": 32491,
+  "swap_attempts": 32505,
+  "vertices": 32491,
+  "edges": 129964,
+  "degree_min": 8,
+  "degree_max": 8,
+  "components": 1,
+  "degree_histogram": {
+    "8": 32491
+  },
+  "csr_bytes": 3249104,
+  "neighbor_int32_bytes": 1039712,
+  "gpu_neighbor_int64_bytes": 2079424,
+  "adjacency_sha256": "e4d5699885201f420814c65bdd05d04a488c0d4970887f36ddf2f5a21bb6709b",
+  "laplacian_gap": 0.14804328563083835,
+  "nontrivial_adjacency_magnitude": 0.8519567143691616,
+  "spectral_residual": 3.867308946704512e-08,
+  "spectral_seconds": 0.16528755299999887,
+  "spectral_method": "sparse symmetric ARPACK; LA k=3, SA k=1, tol1e-7, maxiter6000, ncv40",
+  "required_construction_seconds": 0.457318407999999,
+  "file_sha256": "ab13ff142c91c4f801aead968398fe46546c778d2d6020404da1faa2aa33d7cf"
+}

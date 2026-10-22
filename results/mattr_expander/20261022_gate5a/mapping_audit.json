@@ -1,0 +1,7 @@
+{
+  "vertices": 32491,
+  "all_edges_bijective": true,
+  "order": "row-major true entries of official Graph.real_edge_mask; negative logits column normalized",
+  "csv_sha256": "c6fd1f0eecbcdfb89e42b1817cc9822ec4230e5adb22172dac7f5eac03a96dbe",
+  "gzip_sha256": "3bb22c83f836bcdebc30a5467277c1e1bb053220dc7e9aea7e6ff66219f68d17"
+}

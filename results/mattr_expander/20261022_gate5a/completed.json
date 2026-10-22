@@ -1,0 +1,14 @@
+{
+  "passed_execution": true,
+  "phaseB_selected": [
+    {
+      "family": "G1",
+      "beta": 0.1
+    }
+  ],
+  "phaseC_winner": null,
+  "historical_files_unchanged": 4033,
+  "protocol_sha256": "177f98a8751f408d80ac965ad9e46f67715f3c6458be03a81f48c3beded8a4e2",
+  "refinement_run": false,
+  "leaderboard_submission": false
+}

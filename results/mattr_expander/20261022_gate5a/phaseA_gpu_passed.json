@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "family": "G0",
+      "cpu_gpu_forward_max_error": 5.960464477539063e-08,
+      "cpu_gpu_gradient_max_error": 5.960464477539063e-08,
+      "cuda_gradcheck": true,
+      "forward_backward_repeats": 200,
+      "seconds": 0.15433512600000654,
+      "peak_allocated_mib": 3.84765625
+    },
+    {
+      "family": "G1",
+      "cpu_gpu_forward_max_error": 5.960464477539063e-08,
+      "cpu_gpu_gradient_max_error": 5.960464477539063e-08,
+      "cuda_gradcheck": true,
+      "forward_backward_repeats": 200,
+      "seconds": 0.11634149299999308,
+      "peak_allocated_mib": 3.84765625
+    },
+    {
+      "family": "G2",
+      "cpu_gpu_forward_max_error": 5.960464477539063e-08,
+      "cpu_gpu_gradient_max_error": 5.960464477539063e-08,
+      "cuda_gradcheck": true,
+      "forward_backward_repeats": 200,
+      "seconds": 0.1126576650000004,
+      "peak_allocated_mib": 3.84765625
+    }
+  ]
+}

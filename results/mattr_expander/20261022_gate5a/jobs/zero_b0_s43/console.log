@@ -1,0 +1,106 @@
+2026-10-22 15:35:45,606 INFO expander_official_edge: Loading gpt2-small...
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights:  53%|█████▎    | 78/148 [01:02<00:55,  1.26it/s]
+Loading weights: 100%|██████████| 148/148 [01:02<00:00,  2.39it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+2026-10-22 15:35:51,262 INFO expander_official_edge: Graph: 158 nodes, 32491 edges (32491 real)
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-22 15:35:51,275 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 15:35:51,308 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 15:35:51,975 INFO expander_official_edge: Loaded 128 examples
+2026-10-22 15:35:51,976 INFO expander_official_edge: Edge scores: 32491 parameters
+2026-10-22 15:35:51,976 INFO expander_official_edge: Training for 1000 steps (mode=iso, k_schedule=uniform, live activations)...
+2026-10-22 15:35:52,324 INFO expander_official_edge: Pre-tokenized 128 examples in 0.3s
+zero beta=0.0 seed=43: 1/1000
+2026-10-22 15:35:53,491 INFO expander_official_edge: Step    1/1000  loss=2.6995  |grad|=0.1606  |s|max=0.05  k=14750/32491  (0.9 step/s)
+2026-10-22 15:36:10,068 INFO expander_official_edge: Step   50/1000  loss=-22.6509  |grad|=2.454  |s|max=2.133  k=26035/32491  (2.8 step/s)
+zero beta=0.0 seed=43: 100/1000
+2026-10-22 15:36:25,440 INFO expander_official_edge: Step  100/1000  loss=-36.0960  |grad|=2.531  |s|max=3.565  k=9848/32491  (3.0 step/s)
+2026-10-22 15:36:41,118 INFO expander_official_edge: Step  150/1000  loss=-49.6981  |grad|=6.235  |s|max=4.206  k=2790/32491  (3.1 step/s)
+zero beta=0.0 seed=43: 200/1000
+2026-10-22 15:36:55,085 INFO expander_official_edge: Step  200/1000  loss=-82.9443  |grad|=2.065  |s|max=4.675  k=24404/32491  (3.2 step/s)
+2026-10-22 15:38:13,022 INFO expander_official_edge: Step  250/1000  loss=-63.4639  |grad|=15.7  |s|max=4.984  k=31081/32491  (1.8 step/s)
+zero beta=0.0 seed=43: 300/1000
+2026-10-22 15:37:25,447 INFO expander_official_edge: Step  300/1000  loss=-75.0762  |grad|=1.654  |s|max=5.363  k=30395/32491  (3.2 step/s)
+2026-10-22 15:37:40,323 INFO expander_official_edge: Step  350/1000  loss=-87.8593  |grad|=1.188  |s|max=5.524  k=17873/32491  (3.2 step/s)
+zero beta=0.0 seed=43: 400/1000
+2026-10-22 15:37:55,375 INFO expander_official_edge: Step  400/1000  loss=-73.3422  |grad|=1.188  |s|max=5.903  k=15595/32491  (3.3 step/s)
+2026-10-22 15:38:09,354 INFO expander_official_edge: Step  450/1000  loss=-87.1564  |grad|=1.698  |s|max=6.039  k=11738/32491  (3.3 step/s)
+zero beta=0.0 seed=43: 500/1000
+2026-10-22 15:38:23,817 INFO expander_official_edge: Step  500/1000  loss=-95.3962  |grad|=1.106  |s|max=6.126  k=27266/32491  (3.3 step/s)
+2026-10-22 15:38:37,791 INFO expander_official_edge: Step  550/1000  loss=-83.3226  |grad|=1.583  |s|max=6.386  k=27564/32491  (3.3 step/s)
+zero beta=0.0 seed=43: 600/1000
+2026-10-22 15:38:52,146 INFO expander_official_edge: Step  600/1000  loss=-94.1939  |grad|=1.444  |s|max=6.656  k=21761/32491  (3.3 step/s)
+2026-10-22 15:39:08,119 INFO expander_official_edge: Step  650/1000  loss=-80.1835  |grad|=1.741  |s|max=6.675  k=26235/32491  (3.3 step/s)
+zero beta=0.0 seed=43: 700/1000
+2026-10-22 15:39:22,626 INFO expander_official_edge: Step  700/1000  loss=-95.9002  |grad|=1.163  |s|max=6.759  k=18479/32491  (3.3 step/s)
+2026-10-22 15:40:39,184 INFO expander_official_edge: Step  750/1000  loss=-75.4402  |grad|=1.301  |s|max=6.742  k=9394/32491  (2.6 step/s)
+zero beta=0.0 seed=43: 800/1000
+2026-10-22 15:39:52,016 INFO expander_official_edge: Step  800/1000  loss=-82.2597  |grad|=1.381  |s|max=6.532  k=15751/32491  (3.3 step/s)
+2026-10-22 15:40:05,862 INFO expander_official_edge: Step  850/1000  loss=-79.9136  |grad|=1.364  |s|max=6.679  k=3332/32491  (3.4 step/s)
+zero beta=0.0 seed=43: 900/1000
+2026-10-22 15:40:23,010 INFO expander_official_edge: Step  900/1000  loss=-17.0395  |grad|=7.029  |s|max=6.68  k=454/32491  (3.3 step/s)
+2026-10-22 15:40:38,732 INFO expander_official_edge: Step  950/1000  loss=-72.7395  |grad|=1.202  |s|max=6.686  k=6658/32491  (3.3 step/s)
+zero beta=0.0 seed=43: 1000/1000
+2026-10-22 15:40:52,759 INFO expander_official_edge: Step 1000/1000  loss=-69.3034  |grad|=2.521  |s|max=6.774  k=5061/32491  (3.3 step/s)
+2026-10-22 15:40:52,806 INFO expander_official_edge: Training complete in 300.4s (corrupted-acts cache: 128/1000 forwards paid, 128 cached, 1.06 GB)
+2026-10-22 15:40:52,806 INFO expander_official_edge: Running MIB evaluation (edge level)...
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-22 15:40:52,812 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 15:40:52,821 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+
+  0%|          | 0/7 [00:00<?, ?it/s]
+ 14%|█▍        | 1/7 [00:00<00:02,  2.60it/s]
+ 29%|██▊       | 2/7 [00:00<00:01,  2.78it/s]
+ 43%|████▎     | 3/7 [00:01<00:01,  3.11it/s]
+ 57%|█████▋    | 4/7 [00:01<00:00,  3.18it/s]
+ 71%|███████▏  | 5/7 [00:01<00:00,  3.19it/s]
+ 86%|████████▌ | 6/7 [00:01<00:00,  3.20it/s]
+100%|██████████| 7/7 [00:02<00:00,  3.97it/s]
+100%|██████████| 7/7 [00:02<00:00,  3.41it/s]
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+
+  0%|          | 0/7 [00:00<?, ?it/s]
+ 14%|█▍        | 1/7 [00:00<00:01,  3.29it/s]
+ 29%|██▊       | 2/7 [00:00<00:01,  3.19it/s]
+ 43%|████▎     | 3/7 [00:00<00:01,  3.35it/s]
+ 57%|█████▋    | 4/7 [00:01<00:00,  3.32it/s]
+ 71%|███████▏  | 5/7 [00:01<00:00,  3.28it/s]
+ 86%|████████▌ | 6/7 [00:01<00:00,  3.26it/s]
+100%|██████████| 7/7 [00:01<00:00,  4.04it/s]
+100%|██████████| 7/7 [00:01<00:00,  3.58it/s]
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+2026-10-22 15:41:49,988 INFO expander_official_edge: MIB Results (edge level, live activations):
+2026-10-22 15:41:49,988 INFO expander_official_edge:     0.1% -> CPR=0.0000
+2026-10-22 15:41:49,988 INFO expander_official_edge:     0.2% -> CPR=0.0171
+2026-10-22 15:41:49,988 INFO expander_official_edge:     0.5% -> CPR=0.3541
+2026-10-22 15:41:49,988 INFO expander_official_edge:     1.0% -> CPR=3.8871
+2026-10-22 15:41:49,988 INFO expander_official_edge:     2.0% -> CPR=8.6303
+2026-10-22 15:41:49,988 INFO expander_official_edge:     5.0% -> CPR=12.5448
+2026-10-22 15:41:49,988 INFO expander_official_edge:    10.0% -> CPR=13.4956
+2026-10-22 15:41:49,988 INFO expander_official_edge:    20.0% -> CPR=13.6730
+2026-10-22 15:41:49,988 INFO expander_official_edge:    50.0% -> CPR=13.9016
+2026-10-22 15:41:49,988 INFO expander_official_edge:   100.0% -> CPR=1.0000
+2026-10-22 15:41:49,988 INFO expander_official_edge:   CPR AUC=10.2624  Avg CPR=6.7504
+2026-10-22 15:41:49,997 INFO expander_official_edge: Saved results to /mnt/h/GenAI Research/sketch_prune/results/mattr_expander/20261022_gate5a/jobs/zero_b0_s43/upstream_1000

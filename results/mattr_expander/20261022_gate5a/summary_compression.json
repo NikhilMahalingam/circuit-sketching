@@ -1,0 +1,6 @@
+{
+  "source": "structural_retention_statistics.csv",
+  "source_sha256": "61fe069dfac44cf2b8d7b0db86c370dae81031e76b4e7acaddce519a26829441",
+  "compressed_sha256": "636c98208e5bb2793ab94f356baea3b826507cc597688d653f5e52370cbbc6f3",
+  "scope": "Aggregated structural counts only; no score vectors or example data"
+}

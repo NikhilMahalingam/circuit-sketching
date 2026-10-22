@@ -1,0 +1,11 @@
+test_beta_zero_and_checkpoint_resume_official_trainer (test_mattr_expander.ExpanderTests.test_beta_zero_and_checkpoint_resume_official_trainer) ... ok
+test_effective_export_and_soft_mass (test_mattr_expander.ExpanderTests.test_effective_export_and_soft_mass) ... ok
+test_graphs_degree_reproducibility_and_rng_isolation (test_mattr_expander.ExpanderTests.test_graphs_degree_reproducibility_and_rng_isolation) ... ok
+test_registered_quality_guards (test_mattr_expander.ExpanderTests.test_registered_quality_guards) ... ok
+test_sparse_spectrum_against_known_small_graph (test_mattr_expander.ExpanderTests.test_sparse_spectrum_against_known_small_graph) ... ok
+test_values_gradients_and_finite_difference (test_mattr_expander.ExpanderTests.test_values_gradients_and_finite_difference) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.063s
+
+OK

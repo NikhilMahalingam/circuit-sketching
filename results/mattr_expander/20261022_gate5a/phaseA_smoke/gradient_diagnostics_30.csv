@@ -1,0 +1,2 @@
+step,raw_gradient_norm,effective_gradient_norm,raw_score_variance,effective_score_variance,raw_gradient_top_score_fraction,effective_gradient_top_score_fraction
+1,2.1141979354043445,2.79963173287157,0.0,0.0,0.028192387893795967,0.030100220814347267
