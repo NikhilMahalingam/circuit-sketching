@@ -1,0 +1,11 @@
+target,exact_seeds,n_fixed_seeds,mean,lower,upper,scope
+60,[],0,,,,no exact paired comparison attained by both original rankings
+80,[],0,,,,no exact paired comparison attained by both original rankings
+100,"[42, 43]",2,0.291015625,0.2587890625,0.322265625,descriptive exact subset of already evaluated capped circuits; no separate exact forwards
+116,[42],1,0.408203125,0.3671875,0.447265625,descriptive exact subset of already evaluated capped circuits; no separate exact forwards
+140,[43],1,0.11328125,0.076171875,0.15234375,descriptive exact subset of already evaluated capped circuits; no separate exact forwards
+180,[],0,,,,no exact paired comparison attained by both original rankings
+240,[43],1,0.001953125,-0.0078125,0.01171875,descriptive exact subset of already evaluated capped circuits; no separate exact forwards
+296,"[43, 44]",2,-0.00390625,-0.009765625,0.0009765625,descriptive exact subset of already evaluated capped circuits; no separate exact forwards
+400,"[42, 43, 44]",3,0.018880208333333332,0.010416666666666666,0.027994791666666664,descriptive exact subset of already evaluated capped circuits; no separate exact forwards
+640,"[42, 43, 44]",3,0.0,0.0,0.0,descriptive exact subset of already evaluated capped circuits; no separate exact forwards

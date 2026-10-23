@@ -1,0 +1,3 @@
+batch_size,max_margin_error,top1_equal,passed
+2,0.0,True,True
+1,1.52587890625e-05,True,True

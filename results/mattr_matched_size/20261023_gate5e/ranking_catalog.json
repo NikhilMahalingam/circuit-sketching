@@ -1,0 +1,281 @@
+[
+  {
+    "key": "baseline_s42",
+    "kind": "original",
+    "method": "baseline",
+    "seed": 42,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/bypass_g0_s42/effective_scores_1000.pt",
+    "scores_sha256": "b35cffb0153771b3bd801746165f3c51bb1d06d9bd79f0b603a76016b00a0294"
+  },
+  {
+    "key": "baseline_s43",
+    "kind": "original",
+    "method": "baseline",
+    "seed": 43,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/bypass_g0_s43/effective_scores_1000.pt",
+    "scores_sha256": "6c8ded1f6004f0ebfd3c4ffbc1d33372753fbee61f59f3e9c6c4bdb37c890328"
+  },
+  {
+    "key": "baseline_s44",
+    "kind": "original",
+    "method": "baseline",
+    "seed": 44,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/bypass_g0_s44/effective_scores_1000.pt",
+    "scores_sha256": "44e84dd1f7ec944ada71bc11d3a728a3101ab31dfee2565452a7843f2b42aa10"
+  },
+  {
+    "key": "hierarchy_s42",
+    "kind": "original",
+    "method": "hierarchy",
+    "seed": 42,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0.01_s42/effective_scores_1000.pt",
+    "scores_sha256": "ea19f8adfdfcf6a37630747751961c5084e9e2f664c588d96818d9a306773d23"
+  },
+  {
+    "key": "hierarchy_s43",
+    "kind": "original",
+    "method": "hierarchy",
+    "seed": 43,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0.01_s43/effective_scores_1000.pt",
+    "scores_sha256": "d7e123c9715b71523dc82e847e33fd346ec62021b302fae912741b8a57fbd82d"
+  },
+  {
+    "key": "hierarchy_s44",
+    "kind": "original",
+    "method": "hierarchy",
+    "seed": 44,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0.01_s44/effective_scores_1000.pt",
+    "scores_sha256": "b379fb5bd58d18fa839d914008c88c1e5d598b87fb31cca15bb15aae047158ee"
+  },
+  {
+    "key": "gamma_zero_s42",
+    "kind": "original",
+    "method": "gamma_zero",
+    "seed": 42,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s42/effective_scores_1000.pt",
+    "scores_sha256": "42a17644ff5d10258f09045a141a2c595b4526b5c31d931d7fbdf07fb43f41c5"
+  },
+  {
+    "key": "gamma_zero_s43",
+    "kind": "original",
+    "method": "gamma_zero",
+    "seed": 43,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s43/effective_scores_1000.pt",
+    "scores_sha256": "49f6203fc75d5936ee225caa629d87a9d74cb848f1969779eceb7c8def8f3c93"
+  },
+  {
+    "key": "gamma_zero_s44",
+    "kind": "original",
+    "method": "gamma_zero",
+    "seed": 44,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s44/effective_scores_1000.pt",
+    "scores_sha256": "78bab803bdf669d3c097417504ea5784803dde60de3093cd931b549ff4ce12d5"
+  },
+  {
+    "key": "shuffled_s42",
+    "kind": "original",
+    "method": "shuffled",
+    "seed": 42,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0.01_s42_shuffled/effective_scores_1000.pt",
+    "scores_sha256": "d7d79919f568ee41a431f5d8846be325c4d05dfb76b89b20f6c395e0912d617a"
+  },
+  {
+    "key": "shuffled_s43",
+    "kind": "original",
+    "method": "shuffled",
+    "seed": 43,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0.01_s43_shuffled/effective_scores_1000.pt",
+    "scores_sha256": "4ad0189effa22e126651b3a513a021a83c426f9ac0e9dd288a6679113851aeaf"
+  },
+  {
+    "key": "shuffled_s44",
+    "kind": "original",
+    "method": "shuffled",
+    "seed": 44,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0.01_s44_shuffled/effective_scores_1000.pt",
+    "scores_sha256": "d7c15e2a2b0f5a8581aac588ba3cb2e1139b0fea532aa650803afa13ff765965"
+  },
+  {
+    "key": "edge_l2_s42",
+    "kind": "original",
+    "method": "edge_l2",
+    "seed": 42,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/edge_g0.01_s42/effective_scores_1000.pt",
+    "scores_sha256": "14496b0b7dc06d72707f9f65171e286a56ed68c02e41867d62250fdef32466ef"
+  },
+  {
+    "key": "edge_l2_s43",
+    "kind": "original",
+    "method": "edge_l2",
+    "seed": 43,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/edge_g0.01_s43/effective_scores_1000.pt",
+    "scores_sha256": "e67ed52fb0743be5bb838bf426bba99c2ed62bb320f278e084e2f538a3ae6d2f"
+  },
+  {
+    "key": "edge_l2_s44",
+    "kind": "original",
+    "method": "edge_l2",
+    "seed": 44,
+    "scores": "results/mattr_hierarchy/20261022_gate5c/jobs/edge_g0.01_s44/effective_scores_1000.pt",
+    "scores_sha256": "0c92ec72ed741a7a457a7dcd4a0f67b788df191b049f0afccfd2163e9e24717a"
+  },
+  {
+    "key": "baseline_ensemble",
+    "kind": "ensemble",
+    "method": "baseline",
+    "seed": "ensemble",
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/baseline_ensemble.pt",
+    "scores_sha256": "7c01eb6b71513b0668180ef0699cedba8977f2e32f72e3312631d5846b9b84be"
+  },
+  {
+    "key": "hierarchy_ensemble",
+    "kind": "ensemble",
+    "method": "hierarchy",
+    "seed": "ensemble",
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/hierarchy_ensemble.pt",
+    "scores_sha256": "a44f75676b3e2dc6c8b4cfa937d8afdeaeda41d2c636c11f43a1a72e724a777d"
+  },
+  {
+    "key": "gamma_zero_ensemble",
+    "kind": "ensemble",
+    "method": "gamma_zero",
+    "seed": "ensemble",
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/gamma_zero_ensemble.pt",
+    "scores_sha256": "180674dbdd5edcc7cc3d2474ac097c7bb9ec8c49b08c73e5a29a565ea193af87"
+  },
+  {
+    "key": "baseline_s42_closure",
+    "kind": "closure",
+    "method": "baseline",
+    "seed": 42,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/baseline_s42_closure.pt",
+    "scores_sha256": "545a459af9f98af77a6879e2058f5e8dd7d567b4eb102d057b7da5be57f4839f",
+    "parent": "baseline_s42"
+  },
+  {
+    "key": "baseline_s43_closure",
+    "kind": "closure",
+    "method": "baseline",
+    "seed": 43,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/baseline_s43_closure.pt",
+    "scores_sha256": "6681ac9b72fe4d1d780b62d86c29eeb332a0837a0ca7f2e49b0cf7c7476a101c",
+    "parent": "baseline_s43"
+  },
+  {
+    "key": "baseline_s44_closure",
+    "kind": "closure",
+    "method": "baseline",
+    "seed": 44,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/baseline_s44_closure.pt",
+    "scores_sha256": "8579d45a2e57d855d0139082ac2986b2402b151d80b6107a23690b77b6442b6b",
+    "parent": "baseline_s44"
+  },
+  {
+    "key": "hierarchy_s42_closure",
+    "kind": "closure",
+    "method": "hierarchy",
+    "seed": 42,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/hierarchy_s42_closure.pt",
+    "scores_sha256": "db52239bc1536c6fe114f16f3f48e29c666336021fcd47afa1a1b20b98800dc2",
+    "parent": "hierarchy_s42"
+  },
+  {
+    "key": "hierarchy_s43_closure",
+    "kind": "closure",
+    "method": "hierarchy",
+    "seed": 43,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/hierarchy_s43_closure.pt",
+    "scores_sha256": "272685b049ab242974f6e31d8c83b41a2cf864338f955fd6b4dea8a58227a42b",
+    "parent": "hierarchy_s43"
+  },
+  {
+    "key": "hierarchy_s44_closure",
+    "kind": "closure",
+    "method": "hierarchy",
+    "seed": 44,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/hierarchy_s44_closure.pt",
+    "scores_sha256": "f8a574c2de81d46e6ce84794c4d9dcaa1692697081dee31802ea9c44871c1085",
+    "parent": "hierarchy_s44"
+  },
+  {
+    "key": "gamma_zero_s42_closure",
+    "kind": "closure",
+    "method": "gamma_zero",
+    "seed": 42,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/gamma_zero_s42_closure.pt",
+    "scores_sha256": "5d5fcc63d0b0cd5d40ad2629ade8633f99f70552e9f92d577804a1cdf353a9a7",
+    "parent": "gamma_zero_s42"
+  },
+  {
+    "key": "gamma_zero_s43_closure",
+    "kind": "closure",
+    "method": "gamma_zero",
+    "seed": 43,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/gamma_zero_s43_closure.pt",
+    "scores_sha256": "da8e67fdb9f014bf973b3814500a902d29f5244efbc9cd24a97d9d4a49ff2cb8",
+    "parent": "gamma_zero_s43"
+  },
+  {
+    "key": "gamma_zero_s44_closure",
+    "kind": "closure",
+    "method": "gamma_zero",
+    "seed": 44,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/gamma_zero_s44_closure.pt",
+    "scores_sha256": "674dc53ffde7360338beaba93073ff5171d71bdf0eb7004378d49b8a017d1f69",
+    "parent": "gamma_zero_s44"
+  },
+  {
+    "key": "shuffled_s42_closure",
+    "kind": "closure",
+    "method": "shuffled",
+    "seed": 42,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/shuffled_s42_closure.pt",
+    "scores_sha256": "9cc676b50600c225cbaf766da0a42653bd15fafe2f26de2ddd7674f390df8fb5",
+    "parent": "shuffled_s42"
+  },
+  {
+    "key": "shuffled_s43_closure",
+    "kind": "closure",
+    "method": "shuffled",
+    "seed": 43,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/shuffled_s43_closure.pt",
+    "scores_sha256": "8591a0a9dda6d9c584b06725febe126de535c8f9f4b34538bd6d98788237b57f",
+    "parent": "shuffled_s43"
+  },
+  {
+    "key": "shuffled_s44_closure",
+    "kind": "closure",
+    "method": "shuffled",
+    "seed": 44,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/shuffled_s44_closure.pt",
+    "scores_sha256": "104aabb1baf2abe89c4ebbb9949e3e390cc9318929b3d8376c80f626d4541377",
+    "parent": "shuffled_s44"
+  },
+  {
+    "key": "edge_l2_s42_closure",
+    "kind": "closure",
+    "method": "edge_l2",
+    "seed": 42,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/edge_l2_s42_closure.pt",
+    "scores_sha256": "6f9b90f3f387dac63f2a067b16fbd22f4d4aa64b93eed9dc861d42ec6a628f1b",
+    "parent": "edge_l2_s42"
+  },
+  {
+    "key": "edge_l2_s43_closure",
+    "kind": "closure",
+    "method": "edge_l2",
+    "seed": 43,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/edge_l2_s43_closure.pt",
+    "scores_sha256": "8d7632d80175a42c643e1f1901dc29b7906886bec014fcda6e7093fe5b65a827",
+    "parent": "edge_l2_s43"
+  },
+  {
+    "key": "edge_l2_s44_closure",
+    "kind": "closure",
+    "method": "edge_l2",
+    "seed": 44,
+    "scores": "results/mattr_matched_size/20261023_gate5e/derived_rankings/edge_l2_s44_closure.pt",
+    "scores_sha256": "83c4a887d872ef72dc06c6fd687cfe44569a1403ea0fef4a2693ab08dc7ed13f",
+    "parent": "edge_l2_s44"
+  }
+]

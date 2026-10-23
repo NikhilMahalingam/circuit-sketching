@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "original_rankings": 15,
+  "ensemble_rankings": 3,
+  "valid_closure_rankings": 15,
+  "monotonic": true,
+  "nested": true,
+  "Gate5D_counts_and_masks_reproduced": true,
+  "prefix_range": [
+    1,
+    1624
+  ],
+  "T1": 116,
+  "T2": 296,
+  "targets": [
+    60,
+    80,
+    100,
+    116,
+    140,
+    180,
+    240,
+    296,
+    400,
+    640
+  ],
+  "graph_analysis_seconds": 200.767321474,
+  "registered_pair_comparisons": 1530,
+  "both_exact_pairs": 675,
+  "primary_pairs": 30,
+  "primary_both_exact": 13,
+  "model_forwards": 0
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "protocol_sha256": "bb6421a5e5481a172559d0634ab9e71a90b942192f046a824b818bb4ecc90b39",
+  "historical_files_unchanged": 7834,
+  "full_grid_rankings": 33,
+  "capped_upper_queries": 216,
+  "cohort_prompts": 512,
+  "clean_donor_crossrole_overlap": 0,
+  "no_matched_closure_queries": true,
+  "original_checkpoint_hashes_verified": true,
+  "model_weights_unchanged": true,
+  "actual_forwards_verified": true,
+  "optimizer_updates": 0,
+  "model_backwards": 0,
+  "Gate5D_decision_unchanged": true,
+  "additional_model_forwards": 0,
+  "seconds": 107.861834222
+}

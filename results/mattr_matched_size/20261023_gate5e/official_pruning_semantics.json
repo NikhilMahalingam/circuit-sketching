@@ -1,0 +1,23 @@
+{
+  "apply_topn": {
+    "file": "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/graph.py",
+    "first_line": 443,
+    "last_line": 529,
+    "sha256": "e87d98418cd1bcd5be20d189fc46a826dd7cdb8ca28216e6a7e167167b954f53"
+  },
+  "prune": {
+    "file": "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/graph.py",
+    "first_line": 567,
+    "last_line": 599,
+    "sha256": "e87d98418cd1bcd5be20d189fc46a826dd7cdb8ca28216e6a7e167167b954f53"
+  },
+  "evaluate_area_under_curve": {
+    "file": "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/evaluation.py",
+    "first_line": 12,
+    "last_line": 140,
+    "sha256": "66bf4e8cb2cde67b6dcc30b84e9eee70505f0f52b7e811c1d77c745e30577ef4"
+  },
+  "grid_counting": "nominal selection fraction of len(graph.edges) before pruning; integrals use percentages, not weighted_edge_counts",
+  "pruning": "iteratively remove nodes lacking incoming or outgoing edges, then edges with absent parents/children, until both masks stabilize; input treated as having incoming edges, logits receiver forced present. Q/K/V map to their shared head node for node-presence checks; no new edges are added.",
+  "CPR_linear_area_weight_at_or_below1pct": 0.014014014014014014
+}

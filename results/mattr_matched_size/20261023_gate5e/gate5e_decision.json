@@ -1,0 +1,42 @@
+{
+  "primary_success": true,
+  "checks": {
+    "positive_mean": true,
+    "positive_at_least2_seeds": true,
+    "paired_prompt_lower_positive": true,
+    "correct_evaluator_and_masks": true
+  },
+  "cap_T1": {
+    "mean": 0.3450520833333333,
+    "lower": 0.318359375,
+    "upper": 0.37174479166666663
+  },
+  "nominal_0.5pct": {
+    "mean": 0.3684895833333333,
+    "lower": 0.3411458333333333,
+    "upper": 0.3958333333333333
+  },
+  "positive_cap_seeds": 3,
+  "per_seed_cap_changes": [
+    0.408203125,
+    0.0703125,
+    0.556640625
+  ],
+  "per_seed_nominal_changes": [
+    0.400390625,
+    0.150390625,
+    0.5546875
+  ],
+  "advantage_retention_ratio": {
+    "stable": true,
+    "point": 0.9363957597173145,
+    "lower": 0.9094201289674878,
+    "upper": 0.9628318584070796,
+    "denominator_nearzero_threshold": 0.001953125,
+    "invalid_bootstrap_denominators": 0,
+    "causal_explained_fraction": false
+  },
+  "classification": "Ranking-quality effect",
+  "scope": "capped-size comparison; no causal fraction or training-seed significance claim",
+  "new_training_authorized": false
+}

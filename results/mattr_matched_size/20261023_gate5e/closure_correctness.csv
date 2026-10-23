@@ -1,0 +1,16 @@
+ranking,passed,all_boundaries_checked,every_prefix_in_known_groups_checked,additional_tail_nesting_samples,group_boundary_scope_max_original_prefix,known_closure_scope_max,tail_pruning_free_claim
+baseline_s42,True,1337,1601,50,1624,1601,False
+baseline_s43,True,1388,1612,50,1624,1612,False
+baseline_s44,True,1384,1612,50,1624,1612,False
+hierarchy_s42,True,1354,1613,50,1624,1613,False
+hierarchy_s43,True,1396,1614,50,1624,1614,False
+hierarchy_s44,True,1384,1609,50,1624,1609,False
+gamma_zero_s42,True,1340,1614,50,1624,1614,False
+gamma_zero_s43,True,1387,1616,50,1624,1616,False
+gamma_zero_s44,True,1385,1607,50,1624,1607,False
+shuffled_s42,True,1378,1586,50,1624,1586,False
+shuffled_s43,True,1426,1611,50,1624,1611,False
+shuffled_s44,True,1393,1618,50,1624,1618,False
+edge_l2_s42,True,1338,1604,50,1624,1604,False
+edge_l2_s43,True,1387,1616,50,1624,1616,False
+edge_l2_s44,True,1382,1612,50,1624,1612,False

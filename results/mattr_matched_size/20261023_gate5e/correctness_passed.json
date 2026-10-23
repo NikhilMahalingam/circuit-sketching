@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "official_patcher_unchanged": true,
+  "batch_repeat_singleton": true,
+  "reference_cache_equivalent": true,
+  "full_returns_clean": true,
+  "nested_masks": true,
+  "mask_audit_points": 10,
+  "optimizer_updates": 0,
+  "backward_calls": 0
+}

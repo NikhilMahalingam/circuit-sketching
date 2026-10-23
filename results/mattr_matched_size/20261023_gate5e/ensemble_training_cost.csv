@@ -1,0 +1,4 @@
+method,separate_training_runs,optimizer_updates_total,existing_training_seconds,existing_adaptation_seconds,scope
+baseline,3,3000,826.607681831,857.8911300410002,reused three1000-step runs; not newGate5E compute or a cheaper discovery claim
+hierarchy,3,3000,833.8395680029996,868.2719721210001,reused three1000-step runs; not newGate5E compute or a cheaper discovery claim
+gamma_zero,3,3000,826.6268054099996,859.4405121539994,reused three1000-step runs; not newGate5E compute or a cheaper discovery claim

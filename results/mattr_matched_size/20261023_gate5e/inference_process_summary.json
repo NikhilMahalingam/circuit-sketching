@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "projection_stop": false,
+  "seconds": 3486.62767838,
+  "counts": {
+    "forward_batches": 19956,
+    "example_forwards": 391332,
+    "backward_calls": 0,
+    "optimizer_updates": 0
+  },
+  "unique_prompts": 512,
+  "output_cache_hits": 166,
+  "unique_exact_masks": 381,
+  "reference_scalar_hits": 64,
+  "mutable_activation_cache": false
+}

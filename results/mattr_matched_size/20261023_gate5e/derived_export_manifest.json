@@ -1,0 +1,167 @@
+{
+  "scope": "Lossless CSV exports of already frozen derived scores; no transformations or selections changed",
+  "rankings": [
+    {
+      "ranking": "baseline_ensemble",
+      "kind": "ensemble",
+      "csv_gzip": "derived_rankings/baseline_ensemble_scores.csv.gz",
+      "sha256": "89e7516e2a935bf96f6d8bd2f6d21510b225a226c8ae203d5950bc88421d5fa7",
+      "frozen_tensor_sha256": "7c01eb6b71513b0668180ef0699cedba8977f2e32f72e3312631d5846b9b84be",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "hierarchy_ensemble",
+      "kind": "ensemble",
+      "csv_gzip": "derived_rankings/hierarchy_ensemble_scores.csv.gz",
+      "sha256": "0f20114be472d3643d5d3b22d1c4cd7169eee1237bd1724e9fab4d0988e1b305",
+      "frozen_tensor_sha256": "a44f75676b3e2dc6c8b4cfa937d8afdeaeda41d2c636c11f43a1a72e724a777d",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "gamma_zero_ensemble",
+      "kind": "ensemble",
+      "csv_gzip": "derived_rankings/gamma_zero_ensemble_scores.csv.gz",
+      "sha256": "6d09884c368faf1b6b251dea8355c30ad0be55232f09014ecc99aede6db9ce0f",
+      "frozen_tensor_sha256": "180674dbdd5edcc7cc3d2474ac097c7bb9ec8c49b08c73e5a29a565ea193af87",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "baseline_s42_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/baseline_s42_closure_scores.csv.gz",
+      "sha256": "b13a57cf43cacc8b274d9d83eed2eabb0cdaf096ff1de3a72db46d3537fc0a22",
+      "frozen_tensor_sha256": "545a459af9f98af77a6879e2058f5e8dd7d567b4eb102d057b7da5be57f4839f",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "baseline_s43_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/baseline_s43_closure_scores.csv.gz",
+      "sha256": "f2585a8204e61622ebef30cfc88a4eeabf0e37a66c84070d69bf6d47bf5b7407",
+      "frozen_tensor_sha256": "6681ac9b72fe4d1d780b62d86c29eeb332a0837a0ca7f2e49b0cf7c7476a101c",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "baseline_s44_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/baseline_s44_closure_scores.csv.gz",
+      "sha256": "65cb197d93eb57a8b31fdfe5bbb4d6dde063b438616bdeca2dc7048a537ceca3",
+      "frozen_tensor_sha256": "8579d45a2e57d855d0139082ac2986b2402b151d80b6107a23690b77b6442b6b",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "hierarchy_s42_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/hierarchy_s42_closure_scores.csv.gz",
+      "sha256": "21811473611e4fd46514a8b819b6dcc897d27ad83075be8d14b9354e7e5ffe10",
+      "frozen_tensor_sha256": "db52239bc1536c6fe114f16f3f48e29c666336021fcd47afa1a1b20b98800dc2",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "hierarchy_s43_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/hierarchy_s43_closure_scores.csv.gz",
+      "sha256": "03c311afb58dc245ca197c953e36e5ec653aa33da22fa4496ea762474c0ef10d",
+      "frozen_tensor_sha256": "272685b049ab242974f6e31d8c83b41a2cf864338f955fd6b4dea8a58227a42b",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "hierarchy_s44_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/hierarchy_s44_closure_scores.csv.gz",
+      "sha256": "cdba723002526b66f9ee291238cb5621f550186cd7101cfbb5a2de0d44e2d4b9",
+      "frozen_tensor_sha256": "f8a574c2de81d46e6ce84794c4d9dcaa1692697081dee31802ea9c44871c1085",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "gamma_zero_s42_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/gamma_zero_s42_closure_scores.csv.gz",
+      "sha256": "1d806fab32e70a655af730a3463b370119997ed6f5ea770509af3e11f87283cc",
+      "frozen_tensor_sha256": "5d5fcc63d0b0cd5d40ad2629ade8633f99f70552e9f92d577804a1cdf353a9a7",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "gamma_zero_s43_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/gamma_zero_s43_closure_scores.csv.gz",
+      "sha256": "a08d8baf804c9ce7e560b4305814037bc083e2cbc781d337a29c58109db60639",
+      "frozen_tensor_sha256": "da8e67fdb9f014bf973b3814500a902d29f5244efbc9cd24a97d9d4a49ff2cb8",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "gamma_zero_s44_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/gamma_zero_s44_closure_scores.csv.gz",
+      "sha256": "f08e210560198f473e464c274f78d354ca6b95e76a5c91138a5b0152dfc4ef55",
+      "frozen_tensor_sha256": "674dc53ffde7360338beaba93073ff5171d71bdf0eb7004378d49b8a017d1f69",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "shuffled_s42_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/shuffled_s42_closure_scores.csv.gz",
+      "sha256": "492aaa559e74058129200ada6f7525120b93bd77e632585e8a9e5e9086a6b1f9",
+      "frozen_tensor_sha256": "9cc676b50600c225cbaf766da0a42653bd15fafe2f26de2ddd7674f390df8fb5",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "shuffled_s43_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/shuffled_s43_closure_scores.csv.gz",
+      "sha256": "0bb3d05bf3a637ba12d702bfcd6063f40c73ea280d003dfd645058000dc1b66a",
+      "frozen_tensor_sha256": "8591a0a9dda6d9c584b06725febe126de535c8f9f4b34538bd6d98788237b57f",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "shuffled_s44_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/shuffled_s44_closure_scores.csv.gz",
+      "sha256": "e06e6df1d7b97ebcfbbe4cf3e68c6e2ba67f1b5ab47145b743f59d5f384e3cf3",
+      "frozen_tensor_sha256": "104aabb1baf2abe89c4ebbb9949e3e390cc9318929b3d8376c80f626d4541377",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "edge_l2_s42_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/edge_l2_s42_closure_scores.csv.gz",
+      "sha256": "2aa2c8d0e7496e6cafe0e3b9cbc971f36301ce00401a6439d94d867c9c4e1b76",
+      "frozen_tensor_sha256": "6f9b90f3f387dac63f2a067b16fbd22f4d4aa64b93eed9dc861d42ec6a628f1b",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "edge_l2_s43_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/edge_l2_s43_closure_scores.csv.gz",
+      "sha256": "ef1df7912c63f6ac4e81d75dd92574dc961d9def1a51345920e18c3404b6e4d9",
+      "frozen_tensor_sha256": "8d7632d80175a42c643e1f1901dc29b7906886bec014fcda6e7093fe5b65a827",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    },
+    {
+      "ranking": "edge_l2_s44_closure",
+      "kind": "closure",
+      "csv_gzip": "derived_rankings/edge_l2_s44_closure_scores.csv.gz",
+      "sha256": "5805b2d04976430d56d9c13e903431cd19668af4ee2b125e347f4c395f88a6cc",
+      "frozen_tensor_sha256": "83c4a887d872ef72dc06c6fd687cfe44569a1403ea0fef4a2693ab08dc7ed13f",
+      "count": 32491,
+      "ordering": "descending signed_score; unique negative ordinal values"
+    }
+  ]
+}

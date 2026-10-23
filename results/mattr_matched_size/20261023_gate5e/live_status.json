@@ -1,0 +1,13 @@
+{
+  "elapsed_seconds": 3485.6451749440002,
+  "stage": null,
+  "forward_batches": 19956,
+  "example_forwards": 391332,
+  "backward_calls": 0,
+  "optimizer_updates": 0,
+  "stage_group": "matched",
+  "completed": 18,
+  "total": 18,
+  "ranking": "gamma_zero_ensemble",
+  "exact_cache_hits": 166
+}

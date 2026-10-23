@@ -1,0 +1,16 @@
+ranking,closure,signed_rank_spearman,ordering_scope
+baseline_s42,baseline_s42_closure,0.9999981390358564,first-appearance groups from original prefixes<=1624; unseen tail appended
+baseline_s43,baseline_s43_closure,0.9999985347593755,first-appearance groups from original prefixes<=1624; unseen tail appended
+baseline_s44,baseline_s44_closure,0.9999986742583208,first-appearance groups from original prefixes<=1624; unseen tail appended
+hierarchy_s42,hierarchy_s42_closure,0.9999981827964654,first-appearance groups from original prefixes<=1624; unseen tail appended
+hierarchy_s43,hierarchy_s43_closure,0.999998285280767,first-appearance groups from original prefixes<=1624; unseen tail appended
+hierarchy_s44,hierarchy_s44_closure,0.9999980708918825,first-appearance groups from original prefixes<=1624; unseen tail appended
+gamma_zero_s42,gamma_zero_s42_closure,0.9999983414959767,first-appearance groups from original prefixes<=1624; unseen tail appended
+gamma_zero_s43,gamma_zero_s43_closure,0.999998696578572,first-appearance groups from original prefixes<=1624; unseen tail appended
+gamma_zero_s44,gamma_zero_s44_closure,0.9999980550845912,first-appearance groups from original prefixes<=1624; unseen tail appended
+shuffled_s42,shuffled_s42_closure,0.99999746571108,first-appearance groups from original prefixes<=1624; unseen tail appended
+shuffled_s43,shuffled_s43_closure,0.9999987790285959,first-appearance groups from original prefixes<=1624; unseen tail appended
+shuffled_s44,shuffled_s44_closure,0.9999984391410403,first-appearance groups from original prefixes<=1624; unseen tail appended
+edge_l2_s42,edge_l2_s42_closure,0.9999983186981691,first-appearance groups from original prefixes<=1624; unseen tail appended
+edge_l2_s43,edge_l2_s43_closure,0.9999986097199854,first-appearance groups from original prefixes<=1624; unseen tail appended
+edge_l2_s44,edge_l2_s44_closure,0.9999986286899949,first-appearance groups from original prefixes<=1624; unseen tail appended

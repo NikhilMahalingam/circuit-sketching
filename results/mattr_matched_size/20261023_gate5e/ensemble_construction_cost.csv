@@ -1,0 +1,4 @@
+method,CPU_construction_seconds_replay,reproduced_export,model_forwards,scope
+baseline,0.009558296000001576,True,0,timed deterministic replay; original construction included in PhaseA total; file loading excluded
+hierarchy,0.009297949000000472,True,0,timed deterministic replay; original construction included in PhaseA total; file loading excluded
+gamma_zero,0.00974931300000037,True,0,timed deterministic replay; original construction included in PhaseA total; file loading excluded

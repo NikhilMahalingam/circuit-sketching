@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "official_uncached_equals_cached": true,
+  "per_prompt_margin_and_top1_equal": true,
+  "repeat_forwards": 0,
+  "cache_hits": 11,
+  "masked_activations_cached": false,
+  "scope": "same2 frozen examples, unchanged official patcher and integrals"
+}

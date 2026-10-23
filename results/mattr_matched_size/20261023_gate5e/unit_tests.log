@@ -1,0 +1,12 @@
+test_canonical_signed_ties_and_equal_weight_ensembles (test_mattr_matched_size.MatchedTests.test_canonical_signed_ties_and_equal_weight_ensembles) ... ok
+test_cap_uses_largest_plateau_prefix_and_labels_gaps (test_mattr_matched_size.MatchedTests.test_cap_uses_largest_plateau_prefix_and_labels_gaps) ... ok
+test_clean_and_donor_exclusions_and_stratified_deduplication (test_mattr_matched_size.MatchedTests.test_clean_and_donor_exclusions_and_stratified_deduplication) ... ok
+test_closure_group_ties_and_unseen_tail (test_mattr_matched_size.MatchedTests.test_closure_group_ties_and_unseen_tail) ... ok
+test_exact_cache_does_not_count_or_recompute_hits (test_mattr_matched_size.MatchedTests.test_exact_cache_does_not_count_or_recompute_hits) ... ok
+test_fixed_seed_ratio_and_classification_thresholds (test_mattr_matched_size.MatchedTests.test_fixed_seed_ratio_and_classification_thresholds) ... ok
+test_interpolation_is_fractional_not_a_measured_binary_circuit (test_mattr_matched_size.MatchedTests.test_interpolation_is_fractional_not_a_measured_binary_circuit) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.038s
+
+OK

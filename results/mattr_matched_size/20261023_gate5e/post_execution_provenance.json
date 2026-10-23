@@ -1,0 +1,10 @@
+{
+  "scope": "Post-execution descriptive interpretation and lossless export only; frozen protocol, decisions, inference sources, and hypotheses unchanged",
+  "scripts": {
+    "interpretation_generator.py": "efa8e3633487d6b089908ed05585764e4187352a220738cf3004e61422a3273d",
+    "export_derived_rankings.py": "5a68b8ff1debd1858552a199490d38f701478889f1cb39a65e380a0fec8c6d39"
+  },
+  "protocol_sha256": "bb6421a5e5481a172559d0634ab9e71a90b942192f046a824b818bb4ecc90b39",
+  "additional_model_forwards": 0,
+  "additional_optimizer_updates": 0
+}

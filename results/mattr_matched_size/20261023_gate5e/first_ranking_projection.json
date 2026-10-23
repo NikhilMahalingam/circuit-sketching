@@ -1,0 +1,8 @@
+{
+  "first_ranking_seconds": 95.69785421900002,
+  "requested_circuits": 546,
+  "projected_seconds": 5225.102840357401,
+  "threshold_seconds": 7200,
+  "includes_first_reference_overhead": true,
+  "passed": true
+}

@@ -21,3 +21,6 @@ src/mattr_hierarchy/*.sh text eol=lf
 
 src/mattr_compact_validation/*.sh text eol=lf
 /results/mattr_compact_validation/** -text
+
+src/mattr_matched_size/*.sh text eol=lf
+/results/mattr_matched_size/** -text

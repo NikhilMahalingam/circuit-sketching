@@ -1,0 +1,10 @@
+template_id,official_template
+0c50a0d0a0e0751325cc6addfa17c1ba0947006d8453b4e1f74ea5092db50cea,Friends {name_A} and {name_B} found a {object} at the {place}. {name_C} gave it to
+1761850092a4b3fa58baabc01960df818ec1acd216fcdc2e6484b244669c9422,"When {name_A} and {name_B} were done exploring the {place}, {name_C} decided to give a {object} to"
+2a973fb4edec3c205233ae7e923a3cb5e1a1f226036229c4f36b686538ef1616,"Then, {name_A} and {name_B} were thinking about going to the {place}. {name_C} wanted to give a {object} to"
+4f505e7ee3bfc724786cd2d5d1dbbc632492c0b67e00957ae36ffa81b7c4b970,"Later, {name_A} and {name_B} met at the {place}. {name_C} bought a {object} for"
+6c714790566383068be623b67c91c9251d410916a811b1a47b2e83611bd953a5,"After the lunch, {name_A} and {name_B} went to the {place}. {name_C} gave a {object} to"
+77cfacab10ad6ef85cb004f33b7264c507c8004405a773295fad5049bb6af8e2,"While {name_A} and {name_B} relaxed at the {place}, {name_C} presented a {object} to"
+af843482ab88d863192825f98880df874c339b5ebf3d78676a26406bdd5cc246,"Once {name_A} and {name_B} finished at the {place}, {name_C} gave a {object} to"
+d1df0b3439dc91aa88317c15aac11b38122bac7f3c3b3ed7fcb64c35ab5c2a30,"Afterwards, {name_A} and {name_B} went to the {place}. {name_C} gave a {object} to"
+f2c936c186d3219c4c69f340ad5942be8fecaf3f3ac9d73dad0bbb9a6401539c,"Then, {name_A} and {name_B} had a long argument. Afterwards {name_C} said to"
