@@ -1,0 +1,65 @@
+comparator,seed,fraction,delta,lower,upper,family_endpoints,corrected,broken,interval_scope
+baseline,42,0.005,0.353515625,0.30859375,0.3984375,2,181.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,43,0.005,0.16015625,0.11813964843750001,0.203125,2,98.0,16.0,2 cutoffs within this seed; no correction across seeds
+baseline,44,0.005,0.59375,0.544921875,0.642578125,2,304.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,equal_seed_mean,0.005,0.369140625,0.337890625,0.40007324218749984,2,194.33333333333334,5.333333333333333,shared prompt draws; equally weighted FIXED seeds
+baseline,42,0.01,0.5390625,0.48828125,0.587890625,2,276.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,43,0.01,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,44,0.01,-0.005859375,-0.013671875,0.0,2,0.0,3.0,2 cutoffs within this seed; no correction across seeds
+baseline,equal_seed_mean,0.01,0.177734375,0.1604736328125,0.19401041666666669,2,92.0,1.0,shared prompt draws; equally weighted FIXED seeds
+baseline,42,0.02,0.0078125,0.0,0.017578125,2,4.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,43,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,44,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,equal_seed_mean,0.02,0.0026041666666666665,0.0,0.005859375,2,1.3333333333333333,0.0,shared prompt draws; equally weighted FIXED seeds
+baseline,42,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,43,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,44,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+baseline,equal_seed_mean,0.05,0.0,0.0,0.0,2,0.0,0.0,shared prompt draws; equally weighted FIXED seeds
+gamma_zero,42,0.005,-0.0078125,-0.021484375,0.005859375,2,3.0,7.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,43,0.005,0.009765625,-0.01171875,0.033203125,2,15.0,10.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,44,0.005,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,equal_seed_mean,0.005,0.0006510416666666665,-0.009114583333333332,0.010416666666666666,6,6.0,5.666666666666667,shared prompt draws; equally weighted FIXED seeds
+gamma_zero,42,0.01,-0.01171875,-0.029296875,0.00390625,2,5.0,11.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,43,0.01,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,44,0.01,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,equal_seed_mean,0.01,-0.0039062499999999996,-0.010416666666666666,0.0026041666666666665,6,1.6666666666666667,3.6666666666666665,shared prompt draws; equally weighted FIXED seeds
+gamma_zero,42,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,43,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,44,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,equal_seed_mean,0.02,0.0,0.0,0.0,6,0.0,0.0,shared prompt draws; equally weighted FIXED seeds
+gamma_zero,42,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,43,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,44,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+gamma_zero,equal_seed_mean,0.05,0.0,0.0,0.0,6,0.0,0.0,shared prompt draws; equally weighted FIXED seeds
+shuffled,42,0.005,0.201171875,0.162109375,0.240234375,2,104.0,1.0,2 cutoffs within this seed; no correction across seeds
+shuffled,43,0.005,-0.279296875,-0.326171875,-0.232421875,2,7.0,150.0,2 cutoffs within this seed; no correction across seeds
+shuffled,44,0.005,0.548828125,0.498046875,0.59765625,2,281.0,0.0,2 cutoffs within this seed; no correction across seeds
+shuffled,equal_seed_mean,0.005,0.15690104166666666,0.1255398220486111,0.18880208333333331,6,130.66666666666666,50.333333333333336,shared prompt draws; equally weighted FIXED seeds
+shuffled,42,0.01,-0.017578125,-0.05959472656249999,0.0234375,2,39.0,48.0,2 cutoffs within this seed; no correction across seeds
+shuffled,43,0.01,0.0390625,0.021484375,0.05859375,2,20.0,0.0,2 cutoffs within this seed; no correction across seeds
+shuffled,44,0.01,0.099609375,0.0703125,0.130859375,2,52.0,1.0,2 cutoffs within this seed; no correction across seeds
+shuffled,equal_seed_mean,0.01,0.04036458333333333,0.016164822048611107,0.064453125,6,37.0,16.333333333333332,shared prompt draws; equally weighted FIXED seeds
+shuffled,42,0.02,0.001953125,0.0,0.0078125,2,1.0,0.0,2 cutoffs within this seed; no correction across seeds
+shuffled,43,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+shuffled,44,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+shuffled,equal_seed_mean,0.02,0.0006510416666666666,0.0,0.0026041666666666665,6,0.3333333333333333,0.0,shared prompt draws; equally weighted FIXED seeds
+shuffled,42,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+shuffled,43,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+shuffled,44,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+shuffled,equal_seed_mean,0.05,0.0,0.0,0.0,6,0.0,0.0,shared prompt draws; equally weighted FIXED seeds
+edge_l2,42,0.005,0.353515625,0.30859375,0.3984375,2,181.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,43,0.005,0.166015625,0.123046875,0.20998535156249964,2,101.0,16.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,44,0.005,0.59375,0.544921875,0.642578125,2,304.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,equal_seed_mean,0.005,0.37109375,0.3345241970486111,0.408203125,6,195.33333333333334,5.333333333333333,shared prompt draws; equally weighted FIXED seeds
+edge_l2,42,0.01,0.537109375,0.486328125,0.5859375,2,275.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,43,0.01,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,44,0.01,-0.005859375,-0.013671875,0.0,2,0.0,3.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,equal_seed_mean,0.01,0.17708333333333331,0.15690104166666669,0.19672580295138906,6,91.66666666666667,1.0,shared prompt draws; equally weighted FIXED seeds
+edge_l2,42,0.02,0.0078125,0.0,0.017578125,2,4.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,43,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,44,0.02,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,equal_seed_mean,0.02,0.0026041666666666665,0.0,0.006510416666666666,6,1.3333333333333333,0.0,shared prompt draws; equally weighted FIXED seeds
+edge_l2,42,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,43,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,44,0.05,0.0,0.0,0.0,2,0.0,0.0,2 cutoffs within this seed; no correction across seeds
+edge_l2,equal_seed_mean,0.05,0.0,0.0,0.0,6,0.0,0.0,shared prompt draws; equally weighted FIXED seeds

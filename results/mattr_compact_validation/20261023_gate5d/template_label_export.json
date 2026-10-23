@@ -1,0 +1,5 @@
+{
+  "scope": "Read-only export of exact official generic template strings and frozen counts; no labels inferred or decisions changed",
+  "source_manifest_sha256": "2137d42431d9ea3b3fd01b03b9b64b32508d34cb33a22ff225088616aeb9d8ac",
+  "labels_sha256": "f3791037ca4a11f381c47f4a92f690e53b68aef637f2d42ec3037c53cf4ba634"
+}

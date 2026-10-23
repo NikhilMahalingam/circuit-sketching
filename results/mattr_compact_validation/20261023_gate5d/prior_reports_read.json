@@ -1,0 +1,14 @@
+{
+  "GATE2_FINAL_ANALYSIS.md": {
+    "sha256": "782464ec00fffaa27868b4f593594e5216d592111fd7fc317645aae6f0a72f9a",
+    "characters": 25166
+  },
+  "GATE5B_INTERACTION_DIAGNOSTICS_REPORT.md": {
+    "sha256": "408117a8099aa78960c51eb48053f903e1118ab258e1fea0880a0999096ffee3",
+    "characters": 17798
+  },
+  "GATE5C_HIERARCHICAL_MATTR_REPORT.md": {
+    "sha256": "45068efff8010c434001f429e8685191ffdb3542a4ca47c2572001bfc9fc73d9",
+    "characters": 31796
+  }
+}

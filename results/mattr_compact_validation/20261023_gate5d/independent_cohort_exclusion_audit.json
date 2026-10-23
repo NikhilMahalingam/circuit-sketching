@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "scope": "independent read-only rehash of all historical cohort files and exact strings; no selection/evaluation changes",
+  "selected": 512,
+  "input_manifests": 174,
+  "hash_overlaps": 0,
+  "index_overlaps": 0,
+  "duplicate_clean_strings": 0
+}

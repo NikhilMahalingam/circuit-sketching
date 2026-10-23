@@ -1,0 +1,8 @@
+{
+  "scope": "Descriptive report interpretation and additional read-only audits only; no frozen protocol, metric, cohort, source algorithm, or decision modified",
+  "sha256": {
+    "descriptive_report_generator.py": "ca0655edd0d20835fd14c6e26327c3743970d62e86065f9f5b250df72950436f",
+    "verify_input_metadata.py": "b37b0a20d54a47c1490278cbc21fe852bf9f24a6a818752a4b2e24f4ec494866",
+    "verify_cohort_exclusions.py": "63f3e98408a0a27d5c517b06ba880e3604b94ea7e45673763654811423578b6c"
+  }
+}

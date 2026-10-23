@@ -18,3 +18,6 @@ src/mattr_hierarchy/*.sh text eol=lf
 
 # Preserve the exact frozen Gate 5C adapter bytes recorded in its protocol.
 /src/mattr_hierarchy/checkpoint.py -text
+
+src/mattr_compact_validation/*.sh text eol=lf
+/results/mattr_compact_validation/** -text

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "historical_files_unchanged": 7724,
+  "evaluated_rankings": 15,
+  "protocol_sha256": "ec2bf0f0a2a4fd73f4699b3040e939ae64b629d46e715cf9e531dd92c4e1ad43",
+  "cohort_size": 512,
+  "actual_forwards_verified": true,
+  "weight_updates": 0,
+  "model_backwards": 0,
+  "frozen_sources_and_checkpoints_verified": true,
+  "additional_model_forwards": 0
+}

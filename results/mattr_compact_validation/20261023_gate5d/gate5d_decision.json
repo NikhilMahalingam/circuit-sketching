@@ -1,0 +1,59 @@
+{
+  "primary": {
+    "passed": false,
+    "checks": {
+      "valid_conventions": true,
+      "positive_mean_0.005": true,
+      "corrected_lower_0.005": true,
+      "positive_2seeds_0.005": true,
+      "positive_mean_0.01": true,
+      "corrected_lower_0.01": true,
+      "positive_2seeds_0.01": false,
+      "accuracy_auc": true,
+      "compact_2_5_safeguard": true
+    }
+  },
+  "controls": {
+    "gamma_zero": {
+      "passed": false,
+      "checks": {
+        "valid_conventions": true,
+        "positive_mean_0.005": true,
+        "corrected_lower_0.005": false,
+        "positive_2seeds_0.005": false,
+        "positive_mean_0.01": false,
+        "corrected_lower_0.01": false,
+        "positive_2seeds_0.01": false
+      }
+    },
+    "shuffled": {
+      "passed": true,
+      "checks": {
+        "valid_conventions": true,
+        "positive_mean_0.005": true,
+        "corrected_lower_0.005": true,
+        "positive_2seeds_0.005": true,
+        "positive_mean_0.01": true,
+        "corrected_lower_0.01": true,
+        "positive_2seeds_0.01": true
+      }
+    },
+    "edge_l2": {
+      "passed": false,
+      "checks": {
+        "valid_conventions": true,
+        "positive_mean_0.005": true,
+        "corrected_lower_0.005": true,
+        "positive_2seeds_0.005": true,
+        "positive_mean_0.01": true,
+        "corrected_lower_0.01": true,
+        "positive_2seeds_0.01": false
+      }
+    }
+  },
+  "structural_advantage": false,
+  "classification": "Mixed or inconclusive",
+  "training_seed_significance_claim": false,
+  "CPR_improvement_is_separate": true,
+  "further_training_authorized": false
+}

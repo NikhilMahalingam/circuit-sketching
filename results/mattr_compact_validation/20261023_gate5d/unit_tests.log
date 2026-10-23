@@ -1,0 +1,14 @@
+test_auc_weights_and_simultaneous_interval (test_mattr_compact_validation.CompactTests.test_auc_weights_and_simultaneous_interval) ... ok
+test_exclusions_deduplicate_strings_not_just_ids (test_mattr_compact_validation.CompactTests.test_exclusions_deduplicate_strings_not_just_ids) ... ok
+test_gamma_zero_equivalence_blocks_structural_claim (test_mattr_compact_validation.CompactTests.test_gamma_zero_equivalence_blocks_structural_claim) ... ok
+test_inadequate_data_never_fabricated (test_mattr_compact_validation.CompactTests.test_inadequate_data_never_fabricated) ... ok
+test_official_signed_rankings_nested_and_pruned (test_mattr_compact_validation.CompactTests.test_official_signed_rankings_nested_and_pruned) ... <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+ok
+test_stratified_paired_bootstrap_shared_across_seeds (test_mattr_compact_validation.CompactTests.test_stratified_paired_bootstrap_shared_across_seeds) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 8.550s
+
+OK
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

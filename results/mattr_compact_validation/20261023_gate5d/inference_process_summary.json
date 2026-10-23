@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "seconds": 1364.913888659,
+  "counts": {
+    "forward_batches": 7950,
+    "example_forwards": 155720,
+    "backward_calls": 0,
+    "optimizer_updates": 0
+  },
+  "reference_or_result_cache_hits": 28,
+  "donor_activation_cache_hits": 0,
+  "activation_cache": "disabled; official immutable reference scalar cache enabled",
+  "unique_evaluation_prompts": 512,
+  "fixed_rankings": 15
+}

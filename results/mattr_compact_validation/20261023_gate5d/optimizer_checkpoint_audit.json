@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "scope": "read-only supplemental source-checkpoint metadata; no training or model forwards",
+  "rankings": [
+    {
+      "method": "baseline",
+      "seed": 42,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32491,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "baseline",
+      "seed": 43,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32491,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "baseline",
+      "seed": 44,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32491,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "hierarchy",
+      "seed": 42,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "hierarchy",
+      "seed": 43,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "hierarchy",
+      "seed": 44,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "gamma_zero",
+      "seed": 42,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "gamma_zero",
+      "seed": 43,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "gamma_zero",
+      "seed": 44,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "shuffled",
+      "seed": 42,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "shuffled",
+      "seed": 43,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "shuffled",
+      "seed": 44,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32936,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "edge_l2",
+      "seed": 42,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32491,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "edge_l2",
+      "seed": 43,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32491,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    },
+    {
+      "method": "edge_l2",
+      "seed": 44,
+      "checkpoint_completed": 1000,
+      "Adam_steps": [
+        1000
+      ],
+      "raw_parameter_count": 32491,
+      "canonical_effective_count": 32491,
+      "group_hash_matches": true
+    }
+  ]
+}

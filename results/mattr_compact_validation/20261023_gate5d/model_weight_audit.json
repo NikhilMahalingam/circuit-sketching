@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "before_sha256": "2e352e95c04c9ad7772afe48fb0c5d27fa3439429adca5f63d46fc45e6469a76",
+  "after_sha256": "2e352e95c04c9ad7772afe48fb0c5d27fa3439429adca5f63d46fc45e6469a76",
+  "optimizer_updates": 0,
+  "model_backwards": 0,
+  "stored_model_gradients": false
+}
