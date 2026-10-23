@@ -1,0 +1,12 @@
+2026-10-22 20:39:43,688 INFO hierarchy_official_edge: Loading gpt2-small...
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   7%|▋         | 11/148 [00:00<00:01, 106.11it/s]Loading weights:  15%|█▍        | 22/148 [00:00<00:01, 91.73it/s] Loading weights:  32%|███▏      | 47/148 [00:00<00:00, 154.17it/s]Loading weights:  50%|█████     | 74/148 [00:00<00:00, 190.52it/s]Loading weights:  80%|████████  | 119/148 [00:00<00:00, 277.75it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 269.36it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+2026-10-22 20:40:00,918 INFO hierarchy_official_edge: Graph: 158 nodes, 32491 edges (32491 real)
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-22 20:40:00,946 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 20:40:00,994 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 20:40:01,793 INFO hierarchy_official_edge: Loaded 128 examples
+2026-10-22 20:40:01,794 INFO hierarchy_official_edge: Edge scores: 32491 parameters
+2026-10-22 20:40:01,795 INFO hierarchy_official_edge: Training for 30 steps (mode=iso, k_schedule=uniform, live activations)...
+2026-10-22 20:40:02,222 INFO hierarchy_official_edge: Pre-tokenized 128 examples in 0.4s

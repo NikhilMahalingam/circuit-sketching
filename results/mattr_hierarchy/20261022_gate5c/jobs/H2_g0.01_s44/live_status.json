@@ -1,0 +1,13 @@
+{
+  "elapsed_seconds": 284.56371781400003,
+  "stage": "training",
+  "forward_batches": 1128,
+  "example_forwards": 1128,
+  "backward_calls": 1000,
+  "optimizer_updates": 1000,
+  "completed_iteration": 1000,
+  "target": 1000,
+  "family": "H2",
+  "gamma": 0.01,
+  "seed": 44
+}

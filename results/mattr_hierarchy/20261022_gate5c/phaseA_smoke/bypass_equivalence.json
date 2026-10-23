@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "raw_scores_bitwise_equal": true,
+  "rng_and_logs_equal": true,
+  "scope": "dedicated bypass vs original; gamma-zero hierarchy is deliberately NOT claimed identical"
+}

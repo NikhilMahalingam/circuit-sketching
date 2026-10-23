@@ -1,0 +1,77 @@
+{
+  "winner": null,
+  "primary": {
+    "passed": false,
+    "checks": {
+      "CPR": false,
+      "accuracy_auc": true,
+      "CMD": true,
+      "adaptation_compute": true,
+      "memory": true,
+      "positive_seeds": false,
+      "compact_0.005": true,
+      "compact_0.01": true,
+      "compact_0.02": true,
+      "compact_0.05": true
+    }
+  },
+  "structural_controls": {
+    "H2_gamma0_shuffledFalse": {
+      "passed": false,
+      "checks": {
+        "CPR_advantage": false,
+        "positive_seeds": true,
+        "accuracy_auc": true,
+        "compact_0.005": true,
+        "compact_0.01": true,
+        "compact_0.02": true,
+        "compact_0.05": true
+      },
+      "mean_relative_CPR_advantage": 0.0005017153900101675,
+      "per_seed_relative_CPR_advantage": [
+        0.005964324413581634,
+        -0.0044758560029777295,
+        1.667775942659766e-05
+      ]
+    },
+    "H2_gamma0.01_shuffledTrue": {
+      "passed": true,
+      "checks": {
+        "CPR_advantage": true,
+        "positive_seeds": true,
+        "accuracy_auc": true,
+        "compact_0.005": true,
+        "compact_0.01": true,
+        "compact_0.02": true,
+        "compact_0.05": true
+      },
+      "mean_relative_CPR_advantage": 0.02393356895954087,
+      "per_seed_relative_CPR_advantage": [
+        0.0161709192083479,
+        0.022635936817879676,
+        0.032993850852395035
+      ]
+    },
+    "edge_gamma0.01_shuffledFalse": {
+      "passed": false,
+      "checks": {
+        "CPR_advantage": false,
+        "positive_seeds": false,
+        "accuracy_auc": true,
+        "compact_0.005": true,
+        "compact_0.01": true,
+        "compact_0.02": true,
+        "compact_0.05": true
+      },
+      "mean_relative_CPR_advantage": -0.0013122208812638148,
+      "per_seed_relative_CPR_advantage": [
+        0.015023159570990652,
+        -0.012234015062316694,
+        -0.006725807152465402
+      ]
+    }
+  },
+  "passed": false,
+  "step": 1000,
+  "claim": "structural hierarchy only if primary AND all3 controls pass"
+}

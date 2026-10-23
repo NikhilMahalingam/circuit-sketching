@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "canonical_mapping_sha256": "c6fd1f0eecbcdfb89e42b1817cc9822ec4230e5adb22172dac7f5eac03a96dbe",
+  "hierarchies": {
+    "H1": {
+      "edges": 32491,
+      "groups": 157,
+      "smallest": 1,
+      "largest": 445,
+      "singletons": 1,
+      "ids_sha256": "38d1b82fc47d0b0b4f2cb0b682da635b3d04abf176a5e487b2b3af4518a3f32e",
+      "shuffled_sha256": "f6fdb7224f1a429595c52c3e4ed10746c3e6fec2b4f6d0e0efaad86d2d992f27",
+      "shuffle_seed": 5701,
+      "fallback": "H1 input and H2 logits are explicit official schema components, not a shared unmatched bucket"
+    },
+    "H2": {
+      "edges": 32491,
+      "groups": 445,
+      "smallest": 1,
+      "largest": 157,
+      "singletons": 36,
+      "ids_sha256": "fcfc52e78f861a7fbea10071efefcb424ec828d140c68cffa9c0eec7d7eb828d",
+      "shuffled_sha256": "138092e69d46b90cbb74597d35c72d5b34faa251781ff0a52ae2f3caa3646065",
+      "shuffle_seed": 5701,
+      "fallback": "H1 input and H2 logits are explicit official schema components, not a shared unmatched bucket"
+    }
+  },
+  "construction_seconds": 0.9984741920000033,
+  "source": "pinned official Graph parent/child/qkv and canonical real-mask order"
+}

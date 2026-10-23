@@ -1,0 +1,14 @@
+test_centering_singleton_and_full_score_space (test_mattr_hierarchy.HierarchyTests.test_centering_singleton_and_full_score_space) ... ok
+test_dedicated_bypass_and_exact_resume (test_mattr_hierarchy.HierarchyTests.test_dedicated_bypass_and_exact_resume) ... ok
+test_finite_difference_and_cpu_reference (test_mattr_hierarchy.HierarchyTests.test_finite_difference_and_cpu_reference) ... ok
+test_mapping_and_fixed_shuffle_sizes (test_mattr_hierarchy.HierarchyTests.test_mapping_and_fixed_shuffle_sizes) ... <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+ok
+test_official_mask_mass_and_order (test_mattr_hierarchy.HierarchyTests.test_official_mask_mass_and_order) ... ok
+test_penalty_only_centered_residuals (test_mattr_hierarchy.HierarchyTests.test_penalty_only_centered_residuals) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 12.398s
+
+OK
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "scores_optimizer_rng_bitwise_equal": true,
+  "steps": 30,
+  "split": 15
+}

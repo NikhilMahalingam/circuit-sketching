@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "model_forwards": 0,
+  "GPU_finite_difference": true,
+  "deterministic_export": true,
+  "CPU_GPU_values_and_gradients": true,
+  "all_original_scores_eligible": 32491
+}

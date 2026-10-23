@@ -1,0 +1,25 @@
+{
+  "scope": "descriptive accounting only; frozen protocol, training, raw stage events, metrics, and decisions unchanged",
+  "reason": "nested pilot official_patching_checks is included in training_only_magnitude_probe; stage sums double count 13 forwards and overlapping wall time",
+  "counter_corrections": [
+    {
+      "job": "pilot",
+      "counter": "forward_batches",
+      "stage_sum": 49,
+      "unique_process_count": 36
+    },
+    {
+      "job": "pilot",
+      "counter": "example_forwards",
+      "stage_sum": 49,
+      "unique_process_count": 36
+    }
+  ],
+  "overlapping_pilot_seconds": 1.524665314999993,
+  "counts": {
+    "forward_batches": 26713,
+    "example_forwards": 134161,
+    "backward_calls": 18140,
+    "optimizer_updates": 18120
+  }
+}

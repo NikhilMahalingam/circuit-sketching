@@ -1,0 +1,9 @@
+{
+  "scope": "Post-run descriptive analysis, accounting reconciliation, and decision guard tests only; frozen training/selection source, protocol, and criteria unchanged",
+  "source_sha256": {
+    "src/mattr_hierarchy/diagnostics.py": "7d205aef25bbb559330939ee194f5449af5a4011c637fe855607aa595f171300",
+    "src/mattr_hierarchy/reconcile_accounting.py": "22e5407d0801658dfe9c5c87ac4aabacf10839f1094a0a449da2592b06ef4365",
+    "tests/test_mattr_hierarchy_decisions.py": "16dd4336e3c0f1dbebe5f2dd9df71e9a6c187cc612127e4ade7960a4f3535656",
+    "results/mattr_hierarchy/20261022_gate5c/executive_summary_generator.py": "326a18ff72ad4a9483ee6d281808630909346c8134cd5f0f32e68a9b0d9fdda8"
+  }
+}

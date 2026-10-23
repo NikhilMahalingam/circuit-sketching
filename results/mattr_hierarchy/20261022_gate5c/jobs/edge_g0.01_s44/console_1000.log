@@ -1,0 +1,85 @@
+2026-10-22 22:21:33,390 INFO hierarchy_official_edge: Loading gpt2-small...
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  69%|██████▉   | 102/148 [00:00<00:00, 1017.47it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1370.71it/s]
+Loaded pretrained model gpt2-small into HookedTransformer
+2026-10-22 22:21:39,712 INFO hierarchy_official_edge: Graph: 158 nodes, 32491 edges (32491 real)
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-22 22:21:39,728 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 22:21:39,769 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 22:21:40,392 INFO hierarchy_official_edge: Loaded 128 examples
+2026-10-22 22:21:40,393 INFO hierarchy_official_edge: Edge scores: 32491 parameters
+2026-10-22 22:21:40,394 INFO hierarchy_official_edge: Training for 1000 steps (mode=iso, k_schedule=uniform, live activations)...
+2026-10-22 22:21:40,859 INFO hierarchy_official_edge: Pre-tokenized 128 examples in 0.5s
+edge shuffled=False gamma=0.01 seed=44 1/1000
+2026-10-22 22:21:42,343 INFO hierarchy_official_edge: Step    1/1000  loss=2.9819  |grad|=3.611  |s|max=0.05  k=23380/32491  (0.7 step/s)
+2026-10-22 22:21:59,150 INFO hierarchy_official_edge: Step   50/1000  loss=-62.0565  |grad|=3.854  |s|max=2.096  k=23466/32491  (2.7 step/s)
+edge shuffled=False gamma=0.01 seed=44 100/1000
+2026-10-22 22:22:13,556 INFO hierarchy_official_edge: Step  100/1000  loss=-72.0416  |grad|=4.16  |s|max=3.201  k=11579/32491  (3.1 step/s)
+2026-10-22 22:22:28,321 INFO hierarchy_official_edge: Step  150/1000  loss=-89.7815  |grad|=1.372  |s|max=4.086  k=26485/32491  (3.2 step/s)
+edge shuffled=False gamma=0.01 seed=44 200/1000
+2026-10-22 22:22:42,139 INFO hierarchy_official_edge: Step  200/1000  loss=-82.3549  |grad|=1.44  |s|max=4.586  k=14964/32491  (3.3 step/s)
+2026-10-22 22:22:54,998 INFO hierarchy_official_edge: Step  250/1000  loss=-27.3700  |grad|=3.805  |s|max=4.797  k=31687/32491  (3.4 step/s)
+edge shuffled=False gamma=0.01 seed=44 300/1000
+2026-10-22 22:23:08,174 INFO hierarchy_official_edge: Step  300/1000  loss=-70.5513  |grad|=1.612  |s|max=5.041  k=25274/32491  (3.4 step/s)
+2026-10-22 22:23:22,694 INFO hierarchy_official_edge: Step  350/1000  loss=-72.5388  |grad|=2.08  |s|max=5.274  k=1789/32491  (3.4 step/s)
+edge shuffled=False gamma=0.01 seed=44 400/1000
+2026-10-22 22:23:36,208 INFO hierarchy_official_edge: Step  400/1000  loss=-70.5698  |grad|=1.683  |s|max=5.4  k=12854/32491  (3.5 step/s)
+2026-10-22 22:23:50,196 INFO hierarchy_official_edge: Step  450/1000  loss=-84.0272  |grad|=1.322  |s|max=5.551  k=3057/32491  (3.5 step/s)
+edge shuffled=False gamma=0.01 seed=44 500/1000
+2026-10-22 22:24:04,320 INFO hierarchy_official_edge: Step  500/1000  loss=-75.3994  |grad|=2.508  |s|max=5.655  k=29822/32491  (3.5 step/s)
+2026-10-22 22:24:17,385 INFO hierarchy_official_edge: Step  550/1000  loss=-80.0679  |grad|=1.893  |s|max=5.791  k=29012/32491  (3.5 step/s)
+edge shuffled=False gamma=0.01 seed=44 600/1000
+2026-10-22 22:24:31,011 INFO hierarchy_official_edge: Step  600/1000  loss=-86.3878  |grad|=1.497  |s|max=5.828  k=28483/32491  (3.5 step/s)
+2026-10-22 22:24:44,597 INFO hierarchy_official_edge: Step  650/1000  loss=-79.6975  |grad|=1.511  |s|max=6.26  k=27380/32491  (3.5 step/s)
+edge shuffled=False gamma=0.01 seed=44 700/1000
+2026-10-22 22:24:59,372 INFO hierarchy_official_edge: Step  700/1000  loss=-67.2218  |grad|=1.908  |s|max=6.389  k=27100/32491  (3.5 step/s)
+2026-10-22 22:26:15,969 INFO hierarchy_official_edge: Step  750/1000  loss=-85.4467  |grad|=1.498  |s|max=6.413  k=18434/32491  (2.7 step/s)
+edge shuffled=False gamma=0.01 seed=44 800/1000
+2026-10-22 22:25:26,516 INFO hierarchy_official_edge: Step  800/1000  loss=-83.7462  |grad|=1.502  |s|max=6.552  k=22984/32491  (3.5 step/s)
+2026-10-22 22:25:39,369 INFO hierarchy_official_edge: Step  850/1000  loss=-94.6300  |grad|=1.675  |s|max=6.586  k=18163/32491  (3.6 step/s)
+edge shuffled=False gamma=0.01 seed=44 900/1000
+2026-10-22 22:25:53,600 INFO hierarchy_official_edge: Step  900/1000  loss=-77.3461  |grad|=1.241  |s|max=6.67  k=18851/32491  (3.6 step/s)
+2026-10-22 22:26:06,758 INFO hierarchy_official_edge: Step  950/1000  loss=-97.2936  |grad|=1.241  |s|max=6.788  k=19370/32491  (3.6 step/s)
+edge shuffled=False gamma=0.01 seed=44 1000/1000
+2026-10-22 22:26:21,035 INFO hierarchy_official_edge: Step 1000/1000  loss=-62.9863  |grad|=2.596  |s|max=6.785  k=2264/32491  (3.6 step/s)
+2026-10-22 22:26:21,082 INFO hierarchy_official_edge: Training complete in 280.1s (corrupted-acts cache: 128/1000 forwards paid, 128 cached, 1.06 GB)
+2026-10-22 22:26:21,083 INFO hierarchy_official_edge: Running MIB evaluation (edge level)...
+Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-22 22:26:21,093 WARNING datasets.load: Using the latest cached version of the dataset since mib-bench/ioi couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+2026-10-22 22:26:21,102 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /mnt/h/GenAI Research/sketch_prune/.cache/huggingface/datasets/mib-bench___ioi/default/0.0.0/e5f3468f3af4c0883be35cd3bced8c711c95d286 (last modified on Mon Oct 19 13:38:25 2026).
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:02,  2.37it/s] 29%|██▊       | 2/7 [00:00<00:01,  2.68it/s] 43%|████▎     | 3/7 [00:01<00:01,  3.06it/s] 57%|█████▋    | 4/7 [01:03<01:14, 24.74s/it]100%|██████████| 7/7 [00:02<00:00,  3.35it/s]
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:00<00:01,  3.38it/s] 29%|██▊       | 2/7 [00:00<00:01,  3.33it/s] 43%|████▎     | 3/7 [00:00<00:01,  3.48it/s] 57%|█████▋    | 4/7 [00:01<00:00,  3.46it/s] 71%|███████▏  | 5/7 [00:01<00:00,  3.39it/s] 86%|████████▌ | 6/7 [00:01<00:00,  3.36it/s]100%|██████████| 7/7 [00:01<00:00,  4.16it/s]100%|██████████| 7/7 [00:01<00:00,  3.70it/s]
+Computing results for 0.1% of edges (N=32)
+Computing results for 0.2% of edges (N=64)
+Computing results for 0.5% of edges (N=162)
+Computing results for 1.0% of edges (N=324)
+Computing results for 2.0% of edges (N=649)
+Computing results for 5.0% of edges (N=1624)
+Computing results for 10.0% of edges (N=3249)
+Computing results for 20.0% of edges (N=6498)
+Computing results for 50.0% of edges (N=16245)
+Computing results for 100% of edges (N=32491)
+2026-10-22 22:27:16,872 INFO hierarchy_official_edge: MIB Results (edge level, live activations):
+2026-10-22 22:27:16,873 INFO hierarchy_official_edge:     0.1% -> CPR=0.0078
+2026-10-22 22:27:16,873 INFO hierarchy_official_edge:     0.2% -> CPR=0.0301
+2026-10-22 22:27:16,873 INFO hierarchy_official_edge:     0.5% -> CPR=0.2329
+2026-10-22 22:27:16,874 INFO hierarchy_official_edge:     1.0% -> CPR=3.0446
+2026-10-22 22:27:16,874 INFO hierarchy_official_edge:     2.0% -> CPR=7.9762
+2026-10-22 22:27:16,875 INFO hierarchy_official_edge:     5.0% -> CPR=12.3939
+2026-10-22 22:27:16,875 INFO hierarchy_official_edge:    10.0% -> CPR=13.2476
+2026-10-22 22:27:16,875 INFO hierarchy_official_edge:    20.0% -> CPR=13.5482
+2026-10-22 22:27:16,876 INFO hierarchy_official_edge:    50.0% -> CPR=13.6516
+2026-10-22 22:27:16,876 INFO hierarchy_official_edge:   100.0% -> CPR=1.0000
+2026-10-22 22:27:16,877 INFO hierarchy_official_edge:   CPR AUC=10.0930  Avg CPR=6.5133
+2026-10-22 22:27:16,884 INFO hierarchy_official_edge: Saved results to /mnt/h/GenAI Research/sketch_prune/results/mattr_hierarchy/20261022_gate5c/jobs/edge_g0.01_s44/upstream_1000

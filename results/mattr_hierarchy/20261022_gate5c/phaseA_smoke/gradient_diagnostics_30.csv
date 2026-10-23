@@ -1,0 +1,2 @@
+step,mattr_loss,regularization_loss,mattr_gradient_norm,regularizer_gradient_norm,gradient_ratio,adam_update_regularizer_relative_contribution,residual_variance,component_score_variance,effective_score_variance,total_gradient_norm
+1,-0.7882452011108398,0.0,3.1404899320120294,0.0,0.0,0.0,0.0,0.0,0.0,3.1404899320120294

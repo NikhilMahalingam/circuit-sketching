@@ -1,0 +1,5 @@
+kind,repetitions,seconds,peak_allocated_mib,scope
+bypass,200,0.06321250999999961,4.1142578125,"score transform, MSE and backward only; no model/topk/Adam"
+edge,200,0.10163714699999105,4.3623046875,"score transform, MSE and backward only; no model/topk/Adam"
+H1,200,0.25581133100001807,6.193359375,"score transform, MSE and backward only; no model/topk/Adam"
+H2,200,0.25284300199999166,6.1953125,"score transform, MSE and backward only; no model/topk/Adam"

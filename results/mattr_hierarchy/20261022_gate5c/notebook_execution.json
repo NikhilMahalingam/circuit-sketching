@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "scope": "saved-artifact CPU analysis; all RUN flags false",
+  "model_forwards": 0,
+  "code_cells": 7,
+  "seconds": 2.6392766000062693,
+  "python": "H:\\GenAI Research\\sketch_prune\\.venv\\Scripts\\python.exe"
+}

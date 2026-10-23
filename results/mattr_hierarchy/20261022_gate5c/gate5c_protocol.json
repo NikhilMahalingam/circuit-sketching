@@ -1,0 +1,237 @@
+{
+  "gate": "5C",
+  "git_commit": "a33ab436dcc17436f3ea892fff178e35d240aa18",
+  "source_sha256": {
+    "src/mattr_hierarchy/__init__.py": "c3b8f3d44b802471d91ab3ca2932a744256a8e184f91130ccae4d8b4ff7675d4",
+    "src/mattr_hierarchy/adapter.py": "899471dd9ab9267c69eeec2a7e345577876f8c4ca9be5d644117542b202b2a2f",
+    "src/mattr_hierarchy/analysis.py": "282b610d3bd3ebe335aee8f4595aa37a1a82b95253a90f0dd81882ed871d0355",
+    "src/mattr_hierarchy/audit.py": "7bc2d8ddb4dffaf88a2f452379beda81e03e45ff42333782d014968a91c67a1f",
+    "src/mattr_hierarchy/campaign.py": "fc91ff237d7cd1364d76f388a35f0deb3bb9742ce17c4ab301f281c49d21e4aa",
+    "src/mattr_hierarchy/checkpoint.py": "6697932cc7d5ecc1d67bd11296b828bf9777d824471251db443fa807ce19ee52",
+    "src/mattr_hierarchy/gpu_checks.py": "a0531fc4160dea27d910c99708ecefe566458f5d89082bb626b3543f0703e6d5",
+    "src/mattr_hierarchy/groups.py": "4adcabebdb27c1eed80c58278134bd919b88f0357fad5fd5344152792117d108",
+    "src/mattr_hierarchy/runner.py": "5c385f90d5f318f1d528da15117a6498dacdd48c42f57186cfbe2c8e9b3398ab",
+    "tests/test_mattr_hierarchy.py": "7848943cde93bb5b1db613df9ebb64dd401c9fe6cca1b69e3202693a3fd58339",
+    "src/mattr_optimization/common.py": "0b0aa87a7c85c98b81c5b4d7ea1949ede43134ef7ed2e23719fdc087e253f66c",
+    "src/mattr_optimization/gate0.py": "103b5cb213cfe53a547e4324a79352f9d2e2aa0108faa8ba63460997804f4ffc",
+    "src/mattr_optimization/gate1.py": "f014380f4513ae02e0e579cf9f763b4e72a9178ce8a4ab853c551211f6973633",
+    "src/mattr_optimization/gate2.py": "21a93f59b0e10517f707d10d5d66ebdde795ea1c0dab4199ab111154f7951d9c",
+    "src/mattr_optimization/gate3.py": "d6b703f62156cc8308b6da19e511a50ec26775b4ed5605168bfa576c71509844",
+    "src/mattr_optimization/gate4_train.py": "45c731b1e38aae475af34ec931cf367ebd4348951dd9eb17577f1cd03b1dfb8f",
+    "src/mattr_optimization/gate4_init.py": "76f71f116695b23c8a539e122d4a4f628dcdb6ad6fc408c397f3fe27e7b71e01",
+    "src/mattr_optimization/gate4_report.py": "3e590761f45c426ee47a27ad552360878d7ab536a2484936943fd0cf22612985"
+  },
+  "model": "gpt2-small",
+  "task": "official MIB IOI",
+  "pilot": "20 gradient-only probes at saved Gate2 seed42 step500 scores; first4 training rows; k floor N*[.005,.01,.02,.05,.5]. No optimizer or validation.",
+  "scale_rule": {
+    "negligible": "both hierarchy high-gamma median gradient ratios<1e-4 AND median loss ratios<1e-6",
+    "dominant": "both hierarchy low-gamma median gradient ratios>1 AND median loss ratios>.5",
+    "replacement": "if either extreme condition holds, one common scale=.01/geometric_mean(high-gamma median gradient ratios); target1% regularizer/task gradient ratio for gamma.01. Otherwise scale1. No development-metric choice; gammas stay decade-separated.",
+    "initial_gammas": [
+      0.001,
+      0.01
+    ]
+  },
+  "mapping_hashes": {
+    "H1_groups.npy": "38d1b82fc47d0b0b4f2cb0b682da635b3d04abf176a5e487b2b3af4518a3f32e",
+    "H1_shuffled_groups.npy": "f6fdb7224f1a429595c52c3e4ed10746c3e6fec2b4f6d0e0efaad86d2d992f27",
+    "H2_groups.npy": "fcfc52e78f861a7fbea10071efefcb424ec828d140c68cffa9c0eec7d7eb828d",
+    "H2_shuffled_groups.npy": "138092e69d46b90cbb74597d35c72d5b34faa251781ff0a52ae2f3caa3646065"
+  },
+  "edge_mapping_sha256": "c6fd1f0eecbcdfb89e42b1817cc9822ec4230e5adb22172dac7f5eac03a96dbe",
+  "model_weights": "never optimizer participants; preserve official requires-grad behavior and verify complete SHA before/after",
+  "regularization_scale": {
+    "scale": 1.0,
+    "replaced": false,
+    "negligible": false,
+    "dominant": false,
+    "rule": {
+      "negligible": "both hierarchy high-gamma median gradient ratios<1e-4 AND median loss ratios<1e-6",
+      "dominant": "both hierarchy low-gamma median gradient ratios>1 AND median loss ratios>.5",
+      "replacement": "if either extreme condition holds, one common scale=.01/geometric_mean(high-gamma median gradient ratios); target1% regularizer/task gradient ratio for gamma.01. Otherwise scale1. No development-metric choice; gammas stay decade-separated.",
+      "initial_gammas": [
+        0.001,
+        0.01
+      ]
+    },
+    "training_only_medians": [
+      {
+        "family": "H1",
+        "gamma": 0.001,
+        "gradient_ratio": 7.17911042506116e-06,
+        "loss_ratio": 0.00036785218981085,
+        "mattr_abs_loss": 3.127256393432617,
+        "penalty": 0.001149853458628
+      },
+      {
+        "family": "H1",
+        "gamma": 0.01,
+        "gradient_ratio": 7.179109928737883e-05,
+        "loss_ratio": 0.00367852137424045,
+        "mattr_abs_loss": 3.127256393432617,
+        "penalty": 0.0114985331892967
+      },
+      {
+        "family": "H2",
+        "gamma": 0.001,
+        "gradient_ratio": 6.529254068218605e-06,
+        "loss_ratio": 0.0003626527759479,
+        "mattr_abs_loss": 3.127256393432617,
+        "penalty": 0.0011336008319631
+      },
+      {
+        "family": "H2",
+        "gamma": 0.01,
+        "gradient_ratio": 6.529253608736541e-05,
+        "loss_ratio": 0.00362652761396015,
+        "mattr_abs_loss": 3.127256393432617,
+        "penalty": 0.0113360080868005
+      }
+    ],
+    "probe_sha256": "9245f710b95cff1d22cf9d7d9ce391f7de68c20d5964dda2ff3d76037e2a5587"
+  },
+  "dependency_provenance": {
+    "commits": {
+      "external/matryoshka-attribution": "af82b2eef145dd3e66c793a413352d6931a152d7",
+      "external/matryoshka-attribution/deps/MIB-circuit-track": "582fdbc8a2b0f7063a265c8f94851fd2a3aa5480",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG": "3fb341eafdaba63632954aecbbb96b4b08e13d02"
+    },
+    "source_sha256": {
+      "external/matryoshka-attribution/README.md": "4b13062f534cd84e784d37e764795e5ddefef5c90638998db0a96bcc92818d4e",
+      "external/matryoshka-attribution/pyproject.toml": "27a0bdbc2d7b6652ec04b821d24136293246ad210e676c78fe6688fb0541371a",
+      "external/matryoshka-attribution/uv.lock": "95ff386810f211133e1f8a9a64a8d78a1d263a3e0d673dd578ab6359a8abe235",
+      "external/matryoshka-attribution/scripts/mib/eval_mib.py": "75fa67aea49706c11d1101b38463b1ddff00076405dedaa73ec8281b1c0294c9",
+      "external/matryoshka-attribution/scripts/mib/eval_mib_edge.py": "042b354cbace9c509d339b975557fbb45821639ece50aa4870097f3971de2db1",
+      "external/matryoshka-attribution/src/matryoshka_attribution/cf_cache.py": "b6b20149c1c16acb7178683941ab5843f799ec86c77d5746efa3326103cb6221",
+      "external/matryoshka-attribution/src/matryoshka_attribution/deps.py": "cbfe9bb6dfa3d5efae760f790d1da82782f3ba9b28b89aaa84ebdb7faff04811",
+      "external/matryoshka-attribution/src/matryoshka_attribution/edge_pruning.py": "dfb34e4b99ee90c70cb5024f732ba61dbc0bb38f6c330b25e0e07e2a04c41ff6",
+      "external/matryoshka-attribution/src/matryoshka_attribution/evaluate.py": "53c27db5264f8627f76c7129dc66ccf396a085ab6c948c541973e6b3d5131408",
+      "external/matryoshka-attribution/src/matryoshka_attribution/grad_attribution.py": "280e82a9c5e02d55c67ca2af1ad10a298a054a1cae0bb2bec6a3301230289241",
+      "external/matryoshka-attribution/src/matryoshka_attribution/losses.py": "e0e6afea2767e442ea0af276bccfea71acf3cae618878da784e152c5f499e5c1",
+      "external/matryoshka-attribution/src/matryoshka_attribution/masks.py": "5a9a85d36486e536b544caaefc6f8fbac33919247282cd0c33d354bf722de52c",
+      "external/matryoshka-attribution/src/matryoshka_attribution/modes.py": "7fdc9b88687d596452a8cba2559ab702a2da3089cde7948408c6d36bc4a92d43",
+      "external/matryoshka-attribution/src/matryoshka_attribution/sae_loader.py": "12b14debbc2fb7405c7274a8fe1b053806c492d00e88cd7c54f5e5c5a933fd68",
+      "external/matryoshka-attribution/src/matryoshka_attribution/schedules.py": "9a339ac80ce1e50caefc26defa5f96dbec32b184f7df0b691d129406a6109bd2",
+      "external/matryoshka-attribution/src/matryoshka_attribution/sigmoid_topk.py": "0ecbdc87fe907b68439fb76a3bca140e023506883d6f40446fb44a2612452677",
+      "external/matryoshka-attribution/src/matryoshka_attribution/trainer.py": "b987d4b174e6147613d8f806ba41ee65ce0fde8214cbf568f863ce1c701ab7e9",
+      "external/matryoshka-attribution/src/matryoshka_attribution/wandb_util.py": "c9973b10eadb7e48a9adea89cd97fee965de55e3dc2642ab99692245724a3390",
+      "external/matryoshka-attribution/src/matryoshka_attribution/__init__.py": "e34bf7de36d32cfd27585912945f6b1e7c578a9c21f42c641919374319d26e94",
+      "external/matryoshka-attribution/src/matryoshka_attribution/data/arithmetic_wild.py": "f5a07bd63b6b570fe21367b61a4c8887526fa71ea8d2e39ee1d87100feafd84f",
+      "external/matryoshka-attribution/src/matryoshka_attribution/data/sva.py": "7fe4ab731cfcca9afe3968ca7a600fc094ff0f91b572b269b51d056a9a04aa88",
+      "external/matryoshka-attribution/src/matryoshka_attribution/data/__init__.py": "e50e7b6d62d0f946e180c550d4967a526e7b1206d5bdff2700e2d0014bb3cd59",
+      "external/matryoshka-attribution/src/matryoshka_attribution/models/gpt2.py": "4854845914a25c2cb7968c2a07c58506eb72a1294bdd625d09d194bf942a2afc",
+      "external/matryoshka-attribution/src/matryoshka_attribution/models/llama.py": "421c25d7bc32bf4792f2e963eace0559c6793791b297a3ce4b5b71c8769294e9",
+      "external/matryoshka-attribution/src/matryoshka_attribution/models/__init__.py": "dd0bc2ac16eb893bd7d6f2ede2a0128e7e8e0f3749c7307538180ed84488ba3b",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/evaluation.py": "66bf4e8cb2cde67b6dcc30b84e9eee70505f0f52b7e811c1d77c745e30577ef4",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/dataset.py": "33064953976238cef84943446387fe7faa5e95cb77c2f7d10851d3f7df40c422",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/metrics.py": "842f7bca12577b83d11ca207fa4fac2864edb045fd5aa44b8e6b65ed4444e840",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/graph.py": "e87d98418cd1bcd5be20d189fc46a826dd7cdb8ca28216e6a7e167167b954f53",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/evaluate.py": "aea970d5a3ee9bb6cf2d1a1845d75218e5b6d5c405ee0a97eb91a256a60a06ff"
+    },
+    "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+    "executable": "/home/nikhilmahalingam/.venvs/mattr-optimization-af82b2e/bin/python",
+    "versions": {
+      "torch": "2.12.0",
+      "transformers": "5.9.0",
+      "transformer-lens": "3.2.1",
+      "datasets": "4.8.5",
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "matplotlib": "3.10.9",
+      "psutil": "7.2.2",
+      "pytest": "9.1.1"
+    },
+    "torch_cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3060"
+  },
+  "cohorts": {
+    "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/train_manifest.csv": "f84838fa6f1d259f5278e4b014ecf03abd5cce459a54941bd3b323fba1fe5d33",
+    "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/validation_manifest.csv": "18921021f9a486e2dab0401b0170421f3512847351841d7e80efc354c620dda3",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/train_manifest.csv": "bd354a68f4d6290ba1b11006025239827f181902b915b23eb676b4cb8c2a3855",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/validation_manifest.csv": "18921021f9a486e2dab0401b0170421f3512847351841d7e80efc354c620dda3",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/train_manifest.csv": "a54515beeae8de69a4d9a06883b8092993267fcc9038fa26683c5a1cd40b392e",
+    "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/validation_manifest.csv": "18921021f9a486e2dab0401b0170421f3512847351841d7e80efc354c620dda3"
+  },
+  "seed_pairing": "N128 pool seed matches training seed42/43/44. Fixed dev128 seed42. Identical actual Python row draws and CPU Torch uniform-k draws to Gate2; no RNG consumed by groups/regularizer. Group shuffle fixed5701.",
+  "objective": "L = original negative single-example logit_diff + gamma*scale*mean(centered_r^2); no penalty on h. H1/H2 gamma .001,.01; all32,491 edges.",
+  "optimizer": "unchanged official Adam lr.05 eps1e-8 betas(.9,.999), float32, T.5 n_iters30, iso, uniform-k, one example/update",
+  "phaseA": "six CPU tests, GPU references/gradcheck/mass,20 training-only gradient probes;30 hierarchical smoke plus original30/bypass30 and exact15+15 resumed30 checks (120 model optimizer updates). Fail correctness stops.",
+  "phaseB": {
+    "seed": 42,
+    "updates": 1000,
+    "evaluations": [
+      500,
+      1000
+    ],
+    "candidates": [
+      [
+        "H1",
+        0.001
+      ],
+      [
+        "H1",
+        0.01
+      ],
+      [
+        "H2",
+        0.001
+      ],
+      [
+        "H2",
+        0.01
+      ]
+    ],
+    "baseline": "fresh dedicated bypass1000 must bitwise match saved Gate2; quality uses saved Gate2; fresh control is timing/memory calibration",
+    "criteria": {
+      "CPR_relative_gain_min": 0.005,
+      "accuracy_auc_drop_max": 0.02,
+      "compact_accuracy_drop_max": 0.02,
+      "CMD_guard": "positive paired CPR increase +.05",
+      "adaptation_time_ratio_max": 1.1,
+      "memory_ratio_max": 1.1
+    },
+    "selection": "at most1 passing candidate, descending CPR gain then mean compact gain then smaller gamma then H1. None passes: stop, no controls/seeds beyond42."
+  },
+  "phaseC": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "updates": 1000,
+    "controls": "only selected hierarchy gamma0, fixed size-preserving shuffle at selected gamma, ordinary edge mean-square at selected gamma; dedicated baseline calibrations43/44",
+    "criteria": {
+      "mean_paired_CPR_relative_gain_min": 0.02,
+      "positive_seeds_min": 2,
+      "mean_accuracy_auc_drop_max": 0.02,
+      "mean_compact_drop_max": 0.02,
+      "CMD_guard": "mean increase <= max(0,mean absolute CPR increase)+.05",
+      "adaptation_time_ratio_max": 1.1,
+      "memory_ratio_max": 1.1,
+      "structural_claim": "selected real hierarchy must beat EACH gamma0/shuffle/edge-L2 control by>=.5% mean relative CPR and at least2 positive seeds, with mean compact/logAUC loss<=.02. All needed to advance; otherwise parameterization/regularization evidence only."
+    }
+  },
+  "phaseD": "only full C pass: exact-resume selected and all3 matched controls to5000 across3 seeds; evaluate500/1000/2500/5000, compare5000 to saved Gate2 and controls using same criteria. Restart only if necessary, charge repeated work. No full-data follow-up automatically.",
+  "compact_fractions": [
+    0.005,
+    0.01,
+    0.02,
+    0.05
+  ],
+  "diagnostics": "every50 updates plus first: task/reg losses, analytic penalty gradient and task gradient, read-only same-state Adam update comparison, h/residual/effective variance; log all task+regularized losses and exact raw/effective vectors. No extra model backward for diagnostics.",
+  "compute": "synchronized monotonic stage/process clocks; all pilot/rejected/control/restarter work charged. Construction cost charged to adaptation. Fresh bypass calibration has same instrumentation. No physical-VRAM claims from allocator peaks.",
+  "budget": {
+    "optimizer_updates_max": 70000,
+    "child_launch_seconds_max": 43200,
+    "phaseB_updates": 5000,
+    "phaseC_additional_updates_max": 13000,
+    "phaseD_additional_updates_max": 48000
+  },
+  "historical_criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "no_leaderboard": true,
+  "no_refinement": true,
+  "no_expander": true,
+  "no_interaction_training": true
+}

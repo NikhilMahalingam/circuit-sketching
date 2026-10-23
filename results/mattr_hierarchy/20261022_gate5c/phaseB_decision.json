@@ -1,0 +1,78 @@
+{
+  "selected": {
+    "family": "H2",
+    "gamma": 0.01
+  },
+  "results": [
+    {
+      "family": "H1",
+      "gamma": 0.001,
+      "relative_CPR_gain": -0.05479240515818562,
+      "passed": false,
+      "checks": {
+        "CPR": false,
+        "accuracy_auc": true,
+        "CMD": true,
+        "adaptation_compute": true,
+        "memory": true,
+        "compact_0.005": true,
+        "compact_0.01": false,
+        "compact_0.02": true,
+        "compact_0.05": true
+      }
+    },
+    {
+      "family": "H1",
+      "gamma": 0.01,
+      "relative_CPR_gain": -0.05727937608382472,
+      "passed": false,
+      "checks": {
+        "CPR": false,
+        "accuracy_auc": true,
+        "CMD": true,
+        "adaptation_compute": true,
+        "memory": true,
+        "compact_0.005": true,
+        "compact_0.01": true,
+        "compact_0.02": true,
+        "compact_0.05": true
+      }
+    },
+    {
+      "family": "H2",
+      "gamma": 0.001,
+      "relative_CPR_gain": 0.005215436581468502,
+      "passed": true,
+      "checks": {
+        "CPR": true,
+        "accuracy_auc": true,
+        "CMD": true,
+        "adaptation_compute": true,
+        "memory": true,
+        "compact_0.005": true,
+        "compact_0.01": true,
+        "compact_0.02": true,
+        "compact_0.05": true
+      }
+    },
+    {
+      "family": "H2",
+      "gamma": 0.01,
+      "relative_CPR_gain": 0.009330463477732476,
+      "passed": true,
+      "checks": {
+        "CPR": true,
+        "accuracy_auc": true,
+        "CMD": true,
+        "adaptation_compute": true,
+        "memory": true,
+        "compact_0.005": true,
+        "compact_0.01": true,
+        "compact_0.02": true,
+        "compact_0.05": true
+      }
+    }
+  ],
+  "exploratory_seed": 42,
+  "no_extra_gamma": true
+}

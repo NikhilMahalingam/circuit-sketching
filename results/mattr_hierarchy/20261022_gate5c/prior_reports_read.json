@@ -1,0 +1,26 @@
+{
+  "results/mattr_optimization/20261021T134352Z_gate1/MATTR_BASELINE_REPORT.md": {
+    "sha256": "8837dfb3021b801ed9bd1f58e65f74b991a3a5f56fc3a889a357d4e62d42350f",
+    "characters_read": 7220
+  },
+  "GATE2_FINAL_ANALYSIS.md": {
+    "sha256": "782464ec00fffaa27868b4f593594e5216d592111fd7fc317645aae6f0a72f9a",
+    "characters_read": 25166
+  },
+  "GATE3_ADAPTIVE_SAMPLING_REPORT.md": {
+    "sha256": "c7f798ebff898e7d14fbb8ab9b5029e028d8a18b35bda47ff6ec0d9ceeb36e0e",
+    "characters_read": 12279
+  },
+  "GATE4_EAPIG_INITIALIZATION_REPORT.md": {
+    "sha256": "a489b5331d614297b67804d634a0b5a60cb95d0f590eb8c0704c5120336ab46d",
+    "characters_read": 15556
+  },
+  "GATE5A_EXPANDER_MATTR_REPORT.md": {
+    "sha256": "7a9ef84e1e145023e0b562c0650adaa90c926b313092699aeafe8ec50bd1836d",
+    "characters_read": 23848
+  },
+  "GATE5B_INTERACTION_DIAGNOSTICS_REPORT.md": {
+    "sha256": "408117a8099aa78960c51eb48053f903e1118ab258e1fea0880a0999096ffee3",
+    "characters_read": 17798
+  }
+}

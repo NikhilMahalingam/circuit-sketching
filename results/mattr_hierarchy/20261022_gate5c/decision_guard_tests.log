@@ -1,0 +1,8 @@
+test_CPR_alone_cannot_override_compact_regression (test_mattr_hierarchy_decisions.DecisionTests.test_CPR_alone_cannot_override_compact_regression) ... ok
+test_compute_guard_and_positive_seed_requirement (test_mattr_hierarchy_decisions.DecisionTests.test_compute_guard_and_positive_seed_requirement) ... ok
+test_control_equivalence_prevents_structural_claim_and_confirmation (test_mattr_hierarchy_decisions.DecisionTests.test_control_equivalence_prevents_structural_claim_and_confirmation) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.026s
+
+OK

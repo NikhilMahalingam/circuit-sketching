@@ -1,0 +1,10 @@
+{
+  "family": "bypass",
+  "shuffled": false,
+  "gamma": 0.0,
+  "seed": 43,
+  "step": 500,
+  "cpr": 10.034269507377925,
+  "cmd": 9.04758118955647,
+  "accuracy_auc": 0.7251287494579977
+}

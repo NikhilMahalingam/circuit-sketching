@@ -1,0 +1,10 @@
+{
+  "family": "edge",
+  "shuffled": false,
+  "gamma": 0.01,
+  "seed": 44,
+  "step": 1000,
+  "cpr": 10.092960890801935,
+  "cmd": 9.104969869450127,
+  "accuracy_auc": 0.7502602989315185
+}

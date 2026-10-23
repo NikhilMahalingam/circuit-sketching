@@ -1,0 +1,44 @@
+{
+  "gate": "5C preflight",
+  "git_commit": "a33ab436dcc17436f3ea892fff178e35d240aa18",
+  "source_sha256": {
+    "src/mattr_hierarchy/__init__.py": "c3b8f3d44b802471d91ab3ca2932a744256a8e184f91130ccae4d8b4ff7675d4",
+    "src/mattr_hierarchy/adapter.py": "899471dd9ab9267c69eeec2a7e345577876f8c4ca9be5d644117542b202b2a2f",
+    "src/mattr_hierarchy/analysis.py": "282b610d3bd3ebe335aee8f4595aa37a1a82b95253a90f0dd81882ed871d0355",
+    "src/mattr_hierarchy/audit.py": "7bc2d8ddb4dffaf88a2f452379beda81e03e45ff42333782d014968a91c67a1f",
+    "src/mattr_hierarchy/campaign.py": "fc91ff237d7cd1364d76f388a35f0deb3bb9742ce17c4ab301f281c49d21e4aa",
+    "src/mattr_hierarchy/checkpoint.py": "6697932cc7d5ecc1d67bd11296b828bf9777d824471251db443fa807ce19ee52",
+    "src/mattr_hierarchy/gpu_checks.py": "a0531fc4160dea27d910c99708ecefe566458f5d89082bb626b3543f0703e6d5",
+    "src/mattr_hierarchy/groups.py": "4adcabebdb27c1eed80c58278134bd919b88f0357fad5fd5344152792117d108",
+    "src/mattr_hierarchy/runner.py": "5c385f90d5f318f1d528da15117a6498dacdd48c42f57186cfbe2c8e9b3398ab",
+    "tests/test_mattr_hierarchy.py": "7848943cde93bb5b1db613df9ebb64dd401c9fe6cca1b69e3202693a3fd58339",
+    "src/mattr_optimization/common.py": "0b0aa87a7c85c98b81c5b4d7ea1949ede43134ef7ed2e23719fdc087e253f66c",
+    "src/mattr_optimization/gate0.py": "103b5cb213cfe53a547e4324a79352f9d2e2aa0108faa8ba63460997804f4ffc",
+    "src/mattr_optimization/gate1.py": "f014380f4513ae02e0e579cf9f763b4e72a9178ce8a4ab853c551211f6973633",
+    "src/mattr_optimization/gate2.py": "21a93f59b0e10517f707d10d5d66ebdde795ea1c0dab4199ab111154f7951d9c",
+    "src/mattr_optimization/gate3.py": "d6b703f62156cc8308b6da19e511a50ec26775b4ed5605168bfa576c71509844",
+    "src/mattr_optimization/gate4_train.py": "45c731b1e38aae475af34ec931cf367ebd4348951dd9eb17577f1cd03b1dfb8f",
+    "src/mattr_optimization/gate4_init.py": "76f71f116695b23c8a539e122d4a4f628dcdb6ad6fc408c397f3fe27e7b71e01",
+    "src/mattr_optimization/gate4_report.py": "3e590761f45c426ee47a27ad552360878d7ab536a2484936943fd0cf22612985"
+  },
+  "model": "gpt2-small",
+  "task": "official MIB IOI",
+  "pilot": "20 gradient-only probes at saved Gate2 seed42 step500 scores; first4 training rows; k floor N*[.005,.01,.02,.05,.5]. No optimizer or validation.",
+  "scale_rule": {
+    "negligible": "both hierarchy high-gamma median gradient ratios<1e-4 AND median loss ratios<1e-6",
+    "dominant": "both hierarchy low-gamma median gradient ratios>1 AND median loss ratios>.5",
+    "replacement": "if either extreme condition holds, one common scale=.01/geometric_mean(high-gamma median gradient ratios); target1% regularizer/task gradient ratio for gamma.01. Otherwise scale1. No development-metric choice; gammas stay decade-separated.",
+    "initial_gammas": [
+      0.001,
+      0.01
+    ]
+  },
+  "mapping_hashes": {
+    "H1_groups.npy": "38d1b82fc47d0b0b4f2cb0b682da635b3d04abf176a5e487b2b3af4518a3f32e",
+    "H1_shuffled_groups.npy": "f6fdb7224f1a429595c52c3e4ed10746c3e6fec2b4f6d0e0efaad86d2d992f27",
+    "H2_groups.npy": "fcfc52e78f861a7fbea10071efefcb424ec828d140c68cffa9c0eec7d7eb828d",
+    "H2_shuffled_groups.npy": "138092e69d46b90cbb74597d35c72d5b34faa251781ff0a52ae2f3caa3646065"
+  },
+  "edge_mapping_sha256": "c6fd1f0eecbcdfb89e42b1817cc9822ec4230e5adb22172dac7f5eac03a96dbe",
+  "model_weights": "never optimizer participants; preserve official requires-grad behavior and verify complete SHA before/after"
+}

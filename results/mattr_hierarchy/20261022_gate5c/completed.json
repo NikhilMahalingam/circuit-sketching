@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "protocol_sha256": "3b85dbcc9a01c8e8892795bc3aa622895d4084885f239c6c351e9b8b4d36692e",
+  "phaseB_selected": {
+    "family": "H2",
+    "gamma": 0.01
+  },
+  "phaseC_executed": true,
+  "phaseD_executed": false,
+  "model_weight_updates": 0,
+  "leaderboard_submission": false
+}

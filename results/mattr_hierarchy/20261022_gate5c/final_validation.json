@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "historical_files_unchanged": 9457,
+  "historical_criteria_sha256": "f200fc163bfb0e70b4790bde28ed3a6748bf9051c7d574ed7e23bda69cf0dbde",
+  "protocol_sha256": "3b85dbcc9a01c8e8892795bc3aa622895d4084885f239c6c351e9b8b4d36692e",
+  "jobs": 20,
+  "checkpoints": 183,
+  "cpu_tests": 6,
+  "all_original_edges": 32491,
+  "groups": {
+    "H1": 157,
+    "H2": 445
+  },
+  "exact_bypass_and_resume": true,
+  "weight_updates": 0,
+  "effective_exports_verified": true,
+  "cohort_and_row_k_streams_match": true,
+  "decisions_recomputed_unchanged": true,
+  "counts": {
+    "forward_batches": 26713,
+    "example_forwards": 134161,
+    "backward_calls": 18140,
+    "optimizer_updates": 18120
+  },
+  "total_child_launch_seconds": 6514.190938558,
+  "additional_model_forwards_for_audit": 0,
+  "audit_seconds": 119.074398134
+}

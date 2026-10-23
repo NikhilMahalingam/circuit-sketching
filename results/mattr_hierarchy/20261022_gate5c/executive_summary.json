@@ -1,0 +1,32 @@
+{
+  "hierarchy": "H2 destination-component",
+  "gamma": 0.01,
+  "steps": 1000,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "mean_cpr": 10.051874469877331,
+  "baseline_mean_cpr": 10.105522862446215,
+  "mean_paired_relative_cpr_gain": -0.0051730626660442995,
+  "positive_cpr_seeds": 1,
+  "mean_cmd": 9.062261230681923,
+  "mean_cmd_delta": -0.05957727581773512,
+  "mean_accuracy_log_auc": 0.7889962585939857,
+  "mean_accuracy_log_auc_delta": 0.06730295579127098,
+  "compact_accuracy_deltas": {
+    "0.005": 0.3307291666666667,
+    "0.01": 0.171875,
+    "0.02": 0.0,
+    "0.05": 0.0
+  },
+  "mean_adaptation_time_ratio": 1.0121958044801105,
+  "training_seconds": 4955.131153253999,
+  "evaluation_seconds": 1026.2933690290024,
+  "total_child_launch_seconds": 6514.190938557999,
+  "peak_cuda_allocated_mib": 3912.78564453125,
+  "optimizer_updates": 18120,
+  "phaseD_authorized": false,
+  "leaderboard_submission": false
+}
