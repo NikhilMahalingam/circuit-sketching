@@ -1,0 +1,1193 @@
+{
+  "protocol_sha256": "a3daa1558382e2b78aba9ef4d73172f3dd21199535674db6f33e8113312962a9",
+  "commands": [
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "baseline",
+        "--seed",
+        "42",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "h2",
+        "--seed",
+        "42",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "baseline",
+        "--seed",
+        "43",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "h2",
+        "--seed",
+        "43",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "baseline",
+        "--seed",
+        "44",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "h2",
+        "--seed",
+        "44",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "42",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "42",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "43",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "43",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "44",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "44",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "45",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "45",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "46",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "46",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "eap",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42"
+      ]
+    },
+    {
+      "stage": "eap",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43"
+      ]
+    },
+    {
+      "stage": "eap",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44"
+      ]
+    },
+    {
+      "stage": "eap",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "45",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "45",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "46",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "46",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "0",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "0",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "0",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "0",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "45",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "45",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "46",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "46",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "0",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "0",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "0",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "0",
+        "--cohort",
+        "development"
+      ]
+    }
+  ]
+}

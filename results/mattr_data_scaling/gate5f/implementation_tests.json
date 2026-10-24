@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "unit_tests": 11,
+  "registered_training_runs": 0,
+  "full_cohort_evaluations": 0,
+  "scope": "CPU tests including synthetic offline report with eight plots, direct baseline equivalence, classification and stop rules, cache integrity, topology automorphisms, gradients and checkpoint recovery",
+  "unit_log_sha256": "26617d02f38ad8584f6f7bbac58c87906a3cc572889b75d02a91050b7220caa7"
+}

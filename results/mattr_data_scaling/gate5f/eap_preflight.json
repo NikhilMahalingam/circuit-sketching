@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "examples": 16,
+  "ig_steps": 5,
+  "batch_size": 4,
+  "partition_equivalent": true,
+  "max_partition_error": 1.1920928955078125e-07,
+  "observed_8_to_4_time_ratio": 1.1492731134548146,
+  "seconds_per_example": 0.294099328625002,
+  "full10000_projected_seconds": 2940.99328625002,
+  "peak_allocated_mib": 1916.84912109375,
+  "peak_reserved_mib": 2454.0,
+  "memory_projection": "Fixed batch4; entire observed allocated peak scaled by squared max-token-length ratio, a conservative heuristic, not a guaranteed bound; OOM stops unchanged.",
+  "normalization": "official mean=True loss=True plus divide by total_items. Partition test uses identical batch4 and example-weighted chunks; varying batch sizes is not equivalent raw-score scaling.",
+  "model_weight_sha256": "2e352e95c04c9ad7772afe48fb0c5d27fa3439429adca5f63d46fc45e6469a76",
+  "evaluation_seconds_per_ranking_projection": 844.6550080000015,
+  "sampled_max_positions": 19,
+  "full_train_max_positions": 27,
+  "conservative_full_length_allocated_mib": 3870.8670617100934,
+  "device_total_mib": 12287.5
+}

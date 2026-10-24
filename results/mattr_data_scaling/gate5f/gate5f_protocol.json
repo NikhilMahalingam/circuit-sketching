@@ -1,0 +1,1875 @@
+{
+  "gate": "5F",
+  "parent_commit": "9f56e1585d74b922f4a89813d2bc0ac74f39e32e",
+  "endpoints": [
+    {
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 42,
+      "step": 1000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 42,
+      "step": 5000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 42,
+      "step": 1000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 42,
+      "step": 5000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 43,
+      "step": 1000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 43,
+      "step": 5000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 43,
+      "step": 1000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 43,
+      "step": 5000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 44,
+      "step": 1000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 44,
+      "step": 5000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 44,
+      "step": 1000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 44,
+      "step": 5000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 42,
+      "step": 1000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 42,
+      "step": 5000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 42,
+      "step": 1000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 42,
+      "step": 5000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 43,
+      "step": 1000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 43,
+      "step": 5000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 43,
+      "step": 1000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 43,
+      "step": 5000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 44,
+      "step": 1000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 44,
+      "step": 5000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 44,
+      "step": 1000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 44,
+      "step": 5000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 45,
+      "step": 5000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 45,
+      "step": 5000
+    },
+    {
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 46,
+      "step": 5000
+    },
+    {
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 46,
+      "step": 5000
+    }
+  ],
+  "training_jobs": [
+    {
+      "key": "baseline_n128_s42",
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 42,
+      "reuse_step": 5000,
+      "reuse_checkpoint": "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/checkpoints/step_005000.pt",
+      "endpoints": {
+        "1000": "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/checkpoints/step_001000.pt",
+        "5000": "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/checkpoints/step_005000.pt"
+      },
+      "requires_training": false
+    },
+    {
+      "key": "h2_n128_s42",
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 42,
+      "reuse_step": 1000,
+      "reuse_checkpoint": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s42/checkpoints/step_001000.pt",
+      "endpoints": {
+        "1000": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s42/checkpoints/step_001000.pt",
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "baseline_n128_s43",
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 43,
+      "reuse_step": 5000,
+      "reuse_checkpoint": "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/checkpoints/step_005000.pt",
+      "endpoints": {
+        "1000": "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/checkpoints/step_001000.pt",
+        "5000": "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/checkpoints/step_005000.pt"
+      },
+      "requires_training": false
+    },
+    {
+      "key": "h2_n128_s43",
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 43,
+      "reuse_step": 1000,
+      "reuse_checkpoint": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s43/checkpoints/step_001000.pt",
+      "endpoints": {
+        "1000": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s43/checkpoints/step_001000.pt",
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "baseline_n128_s44",
+      "method": "baseline",
+      "dataset_size": 128,
+      "seed": 44,
+      "reuse_step": 5000,
+      "reuse_checkpoint": "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/checkpoints/step_005000.pt",
+      "endpoints": {
+        "1000": "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/checkpoints/step_001000.pt",
+        "5000": "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/checkpoints/step_005000.pt"
+      },
+      "requires_training": false
+    },
+    {
+      "key": "h2_n128_s44",
+      "method": "h2",
+      "dataset_size": 128,
+      "seed": 44,
+      "reuse_step": 1000,
+      "reuse_checkpoint": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s44/checkpoints/step_001000.pt",
+      "endpoints": {
+        "1000": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s44/checkpoints/step_001000.pt",
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "baseline_n10000_s42",
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 42,
+      "reuse_step": 5000,
+      "reuse_checkpoint": "results/mattr_optimization/20261021T134352Z_gate1/checkpoints/step_005000.pt",
+      "endpoints": {
+        "1000": "results/mattr_optimization/20261021T134352Z_gate1/checkpoints/step_001000.pt",
+        "5000": "results/mattr_optimization/20261021T134352Z_gate1/checkpoints/step_005000.pt"
+      },
+      "requires_training": false
+    },
+    {
+      "key": "h2_n10000_s42",
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 42,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "baseline_n10000_s43",
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 43,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "h2_n10000_s43",
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 43,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "baseline_n10000_s44",
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 44,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "h2_n10000_s44",
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 44,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "baseline_n10000_s45",
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 45,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "h2_n10000_s45",
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 45,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "baseline_n10000_s46",
+      "method": "baseline",
+      "dataset_size": 10000,
+      "seed": 46,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    },
+    {
+      "key": "h2_n10000_s46",
+      "method": "h2",
+      "dataset_size": 10000,
+      "seed": 46,
+      "reuse_step": 0,
+      "reuse_checkpoint": null,
+      "endpoints": {
+        "1000": null,
+        "5000": null
+      },
+      "requires_training": true
+    }
+  ],
+  "eap_jobs": [
+    {
+      "key": "eap_ig_n128_s42",
+      "dataset_size": 128,
+      "seed": 42
+    },
+    {
+      "key": "eap_ig_n128_s43",
+      "dataset_size": 128,
+      "seed": 43
+    },
+    {
+      "key": "eap_ig_n128_s44",
+      "dataset_size": 128,
+      "seed": 44
+    },
+    {
+      "key": "eap_ig_n10000",
+      "dataset_size": 10000,
+      "seed": 42
+    }
+  ],
+  "primary_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "factorial_seeds": [
+    42,
+    43,
+    44
+  ],
+  "caps": [
+    60,
+    80,
+    100,
+    116,
+    140,
+    180,
+    240,
+    296,
+    400,
+    640
+  ],
+  "primary_cap": 116,
+  "batch_size": 20,
+  "precision": "float32",
+  "training": {
+    "optimizer": "official Adam",
+    "lr": 0.05,
+    "T": 0.5,
+    "n_iters": 30,
+    "mode": "iso",
+    "gamma": 0,
+    "k_schedule": "uniform",
+    "cf_cache_gb": 4.0,
+    "steps": 5000
+  },
+  "evaluation": {
+    "metric": "official MIB CPR/CMD/log-AUC; positive-margin and full-vocabulary top1 separately",
+    "signed": true,
+    "prune": true,
+    "cohorts": [
+      "primary",
+      "development"
+    ],
+    "classification_cohort": "primary",
+    "prefix_search": "all original prefixes until first actual count>640; require monotone/nested; caps use largest eligible prefix"
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 5644,
+    "paired": true,
+    "stratify": "exact template_id",
+    "seeds_fixed": true
+  },
+  "criteria": {
+    "meaningful": 0.1,
+    "equivalence": 0.02,
+    "safeguard_caps": [
+      296,
+      400,
+      640
+    ],
+    "safeguard_regression_max": 0.02,
+    "positive_primary_seeds": 3,
+    "precedence": [
+      "Robust compact advantage",
+      "Small compact advantage",
+      "Baseline catches up and data-limited",
+      "Baseline catches up",
+      "Data-limited advantage",
+      "Mixed"
+    ],
+    "catches_up": "delta128_1000>0; step_effect128<0 and step_effect10000<0; baseline accuracy increases with steps at both N; primary<=0 or entire95%CI within[-.02,.02]",
+    "data_limited": "delta128 positive at both budgets; data_effect1000<0 and data_effect5000<0. At both matched durations reduction remains, operationalizing not fully explained by longer optimization.",
+    "invalid_correctness": "Invalid correctness; no positive claim"
+  },
+  "eap": {
+    "method": "EAP-IG-inputs",
+    "ig_steps": 5,
+    "alpha_grid": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "batch_size": 4,
+    "metric": "official mean=True loss=True",
+    "partition": "fixed batch4; divisible sizes128/10000; chunked batch-aligned outputs weight by examples; do not change batch size or mean reduction"
+  },
+  "topology_control": {
+    "seed": 5801,
+    "replicates": 64,
+    "method": "independent within-layer attention-head relabeling automorphisms; Q/K/V coupled; input/MLP/logits fixed",
+    "constraints": "exact actual counts and source/destination type counts under official prune; conditions on layer/head-count structure; no enrichment claim about layer selection"
+  },
+  "runtime_limit_seconds": 43200,
+  "manual_override": "--approve-over-12h; checked before each costly command; approval saved with protocol hash",
+  "source_provenance": {
+    "commits": {
+      "external/matryoshka-attribution": "af82b2eef145dd3e66c793a413352d6931a152d7",
+      "external/matryoshka-attribution/deps/MIB-circuit-track": "582fdbc8a2b0f7063a265c8f94851fd2a3aa5480",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG": "3fb341eafdaba63632954aecbbb96b4b08e13d02"
+    },
+    "source_sha256": {
+      "external/matryoshka-attribution/README.md": "4b13062f534cd84e784d37e764795e5ddefef5c90638998db0a96bcc92818d4e",
+      "external/matryoshka-attribution/pyproject.toml": "27a0bdbc2d7b6652ec04b821d24136293246ad210e676c78fe6688fb0541371a",
+      "external/matryoshka-attribution/uv.lock": "95ff386810f211133e1f8a9a64a8d78a1d263a3e0d673dd578ab6359a8abe235",
+      "external/matryoshka-attribution/scripts/mib/eval_mib.py": "75fa67aea49706c11d1101b38463b1ddff00076405dedaa73ec8281b1c0294c9",
+      "external/matryoshka-attribution/scripts/mib/eval_mib_edge.py": "042b354cbace9c509d339b975557fbb45821639ece50aa4870097f3971de2db1",
+      "external/matryoshka-attribution/src/matryoshka_attribution/cf_cache.py": "b6b20149c1c16acb7178683941ab5843f799ec86c77d5746efa3326103cb6221",
+      "external/matryoshka-attribution/src/matryoshka_attribution/deps.py": "cbfe9bb6dfa3d5efae760f790d1da82782f3ba9b28b89aaa84ebdb7faff04811",
+      "external/matryoshka-attribution/src/matryoshka_attribution/edge_pruning.py": "dfb34e4b99ee90c70cb5024f732ba61dbc0bb38f6c330b25e0e07e2a04c41ff6",
+      "external/matryoshka-attribution/src/matryoshka_attribution/evaluate.py": "53c27db5264f8627f76c7129dc66ccf396a085ab6c948c541973e6b3d5131408",
+      "external/matryoshka-attribution/src/matryoshka_attribution/grad_attribution.py": "280e82a9c5e02d55c67ca2af1ad10a298a054a1cae0bb2bec6a3301230289241",
+      "external/matryoshka-attribution/src/matryoshka_attribution/losses.py": "e0e6afea2767e442ea0af276bccfea71acf3cae618878da784e152c5f499e5c1",
+      "external/matryoshka-attribution/src/matryoshka_attribution/masks.py": "5a9a85d36486e536b544caaefc6f8fbac33919247282cd0c33d354bf722de52c",
+      "external/matryoshka-attribution/src/matryoshka_attribution/modes.py": "7fdc9b88687d596452a8cba2559ab702a2da3089cde7948408c6d36bc4a92d43",
+      "external/matryoshka-attribution/src/matryoshka_attribution/sae_loader.py": "12b14debbc2fb7405c7274a8fe1b053806c492d00e88cd7c54f5e5c5a933fd68",
+      "external/matryoshka-attribution/src/matryoshka_attribution/schedules.py": "9a339ac80ce1e50caefc26defa5f96dbec32b184f7df0b691d129406a6109bd2",
+      "external/matryoshka-attribution/src/matryoshka_attribution/sigmoid_topk.py": "0ecbdc87fe907b68439fb76a3bca140e023506883d6f40446fb44a2612452677",
+      "external/matryoshka-attribution/src/matryoshka_attribution/trainer.py": "b987d4b174e6147613d8f806ba41ee65ce0fde8214cbf568f863ce1c701ab7e9",
+      "external/matryoshka-attribution/src/matryoshka_attribution/wandb_util.py": "c9973b10eadb7e48a9adea89cd97fee965de55e3dc2642ab99692245724a3390",
+      "external/matryoshka-attribution/src/matryoshka_attribution/__init__.py": "e34bf7de36d32cfd27585912945f6b1e7c578a9c21f42c641919374319d26e94",
+      "external/matryoshka-attribution/src/matryoshka_attribution/data/arithmetic_wild.py": "f5a07bd63b6b570fe21367b61a4c8887526fa71ea8d2e39ee1d87100feafd84f",
+      "external/matryoshka-attribution/src/matryoshka_attribution/data/sva.py": "7fe4ab731cfcca9afe3968ca7a600fc094ff0f91b572b269b51d056a9a04aa88",
+      "external/matryoshka-attribution/src/matryoshka_attribution/data/__init__.py": "e50e7b6d62d0f946e180c550d4967a526e7b1206d5bdff2700e2d0014bb3cd59",
+      "external/matryoshka-attribution/src/matryoshka_attribution/models/gpt2.py": "4854845914a25c2cb7968c2a07c58506eb72a1294bdd625d09d194bf942a2afc",
+      "external/matryoshka-attribution/src/matryoshka_attribution/models/llama.py": "421c25d7bc32bf4792f2e963eace0559c6793791b297a3ce4b5b71c8769294e9",
+      "external/matryoshka-attribution/src/matryoshka_attribution/models/__init__.py": "dd0bc2ac16eb893bd7d6f2ede2a0128e7e8e0f3749c7307538180ed84488ba3b",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/evaluation.py": "66bf4e8cb2cde67b6dcc30b84e9eee70505f0f52b7e811c1d77c745e30577ef4",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/dataset.py": "33064953976238cef84943446387fe7faa5e95cb77c2f7d10851d3f7df40c422",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/metrics.py": "842f7bca12577b83d11ca207fa4fac2864edb045fd5aa44b8e6b65ed4444e840",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/graph.py": "e87d98418cd1bcd5be20d189fc46a826dd7cdb8ca28216e6a7e167167b954f53",
+      "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/evaluate.py": "aea970d5a3ee9bb6cf2d1a1845d75218e5b6d5c405ee0a97eb91a256a60a06ff"
+    },
+    "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+    "executable": "/home/nikhilmahalingam/.venvs/mattr-optimization-af82b2e/bin/python",
+    "versions": {
+      "torch": "2.12.0",
+      "transformers": "5.9.0",
+      "transformer-lens": "3.2.1",
+      "datasets": "4.8.5",
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "matplotlib": "3.10.9",
+      "psutil": "7.2.2",
+      "pytest": "9.1.1"
+    },
+    "torch_cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3060"
+  },
+  "source_sha256": {
+    "src/mattr_data_scaling/analysis.py": "a8ae3e2bf50cfb646cbeafb4b08d3ec57b6a4b371aacc21cc792c673ef33401f",
+    "src/mattr_data_scaling/attribution.py": "c8d3bd5101475ba7195b4f7b32eed48b70481cdbb6607d4e73fa2770c9788654",
+    "src/mattr_data_scaling/checks.py": "37f4b269bc0079c3a4c7353f4c42090d985fe597238b8e2bebf3d270dcf33499",
+    "src/mattr_data_scaling/cli.py": "d9c12eefa7843516fa7474b2d7efe558c3649e49aa53607b1bcc1321f8fab51e",
+    "src/mattr_data_scaling/core.py": "f90778e303425bc7cb82b1124f0d123e376a948a0619ef049a980720d89695be",
+    "src/mattr_data_scaling/design.py": "54f257ea398462cc173e13757bf7450bc43ae265d2d49cddf1b521a43e90ae29",
+    "src/mattr_data_scaling/evaluate.py": "dbfccd7d2019630ace92a81256e52d4483d14c9b9492f4df737361060940dcf2",
+    "src/mattr_data_scaling/statistics.py": "e921ebc44cc247cc3a3d1bab1ea7ac217fc5f47b55aaba8be984042e3980b6ca",
+    "src/mattr_data_scaling/structure.py": "017f0a1b704f2b5636a6308c26c866d65539e9476428c6c92b10110f3d45a00a",
+    "src/mattr_data_scaling/training.py": "48eecceca4659bb670a932e5fbca4a08318b576820356e7540385db743cf9d3a",
+    "src/mattr_data_scaling/__init__.py": "c8d92449a4133fd89b55add0adaeb55d620ebac4fc2f3442db30d3efb44e92f2",
+    "scripts/gate5f/00_preflight.sh": "789febe6fb8e8878458c878b58124b7397362cd47dd2513a3640039b6b570eda",
+    "scripts/gate5f/01_freeze_protocol.sh": "563d4ebbf0b01005c974495c9a86a206f2482f7d061f5213a5188678bf3abcaa",
+    "scripts/gate5f/02_train.sh": "82fed8ce17a353adf27f5d68e8504babf017f6afee459cc37eca0d6e91a78fe9",
+    "scripts/gate5f/03_eap_ig.sh": "4e7cac02a6d4ef4344ef00be0fcd6ae074ced1cf4301f76f66b8fcfcce494181",
+    "scripts/gate5f/04_evaluate.sh": "e4f0fbcef69a5db9837aa186fc09ca92105bb64ae99e3bd9938390f06a1836fa",
+    "scripts/gate5f/05_analyze.sh": "1e89c489bce17b45cda87ebeedf34246627af83ee5534f3a033766b9e71f5940",
+    "scripts/gate5f/06_audit.sh": "3e6106547b0a3a91d51245c4541d58f936e949375bde0ebe92e0c4d542a70c46",
+    "scripts/gate5f/07_package.sh": "2bf79cce0e8f55c41995fb25fc6fb677a7c542fe0715715f116ca3af606991b0",
+    "scripts/gate5f/run_all.sh": "942ac6aad990c3bd9f36de3888079f8b5310be793f709acb57601ca509ec6fbc",
+    "scripts/gate5f/_environment.sh": "990620b7eafb85b79b3a090878e16c9292f0d295555168cc331908553f4af255",
+    "configs/gate5f.json": "7d9e48d1ef73a506c019f3f1720d28453161a24fcb1fb5ee7d7604602d10fe24",
+    "tests/test_mattr_data_scaling.py": "ec01cde178176178b5bcc08def4ef2c768b94b674441d41e2ed8890c61ecc7d5",
+    "src/mattr_hierarchy/adapter.py": "899471dd9ab9267c69eeec2a7e345577876f8c4ca9be5d644117542b202b2a2f",
+    "src/mattr_hierarchy/analysis.py": "282b610d3bd3ebe335aee8f4595aa37a1a82b95253a90f0dd81882ed871d0355",
+    "src/mattr_hierarchy/audit.py": "7bc2d8ddb4dffaf88a2f452379beda81e03e45ff42333782d014968a91c67a1f",
+    "src/mattr_hierarchy/campaign.py": "fc91ff237d7cd1364d76f388a35f0deb3bb9742ce17c4ab301f281c49d21e4aa",
+    "src/mattr_hierarchy/checkpoint.py": "6697932cc7d5ecc1d67bd11296b828bf9777d824471251db443fa807ce19ee52",
+    "src/mattr_hierarchy/diagnostics.py": "7d205aef25bbb559330939ee194f5449af5a4011c637fe855607aa595f171300",
+    "src/mattr_hierarchy/gpu_checks.py": "a0531fc4160dea27d910c99708ecefe566458f5d89082bb626b3543f0703e6d5",
+    "src/mattr_hierarchy/groups.py": "4adcabebdb27c1eed80c58278134bd919b88f0357fad5fd5344152792117d108",
+    "src/mattr_hierarchy/reconcile_accounting.py": "22e5407d0801658dfe9c5c87ac4aabacf10839f1094a0a449da2592b06ef4365",
+    "src/mattr_hierarchy/runner.py": "5c385f90d5f318f1d528da15117a6498dacdd48c42f57186cfbe2c8e9b3398ab",
+    "src/mattr_hierarchy/__init__.py": "c3b8f3d44b802471d91ab3ca2932a744256a8e184f91130ccae4d8b4ff7675d4",
+    "src/mattr_matched_size/analysis.py": "a2c8086c9a8e38fde4c4c1fcf1e4aa5e16682298b4b86ff6b80ef49e6aea56f6",
+    "src/mattr_matched_size/campaign.py": "7a32349077e892c2ddd16eaf2929de136b04afb3c97d638038fdadecb0b2d4dd",
+    "src/mattr_matched_size/design.py": "98a74f387c185a0d6c26ff57a4a21dd175d144cdea5ce76e00e440175ef30b03",
+    "src/mattr_matched_size/evaluation.py": "cbc999ec7871d14ed5f96b3e52ac55b88381c13a3ca8b2e18090d610a1c18b21",
+    "src/mattr_matched_size/inference.py": "5060e97e4e9c27e874fe3a303a415cbcb192f121f9b92ae9bbeb52a20696508f",
+    "src/mattr_matched_size/statistics.py": "ca736a419f8db61593c0c8fda937ca2e34d2b6df4a5362c9dca9dcce8627f93d",
+    "src/mattr_matched_size/topology.py": "cebec82eec4027338f3a127bf2959d7e5ca519e1b46bdf190616663a4d3d7c16",
+    "src/mattr_matched_size/__init__.py": "360c195ce015aa08a50a2edc5018f4051c451edb75b2760e5c9b591856cb61cd",
+    "src/mattr_compact_validation/analysis.py": "30f0435567727aad43d22899f8a7f20d44be499bc1a0c3ae9d38f9a0c2102554",
+    "src/mattr_compact_validation/campaign.py": "fcd6b2904d540370e0e6f074e6da69a991dc5efd79a1f7b71a73e4d71af8a5e8",
+    "src/mattr_compact_validation/design.py": "eb16a228e0b9c3efcb2863905a41cf8c944d2b4bf93d8666cad12e5119b419a6",
+    "src/mattr_compact_validation/inference.py": "57ba08b2fb2d552763d3618c71f77595ef8910b6958cf303748912ff70f5f649",
+    "src/mattr_compact_validation/statistics.py": "109e42f205c16a67847de14228f9a276d05c103231c1f92280624a0b6db0960b",
+    "src/mattr_compact_validation/__init__.py": "c6df276c06670e00348965986d4e9081a8cac12d55b60826b0c66815ff1a2f98",
+    "src/mattr_optimization/checkpoint.py": "77e211de407f17ccbb0905dcb9e500f566f3cea423836d74e4008b5907a4e5e8",
+    "src/mattr_optimization/common.py": "0b0aa87a7c85c98b81c5b4d7ea1949ede43134ef7ed2e23719fdc087e253f66c",
+    "src/mattr_optimization/execute_analysis.py": "d10bd176ec66673af351800b5866ec2a66fcc9d3c54e2d1a5550714b1e990c26",
+    "src/mattr_optimization/gate0.py": "103b5cb213cfe53a547e4324a79352f9d2e2aa0108faa8ba63460997804f4ffc",
+    "src/mattr_optimization/gate1.py": "f014380f4513ae02e0e579cf9f763b4e72a9178ce8a4ab853c551211f6973633",
+    "src/mattr_optimization/gate1_report.py": "30b8a62b64e957e26c2240c72f90b1f4dcd987e727d845d7825bbabe50216e9f",
+    "src/mattr_optimization/gate2.py": "21a93f59b0e10517f707d10d5d66ebdde795ea1c0dab4199ab111154f7951d9c",
+    "src/mattr_optimization/gate2_controls.py": "fbed9a82312af1af9babab14bf26d65249e9ed7272ebe9ce0f555e278ae86a1a",
+    "src/mattr_optimization/gate2_final_analysis.py": "d6d2bea1f030e4ac91495adaccd2a93397cd1bc1e7ee564af3ef64853e969920",
+    "src/mattr_optimization/gate2_frozen.py": "4421cbc7fc46d01efb11bc92fd674e1b8a3c27564137ef2ef770c584abc64e51",
+    "src/mattr_optimization/gate2_report.py": "e5ac3ba88d27e5f3a6416f220be38d092d7cc383caa156b6c912fc2fdf9fa384",
+    "src/mattr_optimization/gate3.py": "d6b703f62156cc8308b6da19e511a50ec26775b4ed5605168bfa576c71509844",
+    "src/mattr_optimization/gate3_report.py": "4ec069ade97f2e298bd330c412373fdeae21f3c652917abdb9e8468ca9fb3a15",
+    "src/mattr_optimization/gate3_sampling.py": "003f8642de0d879e024b51daf20eae88bd8442d2a99a9d8b2b045e70bd265097",
+    "src/mattr_optimization/gate4.py": "4800e5f419d0706708e438b7e1ae1d1fe6dd17d8cf96112bde1865bb0ceac0fa",
+    "src/mattr_optimization/gate4_attribution.py": "f8a09ad9c5b7c3dd4f3d5ebab6ba7f6c2f8dadd6c5a7b76df8e11bad85af1ccf",
+    "src/mattr_optimization/gate4_evaluate.py": "c4c2ea90991740d6976d6df27448e1e4632d65932690d630bb1afec9e97eaa69",
+    "src/mattr_optimization/gate4_init.py": "76f71f116695b23c8a539e122d4a4f628dcdb6ad6fc408c397f3fe27e7b71e01",
+    "src/mattr_optimization/gate4_report.py": "3e590761f45c426ee47a27ad552360878d7ab536a2484936943fd0cf22612985",
+    "src/mattr_optimization/gate4_train.py": "45c731b1e38aae475af34ec931cf367ebd4348951dd9eb17577f1cd03b1dfb8f",
+    "src/mattr_optimization/notebook.py": "bf5bb3811471ba00a871c94df13cb5e021b84b2fd24b72b9c604f0f16f6b9abd",
+    "src/mattr_optimization/report.py": "0582b24b7de30f22175c0a5be614913737686bfde453de8e775b036d4cfca7cc",
+    "src/mattr_optimization/resume_data_check.py": "b8cd50fac9e09763a920348fffc49e4c3535147761b5f64fca8a36aeabb7da4c",
+    "src/mattr_optimization/verify_gate1.py": "cb08fa0649e01eb5d45220b01d85074f2178208bad53f99af39aa9fe1794dfc3",
+    "src/mattr_optimization/verify_gate2_final.py": "176e66ac9945d9a9e880ad0e3e742d0c213287b537cca82d2209a89ad5de228b",
+    "src/mattr_optimization/verify_gate3.py": "5636e3d5d6b650115269d06223b3ea2b255504dc1280e5442442134e569e1b90",
+    "src/mattr_optimization/verify_gate4.py": "5f305c426d90f72cd88694d9e62e57bee94d8ae660baf47b11ae7da7a8ab581d",
+    "src/mattr_optimization/__init__.py": "b4d0df167eb7205123808aaaa80335cba083302acc1c4fd978757af9541a16ff"
+  },
+  "artifact_sha256": {
+    "bounded_smoke_summary.json": "3530955045dae8dbf5ad1fd3e49b6e56aa94a5deebf8b4ec47c1cd9c0736e9c6",
+    "checkpoint_inventory.csv": "1f425e466e1b63ce6620f8dd0e313bcb532beb847dc310b7ddeed122ff5d94a9",
+    "cli_help_tests.json": "8e5f101f689c7285e7cc940062ef1e98139208e7ea3316988298ebcdb4d77217",
+    "cohort_audit.json": "948e49d98cfe843ead3d83bdac2e92a66dc64eaa12246edd657f26b651596e3b",
+    "cohort_development.csv": "342b6bc19a068110948059817ada1a148329bdad12c2366cf36c8988597c2f9b",
+    "cohort_development_hashes.csv": "0de81b3eb2c2fcc106139ecbb82f6a9e0a0939621c653fba8519bb1e5439f80b",
+    "cohort_primary.csv": "c9f3153ffc0fa929e8cfcc20766b37ad8ac21aeb7be81d9867adf8d28e45df3e",
+    "cohort_primary_hashes.csv": "c7ad3567dda5b3bfd734f73a47137f3fa1d5280397a4d0138ca93fdadeb2ef8a",
+    "eap_preflight.json": "e6bd4bf893dfdb06ef5009c9a358d93901dd2a0c873006c80f2283eedabd226e",
+    "eap_preflight_throughput.csv": "e81bc5830350e5ac90a8a96047c83f0a7e98f3f73cfdf5e123e01f7b3b3b35c0",
+    "edge_mapping.csv": "c6fd1f0eecbcdfb89e42b1817cc9822ec4230e5adb22172dac7f5eac03a96dbe",
+    "group_sizes.csv": "4c0828d1a0a1cc9c1df1bc8399ae51468ed4cd2b79312cff00ac661a71654f6b",
+    "H1_edge_groups.csv": "1cb88e285cd4fd1709923b231128136355d033674dd9070f8b9fbe0c3dba8286",
+    "H1_groups.npy": "38d1b82fc47d0b0b4f2cb0b682da635b3d04abf176a5e487b2b3af4518a3f32e",
+    "H1_shuffled_groups.npy": "f6fdb7224f1a429595c52c3e4ed10746c3e6fec2b4f6d0e0efaad86d2d992f27",
+    "H2_edge_groups.csv": "7397e84495314fe587f877de2676e07c721cd301972fd951ab6105d8724d01cd",
+    "H2_groups.npy": "fcfc52e78f861a7fbea10071efefcb424ec828d140c68cffa9c0eec7d7eb828d",
+    "H2_shuffled_groups.npy": "138092e69d46b90cbb74597d35c72d5b34faa251781ff0a52ae2f3caa3646065",
+    "historical_evidence.json": "cae94b36819c48bfc50174132e17df9b4e412e66e74b10368f1dccedd35f2328",
+    "historical_ranking_references.json": "3ac63138721f5c8bed8184eda89d0b78f70ca2606bec28fc832cfaf6c878ccb6",
+    "implementation_tests.json": "bb3e1cd5de300f07966fc228d32993b614b27bb09f9aae568a858e128e06ed2f",
+    "known_ioi_heads.json": "9577d8a2a8663428e8a44c3b2e465336b99e1fa32616a87b11e2d3d687d64886",
+    "mapping_audit.json": "b268fda44ef272c87a73348cc471b0843755d2bd80dafa021003c0629913e99a",
+    "preflight_cpu.json": "85b509421d8361e41c7ae9e2fa095c055ab812305f0f9f335df14f20b578328f",
+    "preflight_gpu.json": "d644afa8e4a2a5cb5205f5892d6dd13ebfb65692a94d296083b0f6e3328aa94a",
+    "protected_previous_hashes.json": "53acb2034f26379d27a53fae5fac772bc65ef77213666c229bab2c817a1a9d0f",
+    "replacement_job_manifest.json": "30cabca2d0d993e9aee426b18bd20297b2a290834631b25dc1991eb1431b928c",
+    "schedule_audit.json": "80190dbe5d82909f00893183cab21edd4c579ef26fd33dcac2f4120f208ee70c",
+    "stream_convention.json": "ec755ad87d64eeb44ee412ed6636f1fe5f6c072db822560e80f9355911e317bb",
+    "stream_n10000_s42.csv": "12d8e80e88d6dfcba2f90d9f0c8de5c9486e5213f9de4351e0b9c4f8fcfe7630",
+    "stream_n10000_s43.csv": "08b7c4c8cc56f264fe16d7640180edd3d2ee5803621ac9cdcb1e09db1b7e0dde",
+    "stream_n10000_s44.csv": "8e3b5f0be6b4c78847204be7f0e2f36dca424212304161743bf631912d6987df",
+    "stream_n10000_s45.csv": "177faec1ffaea2466ca0f450d667662805d900062f7bb55e990f7014e4de50b6",
+    "stream_n10000_s46.csv": "a3b1f0792eeaef58015e1370ba692260d71f94147f69c724fd96d4ea3b95bb1a",
+    "stream_n128_s42.csv": "c2c80c1af78f07a3caf85bc796dde63d04e4e8ce2ac9373cb9d86d79163e1ac1",
+    "stream_n128_s43.csv": "bdc5749ad3ca49035a21b34b0307ee13fa0bf8d860290bda33e0ad633cc58962",
+    "stream_n128_s44.csv": "9bb812227e739353bd1fb9396c95313a0f39690bee34fc06455d5bcbb4e484ab",
+    "TRAINING_SCHEDULE_AUDIT.md": "579df175f1640a972a4d019ae13e8a01da70e30bd12f0cd8d3a96192615aa3e6",
+    "train_n10000.csv": "b17563a212719f319f0000317e4ae5083948a838702d6ae153dbfd41c5a267fb",
+    "train_n128_s42.csv": "91fa07a917a6e0ef987bd2d58057f22b239d37a5f5790c31448a2ddd0da8f131",
+    "train_n128_s43.csv": "353abc75a7e08914de6cae6275110b30db19847c6415f1a2ffafcd4cfbfbbabc",
+    "train_n128_s44.csv": "fed52b312da3a34feccfedd165e2a09b13942a8624057b99f00116521aa22fb5"
+  },
+  "new_model_weight_training": false,
+  "leaderboard": false,
+  "commands": [
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "baseline",
+        "--seed",
+        "42",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "h2",
+        "--seed",
+        "42",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "baseline",
+        "--seed",
+        "43",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "h2",
+        "--seed",
+        "43",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "baseline",
+        "--seed",
+        "44",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--method",
+        "h2",
+        "--seed",
+        "44",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "42",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "42",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "43",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "43",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "44",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "44",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "45",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "45",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "baseline",
+        "--seed",
+        "46",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "train",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--method",
+        "h2",
+        "--seed",
+        "46",
+        "--resume"
+      ]
+    },
+    {
+      "stage": "eap",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42"
+      ]
+    },
+    {
+      "stage": "eap",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43"
+      ]
+    },
+    {
+      "stage": "eap",
+      "args": [
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44"
+      ]
+    },
+    {
+      "stage": "eap",
+      "args": [
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "45",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "45",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "46",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "46",
+        "--step",
+        "5000",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "0",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "0",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "0",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "0",
+        "--cohort",
+        "primary"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "43",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "1000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "44",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "45",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "45",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "baseline",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "46",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "h2",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "46",
+        "--step",
+        "5000",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "42",
+        "--step",
+        "0",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "43",
+        "--step",
+        "0",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "128",
+        "--seed",
+        "44",
+        "--step",
+        "0",
+        "--cohort",
+        "development"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "args": [
+        "--method",
+        "eap_ig",
+        "--dataset-size",
+        "10000",
+        "--seed",
+        "42",
+        "--step",
+        "0",
+        "--cohort",
+        "development"
+      ]
+    }
+  ]
+}

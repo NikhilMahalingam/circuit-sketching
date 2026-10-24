@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "scripts": [
+    {
+      "script": "scripts/gate5f/00_preflight.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    },
+    {
+      "script": "scripts/gate5f/01_freeze_protocol.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    },
+    {
+      "script": "scripts/gate5f/02_train.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    },
+    {
+      "script": "scripts/gate5f/03_eap_ig.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    },
+    {
+      "script": "scripts/gate5f/04_evaluate.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    },
+    {
+      "script": "scripts/gate5f/05_analyze.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    },
+    {
+      "script": "scripts/gate5f/06_audit.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    },
+    {
+      "script": "scripts/gate5f/07_package.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    },
+    {
+      "script": "scripts/gate5f/run_all.sh",
+      "help_exit_code": 0,
+      "works_from_other_directory": true
+    }
+  ]
+}

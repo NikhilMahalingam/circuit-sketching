@@ -1,0 +1,127 @@
+{
+  "classes": {
+    "name mover": [
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        9,
+        6
+      ]
+    ],
+    "backup name mover": [
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        9,
+        7
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        11,
+        9
+      ]
+    ],
+    "negative": [
+      [
+        10,
+        7
+      ],
+      [
+        11,
+        10
+      ]
+    ],
+    "s2 inhibition": [
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        10
+      ]
+    ],
+    "induction": [
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        9
+      ]
+    ],
+    "duplicate token": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "previous token": [
+      [
+        2,
+        2
+      ],
+      [
+        4,
+        11
+      ]
+    ]
+  },
+  "paper": "https://arxiv.org/html/2211.00593v1",
+  "reference": "https://github.com/ArthurConmy/Automatic-Circuit-Discovery/blob/bc99ace817974b5584b7ee203d596a8e2bbcd399/acdc/ioi/utils.py#L161-L197",
+  "reference_commit": "bc99ace817974b5584b7ee203d596a8e2bbcd399",
+  "source_sha256": "9f9b3120677a85bf5b4bad1d0664108dc3d9a3906c4792362f71886a56131968",
+  "convention": "Published expanded26-head circuit, including parenthesized backup induction/duplicate heads; zero-based layer/head; overlap descriptive only"
+}

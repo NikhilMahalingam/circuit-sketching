@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "implementation and bounded tests only; registered experiment not executed",
+  "protocol_sha256": "a3daa1558382e2b78aba9ef4d73172f3dd21199535674db6f33e8113312962a9",
+  "historical_files_unchanged": 4497,
+  "registered_training_runs": 0,
+  "full_EAP_runs": 0,
+  "full_cohort_evaluation_jobs": 0,
+  "endpoints": 28,
+  "missing_training_trajectories": 12,
+  "manual_commands": 84,
+  "seconds": 21.371299623
+}

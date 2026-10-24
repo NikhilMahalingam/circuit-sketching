@@ -1,0 +1,7 @@
+{
+  "src/mattr_hierarchy/reconcile_accounting.py": {
+    "archive": "source_at_freeze/src/mattr_hierarchy/reconcile_accounting.py",
+    "sha256": "22e5407d0801658dfe9c5c87ac4aabacf10839f1094a0a449da2592b06ef4365",
+    "scope": "historical working-copy line endings only; no research source or protocol changes"
+  }
+}

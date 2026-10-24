@@ -1,0 +1,8 @@
+{
+  "example": "isolated random.Random(training_seed).randint(0,N-1), one draw per attempted update",
+  "k": "isolated frozen float64 replay of official 1+(32491-1)*torch.rand(1).item(); zero initialization consumes no RNG",
+  "seeds42_44": "first100 official recorded k values, then generator restored from step100 CPU state; all5000 values checked against historical baseline",
+  "seeds45_46": "independent CPU torch.Generator.manual_seed(seed); official uniform distribution, separate from row and model RNG",
+  "initialization": "exact deterministic zero; model RNG never consumes either isolated stream",
+  "resume": "stream position equals completed updates; no data-length skips permitted (fail if present)"
+}

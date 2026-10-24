@@ -24,3 +24,7 @@ src/mattr_compact_validation/*.sh text eol=lf
 
 src/mattr_matched_size/*.sh text eol=lf
 /results/mattr_matched_size/** -text
+
+scripts/gate5f/*.sh text eol=lf
+configs/gate5f.json text eol=lf
+/results/mattr_data_scaling/** -text

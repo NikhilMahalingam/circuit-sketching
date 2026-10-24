@@ -1,0 +1,11 @@
+{
+  "observed_new_job_wall_seconds": 206.13630752,
+  "remaining_updates": 57000,
+  "seconds_per_update": 0.335366698016666,
+  "remaining_evaluations": 64,
+  "projected_cumulative_seconds": 76433.88603491208,
+  "limit_seconds": 43200,
+  "approval": false,
+  "uses_completed_5000_run_rate": false,
+  "decision": "first new5000 run allowed for calibration, within budget, or explicit approval"
+}

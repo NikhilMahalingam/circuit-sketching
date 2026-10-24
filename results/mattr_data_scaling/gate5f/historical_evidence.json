@@ -1,0 +1,13 @@
+{
+  "GATE2_FINAL_ANALYSIS.md": "782464ec00fffaa27868b4f593594e5216d592111fd7fc317645aae6f0a72f9a",
+  "GATE5C_HIERARCHICAL_MATTR_REPORT.md": "45068efff8010c434001f429e8685191ffdb3542a4ca47c2572001bfc9fc73d9",
+  "GATE5D_COMPACT_GENERALIZATION_REPORT.md": "f622a7c51882be18a4a0e36de7352a1e85d42d58366553fd1ab7323e3e969d8b",
+  "GATE5E_MATCHED_SIZE_REPORT.md": "28d557dc8c96a685ba95b2337dc9bb9a9309206587484e86089ad9a0d56ea6ca",
+  "results/mattr_hierarchy/20261022_gate5c/gate5c_protocol.json": "3b85dbcc9a01c8e8892795bc3aa622895d4084885f239c6c351e9b8b4d36692e",
+  "results/mattr_hierarchy/20261022_gate5c/protocol_frozen_at.json": "0fed618e8898638c73a87605c2559f2b8b1b011cd7f816ee9df310f54c8a5bc9",
+  "results/mattr_compact_validation/20261023_gate5d/gate5d_protocol.json": "ec2bf0f0a2a4fd73f4699b3040e939ae64b629d46e715cf9e531dd92c4e1ad43",
+  "results/mattr_compact_validation/20261023_gate5d/historical_protocols_read.json": "2347fc4165d54b1db9e8b4abd55201079822f4cb5a8e8971c24eff72b5383644",
+  "results/mattr_compact_validation/20261023_gate5d/protocol_frozen_at.json": "71b0a57ad5a47fd580544812a7d39467abd72f8f95671e9b55cebc26fb3bef76",
+  "results/mattr_matched_size/20261023_gate5e/gate5e_protocol.json": "bb6421a5e5481a172559d0634ab9e71a90b942192f046a824b818bb4ecc90b39",
+  "results/mattr_matched_size/20261023_gate5e/protocol_frozen_at.json": "897e158b98d222ed72c84d3287fab274e409cdb5c758dc25e6106b9722c6ce0f"
+}

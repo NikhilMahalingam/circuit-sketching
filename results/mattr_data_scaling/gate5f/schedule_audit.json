@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "intermediate_1000_equivalent": true,
+  "optimizer_state_equal": true,
+  "baseline_and_h2_exact_resume": true,
+  "synthetic_cpu_updates": 6120,
+  "registered_GPU_updates": 0,
+  "reference": {
+    "path": "/mnt/h/GenAI Research/sketch_prune/external/matryoshka-attribution/src/matryoshka_attribution/trainer.py",
+    "first_line": 35,
+    "last_line": 195,
+    "sha256": "b987d4b174e6147613d8f806ba41ee65ce0fde8214cbf568f863ce1c701ab7e9"
+  },
+  "findings": {
+    "lr": "constant Adam lr=.05; no warmup/decay",
+    "temperature": "constant .5",
+    "planned_duration": "only loop bound; optimizer initialization independent of steps",
+    "model_construction": "may consume global Torch RNG; isolated frozen streams remove coupling",
+    "resume": "scores, Adam, Python/NumPy/Torch/CUDA RNG, independent stream position; donor cache rebuilt and charged"
+  }
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "key": "baseline_n128_s42",
+    "method": "baseline",
+    "dataset_size": 128,
+    "seed": 42,
+    "reuse_step": 5000,
+    "reuse_checkpoint": "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/checkpoints/step_005000.pt",
+    "endpoints": {
+      "1000": "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/checkpoints/step_001000.pt",
+      "5000": "results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/checkpoints/step_005000.pt"
+    },
+    "requires_training": false
+  },
+  {
+    "key": "h2_n128_s42",
+    "method": "h2",
+    "dataset_size": 128,
+    "seed": 42,
+    "reuse_step": 1000,
+    "reuse_checkpoint": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s42/checkpoints/step_001000.pt",
+    "endpoints": {
+      "1000": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s42/checkpoints/step_001000.pt",
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "baseline_n128_s43",
+    "method": "baseline",
+    "dataset_size": 128,
+    "seed": 43,
+    "reuse_step": 5000,
+    "reuse_checkpoint": "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/checkpoints/step_005000.pt",
+    "endpoints": {
+      "1000": "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/checkpoints/step_001000.pt",
+      "5000": "results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/checkpoints/step_005000.pt"
+    },
+    "requires_training": false
+  },
+  {
+    "key": "h2_n128_s43",
+    "method": "h2",
+    "dataset_size": 128,
+    "seed": 43,
+    "reuse_step": 1000,
+    "reuse_checkpoint": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s43/checkpoints/step_001000.pt",
+    "endpoints": {
+      "1000": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s43/checkpoints/step_001000.pt",
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "baseline_n128_s44",
+    "method": "baseline",
+    "dataset_size": 128,
+    "seed": 44,
+    "reuse_step": 5000,
+    "reuse_checkpoint": "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/checkpoints/step_005000.pt",
+    "endpoints": {
+      "1000": "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/checkpoints/step_001000.pt",
+      "5000": "results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/checkpoints/step_005000.pt"
+    },
+    "requires_training": false
+  },
+  {
+    "key": "h2_n128_s44",
+    "method": "h2",
+    "dataset_size": 128,
+    "seed": 44,
+    "reuse_step": 1000,
+    "reuse_checkpoint": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s44/checkpoints/step_001000.pt",
+    "endpoints": {
+      "1000": "results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s44/checkpoints/step_001000.pt",
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "baseline_n10000_s42",
+    "method": "baseline",
+    "dataset_size": 10000,
+    "seed": 42,
+    "reuse_step": 5000,
+    "reuse_checkpoint": "results/mattr_optimization/20261021T134352Z_gate1/checkpoints/step_005000.pt",
+    "endpoints": {
+      "1000": "results/mattr_optimization/20261021T134352Z_gate1/checkpoints/step_001000.pt",
+      "5000": "results/mattr_optimization/20261021T134352Z_gate1/checkpoints/step_005000.pt"
+    },
+    "requires_training": false
+  },
+  {
+    "key": "h2_n10000_s42",
+    "method": "h2",
+    "dataset_size": 10000,
+    "seed": 42,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "baseline_n10000_s43",
+    "method": "baseline",
+    "dataset_size": 10000,
+    "seed": 43,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "h2_n10000_s43",
+    "method": "h2",
+    "dataset_size": 10000,
+    "seed": 43,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "baseline_n10000_s44",
+    "method": "baseline",
+    "dataset_size": 10000,
+    "seed": 44,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "h2_n10000_s44",
+    "method": "h2",
+    "dataset_size": 10000,
+    "seed": 44,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "baseline_n10000_s45",
+    "method": "baseline",
+    "dataset_size": 10000,
+    "seed": 45,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "h2_n10000_s45",
+    "method": "h2",
+    "dataset_size": 10000,
+    "seed": 45,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "baseline_n10000_s46",
+    "method": "baseline",
+    "dataset_size": 10000,
+    "seed": 46,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  },
+  {
+    "key": "h2_n10000_s46",
+    "method": "h2",
+    "dataset_size": 10000,
+    "seed": 46,
+    "reuse_step": 0,
+    "reuse_checkpoint": null,
+    "endpoints": {
+      "1000": null,
+      "5000": null
+    },
+    "requires_training": true
+  }
+]

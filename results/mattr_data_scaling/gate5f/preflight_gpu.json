@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "training_seconds_per_update": 0.335366698016666,
+  "eap_seconds_per_example": 0.294099328625002,
+  "evaluation_seconds_per_ranking_projection": 844.6550080000015,
+  "model_weight_sha256": "2e352e95c04c9ad7772afe48fb0c5d27fa3439429adca5f63d46fc45e6469a76",
+  "bounded_smokes_only": true,
+  "full_experiment_started": false
+}
