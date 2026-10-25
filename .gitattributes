@@ -28,3 +28,6 @@ src/mattr_matched_size/*.sh text eol=lf
 scripts/gate5f/*.sh text eol=lf
 configs/gate5f.json text eol=lf
 /results/mattr_data_scaling/** -text
+scripts/gate5g/*.sh text eol=lf
+configs/gate5g.json text eol=lf
+/results/mattr_fidelity_splice/** -text

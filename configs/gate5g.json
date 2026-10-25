@@ -1,0 +1,20 @@
+{
+  "campaign_id": "gate5g",
+  "model": "gpt2-small",
+  "dataset": "mib-bench/ioi",
+  "split": "validation",
+  "cohort_size": 512,
+  "minimum_eligible": 256,
+  "cohort_seed": 5545,
+  "bootstrap_seed": 5645,
+  "bootstrap_draws": 5000,
+  "batch_size": 20,
+  "precision": "float32",
+  "caps": [60,80,100,116,140,180,240,296,400,640],
+  "nominal_grid": [0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.2,0.5,1.0],
+  "splice_sizes": [324,1624],
+  "runtime_projection_limit_seconds": 18000,
+  "optimizer_updates": 0,
+  "backward_calls": 0,
+  "codex_registered_execution": false
+}
