@@ -1,0 +1,15 @@
+{
+  "scope": "Post-execution interpretation only; criteria, model outputs and decisions unchanged",
+  "protocol_sha256": "a3daa1558382e2b78aba9ef4d73172f3dd21199535674db6f33e8113312962a9",
+  "script_sha256": "cadd5c315fe9c9f6480ad9489f1cfa8b132c3f70e1afcf6ac646be9178023d8f",
+  "inputs": {
+    "gate5f_decision.json": "e11221ef04bb512e7af921326ef204c456900033580923520924b366338095a7",
+    "final_audit.json": "86c22cbf4bda1f124eba650e00c98ae1fe56e9e475b93c9504f421a9225d09da",
+    "accuracy_size_curves.csv": "63679a8b6dd7eaa848287d8ecc293324e1280c15814b6ea3e54d241dca3acfd4",
+    "official_metrics.csv": "7f7f6760689d7c7d4878a4bdc2871458553b58657c96854e0ea2ed29526bd9d3",
+    "compute_summary.csv": "bc07b876494bef07d4893ff8569f83d2964def360422f78ae9d6f2ce5ea3c54c"
+  },
+  "additional_model_forwards": 0,
+  "additional_training_updates": 0,
+  "primary_means_independently_verified": true
+}

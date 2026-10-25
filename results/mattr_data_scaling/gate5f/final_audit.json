@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "protocol_sha256": "a3daa1558382e2b78aba9ef4d73172f3dd21199535674db6f33e8113312962a9",
+  "historical_files_unchanged": 4497,
+  "paired_streams_verified": true,
+  "cohorts_disjoint": true,
+  "model_weights_unchanged": true,
+  "classification_reproduced": true,
+  "counts_reconciled": true
+}

@@ -1,0 +1,58 @@
+{
+  "primary": {
+    "classification": "Robust compact advantage",
+    "primary": {
+      "mean": 0.19648437500000002,
+      "lower": 0.18203125000000003,
+      "upper": 0.2109375
+    },
+    "per_seed": [
+      0.396484375,
+      0.30078125,
+      -0.00390625,
+      0.31640625,
+      -0.02734375
+    ],
+    "checks": {
+      "robust": true,
+      "small": false,
+      "catches_up": false,
+      "data_limited": false,
+      "larger_budget_safe": true,
+      "positive_seeds": 3,
+      "seed_std": 0.1971766507266945,
+      "seed_min": -0.02734375,
+      "seed_max": 0.396484375,
+      "seed_median": 0.30078125
+    },
+    "prompt_scope": "conditional on fixed trained models and nine-template mixture; no training-seed significance claim"
+  },
+  "development": {
+    "primary": {
+      "mean": 0.20273437500000002,
+      "lower": 0.18828125,
+      "upper": 0.21718750000000003
+    },
+    "per_seed": [
+      0.4296875,
+      0.298828125,
+      0.013671875,
+      0.29296875,
+      -0.021484375
+    ],
+    "checks": {
+      "robust": true,
+      "small": false,
+      "catches_up": false,
+      "data_limited": false,
+      "larger_budget_safe": true,
+      "positive_seeds": 4,
+      "seed_std": 0.19678836914676973,
+      "seed_min": -0.021484375,
+      "seed_max": 0.4296875,
+      "seed_median": 0.29296875
+    },
+    "prompt_scope": "conditional on fixed trained models and nine-template mixture; no training-seed significance claim",
+    "classification_used": false
+  }
+}

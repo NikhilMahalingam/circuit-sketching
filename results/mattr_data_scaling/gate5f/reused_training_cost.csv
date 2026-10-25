@@ -1,0 +1,8 @@
+job,steps,checkpoint,historical_training_seconds,scope
+baseline_n128_s42,5000,results/mattr_optimization/20261021T172035Z_gate2/seed42_n128/checkpoints/step_005000.pt,1391.0751635269999,preexisting training timer; never charged as new Gate5F work; setup/evaluation differs across historical campaigns
+h2_n128_s42,1000,results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s42/checkpoints/step_001000.pt,279.66387274399995,preexisting training timer; never charged as new Gate5F work; setup/evaluation differs across historical campaigns
+baseline_n128_s43,5000,results/mattr_optimization/20261021_gate2_seeds43_44/seed43_n128/checkpoints/step_005000.pt,1462.124559808999,preexisting training timer; never charged as new Gate5F work; setup/evaluation differs across historical campaigns
+h2_n128_s43,1000,results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s43/checkpoints/step_001000.pt,271.6951564779997,preexisting training timer; never charged as new Gate5F work; setup/evaluation differs across historical campaigns
+baseline_n128_s44,5000,results/mattr_optimization/20261021_gate2_seeds43_44/seed44_n128/checkpoints/step_005000.pt,1462.2368952020006,preexisting training timer; never charged as new Gate5F work; setup/evaluation differs across historical campaigns
+h2_n128_s44,1000,results/mattr_hierarchy/20261022_gate5c/jobs/H2_g0_s44/checkpoints/step_001000.pt,275.21665491600015,preexisting training timer; never charged as new Gate5F work; setup/evaluation differs across historical campaigns
+baseline_n10000_s42,5000,results/mattr_optimization/20261021T134352Z_gate1/checkpoints/step_005000.pt,1616.330660885,preexisting training timer; never charged as new Gate5F work; setup/evaluation differs across historical campaigns

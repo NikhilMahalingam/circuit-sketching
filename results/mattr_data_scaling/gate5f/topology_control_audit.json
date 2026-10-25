@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "seconds": 54.30457033800485,
+  "unique_masks": 320,
+  "exact_size_match": true,
+  "replicates": 64,
+  "matching": "within-layer head relabeling automorphism; same layer/head degree pattern, QKV roles and source/destination edge types",
+  "limitation": "conditions on layer structure and head counts. Enrichment tests identity within layers, not preference for known layers. No model forwards; descriptive only."
+}
