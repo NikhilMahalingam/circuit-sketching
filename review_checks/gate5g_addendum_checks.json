@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "CPU_tests": 5,
+  "official_parent_splice_masks_reproduced": 30,
+  "explicit_four_circuit_sets": 60,
+  "wrapper_help_from_other_directory": {
+    "00_stage1.sh": true,
+    "01_freeze_stage2.sh": true,
+    "02_displacement.sh": true,
+    "03_seed42_search.sh": true,
+    "04_seed42_confirm.sh": true,
+    "05_analyze.sh": true,
+    "06_audit.sh": true,
+    "07_package.sh": true,
+    "08_smoke.sh": true
+  },
+  "smoke": {
+    "passed": true,
+    "prompts": 2,
+    "fresh_forwards": 0,
+    "official_faithfulness_equal": true,
+    "KL": "unchanged validated full-vocabulary Gate5G implementation",
+    "counts": {
+      "forward_batches": 14,
+      "example_forwards": 28,
+      "backward_calls": 0,
+      "optimizer_updates": 0
+    },
+    "model_hash": "2e352e95c04c9ad7772afe48fb0c5d27fa3439429adca5f63d46fc45e6469a76"
+  },
+  "Stage1_model_forwards": 0,
+  "Stage2_search_run": false,
+  "Stage2_registered_evaluations_run": false,
+  "Stage1_integrity": true,
+  "test_log_sha256": "f5a069f086bde8652eea4daf04434012ca043a4e54c11b6ac51fa86b6d44cd07"
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "prompts": 2,
+  "fresh_forwards": 0,
+  "official_faithfulness_equal": true,
+  "KL": "unchanged validated full-vocabulary Gate5G implementation",
+  "counts": {
+    "forward_batches": 14,
+    "example_forwards": 28,
+    "backward_calls": 0,
+    "optimizer_updates": 0
+  },
+  "model_hash": "2e352e95c04c9ad7772afe48fb0c5d27fa3439429adca5f63d46fc45e6469a76"
+}

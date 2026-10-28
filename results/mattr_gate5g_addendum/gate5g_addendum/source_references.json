@@ -1,0 +1,37 @@
+[
+  {
+    "path": "src/mattr_data_scaling/attribution.py",
+    "function": "attribute",
+    "first_line": 22,
+    "last_line": 34,
+    "sha256": "c8d3bd5101475ba7195b4f7b32eed48b70481cdbb6607d4e73fa2770c9788654"
+  },
+  {
+    "path": "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/attribute.py",
+    "function": "get_scores_eap_ig",
+    "first_line": 102,
+    "last_line": 183,
+    "sha256": "3b0e4d017fb2b92a11747ace8b176f514365ec966203b5e68aa900e1e051c796"
+  },
+  {
+    "path": "external/matryoshka-attribution/deps/MIB-circuit-track/EAP-IG/src/eap/utils.py",
+    "function": "make_hooks_and_matrices",
+    "first_line": 42,
+    "last_line": 138,
+    "sha256": "1bea32178bfd0313f5c5b460c9965c7a1e218a73de47ec5918928d61cdd5d7c3"
+  },
+  {
+    "path": "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/metrics.py",
+    "function": "logit_diff",
+    "first_line": 138,
+    "last_line": 150,
+    "sha256": "842f7bca12577b83d11ca207fa4fac2864edb045fd5aa44b8e6b65ed4444e840"
+  },
+  {
+    "path": "external/matryoshka-attribution/deps/MIB-circuit-track/MIB_circuit_track/evaluation.py",
+    "function": "evaluate_area_under_curve",
+    "first_line": 12,
+    "last_line": 140,
+    "sha256": "66bf4e8cb2cde67b6dcc30b84e9eee70505f0f52b7e811c1d77c745e30577ef4"
+  }
+]

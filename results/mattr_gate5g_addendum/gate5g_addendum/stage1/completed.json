@@ -1,0 +1,30 @@
+{
+  "identity": {
+    "plan_sha256": "f03e96a72811bcca111cf007fad27bbd7b83ed717046a38dfa9f243a1a9330f6",
+    "original_protocol_sha256": "c051cf92d775c92693205b22d07684b911268b96e41d99e777efc1018e8c3462",
+    "source_sha256": {
+      "src/mattr_gate5g_addendum/analysis.py": "0a5c44f313a5462ee2a3fcf922ef1f6d59cbfba782ac4bc756f86dea03f4bc94",
+      "src/mattr_gate5g_addendum/cli.py": "6481fd390efb5cdd6d3dc4d12736a08a19f5e0965fda5b6b1a1109eda4373da8",
+      "src/mattr_gate5g_addendum/common.py": "40016555d0916384cb4ac841ba60aa9f2dc79da0db9d323b842f197ba9644a87",
+      "src/mattr_gate5g_addendum/smoke.py": "b559b33e66c22849fe2129bd81e6e71a918975decb86077baefc81c774d55407",
+      "src/mattr_gate5g_addendum/stage1.py": "c619680309fa77384481858ad4bb044157b15574fbe7918fc9fa8bb96ea48639",
+      "src/mattr_gate5g_addendum/stage2.py": "bef10c8c70421eb54a4b2c10a5b4906038ab70628a9562e3bf8e8c309f5f84ab",
+      "src/mattr_gate5g_addendum/__init__.py": "73ea4d7535e83fc14b1d28069ae568c8da799ca88beb27b6203417a6f5152ace",
+      "scripts/gate5g_addendum/00_stage1.sh": "ac77758553041a2ab88446309995d3b1808e7d9fc6de1b3cfb5f32d955be45f2",
+      "scripts/gate5g_addendum/01_freeze_stage2.sh": "215462821a9006a9a32f17d723d3ae313c4fd7a13394ce0b6fd4c0089bbdfb24",
+      "scripts/gate5g_addendum/02_displacement.sh": "a637667ac895bb0fb7b0058cff0f3a231e9d65268f6d0a8ca3fecbf510f834b4",
+      "scripts/gate5g_addendum/03_seed42_search.sh": "b6cc2514148970c083b543224fae7336fc012fed72c3258b403f619c211d0cdb",
+      "scripts/gate5g_addendum/04_seed42_confirm.sh": "411592eb0651810437299b3869ad8e599e6923472c19dbdb3d74275868d5a29c",
+      "scripts/gate5g_addendum/05_analyze.sh": "0bc684c991f971f2b18b82ca52b6b1c26f356e81da7695d41445d9ac9cf1daae",
+      "scripts/gate5g_addendum/06_audit.sh": "6f08336f72a4af829b4a5967ee89b623c6acb66bfa0c450fe4e697eccafd1973",
+      "scripts/gate5g_addendum/07_package.sh": "0a52c41f6d8bc14968178176b00dd5439dae93883d76176f1201ad4a04e83e3b",
+      "scripts/gate5g_addendum/08_smoke.sh": "5f14fab96eacdd8b085f616b32c13a5bd6cd297dad8f4c0e4a6dda88250ef152",
+      "scripts/gate5g_addendum/_environment.sh": "39ffe810a01fba7226c00d853ec384ca2d3b994f58ed9333bcb0db431e78c98d",
+      "tests/test_mattr_gate5g_addendum.py": "e8555d33787842ce12909b15d5a311993591e077a18e8e3b0da68645e7625970"
+    }
+  },
+  "passed": true,
+  "sha256": {
+    "outputs.json": "5550d8010a6b16c05f1e27f0385d2d93a94951e85ebae37c1c12c2cc5cd2608e"
+  }
+}
