@@ -1,0 +1,9 @@
+{
+  "eligible": 7248,
+  "selected": 512,
+  "template_strata": 9,
+  "eap_signed_historical_masks": 10,
+  "graph_forwards": 0,
+  "cpu_tests_passed": 17,
+  "script_checks_passed": true
+}

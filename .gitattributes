@@ -33,3 +33,6 @@ configs/gate5g.json text eol=lf
 /results/mattr_fidelity_splice/** -text
 scripts/gate5g_addendum/*.sh text eol=lf
 /results/mattr_gate5g_addendum/** -text
+scripts/gate6a/*.sh text eol=lf
+/results/mattr_faithful/** -text
+GATE6A*.md text eol=lf
