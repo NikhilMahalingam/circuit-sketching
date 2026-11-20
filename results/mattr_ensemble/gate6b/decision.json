@@ -1,0 +1,28 @@
+{
+  "classification": "Two-goal success",
+  "cmd": {
+    "first": 0.015441876094323195,
+    "comparator": 0.02724022455195437,
+    "difference": -0.011798348457631176,
+    "interval": [
+      -0.015851966361312333,
+      -0.007543689780797881
+    ],
+    "unstable": 0
+  },
+  "compact": {
+    "first": 0.890625,
+    "comparator": 0.390625,
+    "difference": 0.5,
+    "interval": [
+      0.458984375,
+      0.541015625
+    ],
+    "unstable": 0
+  },
+  "relative_cmd": -43.31222907185871,
+  "numerically_lower_cmd": true,
+  "cmd_superior": true,
+  "cmd_noninferior": true,
+  "compact_superior": true
+}
